@@ -1,0 +1,250 @@
+﻿<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog - Pracownia Rachunkowosci</title>
+  <meta name="description" content="Porady ksiegowe, estonski CIT, VAT OSS - blog Pracowni Rachunkowosci." />
+  <link rel="canonical" href="https://twojadomena.pl/blog/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css" />
+
+  <style>
+    :root {
+      --brand: #0D1B2A;
+      --accent: #FFCC00;
+      --bg: #F5F7FA;
+      --text: #1F2937;
+      --muted: #6B7280;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      --maxw: 1100px;
+    }
+    body {
+      font-family: Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+    }
+    .blog-content {
+      padding: 84px 20px 60px;
+      max-width: var(--maxw);
+      margin: 0 auto;
+    }
+    h1 {
+      color: var(--brand);
+      font-family: Montserrat, sans-serif;
+      font-size: 40px;
+      margin: 0 0 40px;
+    }
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .categories a {
+      font-size: 14px;
+      color: var(--brand);
+      text-decoration: none;
+      background: var(--accent);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    .categories a:hover {
+      background: #f1c400;
+    }
+    .posts-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+    .post-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .post-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .post-info {
+      padding: 24px;
+    }
+    .post-info .meta {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .post-info h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      color: var(--brand);
+    }
+    .post-info p {
+      color: var(--text);
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+    .read-more {
+      font-weight: 600;
+      color: var(--brand);
+      text-decoration: none;
+    }
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    @media (min-width: 700px) {
+      .posts-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Glowna nawigacja">
+      <div class="logo">
+        <span class="logo-badge">PR</span> PRACOWNIA RACHUNKOWOSCI
+      </div>
+
+      <button class="hamburger" aria-label="Otworz menu" aria-expanded="false">&#9776;</button>
+
+      <ul class="menu" id="mainMenu">
+        <li><a href="../index.html#uslugi">Uslugi</a></li>
+        <li><a href="../index.html#dla-kogo">Dla kogo</a></li>
+        <li><a href="../oferta.html">Oferta</a></li>
+        <li><a href="index.html" aria-current="page">Blog</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
+        <li><a class="btn btn-primary" href="https://konto.insert.com.pl/#/login" target="_blank" rel="noopener">Panel klienta</a></li>
+        <li><a class="btn btn-outline" href="../index.html#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="blog-content" id="main">
+    <h1>Blog Pracowni Rachunkowosci</h1>
+    <nav class="categories" aria-label="Filtry kategorii">
+      <a href="#" data-category="all">Wszystkie</a>
+      <a href="#" data-category="podatki">Podatki</a>
+      <a href="#" data-category="estonski">Estonski CIT</a>
+      <a href="#" data-category="e-commerce">E-commerce</a>
+      <a href="#" data-category="controlling">Controlling</a>
+    </nav>
+
+    <div class="posts-grid">
+      <article class="post-card" data-category="estonski">
+        <img src="cit-estonski-canva.png" alt="CIT estonski" />
+        <div class="post-info">
+          <div class="meta">Estonski CIT | 15 wrz 2025 | Autor: Imie Nazwisko</div>
+          <h2><a href="estonski-cit-wdrozenie.html">Jak wdrozyc estonski CIT w spolece z o.o.?</a></h2>
+          <p>Praktyczny przewodnik krok po kroku: kiedy warto, jak zaczac i na co uwazac przy przejsciu na ryczalt estonski.</p>
+          <a href="estonski-cit-wdrozenie.html" class="read-more">Czytaj wiecej -&gt;</a>
+        </div>
+      </article>
+
+      <article class="post-card" data-category="e-commerce">
+        <img src="vat-oss-amazon.png" alt="VAT OSS Amazon" />
+        <div class="post-info">
+          <div class="meta">E-commerce | 22 paz 2025 | Autor: Imie Nazwisko</div>
+          <h2><a href="vat-oss-amazon.html">VAT OSS w e-commerce - jak to dziala w praktyce?</a></h2>
+          <p>Sprzedajesz przez Amazon lub Shopify do UE? Sprawdz, kiedy musisz zarejestrowac sie do VAT OSS, jak wyglada rozliczenie i czego unikac.</p>
+          <a href="vat-oss-amazon.html" class="read-more">Czytaj wiecej -&gt;</a>
+        </div>
+      </article>
+
+      <article class="post-card" data-category="controlling">
+        <img src="raporty-kpi-canva.png" alt="Raporty zarzadcze KPI" />
+        <div class="post-info">
+          <div class="meta">Controlling | 22 paz 2025 | Autor: Imie Nazwisko</div>
+          <h2><a href="controlling-kpi.html">Raporty zarzadcze i KPI - controlling dla zarzadu</a></h2>
+          <p>Jak wygladaja nowoczesne raporty zarzadcze? Czym sa KPI? Jak controlling pomaga w decyzjach i rozwoju firmy?</p>
+          <a href="controlling-kpi.html" class="read-more">Czytaj wiecej -&gt;</a>
+        </div>
+      </article>
+
+      <article class="post-card" data-category="podatki">
+        <img src="samochod2026.png" alt="Koszty samochodu firmowego 2026" />
+        <div class="post-info">
+          <div class="meta">Samochod firmowy | 22 paz 2025 | Autor: Imie Nazwisko</div>
+          <h2><a href="koszty-samochodu.html">Zmiany w kosztach samochodu w spolece od 2026 r.</a></h2>
+          <p>Nowe limity dla amortyzacji, leasingu i kosztow uzywania samochodow osobowych w firmach. Sprawdz, jak wplyna na Twoja spoleke z o.o.</p>
+          <a href="koszty-samochodu.html" class="read-more">Czytaj wiecej -&gt;</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <script>
+  document.querySelectorAll(".categories a").forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      event.preventDefault();
+      var category = button.getAttribute("data-category");
+
+      document.querySelectorAll(".post-card").forEach(function (card) {
+        var cardCategory = card.getAttribute("data-category");
+
+        if (category === "all" || cardCategory === category) {
+          card.style.display = "flex";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  });
+  </script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var menu = document.getElementById("mainMenu");
+    var toggleBtn = document.querySelector(".hamburger");
+
+    if (!menu || !toggleBtn) {
+      return;
+    }
+
+    var setMenuState = function (open) {
+      menu.classList.toggle("active", open);
+      document.body.classList.toggle("menu-open", open);
+      toggleBtn.setAttribute("aria-expanded", open ? "true" : "false");
+      toggleBtn.setAttribute("aria-label", open ? "Zamknij menu" : "Otworz menu");
+      toggleBtn.innerHTML = open ? "&times;" : "&#9776;";
+    };
+
+    toggleBtn.addEventListener("click", function () {
+      var isOpen = menu.classList.contains("active");
+      setMenuState(!isOpen);
+    });
+
+    menu.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        setMenuState(false);
+      });
+    });
+
+    var desktopMq = window.matchMedia("(min-width: 769px)");
+    var handleViewportChange = function (event) {
+      if (event.matches) {
+        setMenuState(false);
+      }
+    };
+
+    if (desktopMq.addEventListener) {
+      desktopMq.addEventListener("change", handleViewportChange);
+    } else if (desktopMq.addListener) {
+      desktopMq.addListener(handleViewportChange);
+    }
+
+    setMenuState(false);
+  });
+  </script>
+</body>
+</html>
