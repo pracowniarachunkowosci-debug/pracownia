@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dziękujemy za kontakt – Pracownia Rachunkowości</title>
+  <meta name="description" content="Dziękujemy za przesłanie formularza. Oddzwonimy w 15 minut (SLA). Sprawdź e-mail z potwierdzeniem.">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H210DZ34Y8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-H210DZ34Y8');
+    gtag('event','view_thank_you');
+  </script>
+  <!-- Meta Pixel Base Code -->
+<script>
+  !function(f,b,e,v,n,t,s){
+    if(f.fbq) return;
+    n=f.fbq=function(){ n.callMethod ?
+      n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
+    if(!f._fbq) f._fbq=n;
+    n.push=n;
+    n.loaded=!0;
+    n.version='2.0';
+    n.queue=[];
+    t=b.createElement(e);
+    t.async=!0;
+    t.src=v;
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)
+  }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '787902193146715');
+  fbq('track', 'Lead');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=787902193146715&ev=Lead&noscript=1"/>
+</noscript>
+
+</head>
+<body>
+  <main class="container" style="padding: 80px 20px; text-align: center;">
+    <h1>Dziękujemy!</h1>
+    <p class="lead" style="font-size: 1.25rem; margin-top: 20px;">
+      Oddzwonimy w <strong>15 minut</strong> (SLA) w dni robocze.<br>
+      Na e-mail wysłaliśmy potwierdzenie.
+    </p>
+    <p style="margin-top: 30px;">
+      <a href="/" class="btn btn-primary">Powrót na stronę główną</a>
+    </p>
+  </main>
+</body>
+</html>
