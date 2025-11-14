@@ -1,0 +1,15 @@
+/* KSeF Quiz – minimalny styl (dopasowany do .card / .btn) */
+.ksef-quiz.card { padding:22px; border-radius:16px; background:#fff; box-shadow:0 6px 20px rgba(0,0,0,.06); }
+.ksef-quiz h2 { margin-top:0; font-size:24px; }
+.ksef-quiz .q { padding:12px 0; border-bottom:1px solid #eee; }
+.ksef-quiz .q:last-child { border-bottom:0; }
+.ksef-quiz .q legend { font-weight:600; margin-bottom:6px; }
+.ksef-quiz .opts { display:flex; gap:16px; margin-top:6px; }
+.ksef-quiz .muted { color:#6b7280; font-size:14px; }
+.ksef-quiz .res { margin-top:18px; padding:16px; border-radius:12px; }
+.ksef-quiz .res.green { background:#ECFDF5; border:1px solid #10B981; }
+.ksef-quiz .res.yellow{ background:#FFFBEB; border:1px solid #F59E0B; }
+.ksef-quiz .res.red   { background:#FEF2F2; border:1px solid #EF4444; }
+.ksef-quiz .badge { display:inline-block; padding:4px 10px; border-radius:999px; background:#111; color:#fff; font-size:12px; margin-left:8px; }
+.ksef-quiz .grid { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+.ksef-quiz .error { background:#FEF2F2; border:1px solid #EF4444; color:#991B1B; padding:10px 12px; border-radius:8px; margin-bottom:12px; display:none; }
