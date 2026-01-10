@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Obowiązek SRK w placówce medycznej – kogo dotyczy?</title>
+  <meta name="description" content="Sprawdź, czy Twoją placówkę dotyczy standard rachunku kosztów (SRK) i jakie są wyłączenia. Konkretna checklista + przykłady." />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="canonical" href="https://pracowniarachunkowosci.pl/blog/srk-obowiazek-kogo-dotyczy.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:title" content="Obowiązek SRK w placówce medycznej – kogo dotyczy?" />
+  <meta property="og:description" content="Kontrakt z NFZ a SRK, 3 ustawowe wyłączenia i szybka checklista. Praktycznie i rzeczowo – dla podmiotów leczniczych." />
+  <meta property="og:url" content="https://pracowniarachunkowosci.pl/blog/srk-obowiazek-kogo-dotyczy.html" />
+  <meta property="og:site_name" content="Pracownia Rachunkowości" />
+  <meta property="og:image" content="https://pracowniarachunkowosci.pl/assets/og-image.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css" />
+
+  <style>
+    :root{
+      --brand:#0D1B2A;
+      --accent:#FFCC00;
+      --bg:#F5F7FA;
+      --text:#1F2937;
+      --muted:#6B7280;
+      --radius:16px;
+      --shadow:0 10px 30px rgba(0,0,0,0.06);
+      --maxw:1100px;
+    }
+    body{background:var(--bg);}
+    .post-wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 84px 20px 60px;
+    }
+    .post-hero{
+      background:#fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      border: 1px solid #EEF2F7;
+      margin-bottom: 22px;
+    }
+    .post-hero h1{
+      font-family: Montserrat, sans-serif;
+      font-size: 38px;
+      line-height: 1.15;
+      margin: 0 0 10px;
+      color: var(--brand);
+    }
+    .meta{
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    .lead{
+      font-size: 16px;
+      color: #374151;
+      margin: 0;
+    }
+    .toc{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .toc a{
+      font-size: 13px;
+      background: var(--accent);
+      color: #111;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .post-body{
+      background:#fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid #EEF2F7;
+      padding: 28px;
+    }
+    .post-body h2{
+      font-family: Montserrat, sans-serif;
+      color: var(--brand);
+      margin: 26px 0 10px;
+      font-size: 24px;
+    }
+    .post-body h3{
+      margin: 18px 0 8px;
+      font-size: 18px;
+      color: var(--brand);
+    }
+    .post-body p{line-height:1.7; margin: 10px 0;}
+    .post-body ul{margin: 10px 0 10px 18px; line-height:1.7;}
+    .callout{
+      margin: 16px 0;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: #fffdf2;
+      border: 1px solid #fde68a;
+    }
+    .callout strong{color:#111;}
+    .steps{
+      background:#0D1B2A;
+      color:#fff;
+      border-radius: 16px;
+      padding: 18px;
+      margin: 18px 0;
+    }
+    .steps b{color: var(--accent);}
+    .post-footer{
+      margin-top: 18px;
+      display: grid;
+      gap: 10px;
+    }
+    .next-links{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .next-links a{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid #E5E7EB;
+      background:#fff;
+      text-decoration:none;
+      font-weight:600;
+      color: var(--brand);
+    }
+    .faq{
+      margin-top: 22px;
+    }
+    .faq details{
+      border:1px solid #EEF2F7;
+      border-radius: 12px;
+      padding: 14px 16px;
+      background:#fff;
+      margin: 10px 0;
+    }
+    .faq summary{
+      cursor:pointer;
+      font-weight: 700;
+      color: var(--brand);
+    }
+  </style>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Czy prywatna klinika bez kontraktu z NFZ musi stosować SRK?",
+        "acceptedAnswer": {"@type":"Answer","text":"Nie. Obowiązek SRK jest powiązany z posiadaniem umowy z NFZ. Jeśli placówka działa wyłącznie komercyjnie, SRK nie wynika z tego obowiązku."}
+      },
+      {
+        "@type": "Question",
+        "name": "POZ + rehabilitacja: czy SRK dotyczy?",
+        "acceptedAnswer": {"@type":"Answer","text":"Tak. Wyłączenie działa tylko, gdy świadczenia są udzielane wyłącznie w zakresie POZ. Jeśli realizujesz też inne rodzaje świadczeń (np. rehabilitację), SRK staje się obowiązkowy."}
+      },
+      {
+        "@type": "Question",
+        "name": "Czy SRK zmusza do przejścia z KPiR na księgi rachunkowe?",
+        "acceptedAnswer": {"@type":"Answer","text":"Nie. Jeżeli podmiot nie ma obowiązku prowadzenia pełnej księgowości, SRK nie nakłada przymusu przejścia na księgi rachunkowe."}
+      },
+      {
+        "@type": "Question",
+        "name": "Czy świadczenia NFZ + komercyjne oznaczają, że SRK nie obowiązuje?",
+        "acceptedAnswer": {"@type":"Answer","text":"Nie. Jeśli placówka ma kontrakt z NFZ i nie spełnia ustawowych wyłączeń, SRK obowiązuje niezależnie od świadczeń komercyjnych."}
+      },
+      {
+        "@type": "Question",
+        "name": "Czy SRK to to samo co raportowanie danych do AOTMiT/NFZ?",
+        "acceptedAnswer": {"@type":"Answer","text":"Nie zawsze. SRK to standard prowadzenia ewidencji kosztów. Raportowanie może pojawiać się w określonych procesach i komunikatach — wtedy SRK ułatwia przygotowanie danych."}
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="nav" aria-label="Główna nawigacja">
+      <div class="logo">
+        <span class="logo-badge">PR</span> PRACOWNIA RACHUNKOWOŚCI
+      </div>
+
+      <button class="hamburger" aria-label="Otworz menu" aria-expanded="false">&#9776;</button>
+
+      <ul class="menu" id="mainMenu">
+        <li><a href="../index.html">Strona Główna</a></li>
+        <li><a href="../index.html#dla-kogo">Dla kogo</a></li>
+        <li><a href="../oferta.html">Oferta</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
+        <li><a class="btn btn-primary" href="https://konto.insert.com.pl/#/login" target="_blank" rel="noopener">Panel klienta</a></li>
+        <li><a class="btn btn-outline" href="../index.html#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="post-wrap" id="main">
+    <section class="post-hero">
+      <div class="meta">Medycyna / SRK / Controlling • 10 sty 2026 • Autor: Łukasz Sołtys</div>
+      <h1>Obowiązek SRK w placówkach medycznych – kogo dotyczy i kto jest wyłączony?</h1>
+<figure class="article-hero">
+        <img src="Obowiązek-SRK.png" alt="Obowiązek SRK w placówkach medycznych – kogo dotyczy i kto jest wyłączony?" loading="lazy" width="1100" height="600" />
+      </figure>
+   
+
+      <p class="lead">
+        Jeśli prowadzisz podmiot leczniczy, temat SRK zwykle wraca „przy okazji”: zmiany systemu, analizy kosztów procedur albo komunikatu o przekazaniu danych.
+        Poniżej – prosta zasada, 3 wyłączenia i checklista, żeby szybko ustalić, czy SRK dotyczy Twojej placówki.
+      </p>
+
+      <nav class="toc" aria-label="Spis treści">
+        <a href="#czym-jest">Czym jest SRK</a>
+        <a href="#podstawa">Podstawa prawna</a>
+        <a href="#kogo-dotyczy">Kogo dotyczy</a>
+        <a href="#wylaczenia">Wyłączenia</a>
+        <a href="#drzewko">Drzewko decyzyjne</a>
+        <a href="#przyklady">Przykłady</a>
+        <a href="#bledy">Błędy</a>
+        <a href="#pierwsze-kroki">Pierwsze kroki</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </section>
+
+    <article class="post-body">
+      <h2 id="czym-jest">Czym jest SRK i po co w ogóle powstał?</h2>
+      <p>
+        SRK (Standard Rachunku Kosztów) porządkuje sposób ewidencjonowania i alokowania kosztów u świadczeniodawców tak,
+        aby dane kosztowe były porównywalne, a koszty procedur dało się policzyć w sposób spójny.
+        W praktyce SRK dotyka planu kont, podziału kosztów wspólnych, a często też raportowania i controllingu.
+      </p>
+
+      <h2 id="podstawa">Podstawa prawna i od kiedy obowiązuje SRK</h2>
+      <p>
+        Obowiązek stosowania SRK jest powiązany z umową o udzielanie świadczeń opieki zdrowotnej oraz rozporządzeniem Ministra Zdrowia dotyczącym zaleceń SRK.
+        Rozporządzenie weszło w życie 1 stycznia 2021 r.
+      </p>
+
+      <h2 id="kogo-dotyczy">Kogo dotyczy obowiązek stosowania SRK (najważniejsza zasada)</h2>
+      <div class="callout">
+        <strong>Najprościej:</strong> jeśli masz <strong>umowę z NFZ</strong>, to co do zasady SRK Cię dotyczy – niezależnie od wielkości placówki, formy prawnej i tego, że część usług jest komercyjna.
+      </div>
+      <p>
+        Jeśli działasz wyłącznie komercyjnie (bez umowy z NFZ), SRK nie wynika z tego obowiązku. Zanim jednak postawisz kropkę,
+        sprawdź jeszcze 3 wyłączenia.
+      </p>
+
+      <h2 id="wylaczenia">Trzy ustawowe wyłączenia – kiedy SRK nie jest obowiązkowy</h2>
+
+      <h3>1) Wyłącznie POZ</h3>
+      <p>
+        Jeśli udzielasz świadczeń <strong>wyłącznie w zakresie POZ</strong>, jesteś wyłączony z obowiązku SRK.
+        Ale jeśli poza POZ realizujesz też inne rodzaje świadczeń (np. AOS, rehabilitację, stomatologię) – SRK staje się obowiązkowy.
+      </p>
+
+      <h3>2) Brak ksiąg rachunkowych (i ważna konsekwencja)</h3>
+      <p>
+        Wyłączone są też podmioty, które <strong>nie prowadzą ksiąg rachunkowych</strong> na podstawie ustawy o rachunkowości.
+        I ważne: SRK nie zmusza do przejścia z KPiR na pełne księgi „tylko dlatego, że jest SRK”.
+      </p>
+
+      <h3>3) Zaopatrzenie w wyroby medyczne</h3>
+      <p>
+        Wyłączenie dotyczy także świadczeniodawców realizujących czynności z zakresu <strong>zaopatrzenia w wyroby medyczne</strong>.
+      </p>
+
+      <h2 id="drzewko">Drzewko decyzyjne: sprawdź w 2 minuty, czy SRK dotyczy Twojej placówki</h2>
+      <div class="steps">
+        <p><b>Krok 1:</b> Czy masz umowę z NFZ? Jeśli nie – SRK nie wynika z tego obowiązku.</p>
+        <p><b>Krok 2:</b> Jeśli tak – czy to wyłącznie POZ? Jeśli tak – wyłączenie.</p>
+        <p><b>Krok 3:</b> Czy prowadzisz księgi rachunkowe? Jeśli nie – wyłączenie (bez przymusu przejścia na pełne księgi).</p>
+        <p><b>Krok 4:</b> Czy to wyłącznie zaopatrzenie w wyroby medyczne? Jeśli tak – wyłączenie. Jeśli nie – <b>SRK jest obowiązkowy</b>.</p>
+      </div>
+
+      <h2 id="przyklady">Przykłady z praktyki (najczęstsze scenariusze)</h2>
+      <ul>
+        <li><strong>POZ + AOS</strong> → SRK obowiązkowy.</li>
+        <li><strong>Stomatologia NFZ + komercja</strong> → SRK obowiązkowy.</li>
+        <li><strong>Hospicjum / ZOL / mała przychodnia</strong> → wielkość nie ma znaczenia; decyduje kontrakt i wyłączenia.</li>
+        <li><strong>Placówka wyłącznie prywatna</strong> → SRK nie wynika z obowiązku kontraktowego.</li>
+        <li><strong>JDG na KPiR z kontraktem</strong> → brak przymusu przejścia na księgi tylko „dla SRK”.</li>
+      </ul>
+
+      <h2 id="bledy">Najczęstsze błędy w interpretacji obowiązku SRK</h2>
+      <ul>
+        <li>„Jesteśmy mali, więc nas nie dotyczy” – dotyczy także małych świadczeniodawców.</li>
+        <li>„Mamy POZ, więc jesteśmy zwolnieni” – zwolnienie działa tylko przy <strong>wyłącznie POZ</strong>.</li>
+        <li>„To tylko dla szpitali” – nie, zasada jest szersza.</li>
+        <li>Mylenie SRK z jednorazowym raportem – SRK to standard prowadzenia ewidencji kosztów.</li>
+      </ul>
+
+      <h2 id="pierwsze-kroki">Co zrobić, jeśli SRK Cię dotyczy – pierwsze kroki</h2>
+      <p>Najczęściej zaczynamy od trzech rzeczy:</p>
+      <ul>
+        <li>porządne ustalenie zakresów umów (czy na pewno nie ma „mieszanki” POZ + coś jeszcze),</li>
+        <li>przegląd polityki rachunkowości i planu kont (czy da się sensownie wydzielać koszty),</li>
+        <li>ustalenie kluczy podziałowych kosztów wspólnych.</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Tip:</strong> jeśli chcesz, żeby SRK realnie wspierał zarządzanie, od razu planuj go pod raportowanie (KPI, rentowność, koszty procedur).
+        Zobacz też: <a href="controlling-kpi.html"><strong>Raporty zarządcze i KPI – controlling dla zarządu</strong></a>.
+      </div>
+
+      <h2 id="faq">FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary>Czy prywatna klinika bez kontraktu z NFZ musi stosować SRK?</summary>
+          <p>Nie. Obowiązek SRK jest powiązany z posiadaniem umowy z NFZ. Jeśli placówka działa wyłącznie komercyjnie, SRK nie wynika z tego obowiązku.</p>
+        </details>
+        <details>
+          <summary>POZ + rehabilitacja: czy SRK dotyczy?</summary>
+          <p>Tak. Wyłączenie działa tylko, gdy świadczenia są udzielane wyłącznie w zakresie POZ. Jeśli realizujesz też inne rodzaje świadczeń, SRK staje się obowiązkowy.</p>
+        </details>
+        <details>
+          <summary>Czy SRK zmusza do przejścia z KPiR na księgi rachunkowe?</summary>
+          <p>Nie. Jeżeli podmiot nie ma obowiązku prowadzenia pełnej księgowości, SRK nie nakłada przymusu przejścia na księgi rachunkowe.</p>
+        </details>
+        <details>
+          <summary>Czy świadczenia NFZ + komercyjne oznaczają, że SRK nie obowiązuje?</summary>
+          <p>Nie. Jeśli placówka ma kontrakt z NFZ i nie spełnia ustawowych wyłączeń, SRK obowiązuje niezależnie od świadczeń komercyjnych.</p>
+        </details>
+        <details>
+          <summary>Czy SRK to to samo co raportowanie danych do AOTMiT/NFZ?</summary>
+          <p>Nie zawsze. SRK to standard prowadzenia ewidencji kosztów. Raportowanie może pojawiać się w określonych procesach i komunikatach — wtedy SRK ułatwia przygotowanie danych.</p>
+        </details>
+      </div>
+
+      <div class="post-footer">
+        <p><strong>Jeśli chcesz sprawdzić obowiązek SRK dla Twojej placówki:</strong> prześlij zakresy kontraktów i informację, jak prowadzisz księgowość. Podpowiemy kierunek i plan działań – bez chaosu.</p>
+
+        <div class="next-links" aria-label="Zobacz też">
+          <a href="zmiana-biura.html">Zmiana biura rachunkowego bez przestojów</a>
+          <a href="controlling-kpi.html">Raporty zarządcze i KPI</a>
+          <a href="index.html">Wróć do bloga</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  </script>
+   <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var menu = document.getElementById("mainMenu");
+    var toggleBtn = document.querySelector(".hamburger");
+
+    if (!menu || !toggleBtn) {
+      return;
+    }
+
+    var setMenuState = function (open) {
+      menu.classList.toggle("active", open);
+      document.body.classList.toggle("menu-open", open);
+      toggleBtn.setAttribute("aria-expanded", open ? "true" : "false");
+      toggleBtn.setAttribute("aria-label", open ? "Zamknij menu" : "Otworz menu");
+      toggleBtn.innerHTML = open ? "&times;" : "&#9776;";
+    };
+
+    toggleBtn.addEventListener("click", function () {
+      var isOpen = menu.classList.contains("active");
+      setMenuState(!isOpen);
+    });
+
+    menu.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        setMenuState(false);
+      });
+    });
+
+    var desktopMq = window.matchMedia("(min-width: 769px)");
+    var handleViewportChange = function (event) {
+      if (event.matches) {
+        setMenuState(false);
+      }
+    };
+
+    if (desktopMq.addEventListener) {
+      desktopMq.addEventListener("change", handleViewportChange);
+    } else if (desktopMq.addListener) {
+      desktopMq.addListener(handleViewportChange);
+    }
+
+    setMenuState(false);
+  });
+  </script>
+
+  <!-- Baner cookies + GA4 + Meta Pixel – wersja jak na blogu -->
+  <div id="cookie-banner" style="display:none; position: fixed; bottom: 0; left: 0; right: 0; background: #0D1B2A; color: #fff; padding: 20px; z-index: 9999; font-family: Inter, sans-serif;">
+    <div style="max-width: 960px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;">
+      <p style="margin: 0; flex: 1;">
+        Używamy plików cookies do analityki (GA4) i marketingu (Meta). Więcej w <a href="../index.html#privacy" style="color: #FFCC00;">Polityce prywatności</a>.
+      </p>
+      <div style="display: flex; gap: 10px; flex-shrink: 0;">
+        <button id="acceptAll" class="btn btn-primary">Akceptuję wszystkie</button>
+        <button id="acceptEssential" class="btn btn-outline">Tylko niezbędne</button>
+      </div>
+    </div>
+  </div>
+<footer style="background: #0D1B2A; color: #ffffff; padding: 40px 20px; font-family: Montserrat, sans-serif; font-size: 14px;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto; gap: 32px;">
+    <!-- Kolumna: info + SEO -->
+    <div style="flex: 1 1 320px; line-height: 1.6;">
+      <strong>PRACOWNIA RACHUNKOWOŚCI SP. Z O.O.</strong><br>
+      Nowoczesne <strong>biuro rachunkowe z Wrocławia</strong>, które specjalizuje się w
+      <strong>księgowości spółek z o.o.</strong>, estońskim CIT i obsłudze e-commerce (VAT OSS, Amazon FBA).<br><br>
+
+      Prowadzimy pełną <strong>księgowość dla spółek z o.o.</strong> z całej Polski, pomagamy przy
+      <strong>zmianie biura rachunkowego</strong> oraz budujemy raporty zarządcze dla zarządów i właścicieli firm.<br><br>
+
+      NIP 8943197084 · ul. Trawowa 19/1, 54-614 Wrocław<br>
+      © <span id="year">2025</span> Wszystkie prawa zastrzeżone ·
+      <a href="/polityka-prywatnosci.html" style="color: #FFCC00; text-decoration: none;">
+        Polityka prywatności
+      </a>
+    </div>
+
+    <!-- Kolumna: newsletter -->
+    <div style="flex: 1 1 360px; background: #fffbe6; padding: 20px 24px; border-radius: 12px; color: #0D1B2A;">
+      <h3 style="margin-top: 0; margin-bottom: 8px; font-size: 18px;">★ Zapisz się na newsletter</h3>
+      <p style="font-size: 13px; margin-bottom: 14px; color: #374151;">
+        Raz w miesiącu wysyłamy krótkie podsumowanie zmian podatkowych, checklisty dla zarządów
+        i nowe wpisy z bloga o księgowości spółek z o.o. – bez spamu.
+      </p>
+      <button class="ml-onclick-form"
+              onclick="ml?.('show','Uj4jni',true)"
+              style="padding: 10px 16px; background-color: #0D1B2A; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+        Zapisz mnie
+      </button>
+    </div>
+  </div>
+
+  <p style="margin-top: 8px;">
+    <a href="#"
+       onclick="resetConsent();return false;"
+       style="color: #FFCC00; text-decoration: underline; font-size: 13px;">
+      Zarządzaj zgodami cookies
+    </a>
+  </p>
+</footer>
+
+
+  <script>
+    const consentKey = 'cookieConsent';
+    const banner = document.getElementById('cookie-banner');
+
+    function loadScripts(type) {
+      if (type === 'all') {
+        // GA4
+        const ga = document.createElement('script');
+        ga.src = "https://www.googletagmanager.com/gtag/js?id=G-H210DZ34Y8";
+        ga.async = true;
+        document.head.appendChild(ga);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', 'G-H210DZ34Y8', { 'anonymize_ip': true });
+
+        // Meta Pixel
+        const fb = document.createElement('script');
+        fb.innerHTML = `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+        (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2249646038845826'); fbq('track', 'PageView');`;
+        document.head.appendChild(fb);
+      }
+    }
+
+    function showBannerIfNeeded() {
+      const consent = localStorage.getItem(consentKey);
+      if (!consent) {
+        banner.style.display = 'block';
+      } else if (consent === 'all') {
+        loadScripts('all');
+      }
+    }
+
+    document.getElementById('acceptAll').onclick = () => {
+      localStorage.setItem(consentKey, 'all');
+      banner.style.display = 'none';
+      loadScripts('all');
+    };
+
+    document.getElementById('acceptEssential').onclick = () => {
+      localStorage.setItem(consentKey, 'essential');
+      banner.style.display = 'none';
+    };
+
+    function resetConsent() {
+      localStorage.removeItem(consentKey);
+      location.reload();
+    }
+
+    showBannerIfNeeded();
+  </script>
+</body>
+</html>
