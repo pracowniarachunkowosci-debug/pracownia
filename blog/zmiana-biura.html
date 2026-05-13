@@ -1,0 +1,1270 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Consent Mode v2: ustawienia domyślne przed uruchomieniem GTM/GA4 -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      wait_for_update: 500
+    });
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WC88L2GJ');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H210DZ34Y8"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-H210DZ34Y8', { anonymize_ip: true });
+  </script>
+
+  <title>Zmiana biura rachunkowego bez chaosu | Pracownia Rachunkowości</title>
+  <meta name="description" content="Zmiana biura rachunkowego dla spółki z o.o. Jak przejąć księgi, dokumenty, terminy i rozrachunki bez chaosu? Praktyczny przewodnik." />
+  <link rel="canonical" href="https://pracowniarachunkowosci.pl/blog/zmiana-biura.html" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="author" content="Łukasz Sołtys" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:title" content="Zmiana biura rachunkowego bez chaosu" />
+  <meta property="og:description" content="Co sprawdzić przed zmianą biura rachunkowego, jak przejąć dokumenty i jak uniknąć przenoszenia księgowego chaosu?" />
+  <meta property="og:url" content="https://pracowniarachunkowosci.pl/blog/zmiana-biura.html" />
+  <meta property="og:site_name" content="Pracownia Rachunkowości" />
+  <meta property="og:image" content="https://pracowniarachunkowosci.pl/blog/zmiana-biura.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="article:author" content="Łukasz Sołtys" />
+  <meta property="article:published_time" content="2026-05-13" />
+  <meta property="article:modified_time" content="2026-05-13" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zmiana biura rachunkowego bez chaosu" />
+  <meta name="twitter:description" content="Praktycznie o zmianie biura rachunkowego dla spółki z o.o.: audyt, dokumenty, terminy, ryzyka i wdrożenie." />
+  <meta name="twitter:image" content="https://pracowniarachunkowosci.pl/blog/zmiana-biura.png" />
+
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
+
+  <style>
+    :root {
+      --navy: #0D1B2A;
+      --navy-2: #13263A;
+      --navy-3: #20364D;
+      --yellow: #FFCC00;
+      --yellow-soft: #FFF6CC;
+      --green: #10B981;
+      --red: #DC2626;
+      --bg: #F5F7FA;
+      --card: #FFFFFF;
+      --text: #111827;
+      --muted: #667085;
+      --line: #E5E7EB;
+      --line-soft: #EEF2F7;
+      --shadow: 0 12px 34px rgba(13,27,42,.08);
+      --shadow-lg: 0 28px 80px rgba(13,27,42,.16);
+      --shadow-strong: 0 36px 100px rgba(0,0,0,.30);
+      --radius: 22px;
+      --max: 1180px;
+      --article: 780px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; height: auto; }
+    button { font: inherit; }
+
+    .container {
+      width: min(var(--max), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .skip {
+      position: absolute;
+      top: 10px;
+      left: -999px;
+      z-index: 99999;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: var(--yellow);
+      color: #111;
+      font-weight: 900;
+    }
+    .skip:focus { left: 10px; }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(13,27,42,.07);
+    }
+    .nav__inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--navy);
+      font-weight: 900;
+      letter-spacing: -.025em;
+      text-decoration: none;
+      line-height: 1.05;
+    }
+    .logo__mark {
+      width: 38px;
+      height: 38px;
+      flex: 0 0 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 11px;
+      background: var(--navy);
+      color: var(--yellow);
+      font-size: 12px;
+      font-weight: 900;
+      box-shadow: 0 8px 22px rgba(13,27,42,.16);
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .menu a {
+      color: #334155;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .menu a:hover,
+    .menu a[aria-current="page"] { color: var(--navy); }
+    .menu .panel {
+      padding: 11px 17px;
+      border-radius: 13px;
+      color: #fff;
+      background: var(--navy);
+      box-shadow: 0 12px 26px rgba(13,27,42,.14);
+    }
+    .menu .contact {
+      padding: 11px 17px;
+      border-radius: 13px;
+      border: 1px solid var(--line);
+      background: #fff;
+      box-shadow: 0 8px 18px rgba(13,27,42,.04);
+    }
+    .burger {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 12px;
+      background: var(--bg);
+      cursor: pointer;
+    }
+    .burger span,
+    .burger span::before,
+    .burger span::after {
+      display: block;
+      width: 22px;
+      height: 2px;
+      margin: 0 auto;
+      border-radius: 999px;
+      background: var(--navy);
+      content: "";
+      transition: .18s ease;
+    }
+    .burger span::before { transform: translateY(-7px); }
+    .burger span::after { transform: translateY(5px); }
+    .burger.is-active span { background: transparent; }
+    .burger.is-active span::before { transform: translateY(1px) rotate(45deg); }
+    .burger.is-active span::after { transform: translateY(-1px) rotate(-45deg); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 48px;
+      padding: 13px 21px;
+      border-radius: 14px;
+      border: 1px solid transparent;
+      font-weight: 900;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn--yellow {
+      background: var(--yellow);
+      color: #111 !important;
+      box-shadow: 0 18px 40px rgba(255,204,0,.28);
+    }
+    .btn--dark {
+      background: var(--navy);
+      color: #fff !important;
+      box-shadow: 0 18px 40px rgba(13,27,42,.18);
+    }
+    .btn--light {
+      background: rgba(255,255,255,.92);
+      color: var(--navy) !important;
+      border-color: rgba(255,255,255,.34);
+    }
+    .btn--outline {
+      background: #fff;
+      color: var(--navy) !important;
+      border-color: var(--line);
+    }
+
+    .breadcrumbs {
+      padding: 16px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .breadcrumbs a {
+      color: var(--navy);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .article-hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 78% 14%, rgba(255,204,0,.20), transparent 30%),
+        radial-gradient(circle at 80% 88%, rgba(32,54,77,.95), transparent 36%),
+        linear-gradient(135deg, #0A1724 0%, #0D1B2A 48%, #13263A 100%);
+      color: #fff;
+      padding: 78px 0 72px;
+    }
+    .article-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.08) 1px, transparent 0);
+      background-size: 28px 28px;
+      opacity: .32;
+      pointer-events: none;
+      mask-image: linear-gradient(90deg, #000 0%, #000 45%, transparent 88%);
+    }
+    .article-hero__grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.06fr) minmax(340px, .94fr);
+      gap: 54px;
+      align-items: center;
+    }
+    .article-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 22px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,204,0,.48);
+      background: rgba(255,204,0,.13);
+      color: #FFE88A;
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .article-label::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 6px rgba(16,185,129,.14);
+    }
+    .article-hero h1 {
+      max-width: 790px;
+      margin: 0 0 22px;
+      color: #fff;
+      font-size: clamp(40px, 5vw, 66px);
+      line-height: .99;
+      letter-spacing: -.055em;
+      font-weight: 900;
+    }
+    .article-hero .lead {
+      max-width: 720px;
+      margin: 0 0 24px;
+      color: rgba(255,255,255,.80);
+      font-size: 20px;
+      line-height: 1.72;
+      font-weight: 500;
+    }
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      color: rgba(255,255,255,.72);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hero-card {
+      position: relative;
+      padding: 28px;
+      border-radius: 28px;
+      border: 1px solid rgba(255,255,255,.15);
+      background: rgba(255,255,255,.96);
+      color: var(--navy);
+      box-shadow: var(--shadow-strong);
+    }
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      z-index: -1;
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(255,204,0,.78), transparent 34%, rgba(255,255,255,.5));
+    }
+    .hero-card h2 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: 26px;
+      line-height: 1.15;
+      letter-spacing: -.03em;
+    }
+    .hero-card p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .check-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .check-list li {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 10px;
+      align-items: start;
+      color: #334155;
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+    .check-list span {
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    .article-layout {
+      width: min(var(--max), calc(100% - 48px));
+      margin-inline: auto;
+      padding: 54px 0 92px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 314px;
+      gap: 44px;
+      align-items: start;
+    }
+    .article-body {
+      max-width: var(--article);
+      min-width: 0;
+    }
+    .article-body h2,
+    .article-body h3 {
+      color: var(--navy);
+      line-height: 1.2;
+      letter-spacing: -.025em;
+      font-weight: 900;
+    }
+    .article-body h2 {
+      font-size: clamp(28px, 3.2vw, 40px);
+      margin: 54px 0 18px;
+    }
+    .article-body h3 {
+      font-size: 23px;
+      margin: 32px 0 10px;
+    }
+    .article-body p,
+    .article-body li {
+      font-size: 17px;
+      line-height: 1.82;
+    }
+    .article-body p { margin: 0 0 19px; color: #243244; }
+    .article-body a {
+      color: var(--navy);
+      font-weight: 800;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .article-body ul,
+    .article-body ol {
+      padding-left: 22px;
+      margin: 12px 0 24px;
+    }
+    .article-body li + li { margin-top: 8px; }
+    .article-intro {
+      font-size: 18.5px !important;
+      color: var(--navy) !important;
+      font-weight: 500;
+    }
+
+    .note,
+    .box,
+    .cta-box,
+    .related-posts {
+      border-radius: var(--radius);
+      padding: 24px;
+      margin: 30px 0;
+      box-shadow: var(--shadow);
+    }
+    .note {
+      background: var(--yellow-soft);
+      border: 1px solid #FFE88A;
+      color: #5B4B00;
+    }
+    .box,
+    .related-posts {
+      background: var(--bg);
+      border: 1px solid var(--line-soft);
+    }
+    .box h3,
+    .cta-box h3 { margin-top: 0; }
+    .cta-box {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-box::after {
+      content: "";
+      position: absolute;
+      right: -120px;
+      top: -160px;
+      width: 360px;
+      height: 360px;
+      background: radial-gradient(circle, rgba(255,204,0,.18), transparent 66%);
+    }
+    .cta-box > * { position: relative; z-index: 1; }
+    .cta-box h2,
+    .cta-box h3 { color: #fff; margin-top: 0; }
+    .cta-box p { color: rgba(255,255,255,.76); }
+
+    .step-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 26px 0;
+    }
+    .step-card {
+      background: #fff;
+      border: 1px solid var(--line-soft);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+    .step-card span {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: var(--yellow-soft);
+      color: #856200;
+      font-size: 13px;
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+    .step-card h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+    .step-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .comparison-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 24px 0 30px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .comparison-table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: collapse;
+      font-size: 15px;
+      background: #fff;
+    }
+    .comparison-table th,
+    .comparison-table td {
+      border: 1px solid var(--line);
+      padding: 15px;
+      text-align: left;
+      vertical-align: top;
+      line-height: 1.55;
+    }
+    .comparison-table th {
+      background: var(--navy);
+      color: #fff;
+      font-weight: 900;
+    }
+    .comparison-table tr:nth-child(even) td { background: #FAFAFA; }
+
+    .toc {
+      position: sticky;
+      top: 96px;
+      background: #fff;
+      border: 1px solid var(--line-soft);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+    .toc h2 {
+      color: var(--navy);
+      font-size: 20px;
+      margin: 0 0 12px;
+      letter-spacing: -.02em;
+    }
+    .toc a {
+      display: block;
+      color: #334155;
+      text-decoration: none;
+      padding: 9px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #F3F4F6;
+    }
+    .toc a:hover,
+    .toc a:focus { color: var(--navy); font-weight: 800; }
+    .toc__cta {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+    .toc__cta p {
+      font-size: 14px;
+      line-height: 1.55;
+      color: var(--muted);
+      margin: 0 0 12px;
+    }
+    .toc__cta .btn { width: 100%; }
+
+    .faq-list details {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 0;
+      margin-bottom: 12px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .faq-list summary {
+      cursor: pointer;
+      font-weight: 900;
+      color: var(--navy);
+      padding: 18px 20px;
+      list-style: none;
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list p {
+      margin: 0;
+      padding: 0 20px 18px;
+      color: var(--muted);
+      font-size: 15.5px;
+      line-height: 1.7;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .related-card {
+      display: block;
+      background: #fff;
+      border: 1px solid var(--line-soft);
+      border-radius: 16px;
+      padding: 18px;
+      text-decoration: none !important;
+      box-shadow: var(--shadow);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .related-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .related-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 6px;
+      font-weight: 800;
+    }
+    .related-card strong {
+      color: var(--navy);
+      line-height: 1.35;
+    }
+
+    .cookie {
+      display: none;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      background: var(--navy);
+      color: #fff;
+      padding: 20px;
+      box-shadow: 0 -10px 30px rgba(0,0,0,.18);
+    }
+    .cookie__inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .cookie p {
+      margin: 0;
+      flex: 1 1 460px;
+      color: #fff;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .cookie a { color: var(--yellow); font-weight: 900; }
+    .cookie__actions { display: flex; gap: 10px; flex-wrap: wrap; flex-shrink: 0; }
+
+    .footer {
+      width: 100%;
+      background: var(--navy);
+      color: rgba(255,255,255,.72);
+      padding: 54px 0 28px;
+    }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 44px;
+    }
+    .footer h4 {
+      margin: 0 0 15px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      font-size: 12px;
+    }
+    .footer p,
+    .footer li {
+      color: rgba(255,255,255,.68);
+      font-size: 14px;
+      line-height: 1.72;
+    }
+    .footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 7px; }
+    .footer a { color: rgba(255,255,255,.84); text-decoration: underline; text-underline-offset: 3px; }
+    .footer__bottom {
+      margin-top: 34px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,.1);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+      color: rgba(255,255,255,.52);
+      font-size: 13px;
+    }
+
+    @media (max-width: 1100px) {
+      .menu { gap: 14px; font-size: 13px; }
+      .article-hero__grid { grid-template-columns: 1fr; }
+      .hero-card { max-width: 680px; }
+      .article-layout { grid-template-columns: 1fr; }
+      .article-body { max-width: 100%; }
+      .toc { position: static; order: -1; }
+    }
+
+    @media (max-width: 820px) {
+      .container,
+      .article-layout { width: min(100% - 36px, var(--max)); }
+      .burger { display: inline-flex; align-items: center; justify-content: center; }
+      .menu {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 72px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px 20px 20px;
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+        box-shadow: var(--shadow-lg);
+      }
+      .menu.is-open { display: flex; }
+      .menu li a { display: block; padding: 13px 0; }
+      .menu .panel,
+      .menu .contact { text-align: center; margin-top: 8px; }
+      .nav__inner { min-height: 68px; }
+      .article-hero { padding: 58px 0 64px; }
+      .article-hero h1 { font-size: clamp(36px, 11vw, 54px); }
+      .article-hero .lead { font-size: 17px; }
+      .step-grid,
+      .related-grid,
+      .footer__grid { grid-template-columns: 1fr; }
+      .article-body p,
+      .article-body li { font-size: 16px; }
+      .cookie__actions, .cookie__actions .btn { width: 100%; }
+      .footer__bottom { display: block; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Strona główna","item":"https://pracowniarachunkowosci.pl/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://pracowniarachunkowosci.pl/blog/"},
+      {"@type":"ListItem","position":3,"name":"Zmiana biura rachunkowego bez chaosu","item":"https://pracowniarachunkowosci.pl/blog/zmiana-biura.html"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Zmiana biura rachunkowego bez chaosu",
+    "description":"Praktyczny przewodnik dla zarządów spółek z o.o.: kiedy zmienić biuro rachunkowe, jakie dokumenty przygotować, jak przejąć księgi i ograniczyć ryzyko.",
+    "author":{"@type":"Person","name":"Łukasz Sołtys"},
+    "publisher":{"@type":"Organization","name":"Pracownia Rachunkowości","logo":{"@type":"ImageObject","url":"https://pracowniarachunkowosci.pl/assets/logo.png"}},
+    "mainEntityOfPage":"https://pracowniarachunkowosci.pl/blog/zmiana-biura.html",
+    "datePublished":"2026-05-13",
+    "dateModified":"2026-05-13",
+    "image":"https://pracowniarachunkowosci.pl/blog/zmiana-biura.png"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Kiedy warto zmienić biuro rachunkowe?","acceptedAnswer":{"@type":"Answer","text":"Zmianę warto rozważyć, gdy biuro nie odpowiada na pytania, spóźnia się z rozliczeniami, nie pilnuje terminów, nie wyjaśnia ryzyk albo nie dostarcza danych potrzebnych zarządowi do decyzji."}},
+      {"@type":"Question","name":"Czy można zmienić biuro rachunkowe w trakcie roku?","acceptedAnswer":{"@type":"Answer","text":"Tak. Zmiana w trakcie roku jest możliwa, ale wymaga dobrego planu: przekazania dokumentów, sprawdzenia rozrachunków, deklaracji, plików JPK, sald i terminów."}},
+      {"@type":"Question","name":"Jakie dokumenty są potrzebne przy zmianie biura rachunkowego?","acceptedAnswer":{"@type":"Answer","text":"Najczęściej potrzebne są księgi, deklaracje, JPK, rejestry VAT, salda rozrachunków, zestawienia środków trwałych, umowy, dokumenty kadrowe i dostęp do systemów lub eksport danych."}},
+      {"@type":"Question","name":"Czy nowe biuro odpowiada za błędy poprzedniego biura?","acceptedAnswer":{"@type":"Answer","text":"Nowe biuro nie przejmuje automatycznie odpowiedzialności za wcześniejsze błędy. Może jednak pomóc je zidentyfikować, uporządkować dokumenty i zaproponować dalsze kroki."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC88L2GJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <a href="#main" class="skip">Przejdź do treści</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="../" class="logo" aria-label="Pracownia Rachunkowości - strona główna">
+        <span class="logo__mark">PR</span>
+        <span>PRACOWNIA<br>RACHUNKOWOŚCI</span>
+      </a>
+
+      <button class="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mainMenu">
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav aria-label="Główna nawigacja">
+        <ul class="menu" id="mainMenu">
+          <li><a href="../ksiegowosc-spolka-z-oo.html">Spółki z o.o.</a></li>
+          <li><a href="../oferta.html">Oferta</a></li>
+          <li><a href="../#dla-kogo">Dla kogo</a></li>
+          <li><a href="../ksiegowosc-spolka-z-oo.html#proces">Proces</a></li>
+          <li><a href="./" aria-current="page">Blog</a></li>
+          <li><a href="../#faq">FAQ</a></li>
+          <li><a class="panel" href="https://konto.insert.com.pl/#/login" target="_blank" rel="noopener">Panel klienta</a></li>
+          <li><a class="contact" href="../#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Okruszki">
+        <a href="../">Strona główna</a> / <a href="./">Blog</a> / Zmiana biura rachunkowego
+      </nav>
+    </div>
+
+    <section class="article-hero">
+      <div class="container article-hero__grid">
+        <div class="article-hero__content">
+          <span class="article-label">Zmiana biura • Spółka z o.o. • Audyt ksiąg</span>
+          <h1>Zmiana biura rachunkowego bez przenoszenia chaosu.</h1>
+          <p class="lead">Zmiana księgowości nie musi oznaczać nerwów, zaległości i utraty kontroli. Najważniejsze jest to, żeby przed przejęciem sprawdzić dokumenty, rozrachunki, deklaracje, terminy i ryzyka — a dopiero potem ustawić bieżącą obsługę.</p>
+          <div class="article-meta">
+            <span>Autor: Łukasz Sołtys</span>
+            <span>Aktualizacja: <time datetime="2026-05-13">13 maja 2026</time></span>
+            <span>Czas czytania: 8 minut</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Najważniejsze założenia zmiany biura rachunkowego">
+          <h2>Bezpieczna migracja to proces, nie samo przekazanie faktur.</h2>
+          <p>Przy spółce z o.o. trzeba sprawdzić nie tylko bieżące dokumenty, ale też salda, rozrachunki, JPK, CIT, VAT, środki trwałe, kadry i terminy sprawozdawcze.</p>
+          <ul class="check-list">
+            <li><span>✓</span><strong>audyt startowy przed przejęciem,</strong></li>
+            <li><span>✓</span><strong>lista dokumentów i dostępów do przekazania,</strong></li>
+            <li><span>✓</span><strong>plan wdrożenia nowego obiegu dokumentów,</strong></li>
+            <li><span>✓</span><strong>raport z ryzyk i priorytetów dla zarządu.</strong></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <div class="article-layout">
+      <article class="article-body">
+        <p class="article-intro">Najczęstszy powód zmiany biura rachunkowego nie brzmi: „jest za drogo”. W praktyce znacznie częściej chodzi o brak odpowiedzi, opóźnienia, niejasne rozliczenia, brak raportów, chaos w dokumentach albo poczucie, że zarząd dowiaduje się o problemach za późno.</p>
+
+        <p>W spółce z o.o. księgowość nie jest tylko zapisem faktur. To system, który powinien pokazywać wynik, podatki, zobowiązania, należności, płynność i ryzyka. Jeżeli ten system nie działa, zarząd podejmuje decyzje na wyczucie — a to potrafi kosztować więcej niż sama obsługa księgowa.</p>
+
+        <div class="note">
+          <strong>Ważne:</strong> zmiana biura rachunkowego w trakcie roku jest możliwa. Kluczowe jest jednak dobre przekazanie danych i sprawdzenie stanu ksiąg przed startem. Nowe biuro nie powinno „w ciemno” przejmować chaosu, którego nikt wcześniej nie nazwał.
+        </div>
+
+        <h2 id="kiedy-zmienic">Kiedy warto rozważyć zmianę biura rachunkowego?</h2>
+        <p>Zmiana biura ma sens wtedy, gdy obecna obsługa przestaje dawać bezpieczeństwo i przewidywalność. Nie chodzi o to, że każde opóźnienie lub pojedyncza pomyłka musi oznaczać koniec współpracy. Problem zaczyna się wtedy, gdy firma nie ma pewności, czy podatki, terminy i dane finansowe są pod kontrolą.</p>
+
+        <p>Najczęstsze sygnały ostrzegawcze to:</p>
+        <ul>
+          <li>brak odpowiedzi na pytania zarządu albo bardzo długi czas reakcji,</li>
+          <li>informacje o podatkach przekazywane w ostatniej chwili,</li>
+          <li>brak jasnych sald należności i zobowiązań,</li>
+          <li>brak raportów zarządczych, cash-flow lub informacji o wyniku,</li>
+          <li>niejasność, kto odpowiada za deklaracje, JPK, CIT, VAT i sprawozdanie finansowe,</li>
+          <li>powtarzające się błędy w dokumentach, opisach lub rozliczeniach,</li>
+          <li>brak wsparcia przy e-commerce, VAT-OSS, KSeF albo estońskim CIT.</li>
+        </ul>
+
+        <p>Jeżeli spółka rośnie, ma coraz więcej dokumentów, pracowników, kanałów sprzedaży lub sprzedaż zagraniczną, prosta obsługa „księgujemy i wysyłamy deklarację” często przestaje wystarczać. Wtedy biuro powinno pomagać uporządkować procesy, a nie tylko reagować po terminie.</p>
+
+        <h2 id="czy-w-trakcie-roku">Czy można zmienić biuro rachunkowe w trakcie roku?</h2>
+        <p>Tak, można. Wbrew obawom przedsiębiorców nie trzeba czekać do stycznia. Zmiana biura rachunkowego w trakcie roku jest możliwa, ale wymaga lepszego przygotowania niż start od nowego roku obrotowego.</p>
+
+        <p>Najważniejsze jest ustalenie daty przejęcia i zakresu odpowiedzialności. Trzeba jasno określić, kto przygotowuje ostatnie deklaracje, kto zamyka miesiąc, kto przekazuje dane i od którego okresu nowe biuro zaczyna bieżącą obsługę.</p>
+
+        <div class="box">
+          <h3>Najbezpieczniejszy moment na zmianę</h3>
+          <p>Najłatwiej zmienić biuro po zamknięciu miesiąca albo kwartału. Nie zawsze jednak warto czekać. Jeśli obecna księgowość generuje ryzyko, lepiej zaplanować przejęcie niż odkładać problem do końca roku.</p>
+        </div>
+
+        <h2 id="dokumenty">Jakie dokumenty przygotować do zmiany biura?</h2>
+        <p>W spółce z o.o. przekazanie dokumentów to nie tylko faktury sprzedaży i kosztowe. Nowe biuro musi zrozumieć historię ksiąg, stan rozrachunków, podatki, kadry, środki trwałe i zobowiązania wobec urzędów.</p>
+
+        <p>Najczęściej potrzebne są:</p>
+        <ul>
+          <li>księgi rachunkowe lub eksport danych z systemu księgowego,</li>
+          <li>deklaracje VAT, CIT, JPK i potwierdzenia wysyłek,</li>
+          <li>rejestry VAT i zestawienia sprzedaży oraz zakupów,</li>
+          <li>salda należności i zobowiązań,</li>
+          <li>zestawienie środków trwałych i amortyzacji,</li>
+          <li>umowy kredytowe, leasingowe, najmu i ważne umowy handlowe,</li>
+          <li>dokumenty kadrowe i płacowe, jeśli spółka zatrudnia pracowników,</li>
+          <li>sprawozdania finansowe i uchwały z poprzednich lat,</li>
+          <li>dostępy do systemów, kont, KSeF, PUE ZUS, e-Urzędu Skarbowego lub pełnomocnictwa.</li>
+        </ul>
+
+        <p>Lista może się różnić w zależności od branży. Inaczej wygląda przejęcie spółki usługowej z kilkudziesięcioma dokumentami miesięcznie, a inaczej e-commerce z marketplace, prowizjami, magazynami zagranicznymi i wieloma walutami.</p>
+
+        <h2 id="proces">Jak wygląda zmiana biura rachunkowego krok po kroku?</h2>
+        <p>Najgorszy scenariusz to taki, w którym spółka po prostu wysyła nowemu biuru paczkę dokumentów i liczy, że „jakoś się uda”. Bez audytu startowego łatwo przeoczyć zaległości, niespójne salda, brakujące deklaracje albo dokumenty, których poprzednie biuro nie przekazało.</p>
+
+        <div class="step-grid" aria-label="Proces zmiany biura rachunkowego">
+          <div class="step-card">
+            <span>01</span>
+            <h3>Rozmowa wstępna</h3>
+            <p>Ustalamy skalę spółki, liczbę dokumentów, branżę, obecne problemy i oczekiwania zarządu.</p>
+          </div>
+          <div class="step-card">
+            <span>02</span>
+            <h3>Audyt startowy</h3>
+            <p>Sprawdzamy dokumenty, salda, deklaracje, rozrachunki, terminy i najważniejsze obszary ryzyka.</p>
+          </div>
+          <div class="step-card">
+            <span>03</span>
+            <h3>Plan przejęcia</h3>
+            <p>Ustalamy datę przejęcia, listę braków, odpowiedzialności i harmonogram przekazania danych.</p>
+          </div>
+          <div class="step-card">
+            <span>04</span>
+            <h3>Nowy model pracy</h3>
+            <p>Wdrażamy obieg dokumentów, komunikację, raportowanie, terminy i zasady współpracy z zarządem.</p>
+          </div>
+        </div>
+
+        <h2 id="audyt">Po co audyt startowy przy zmianie biura?</h2>
+        <p>Audyt startowy nie jest po to, żeby szukać winnych. Jego celem jest sprawdzenie, z czym naprawdę zaczynamy pracę. Bez tego nowe biuro może nieświadomie przejąć błędy, które powstały wcześniej.</p>
+
+        <p>W audycie warto sprawdzić przede wszystkim:</p>
+        <ul>
+          <li>czy deklaracje i JPK były składane terminowo,</li>
+          <li>czy salda rozrachunków zgadzają się z rzeczywistością,</li>
+          <li>czy są zaległości podatkowe lub ZUS,</li>
+          <li>czy sprawozdania finansowe i uchwały są kompletne,</li>
+          <li>czy środki trwałe i amortyzacja są prawidłowo prowadzone,</li>
+          <li>czy dokumenty kadrowe są kompletne,</li>
+          <li>czy w spółce występują obszary wymagające osobnej analizy, np. VAT-OSS, Amazon FBA, estoński CIT, KSeF lub transakcje zagraniczne.</li>
+        </ul>
+
+        <div class="cta-box">
+          <h2>Masz wrażenie, że obecna księgowość nie daje Ci kontroli?</h2>
+          <p>Możemy zacząć od rozmowy i sprawdzenia, czy zmiana biura ma sens. Przy spółkach z o.o. patrzymy nie tylko na dokumenty, ale też na rozrachunki, terminy, raporty i ryzyka dla zarządu.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a class="btn btn--yellow js-track-calendly" href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer">Umów konsultację</a>
+            <a class="btn btn--light" href="../ksiegowosc-spolka-z-oo.html">Oferta dla spółek</a>
+          </div>
+        </div>
+
+        <h2 id="ryzyka">Najczęstsze ryzyka przy zmianie księgowości</h2>
+        <p>Zmiana biura rachunkowego sama w sobie nie jest problemem. Problemem jest chaotyczne przejęcie. Największe ryzyka pojawiają się wtedy, gdy nie wiadomo, kto odpowiada za dany miesiąc, jakie dane zostały przekazane i czy poprzednie księgi były kompletne.</p>
+
+        <div class="comparison-table-wrap" role="region" aria-label="Ryzyka przy zmianie biura rachunkowego i sposób ograniczenia" tabindex="0">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Ryzyko</th>
+                <th>Co może się wydarzyć?</th>
+                <th>Jak ograniczyć problem?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Brak kompletu dokumentów</td>
+                <td>Nowe biuro nie ma danych do prawidłowego zamknięcia miesiąca.</td>
+                <td>Przygotować checklistę dokumentów i potwierdzić ich odbiór.</td>
+              </tr>
+              <tr>
+                <td>Niespójne rozrachunki</td>
+                <td>Zarząd nie wie, kto naprawdę zalega z płatnością i komu spółka jest winna pieniądze.</td>
+                <td>Zweryfikować salda należności i zobowiązań przed przejęciem.</td>
+              </tr>
+              <tr>
+                <td>Niejasny podział odpowiedzialności</td>
+                <td>Poprzednie i nowe biuro zakładają, że dany obowiązek wykona druga strona.</td>
+                <td>Ustalić dokładnie okresy, deklaracje i terminy przejęcia.</td>
+              </tr>
+              <tr>
+                <td>Brak raportowania</td>
+                <td>Po zmianie nadal są księgi, ale zarząd nie ma danych do decyzji.</td>
+                <td>Od razu ustalić zakres raportów: wynik, cash-flow, należności, koszty i KPI.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="nowy-model">Co powinno się zmienić po przejęciu księgowości?</h2>
+        <p>Dobra zmiana biura nie kończy się na tym, że dokumenty trafiają do nowego adresata. Najważniejsze jest ustawienie nowego modelu pracy: kto za co odpowiada, jak przekazywane są faktury, kiedy zarząd dostaje informacje o podatkach i jakie raporty są przygotowywane co miesiąc.</p>
+
+        <p>Po przejęciu warto ustalić:</p>
+        <ul>
+          <li>harmonogram zamknięcia miesiąca,</li>
+          <li>zasady opisywania i przekazywania dokumentów,</li>
+          <li>osoby kontaktowe po stronie spółki i biura,</li>
+          <li>termin przekazywania informacji o podatkach,</li>
+          <li>zakres raportów zarządczych,</li>
+          <li>obsługę nietypowych tematów: e-commerce, VAT-OSS, KSeF, leasingi, finansowanie, wynagrodzenia, estoński CIT.</li>
+        </ul>
+
+        <p>W praktyce to właśnie ten etap decyduje, czy zmiana biura rzeczywiście poprawi sytuację. Samo przeniesienie ksiąg bez uporządkowania komunikacji może sprawić, że po kilku miesiącach problem wróci w nowej formie.</p>
+
+        <h2 id="dla-kogo">Dla jakich spółek taka zmiana ma największy sens?</h2>
+        <p>Najwięcej korzyści ze zmiany biura widzą zwykle spółki, które zaczęły rosnąć szybciej niż ich dotychczasowa księgowość. To firmy, które mają więcej dokumentów, pracowników, kontraktów, kanałów sprzedaży albo potrzebują danych finansowych dla zarządu.</p>
+
+        <p>Szczególnie dotyczy to spółek, które:</p>
+        <ul>
+          <li>działają w e-commerce, Amazon FBA, marketplace lub sprzedaży zagranicznej,</li>
+          <li>potrzebują raportów KPI, cash-flow, EBITDA i analizy rentowności,</li>
+          <li>rozważają estoński CIT albo już z niego korzystają,</li>
+          <li>mają zaległości, niejasne salda albo brak pełnej kontroli nad rozrachunkami,</li>
+          <li>oczekują szybszej komunikacji i bardziej partnerskiego podejścia do finansów.</li>
+        </ul>
+
+        <h2 id="podsumowanie">Podsumowanie</h2>
+        <p>Zmiana biura rachunkowego nie musi oznaczać chaosu. Może być dobrym momentem, żeby uporządkować dokumenty, sprawdzić stan ksiąg, ustawić raportowanie i odzyskać kontrolę nad finansami spółki.</p>
+
+        <p>Najważniejsze, żeby nie traktować migracji jak prostego przekazania faktur. Przy spółce z o.o. potrzebny jest audyt startowy, lista dokumentów, jasny podział odpowiedzialności i plan wdrożenia nowego modelu pracy.</p>
+
+        <section class="related-posts" aria-labelledby="related-title">
+          <h2 id="related-title">Przeczytaj też</h2>
+          <div class="related-grid">
+            <a class="related-card" href="spolka-z-oo-2026.html">
+              <span>Spółka z o.o.</span>
+              <strong>Spółka z o.o. w 2026 roku – co warto wiedzieć?</strong>
+            </a>
+            <a class="related-card" href="controlling-kpi.html">
+              <span>Controlling</span>
+              <strong>Raporty zarządcze i KPI dla zarządu</strong>
+            </a>
+            <a class="related-card" href="estonski-cit-wdrozenie.html">
+              <span>Estoński CIT</span>
+              <strong>Jak wdrożyć estoński CIT w spółce z o.o.?</strong>
+            </a>
+            <a class="related-card" href="vat-oss-amazon.html">
+              <span>E-commerce</span>
+              <strong>VAT-OSS i Amazon FBA w e-commerce</strong>
+            </a>
+          </div>
+        </section>
+
+        <h2 id="faq">FAQ – najczęstsze pytania</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Czy można zmienić biuro rachunkowe w trakcie roku?</summary>
+            <p>Tak. Zmiana w trakcie roku jest możliwa. Trzeba jednak ustalić datę przejęcia, zakres odpowiedzialności poprzedniego i nowego biura oraz listę dokumentów do przekazania.</p>
+          </details>
+          <details>
+            <summary>Czy nowe biuro odpowiada za błędy poprzedniego biura?</summary>
+            <p>Nowe biuro nie przejmuje automatycznie odpowiedzialności za wcześniejsze błędy. Może jednak pomóc je zidentyfikować, uporządkować dokumenty i zaproponować dalsze kroki.</p>
+          </details>
+          <details>
+            <summary>Ile trwa przejęcie księgowości spółki z o.o.?</summary>
+            <p>To zależy od stanu dokumentów i skali spółki. Przy uporządkowanych danych proces może być szybki, ale przy zaległościach lub niejasnych rozrachunkach potrzebny jest dodatkowy czas na audyt i wyjaśnienia.</p>
+          </details>
+          <details>
+            <summary>Jakie dokumenty trzeba przekazać nowemu biuru?</summary>
+            <p>Najczęściej są to księgi, deklaracje, JPK, rejestry VAT, salda rozrachunków, środki trwałe, dokumenty kadrowe, umowy i dostępy do systemów. Dokładna lista zależy od rodzaju działalności.</p>
+          </details>
+        </div>
+      </article>
+
+      <aside class="toc" aria-label="Spis treści">
+        <h2>Spis treści</h2>
+        <a href="#kiedy-zmienic">Kiedy zmienić biuro?</a>
+        <a href="#czy-w-trakcie-roku">Zmiana w trakcie roku</a>
+        <a href="#dokumenty">Dokumenty do przekazania</a>
+        <a href="#proces">Proces krok po kroku</a>
+        <a href="#audyt">Audyt startowy</a>
+        <a href="#ryzyka">Najczęstsze ryzyka</a>
+        <a href="#nowy-model">Nowy model pracy</a>
+        <a href="#dla-kogo">Dla jakich spółek?</a>
+        <a href="#podsumowanie">Podsumowanie</a>
+        <a href="#faq">FAQ</a>
+
+        <div class="toc__cta">
+          <p>Chcesz sprawdzić, czy zmiana biura ma sens w Twojej spółce?</p>
+          <a class="btn btn--dark js-track-calendly" href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer">Umów rozmowę</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <div id="cookie-banner" class="cookie" role="dialog" aria-live="polite" aria-label="Informacja o plikach cookies">
+    <div class="cookie__inner">
+      <p>Używamy plików cookies do analityki (GA4) i marketingu (Meta Pixel). Możesz zaakceptować wszystkie zgody albo pozostać przy plikach niezbędnych. Więcej w <a href="../#privacy">Polityce prywatności</a>.</p>
+      <div class="cookie__actions">
+        <button id="acceptAll" class="btn btn--yellow" type="button">Akceptuję wszystkie</button>
+        <button id="acceptEssential" class="btn btn--light" type="button">Tylko niezbędne</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" id="privacy">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="../" class="logo" style="color:#fff;margin-bottom:18px;">
+            <span class="logo__mark">PR</span>
+            <span>PRACOWNIA<br>RACHUNKOWOŚCI</span>
+          </a>
+          <p>Biuro rachunkowe dla spółek z o.o. Specjalizacja: pełna księgowość, raporty zarządcze, estoński CIT, KSeF, VAT-OSS i e-commerce.</p>
+          <p><strong style="color:#fff;">PRACOWNIA RACHUNKOWOŚCI SP. Z O.O.</strong><br>ul. Trawowa 19/1, 54-614 Wrocław<br>NIP 8943197084</p>
+        </div>
+        <div>
+          <h4>Artykuły</h4>
+          <ul>
+            <li><a href="spolka-z-oo-2026.html">Spółka z o.o. w 2026 roku</a></li>
+            <li><a href="estonski-cit-wdrozenie.html">Estoński CIT</a></li>
+            <li><a href="vat-oss-amazon.html">VAT-OSS i Amazon FBA</a></li>
+            <li><a href="controlling-kpi.html">Controlling i KPI</a></li>
+            <li><a href="./">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="tel:+48504853962">+48 504 853 962</a></li>
+            <li><a href="https://wa.me/48504853962" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer" class="js-track-calendly">Umów konsultację</a></li>
+            <li><a href="../#privacy">Polityka prywatności</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Pracownia Rachunkowości. Wszelkie prawa zastrzeżone.</span>
+        <span>Artykuł: zmiana biura rachunkowego</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var year = document.getElementById('year');
+      if (year) year.textContent = new Date().getFullYear();
+
+      var menu = document.getElementById('mainMenu');
+      var burger = document.querySelector('.burger');
+
+      if (menu && burger) {
+        function setMenu(open) {
+          menu.classList.toggle('is-open', open);
+          burger.classList.toggle('is-active', open);
+          burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+          burger.setAttribute('aria-label', open ? 'Zamknij menu' : 'Otwórz menu');
+        }
+
+        burger.addEventListener('click', function () {
+          setMenu(!menu.classList.contains('is-open'));
+        });
+
+        menu.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () { setMenu(false); });
+        });
+
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape') setMenu(false);
+        });
+      }
+
+      document.querySelectorAll('.js-track-calendly').forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'click_calendly', {
+              event_category: 'lead',
+              event_label: 'blog_zmiana_biura_calendly'
+            });
+          }
+          if (typeof fbq === 'function') fbq('track', 'Contact');
+        });
+      });
+
+      var consentKey = 'cookieConsent';
+      var banner = document.getElementById('cookie-banner');
+      var acceptAll = document.getElementById('acceptAll');
+      var acceptEssential = document.getElementById('acceptEssential');
+      var marketingLoaded = false;
+
+      function updateGoogleConsent(granted) {
+        if (typeof gtag !== 'function') return;
+        gtag('consent', 'update', {
+          ad_storage: granted ? 'granted' : 'denied',
+          analytics_storage: granted ? 'granted' : 'denied',
+          ad_user_data: granted ? 'granted' : 'denied',
+          ad_personalization: granted ? 'granted' : 'denied'
+        });
+      }
+
+      function loadMetaPixel() {
+        if (marketingLoaded || window.fbq) return;
+        marketingLoaded = true;
+        !function(f,b,e,v,n,t,s){
+          if(f.fbq)return;
+          n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;
+          n.push=n;
+          n.loaded=!0;
+          n.version='2.0';
+          n.queue=[];
+          t=b.createElement(e);
+          t.async=!0;
+          t.src=v;
+          s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s);
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2249646038845826');
+        fbq('track', 'PageView');
+      }
+
+      function hideBanner() { if (banner) banner.style.display = 'none'; }
+      function showBanner() { if (banner) banner.style.display = 'block'; }
+
+      function applySavedConsent() {
+        var savedConsent = localStorage.getItem(consentKey);
+        if (savedConsent === 'all') {
+          updateGoogleConsent(true);
+          loadMetaPixel();
+          hideBanner();
+          return;
+        }
+        if (savedConsent === 'essential') {
+          updateGoogleConsent(false);
+          hideBanner();
+          return;
+        }
+        showBanner();
+      }
+
+      if (acceptAll) {
+        acceptAll.addEventListener('click', function () {
+          localStorage.setItem(consentKey, 'all');
+          updateGoogleConsent(true);
+          loadMetaPixel();
+          hideBanner();
+        });
+      }
+
+      if (acceptEssential) {
+        acceptEssential.addEventListener('click', function () {
+          localStorage.setItem(consentKey, 'essential');
+          updateGoogleConsent(false);
+          hideBanner();
+        });
+      }
+
+      window.resetCookieConsent = function () {
+        localStorage.removeItem(consentKey);
+        window.location.reload();
+      };
+
+      applySavedConsent();
+    });
+  </script>
+</body>
+</html>
