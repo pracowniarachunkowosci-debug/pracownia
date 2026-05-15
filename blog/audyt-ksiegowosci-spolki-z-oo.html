@@ -1,0 +1,1364 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Consent Mode v2: domyślne zgody przed GTM/GA4 -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      wait_for_update: 500
+    });
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WC88L2GJ');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H210DZ34Y8"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-H210DZ34Y8', { anonymize_ip: true });
+  </script>
+
+  <title>Audyt księgowości spółki z o.o. | Pracownia Rachunkowości</title>
+  <meta name="description" content="Audyt księgowości spółki z o.o. przed zmianą biura: dokumenty, terminy, rozrachunki i ryzyka. Sprawdź, kiedy warto go zrobić." />
+  <link rel="canonical" href="https://pracowniarachunkowosci.pl/blog/audyt-ksiegowosci-spolki-z-oo.html" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="author" content="Pracownia Rachunkowości" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:title" content="Audyt księgowości spółki z o.o. – co sprawdzić przed zmianą biura?" />
+  <meta property="og:description" content="Zobacz, co obejmuje audyt księgowości spółki z o.o. i dlaczego warto go wykonać przed przejęciem obsługi przez nowe biuro rachunkowe." />
+  <meta property="og:url" content="https://pracowniarachunkowosci.pl/blog/audyt-ksiegowosci-spolki-z-oo.html" />
+  <meta property="og:site_name" content="Pracownia Rachunkowości" />
+  <meta property="og:image" content="https://pracowniarachunkowosci.pl/assets/og-image.jpg" />
+  <meta property="article:published_time" content="2026-05-14" />
+  <meta property="article:modified_time" content="2026-05-14" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
+
+  <style>
+    :root {
+      --navy: #0D1B2A;
+      --navy-2: #13263A;
+      --navy-3: #20364D;
+      --yellow: #FFCC00;
+      --yellow-soft: #FFF6CC;
+      --green: #10B981;
+      --red: #DC2626;
+      --bg: #F5F7FA;
+      --card: #FFFFFF;
+      --text: #111827;
+      --muted: #667085;
+      --line: #E5E7EB;
+      --line-soft: #EEF2F7;
+      --shadow: 0 12px 34px rgba(13,27,42,.08);
+      --shadow-lg: 0 28px 80px rgba(13,27,42,.16);
+      --radius: 22px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; height: auto; }
+    button { font: inherit; }
+
+    .container {
+      width: min(var(--max), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .skip {
+      position: absolute;
+      top: 10px;
+      left: -999px;
+      z-index: 99999;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: var(--yellow);
+      color: #111;
+      font-weight: 900;
+    }
+    .skip:focus { left: 10px; }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(13,27,42,.07);
+    }
+    .nav__inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--navy);
+      font-weight: 900;
+      letter-spacing: -.025em;
+      text-decoration: none;
+      line-height: 1.05;
+    }
+    .logo__mark {
+      width: 38px;
+      height: 38px;
+      flex: 0 0 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 11px;
+      background: var(--navy);
+      color: var(--yellow);
+      font-size: 12px;
+      font-weight: 900;
+      box-shadow: 0 8px 22px rgba(13,27,42,.16);
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .menu a {
+      color: #334155;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .menu a:hover,
+    .menu a[aria-current="page"] { color: var(--navy); }
+    .menu .panel {
+      padding: 11px 17px;
+      border-radius: 13px;
+      color: #fff;
+      background: var(--navy);
+      box-shadow: 0 12px 26px rgba(13,27,42,.14);
+    }
+    .menu .contact {
+      padding: 11px 17px;
+      border-radius: 13px;
+      border: 1px solid var(--line);
+      background: #fff;
+      box-shadow: 0 8px 18px rgba(13,27,42,.04);
+    }
+    .burger {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 12px;
+      background: var(--bg);
+      cursor: pointer;
+    }
+    .burger span,
+    .burger span::before,
+    .burger span::after {
+      display: block;
+      width: 22px;
+      height: 2px;
+      margin: 0 auto;
+      border-radius: 999px;
+      background: var(--navy);
+      content: "";
+      transition: .18s ease;
+    }
+    .burger span::before { transform: translateY(-7px); }
+    .burger span::after { transform: translateY(5px); }
+    .burger.is-active span { background: transparent; }
+    .burger.is-active span::before { transform: translateY(1px) rotate(45deg); }
+    .burger.is-active span::after { transform: translateY(-1px) rotate(-45deg); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 48px;
+      padding: 13px 21px;
+      border-radius: 14px;
+      border: 1px solid transparent;
+      font-weight: 900;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn--yellow {
+      background: var(--yellow);
+      color: #111 !important;
+      box-shadow: 0 18px 40px rgba(255,204,0,.28);
+    }
+    .btn--dark {
+      background: var(--navy);
+      color: #fff !important;
+      box-shadow: 0 18px 40px rgba(13,27,42,.18);
+    }
+    .btn--light {
+      background: rgba(255,255,255,.92);
+      color: var(--navy) !important;
+      border-color: rgba(255,255,255,.34);
+    }
+    .btn--outline {
+      background: #fff;
+      color: var(--navy) !important;
+      border-color: var(--line);
+    }
+
+    .breadcrumbs {
+      padding: 16px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .breadcrumbs a {
+      color: var(--navy);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 78% 14%, rgba(255,204,0,.20), transparent 30%),
+        radial-gradient(circle at 80% 88%, rgba(32,54,77,.95), transparent 36%),
+        linear-gradient(135deg, #0A1724 0%, #0D1B2A 48%, #13263A 100%);
+      color: #fff;
+      padding: 78px 0 74px;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.08) 1px, transparent 0);
+      background-size: 28px 28px;
+      opacity: .32;
+      pointer-events: none;
+      mask-image: linear-gradient(90deg, #000 0%, #000 45%, transparent 88%);
+    }
+    .hero__grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(320px, .92fr);
+      gap: 54px;
+      align-items: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 22px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,204,0,.48);
+      background: rgba(255,204,0,.13);
+      color: #FFE88A;
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 6px rgba(16,185,129,.14);
+    }
+    .hero h1 {
+      max-width: 820px;
+      margin: 0 0 22px;
+      color: #fff;
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.02;
+      letter-spacing: -.052em;
+      font-weight: 900;
+    }
+    .highlight { color: var(--yellow); }
+    .lead {
+      max-width: 760px;
+      margin: 0 0 30px;
+      color: rgba(255,255,255,.80);
+      font-size: 20px;
+      line-height: 1.72;
+      font-weight: 500;
+    }
+    .lead strong { color: #fff; }
+    .hero__cta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 13px;
+      margin-bottom: 28px;
+    }
+    .hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: rgba(255,255,255,.78);
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .hero__meta span {
+      padding: 8px 11px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.08);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-card {
+      position: relative;
+      padding: 28px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.09);
+      backdrop-filter: blur(16px);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero-card h2 {
+      margin: 0 0 14px;
+      color: #fff;
+      font-size: 25px;
+      line-height: 1.18;
+      letter-spacing: -.03em;
+    }
+    .hero-card p {
+      margin: 0 0 18px;
+      color: rgba(255,255,255,.76);
+      line-height: 1.65;
+    }
+    .quick-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .quick-list li {
+      display: grid;
+      grid-template-columns: 26px 1fr;
+      gap: 10px;
+      align-items: start;
+      color: rgba(255,255,255,.86);
+      line-height: 1.45;
+      font-weight: 700;
+    }
+    .quick-list span {
+      display: inline-flex;
+      width: 26px;
+      height: 26px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: rgba(255,204,0,.16);
+      color: var(--yellow);
+      font-weight: 900;
+    }
+
+    .section {
+      padding: 82px 0;
+    }
+    .section--soft {
+      background: var(--bg);
+    }
+    .article-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 330px;
+      gap: 42px;
+      align-items: start;
+    }
+    .article-card {
+      border: 1px solid var(--line-soft);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow);
+      padding: clamp(28px, 4vw, 52px);
+    }
+    .article-content {
+      color: #253041;
+      font-size: 18px;
+      line-height: 1.82;
+    }
+    .article-content > *:first-child { margin-top: 0; }
+    .article-content h2 {
+      margin: 48px 0 18px;
+      color: var(--navy);
+      font-size: clamp(27px, 3vw, 36px);
+      line-height: 1.18;
+      letter-spacing: -.035em;
+    }
+    .article-content h3 {
+      margin: 34px 0 12px;
+      color: var(--navy);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+    }
+    .article-content p {
+      margin: 0 0 18px;
+    }
+    .article-content ul {
+      margin: 0 0 24px;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 11px;
+    }
+    .article-content li {
+      position: relative;
+      padding-left: 30px;
+    }
+    .article-content li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--green);
+      font-weight: 900;
+    }
+    .article-content a {
+      color: var(--navy);
+      font-weight: 900;
+      text-decoration: underline;
+      text-decoration-color: rgba(255,204,0,.85);
+      text-decoration-thickness: 3px;
+      text-underline-offset: 4px;
+    }
+    .note {
+      margin: 34px 0;
+      padding: 24px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,204,0,.50);
+      background: var(--yellow-soft);
+      color: var(--navy);
+    }
+    .note strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 26px 0 34px;
+    }
+    .check-card {
+      padding: 20px;
+      border-radius: 18px;
+      border: 1px solid var(--line-soft);
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(13,27,42,.05);
+    }
+    .check-card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--navy);
+      font-size: 16px;
+    }
+    .check-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 96px;
+      display: grid;
+      gap: 18px;
+    }
+    .side-card {
+      padding: 24px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line-soft);
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .side-card h2,
+    .side-card h3 {
+      margin: 0 0 14px;
+      color: var(--navy);
+      font-size: 20px;
+      line-height: 1.22;
+      letter-spacing: -.02em;
+    }
+    .toc {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 14px;
+      line-height: 1.35;
+      font-weight: 800;
+    }
+    .toc a {
+      color: #334155;
+      text-decoration: none;
+    }
+    .toc a:hover { color: var(--navy); }
+    .side-card p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 15px;
+    }
+    .side-card .btn { width: 100%; }
+
+    .cta-band {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 28px;
+      align-items: center;
+      padding: 34px;
+      border-radius: var(--radius);
+      background:
+        radial-gradient(circle at 82% 10%, rgba(255,204,0,.22), transparent 32%),
+        linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
+      color: #fff;
+      box-shadow: var(--shadow-lg);
+    }
+    .cta-band h2 {
+      margin: 0 0 10px;
+      color: #fff;
+      font-size: 30px;
+      line-height: 1.15;
+      letter-spacing: -.035em;
+    }
+    .cta-band p {
+      margin: 0;
+      max-width: 740px;
+      color: rgba(255,255,255,.76);
+      line-height: 1.7;
+    }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+    .faq details {
+      border: 1px solid var(--line-soft);
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .faq summary {
+      cursor: pointer;
+      padding: 20px 22px;
+      color: var(--navy);
+      font-weight: 900;
+      list-style: none;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq details[open] summary {
+      border-bottom: 1px solid var(--line-soft);
+      background: #fffdf1;
+    }
+    .faq details p {
+      margin: 0;
+      padding: 18px 22px 22px;
+      color: #344054;
+      line-height: 1.7;
+    }
+
+    .related {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+    .related article {
+      padding: 24px;
+      border: 1px solid var(--line-soft);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .related h3 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      line-height: 1.2;
+      letter-spacing: -.02em;
+    }
+    .related p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .related a {
+      color: var(--navy);
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .footer {
+      background: var(--navy);
+      color: rgba(255,255,255,.78);
+      padding: 56px 0 28px;
+    }
+    .footer a { color: rgba(255,255,255,.86); text-decoration: none; }
+    .footer a:hover { color: #fff; }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1.3fr .8fr .8fr;
+      gap: 34px;
+    }
+    .footer h4 {
+      margin: 0 0 14px;
+      color: #fff;
+    }
+    .footer ul {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .footer p {
+      line-height: 1.7;
+      margin: 0 0 14px;
+    }
+    .footer__bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 34px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.10);
+      font-size: 13px;
+      color: rgba(255,255,255,.62);
+    }
+
+    .cookie {
+      position: fixed;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      z-index: 200;
+      display: none;
+    }
+    .cookie.is-visible { display: block; }
+    .cookie__inner {
+      width: min(980px, 100%);
+      margin: 0 auto;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(13,27,42,.96);
+      color: rgba(255,255,255,.82);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      box-shadow: var(--shadow-lg);
+    }
+    .cookie p {
+      margin: 0;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    .cookie a {
+      color: #fff;
+      font-weight: 900;
+    }
+    .cookie__actions {
+      display: flex;
+      gap: 10px;
+      flex: 0 0 auto;
+    }
+    .cookie .btn {
+      min-height: 42px;
+      padding: 10px 14px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 1020px) {
+      .hero__grid,
+      .article-layout,
+      .cta-band,
+      .footer__grid {
+        grid-template-columns: 1fr;
+      }
+      .sidebar { position: static; }
+      .related { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 820px) {
+      .container { width: min(100% - 36px, var(--max)); }
+      .burger { display: inline-flex; align-items: center; justify-content: center; }
+      .menu {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 72px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px 20px 20px;
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+        box-shadow: var(--shadow-lg);
+      }
+      .menu.is-open { display: flex; }
+      .menu li a { display: block; padding: 13px 0; }
+      .menu .panel,
+      .menu .contact { text-align: center; margin-top: 8px; }
+      .nav__inner { min-height: 68px; }
+      .hero { padding: 58px 0 64px; }
+      .hero h1 { font-size: clamp(34px, 10vw, 52px); }
+      .lead { font-size: 17px; }
+      .hero__cta .btn { width: 100%; }
+      .section { padding: 64px 0; }
+      .article-card { padding: 24px; }
+      .article-content { font-size: 16.5px; line-height: 1.78; }
+      .check-grid { grid-template-columns: 1fr; }
+      .cta-band .btn { width: 100%; }
+      .cookie__inner { display: grid; }
+      .cookie__actions, .cookie__actions .btn { width: 100%; }
+      .footer__bottom { display: block; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":["AccountingService","LocalBusiness"],
+    "@id":"https://pracowniarachunkowosci.pl/#firma",
+    "name":"PRACOWNIA RACHUNKOWOŚCI SP. Z O.O.",
+    "url":"https://pracowniarachunkowosci.pl/",
+    "logo":"https://pracowniarachunkowosci.pl/assets/logo.png",
+    "image":"https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+    "telephone":"+48 504 853 962",
+    "priceRange":"$$",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"ul. Trawowa 19/1",
+      "addressLocality":"Wrocław",
+      "postalCode":"54-614",
+      "addressRegion":"Dolnośląskie",
+      "addressCountry":"PL"
+    },
+    "areaServed":["Polska","Wrocław","Dolnośląskie"],
+    "sameAs":["https://www.facebook.com/profile.php?id=100088976319049"]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Strona główna","item":"https://pracowniarachunkowosci.pl/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://pracowniarachunkowosci.pl/blog/"},
+      {"@type":"ListItem","position":3,"name":"Audyt księgowości spółki z o.o.","item":"https://pracowniarachunkowosci.pl/blog/audyt-ksiegowosci-spolki-z-oo.html"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BlogPosting",
+    "headline":"Audyt księgowości spółki z o.o. – co sprawdzić przed zmianą biura rachunkowego?",
+    "description":"Audyt księgowości spółki z o.o. przed zmianą biura: dokumenty, terminy, rozrachunki i ryzyka. Sprawdź, kiedy warto go zrobić.",
+    "image":"https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+    "datePublished":"2026-05-14",
+    "dateModified":"2026-05-14",
+    "author":{"@type":"Organization","name":"Pracownia Rachunkowości","url":"https://pracowniarachunkowosci.pl/"},
+    "publisher":{"@id":"https://pracowniarachunkowosci.pl/#firma"},
+    "mainEntityOfPage":{"@type":"WebPage","@id":"https://pracowniarachunkowosci.pl/blog/audyt-ksiegowosci-spolki-z-oo.html"},
+    "inLanguage":"pl-PL",
+    "articleSection":"Księgowość spółek z o.o."
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Kiedy warto zrobić audyt księgowości spółki z o.o.?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Audyt warto zrobić przed zmianą biura rachunkowego, przy zaległościach, niejasnych rozrachunkach, braku raportów, opóźnieniach w deklaracjach albo wtedy, gdy zarząd nie ma pewności, czy księgowość jest prowadzona prawidłowo."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Co obejmuje audyt księgowości spółki z o.o.?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Najczęściej obejmuje przegląd dokumentów, deklaracji, terminów, rozrachunków, podatków, obiegu faktur i potencjalnych ryzyk. Zakres zależy od skali działalności i problemów spółki."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Czy audyt księgowości jest potrzebny przed zmianą biura?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"W wielu przypadkach to najbezpieczniejszy start. Audyt pozwala sprawdzić, czy dokumenty są kompletne, czy są zaległości i jakie obszary trzeba uporządkować przed przejęciem bieżącej obsługi."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Czy audyt oznacza, że w księgowości na pewno są błędy?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Nie. Audyt nie musi oznaczać szukania błędów. Często służy potwierdzeniu, że księgi, dokumenty i terminy są uporządkowane albo wskazaniu obszarów, które warto poprawić."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Co zrobić, jeśli audyt wykaże zaległości?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Najpierw warto ustalić priorytety: terminy podatkowe, brakujące dokumenty, deklaracje, rozrachunki i komunikację. Potem można przygotować harmonogram porządkowania ksiąg i bieżącej obsługi."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC88L2GJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <a href="#main" class="skip">Przejdź do treści</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="../" class="logo" aria-label="Pracownia Rachunkowości - strona główna">
+        <span class="logo__mark">PR</span>
+        <span>PRACOWNIA<br>RACHUNKOWOŚCI</span>
+      </a>
+
+      <button class="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mainMenu">
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav aria-label="Główna nawigacja">
+        <ul class="menu" id="mainMenu">
+          <li><a href="../ksiegowosc-spolka-z-oo.html">Spółki z o.o.</a></li>
+          <li><a href="../oferta.html">Oferta</a></li>
+          <li><a href="../#dla-kogo">Dla kogo</a></li>
+          <li><a href="../ksiegowosc-spolka-z-oo.html#proces">Proces</a></li>
+          <li><a href="./" aria-current="page">Blog</a></li>
+          <li><a href="../#faq">FAQ</a></li>
+          <li><a class="panel" href="https://konto.insert.com.pl/#/login" target="_blank" rel="noopener">Panel klienta</a></li>
+          <li><a class="contact" href="../#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Okruszki">
+        <a href="../">Strona główna</a> / <a href="./">Blog</a> / Audyt księgowości spółki z o.o.
+      </nav>
+    </div>
+
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <div class="badge">Blog • zmiana biura rachunkowego</div>
+          <h1>Audyt księgowości spółki z o.o. – co sprawdzić przed <span class="highlight">zmianą biura?</span></h1>
+          <p class="lead">Zmiana biura rachunkowego to dobry moment, żeby nie przenosić chaosu dalej. Zobacz, co powinien objąć <strong>audyt księgowości spółki z o.o.</strong> i kiedy warto go zrobić.</p>
+          <div class="hero__cta">
+            <a class="btn btn--yellow js-track-calendly" href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer">Umów konsultację</a>
+            <a class="btn btn--light" href="../oferta.html#zmiana-biura">Zobacz zmianę biura</a>
+          </div>
+          <div class="hero__meta" aria-label="Informacje o artykule">
+            <span>14 maja 2026</span>
+            <span>ok. 8 minut czytania</span>
+            <span>spółka z o.o.</span>
+            <span>audyt księgowości</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Co sprawdzamy w audycie">
+          <h2>Audyt nie jest po to, żeby straszyć błędami.</h2>
+          <p>Jego celem jest ustalenie punktu startowego: co jest uporządkowane, co wymaga wyjaśnienia i czego nie warto przenosić do nowej obsługi.</p>
+          <ul class="quick-list">
+            <li><span>✓</span><strong>dokumenty, deklaracje i terminy,</strong></li>
+            <li><span>✓</span><strong>rozrachunki, należności i zobowiązania,</strong></li>
+            <li><span>✓</span><strong>VAT, CIT i potencjalne ryzyka,</strong></li>
+            <li><span>✓</span><strong>obieg dokumentów i komunikacja z biurem.</strong></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container article-layout">
+        <article class="article-card article-content">
+          <p>Zmiana biura rachunkowego często zaczyna się od prostego problemu: „nie mamy odpowiedzi”, „nie wiemy, czy wszystko jest wysłane”, „zarząd nie widzi liczb”, „dokumenty są gdzieś w mailach”. W praktyce jednak za takim sygnałem może stać coś więcej niż sama komunikacja.</p>
+
+          <p>W spółce z o.o. księgowość to nie tylko księgowanie faktur. To również terminy podatkowe, rozrachunki, deklaracje, sprawozdania, dane do decyzji zarządu i odpowiedzialność za porządek w dokumentach. Dlatego przed przejęciem obsługi przez nowe biuro warto zrobić <strong>audyt księgowości spółki z o.o.</strong></p>
+
+          <p>Taki audyt nie musi oznaczać kontroli „od A do Z” całej historii firmy. Często chodzi o praktyczne sprawdzenie najważniejszych obszarów: dokumentów, podatków, rozrachunków, terminów i potencjalnych ryzyk.</p>
+
+          <div class="note">
+            <strong>W skrócie:</strong>
+            audyt księgowości pozwala ustalić, czy spółka ma uporządkowane dokumenty, aktualne rozrachunki, wysłane deklaracje i proces, który daje zarządowi kontrolę nad terminami oraz danymi finansowymi.
+          </div>
+
+          <h2 id="kiedy">Kiedy warto zrobić audyt księgowości spółki z o.o.?</h2>
+
+          <p>Audyt księgowości warto rozważyć przede wszystkim wtedy, gdy zarząd traci zaufanie do danych, które otrzymuje z księgowości.</p>
+
+          <p>Najczęstsze sytuacje to:</p>
+
+          <ul>
+            <li>planowana <a href="../oferta.html#zmiana-biura">zmiana biura rachunkowego</a>,</li>
+            <li>opóźnienia w deklaracjach lub sprawozdaniach,</li>
+            <li>brak informacji o podatkach przed terminem płatności,</li>
+            <li>niejasne rozrachunki z kontrahentami,</li>
+            <li>brak bieżącej informacji o należnościach i zobowiązaniach,</li>
+            <li>chaos w dokumentach,</li>
+            <li>brak raportów dla zarządu,</li>
+            <li>przygotowanie do estońskiego CIT, finansowania, sprzedaży firmy lub większej zmiany organizacyjnej.</li>
+          </ul>
+
+          <p>W praktyce często widzimy, że problem nie polega tylko na jednym błędzie. Częściej chodzi o brak procesu: dokumenty trafiają za późno, odpowiedzialności nie są ustalone, zarząd nie wie, co zostało sprawdzone, a księgowość działa bardziej reaktywnie niż systemowo.</p>
+
+          <h2 id="zakres">Co powinien obejmować audyt księgowy spółki?</h2>
+
+          <p>Zakres audytu powinien zależeć od sytuacji firmy. Inaczej wygląda przegląd prostej spółki usługowej, inaczej spółki e-commerce, a jeszcze inaczej firmy z wieloma projektami, magazynem, sprzedażą zagraniczną lub zaległościami.</p>
+
+          <p>Są jednak obszary, które warto sprawdzić prawie zawsze.</p>
+
+          <div class="check-grid" aria-label="Główne obszary audytu">
+            <div class="check-card">
+              <strong>Dokumenty i terminy</strong>
+              <p>Czy dokumenty są kompletne, deklaracje wysłane, a okresy księgowe zamknięte?</p>
+            </div>
+            <div class="check-card">
+              <strong>Rozrachunki</strong>
+              <p>Czy salda kontrahentów, należności i zobowiązania zgadzają się z rzeczywistością?</p>
+            </div>
+            <div class="check-card">
+              <strong>Podatki i ryzyka</strong>
+              <p>Czy w VAT, CIT, kosztach i transakcjach nietypowych nie widać obszarów wymagających omówienia?</p>
+            </div>
+            <div class="check-card">
+              <strong>Proces współpracy</strong>
+              <p>Czy firma ma jasny obieg dokumentów, osoby odpowiedzialne i terminy komunikacji z biurem?</p>
+            </div>
+          </div>
+
+          <h3 id="dokumenty">Dokumenty, deklaracje i terminy</h3>
+
+          <p>Pierwszy krok to ustalenie, czy podstawowe obowiązki są pod kontrolą.</p>
+
+          <p>W audycie warto sprawdzić między innymi:</p>
+
+          <ul>
+            <li>czy dokumenty są kompletne,</li>
+            <li>czy deklaracje były składane terminowo,</li>
+            <li>czy spółka ma potwierdzenia wysyłek deklaracji i plików JPK,</li>
+            <li>czy sprawozdania finansowe zostały przygotowane i złożone,</li>
+            <li>czy są zaległości w dokumentach,</li>
+            <li>czy poprzednie okresy są zamknięte,</li>
+            <li>czy dokumentacja jest dostępna dla zarządu.</li>
+          </ul>
+
+          <p>To ważne, bo nowe biuro rachunkowe nie powinno przejmować księgowości „w ciemno”. Jeżeli w dokumentach są braki, trzeba je nazwać na początku, a nie dopiero przy pierwszym terminie podatkowym.</p>
+
+          <h3 id="rozrachunki">Rozrachunki, należności i zobowiązania</h3>
+
+          <p>Drugi obszar to rozrachunki. Dla zarządu to często jeden z najważniejszych elementów, bo pokazuje, kto jest winien spółce pieniądze i komu spółka powinna zapłacić.</p>
+
+          <p>Warto sprawdzić:</p>
+
+          <ul>
+            <li>czy saldo kontrahentów jest aktualne,</li>
+            <li>czy należności i zobowiązania zgadzają się z rzeczywistością,</li>
+            <li>czy są stare, niewyjaśnione pozycje,</li>
+            <li>czy płatności są prawidłowo rozliczane,</li>
+            <li>czy kompensaty, zwroty i korekty zostały ujęte poprawnie,</li>
+            <li>czy zarząd ma cykliczną informację o przeterminowanych należnościach.</li>
+          </ul>
+
+          <p>Nieuporządkowane rozrachunki potrafią utrudnić zarządzanie płynnością. Spółka może mieć przychód na papierze, ale jednocześnie nie wiedzieć, ile pieniędzy realnie powinna odzyskać od klientów.</p>
+
+          <h3 id="podatki">Podatki, VAT, CIT i ryzyka zarządu</h3>
+
+          <p>Audyt księgowości spółki z o.o. powinien też obejmować podatki. Nie chodzi o obietnicę, że „wszystko jest na pewno idealnie”, ale o praktyczne sprawdzenie, czy w najważniejszych obszarach nie widać ryzyk.</p>
+
+          <p>W zależności od działalności spółki warto przeanalizować:</p>
+
+          <ul>
+            <li>rozliczenia VAT,</li>
+            <li>koszty podatkowe,</li>
+            <li>przychody i moment ich rozpoznania,</li>
+            <li>zaliczki na CIT,</li>
+            <li>rozliczenia z członkami zarządu i wspólnikami,</li>
+            <li>dokumentację kosztów,</li>
+            <li>transakcje nietypowe,</li>
+            <li>sprzedaż zagraniczną,</li>
+            <li>e-commerce, marketplace, VAT-OSS lub Amazon FBA,</li>
+            <li>przygotowanie do KSeF i elektronicznego obiegu faktur.</li>
+          </ul>
+
+          <p>To szczególnie ważne przy spółkach, które szybko rosną. Im więcej kanałów sprzedaży, dokumentów i nietypowych zdarzeń, tym większe ryzyko, że księgowość prowadzona „po staremu” przestaje wystarczać.</p>
+
+          <h3 id="proces">Obieg dokumentów i komunikacja z biurem</h3>
+
+          <p>Nawet dobre biuro rachunkowe będzie mieć problem, jeśli dokumenty trafiają za późno, są niekompletne albo krążą po kilku skrzynkach mailowych.</p>
+
+          <p>Dlatego audyt powinien objąć również proces:</p>
+
+          <ul>
+            <li>kto odpowiada za przekazywanie dokumentów,</li>
+            <li>w jakim terminie dokumenty trafiają do księgowości,</li>
+            <li>gdzie przechowywane są faktury,</li>
+            <li>kto akceptuje koszty,</li>
+            <li>jak zarząd otrzymuje informację o podatkach,</li>
+            <li>czy są ustalone osoby kontaktowe,</li>
+            <li>czy spółka ma harmonogram miesięcznych obowiązków.</li>
+          </ul>
+
+          <p>To często najprostszy obszar do poprawy. Wystarczy uporządkować zasady współpracy, aby ograniczyć stres przed terminami i skrócić czas wyjaśniania dokumentów.</p>
+
+          <h2 id="sygnaly">Najczęstsze sygnały, że księgowość wymaga sprawdzenia</h2>
+
+          <p>Nie każda spółka potrzebuje rozbudowanego audytu. Są jednak sygnały ostrzegawcze, których nie warto ignorować.</p>
+
+          <p>Pierwszy sygnał to brak jasnej informacji o podatkach. Jeżeli zarząd dowiaduje się o kwotach do zapłaty w ostatniej chwili, trudno mówić o kontroli nad finansami.</p>
+
+          <p>Drugi sygnał to brak raportów. Sama deklaracja podatkowa nie mówi zarządowi, jaka jest rentowność firmy, jak wygląda cash-flow, które koszty rosną i gdzie pojawiają się odchylenia.</p>
+
+          <p>Trzeci sygnał to niejasne salda. Jeżeli spółka nie wie, które należności są aktualne, które faktury zostały opłacone, a które pozycje „wiszą” od wielu miesięcy, warto sprawdzić rozrachunki.</p>
+
+          <p>Czwarty sygnał to ciągłe poprawki. Jeżeli co miesiąc wracają te same pytania, brakuje dokumentów albo trzeba odtwarzać historię transakcji, problem może leżeć w procesie, a nie tylko w pojedynczej pomyłce.</p>
+
+          <p>Piąty sygnał to brak spokojnej komunikacji. Księgowość powinna wspierać zarząd, a nie blokować decyzje brakiem odpowiedzi.</p>
+
+          <h2 id="zmiana-biura">Audyt przed zmianą biura rachunkowego – dlaczego to bezpieczny start?</h2>
+
+          <p>Zmiana biura rachunkowego bez audytu może wyglądać szybko, ale w praktyce bywa ryzykowna. Nowe biuro przejmuje dokumenty, ale nie zawsze od razu wie, czy poprzednie okresy są kompletne, czy rozrachunki są zgodne, czy deklaracje zostały wysłane i czy są zaległości.</p>
+
+          <p>Audyt pozwala ustalić punkt startowy.</p>
+
+          <p>Dzięki temu wiadomo:</p>
+
+          <ul>
+            <li>co jest uporządkowane,</li>
+            <li>co wymaga wyjaśnienia,</li>
+            <li>czego brakuje,</li>
+            <li>które terminy są najpilniejsze,</li>
+            <li>jakie ryzyka trzeba omówić z zarządem,</li>
+            <li>jaki zakres obsługi będzie realnie potrzebny.</li>
+          </ul>
+
+          <p>To uczciwe dla obu stron. Spółka wie, z czym zaczyna. Biuro rachunkowe wie, co przejmuje. A zarząd nie ma fałszywego poczucia bezpieczeństwa.</p>
+
+          <p>W Pracowni Rachunkowości lubimy zaczynać właśnie od takiego uporządkowania sytuacji. Nie chodzi o straszenie błędami, ale o spokojne sprawdzenie, czy księgi, dokumenty i terminy dają bezpieczną podstawę do dalszej pracy.</p>
+
+          <h2 id="po-audycie">Co zrobić po audycie księgowości?</h2>
+
+          <p>Dobry audyt powinien kończyć się konkretnymi wnioskami. Sama informacja, że „coś jest do poprawy”, nie wystarczy.</p>
+
+          <p>Po audycie warto ustalić:</p>
+
+          <ul>
+            <li>listę brakujących dokumentów,</li>
+            <li>priorytety do uporządkowania,</li>
+            <li>odpowiedzialności po stronie spółki i biura,</li>
+            <li>harmonogram naprawy zaległości,</li>
+            <li>sposób przekazywania dokumentów,</li>
+            <li>zakres raportowania dla zarządu,</li>
+            <li>terminy cyklicznej komunikacji.</li>
+          </ul>
+
+          <p>Jeżeli audyt pokazuje większe zaległości, nie trzeba naprawiać wszystkiego jednego dnia. Ważne, aby ustalić kolejność działań: najpierw terminy krytyczne, potem deklaracje i dokumenty, następnie rozrachunki, a na końcu raportowanie i stały model pracy.</p>
+
+          <h2 id="podsumowanie">Podsumowanie</h2>
+
+          <p>Audyt księgowości spółki z o.o. to dobry krok wtedy, gdy zarząd chce odzyskać kontrolę nad dokumentami, podatkami, rozrachunkami i raportami. Szczególnie warto go zrobić przed zmianą biura rachunkowego, bo pozwala sprawdzić, co naprawdę jest do przejęcia.</p>
+
+          <p>Nie chodzi o szukanie winnych. Chodzi o uporządkowanie sytuacji i bezpieczne ustawienie dalszej współpracy.</p>
+
+          <p>Jeśli prowadzisz spółkę z o.o. i zastanawiasz się, czy obecna księgowość daje zarządowi wystarczającą kontrolę, możemy zacząć od krótkiej rozmowy. W Pracowni Rachunkowości sprawdzimy, czy potrzebny jest audyt, zmiana procesu, czy pełne przejęcie księgowości.</p>
+        </article>
+
+        <aside class="sidebar" aria-label="Nawigacja artykułu">
+          <div class="side-card">
+            <h2>Spis treści</h2>
+            <ul class="toc">
+              <li><a href="#kiedy">Kiedy zrobić audyt?</a></li>
+              <li><a href="#zakres">Co obejmuje audyt?</a></li>
+              <li><a href="#dokumenty">Dokumenty i terminy</a></li>
+              <li><a href="#rozrachunki">Rozrachunki</a></li>
+              <li><a href="#podatki">Podatki i ryzyka</a></li>
+              <li><a href="#proces">Proces dokumentów</a></li>
+              <li><a href="#sygnaly">Sygnały ostrzegawcze</a></li>
+              <li><a href="#zmiana-biura">Audyt przed zmianą biura</a></li>
+              <li><a href="#po-audycie">Co po audycie?</a></li>
+            </ul>
+          </div>
+
+          <div class="side-card">
+            <h3>Chcesz sprawdzić księgowość spółki?</h3>
+            <p>Możemy zacząć od krótkiej rozmowy i ustalenia, czy potrzebny jest audyt, porządkowanie dokumentów czy pełne przejęcie księgowości.</p>
+            <a class="btn btn--yellow js-track-calendly" href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer">Umów rozmowę</a>
+          </div>
+
+          <div class="side-card">
+            <h3>Powiązane usługi</h3>
+            <ul class="toc">
+              <li><a href="../ksiegowosc-spolka-z-oo.html">Księgowość dla spółki z o.o.</a></li>
+              <li><a href="../oferta.html#zmiana-biura">Zmiana biura rachunkowego</a></li>
+              <li><a href="../oferta.html#uslugi-uzupelniajace">Audyt księgowości</a></li>
+              <li><a href="../oferta.html#controlling">Raporty zarządcze i controlling</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="faq">
+      <div class="container">
+        <div class="article-layout">
+          <div>
+            <div class="badge" style="color:var(--navy);background:var(--yellow-soft);border-color:rgba(255,204,0,.65);">FAQ</div>
+            <h2 style="margin:0 0 18px;color:var(--navy);font-size:clamp(32px,4vw,46px);line-height:1.08;letter-spacing:-.045em;">Najczęstsze pytania o audyt księgowości spółki z o.o.</h2>
+            <p style="margin:0;color:var(--muted);font-size:18px;line-height:1.7;max-width:760px;">Poniżej zebraliśmy pytania, które najczęściej pojawiają się przy zmianie biura rachunkowego i porządkowaniu ksiąg.</p>
+          </div>
+
+          <div class="faq">
+            <details>
+              <summary>Kiedy warto zrobić audyt księgowości spółki z o.o.?</summary>
+              <p>Audyt warto zrobić przed zmianą biura rachunkowego, przy zaległościach, niejasnych rozrachunkach, braku raportów, opóźnieniach w deklaracjach albo wtedy, gdy zarząd nie ma pewności, czy księgowość jest prowadzona prawidłowo.</p>
+            </details>
+            <details>
+              <summary>Co obejmuje audyt księgowości spółki z o.o.?</summary>
+              <p>Najczęściej obejmuje przegląd dokumentów, deklaracji, terminów, rozrachunków, podatków, obiegu faktur i potencjalnych ryzyk. Zakres zależy od skali działalności i problemów spółki.</p>
+            </details>
+            <details>
+              <summary>Czy audyt księgowości jest potrzebny przed zmianą biura?</summary>
+              <p>W wielu przypadkach to najbezpieczniejszy start. Audyt pozwala sprawdzić, czy dokumenty są kompletne, czy są zaległości i jakie obszary trzeba uporządkować przed przejęciem bieżącej obsługi.</p>
+            </details>
+            <details>
+              <summary>Czy audyt oznacza, że w księgowości na pewno są błędy?</summary>
+              <p>Nie. Audyt nie musi oznaczać szukania błędów. Często służy potwierdzeniu, że księgi, dokumenty i terminy są uporządkowane albo wskazaniu obszarów, które warto poprawić.</p>
+            </details>
+            <details>
+              <summary>Co zrobić, jeśli audyt wykaże zaległości?</summary>
+              <p>Najpierw warto ustalić priorytety: terminy podatkowe, brakujące dokumenty, deklaracje, rozrachunki i komunikację. Potem można przygotować harmonogram porządkowania ksiąg i bieżącej obsługi.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2>Nie przenoś chaosu do nowej księgowości.</h2>
+            <p>Jeżeli rozważasz zmianę biura rachunkowego, zacznijmy od sprawdzenia dokumentów, rozrachunków, terminów i ryzyk. Dzięki temu przejęcie obsługi będzie spokojniejsze i bardziej przewidywalne.</p>
+          </div>
+          <a class="btn btn--yellow js-track-calendly" href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer">Umów konsultację</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="badge" style="color:var(--navy);background:var(--yellow-soft);border-color:rgba(255,204,0,.65);">Czytaj dalej</div>
+        <h2 style="margin:0;color:var(--navy);font-size:clamp(32px,4vw,46px);line-height:1.08;letter-spacing:-.045em;">Powiązane artykuły</h2>
+
+        <div class="related">
+          <article>
+            <h3>Zmiana biura rachunkowego bez przestojów</h3>
+            <p>Jak przejść do nowej obsługi bez chaosu w dokumentach, terminach i komunikacji?</p>
+            <a href="zmiana-biura.html">Czytaj artykuł →</a>
+          </article>
+          <article>
+            <h3>Raporty zarządcze i KPI dla zarządu</h3>
+            <p>Dlaczego księgowość powinna dawać dane do decyzji, a nie tylko deklaracje podatkowe?</p>
+            <a href="controlling-kpi.html">Czytaj artykuł →</a>
+          </article>
+          <article>
+            <h3>Księgowość dla spółki z o.o.</h3>
+            <p>Pełna księgowość, CIT, VAT, sprawozdania, raporty i bieżąca komunikacja z zarządem.</p>
+            <a href="../ksiegowosc-spolka-z-oo.html">Zobacz ofertę →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="cookie-banner" class="cookie" role="dialog" aria-live="polite" aria-label="Informacja o plikach cookies">
+    <div class="cookie__inner">
+      <p>Używamy plików cookies do analityki (GA4) i marketingu (Meta Pixel). Możesz zaakceptować wszystkie zgody albo pozostać przy plikach niezbędnych. Więcej w <a href="../#privacy">Polityce prywatności</a>.</p>
+      <div class="cookie__actions">
+        <button id="acceptAll" class="btn btn--yellow" type="button">Akceptuję wszystkie</button>
+        <button id="acceptEssential" class="btn btn--light" type="button">Tylko niezbędne</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" id="privacy">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="../" class="logo" style="color:#fff;margin-bottom:18px;">
+            <span class="logo__mark">PR</span>
+            <span>PRACOWNIA<br>RACHUNKOWOŚCI</span>
+          </a>
+          <p>Blog Pracowni Rachunkowości: księgowość spółek z o.o., raporty zarządcze, estoński CIT, KSeF, VAT-OSS i e-commerce.</p>
+          <p><strong style="color:#fff;">PRACOWNIA RACHUNKOWOŚCI SP. Z O.O.</strong><br>ul. Trawowa 19/1, 54-614 Wrocław<br>NIP 8943197084</p>
+        </div>
+        <div>
+          <h4>Artykuły</h4>
+          <ul>
+            <li><a href="spolka-z-oo-2026.html">Spółka z o.o. w 2026 roku</a></li>
+            <li><a href="estonski-cit-wdrozenie.html">Estoński CIT</a></li>
+            <li><a href="vat-oss-amazon.html">VAT-OSS i Amazon FBA</a></li>
+            <li><a href="controlling-kpi.html">Controlling i KPI</a></li>
+            <li><a href="zmiana-biura.html">Zmiana biura rachunkowego</a></li>
+            <li><a href="audyt-ksiegowosci-spolki-z-oo.html">Audyt księgowości spółki z o.o.</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="tel:+48504853962">+48 504 853 962</a></li>
+            <li><a href="https://wa.me/48504853962" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer" class="js-track-calendly">Umów konsultację</a></li>
+            <li><a href="../#privacy">Polityka prywatności</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Pracownia Rachunkowości. Wszelkie prawa zastrzeżone.</span>
+        <span>Treści mają charakter informacyjny i nie stanowią indywidualnej porady podatkowej.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
+
+    const burger = document.querySelector('.burger');
+    const menu = document.getElementById('mainMenu');
+    if (burger && menu) {
+      const setMenuState = (open) => {
+        menu.classList.toggle('is-open', open);
+        burger.classList.toggle('is-active', open);
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+        burger.setAttribute('aria-label', open ? 'Zamknij menu' : 'Otwórz menu');
+      };
+
+      burger.addEventListener('click', () => {
+        setMenuState(!menu.classList.contains('is-open'));
+      });
+
+      menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => setMenuState(false));
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') setMenuState(false);
+      });
+    }
+
+    document.querySelectorAll('.js-track-calendly').forEach(link => {
+      link.addEventListener('click', () => {
+        if (typeof gtag === 'function') {
+          gtag('event', 'click_calendly', {
+            event_category: 'kontakt',
+            event_label: 'blog_audyt_ksiegowosci_spolki_z_oo'
+          });
+        }
+      });
+    });
+
+    const banner = document.getElementById('cookie-banner');
+    const acceptAll = document.getElementById('acceptAll');
+    const acceptEssential = document.getElementById('acceptEssential');
+    const consentKey = 'pr_cookie_consent';
+
+    const updateConsent = (type) => {
+      if (type === 'all') {
+        gtag('consent', 'update', {
+          ad_storage: 'granted',
+          analytics_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted'
+        });
+      } else {
+        gtag('consent', 'update', {
+          ad_storage: 'denied',
+          analytics_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
+        });
+      }
+      localStorage.setItem(consentKey, type);
+      banner && banner.classList.remove('is-visible');
+    };
+
+    const savedConsent = localStorage.getItem(consentKey);
+    if (!savedConsent && banner) {
+      banner.classList.add('is-visible');
+    } else if (savedConsent) {
+      updateConsent(savedConsent);
+    }
+
+    acceptAll && acceptAll.addEventListener('click', () => updateConsent('all'));
+    acceptEssential && acceptEssential.addEventListener('click', () => updateConsent('essential'));
+  </script>
+</body>
+</html>
