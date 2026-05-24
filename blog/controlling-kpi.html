@@ -1,0 +1,1548 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Consent Mode v2: domyślne zgody przed GTM/GA4 -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      wait_for_update: 500
+    });
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WC88L2GJ');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H210DZ34Y8"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-H210DZ34Y8', { anonymize_ip: true });
+  </script>
+
+  <title>Raporty zarządcze dla spółki z o.o. – KPI i cash flow</title>
+  <meta name="description" content="Raporty zarządcze dla spółki z o.o.: KPI, cash flow, marża, należności, koszty i wynik. Sprawdź, co zarząd powinien widzieć co miesiąc." />
+  <link rel="canonical" href="https://pracowniarachunkowosci.pl/blog/controlling-kpi.html" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="author" content="Pracownia Rachunkowości" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:title" content="Raporty zarządcze dla spółki z o.o. – co powinien widzieć zarząd?" />
+  <meta property="og:description" content="Księgowość to nie tylko deklaracje. Zobacz, jakie KPI, dane o cash flow i raporty pomagają zarządowi podejmować decyzje." />
+  <meta property="og:url" content="https://pracowniarachunkowosci.pl/blog/controlling-kpi.html" />
+  <meta property="og:site_name" content="Pracownia Rachunkowości" />
+  <meta property="og:image" content="https://pracowniarachunkowosci.pl/blog/raporty-kpi-canva.png" />
+  <meta property="article:author" content="Pracownia Rachunkowości" />
+  <meta property="article:published_time" content="2025-10-22" />
+  <meta property="article:modified_time" content="2026-05-24" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Raporty zarządcze dla spółki z o.o. – KPI i cash flow" />
+  <meta name="twitter:description" content="Co zarząd powinien widzieć co miesiąc: wynik, marżę, cash flow, należności, zobowiązania i koszty." />
+  <meta name="twitter:image" content="https://pracowniarachunkowosci.pl/blog/raporty-kpi-canva.png" />
+
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
+
+  <style>
+    :root {
+      --navy: #0D1B2A;
+      --navy-2: #13263A;
+      --navy-3: #1E3A5F;
+      --yellow: #FFCC00;
+      --yellow-soft: #FFF6CC;
+      --green: #10B981;
+      --red: #DC2626;
+      --bg: #F5F7FA;
+      --card: #FFFFFF;
+      --text: #111827;
+      --muted: #667085;
+      --line: #E5E7EB;
+      --line-soft: #EEF2F7;
+      --shadow: 0 14px 38px rgba(13,27,42,.08);
+      --shadow-lg: 0 28px 80px rgba(13,27,42,.16);
+      --radius: 22px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; height: auto; display: block; }
+    button, input, textarea { font: inherit; }
+
+    .container {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .skip {
+      position: absolute;
+      left: -999px;
+      top: 12px;
+      z-index: 999;
+      padding: 10px 14px;
+      background: var(--yellow);
+      color: #111;
+      border-radius: 12px;
+      font-weight: 800;
+    }
+    .skip:focus { left: 12px; }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav__inner {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--navy);
+      font-weight: 900;
+      letter-spacing: .04em;
+      line-height: 1.05;
+      font-size: 13px;
+    }
+    .logo__mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--navy);
+      color: var(--yellow);
+      font-weight: 900;
+      box-shadow: var(--shadow);
+    }
+    .menu {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+    }
+    .menu a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .menu a:hover {
+      background: var(--yellow-soft);
+    }
+    .menu .panel {
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+    .menu .contact {
+      background: var(--yellow);
+      color: #111;
+      box-shadow: 0 10px 24px rgba(255,204,0,.28);
+    }
+    .burger {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      cursor: pointer;
+    }
+    .burger span,
+    .burger span::before,
+    .burger span::after {
+      display: block;
+      width: 20px;
+      height: 2px;
+      margin: 0 auto;
+      background: var(--navy);
+      border-radius: 999px;
+      content: "";
+      transition: .2s ease;
+    }
+    .burger span::before { transform: translateY(-7px); }
+    .burger span::after { transform: translateY(5px); }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 74px 0 70px;
+      background:
+        radial-gradient(circle at 88% 16%, rgba(255,204,0,.26), transparent 28%),
+        linear-gradient(135deg, #071421 0%, var(--navy) 55%, var(--navy-2) 100%);
+      color: #fff;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -20% -60% 48%;
+      height: 560px;
+      border-radius: 50%;
+      background: rgba(255,204,0,.10);
+      filter: blur(8px);
+    }
+    .hero__grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(300px, .78fr);
+      gap: 44px;
+      align-items: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,204,0,.14);
+      border: 1px solid rgba(255,204,0,.32);
+      color: var(--yellow);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      margin: 18px 0 18px;
+      font-size: clamp(40px, 6vw, 68px);
+      line-height: .98;
+      letter-spacing: -.055em;
+      max-width: 900px;
+    }
+    .highlight { color: var(--yellow); }
+    .lead {
+      margin: 0;
+      max-width: 780px;
+      font-size: 20px;
+      line-height: 1.75;
+      color: rgba(255,255,255,.78);
+    }
+    .hero__cta {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+    .proof {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 34px;
+      max-width: 850px;
+    }
+    .proof__item {
+      padding: 16px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 18px;
+      background: rgba(255,255,255,.06);
+    }
+    .proof__item strong {
+      display: block;
+      color: var(--yellow);
+      font-size: 22px;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .proof__item span {
+      display: block;
+      color: rgba(255,255,255,.72);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .hero-card {
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.08);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+    }
+    .hero-card img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      background: #0A1724;
+    }
+    .hero-card__body {
+      padding: 22px;
+    }
+    .hero-card__body h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      color: #fff;
+    }
+    .hero-card__body p {
+      margin: 0;
+      color: rgba(255,255,255,.76);
+      line-height: 1.65;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 13px 18px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-weight: 900;
+      cursor: pointer;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+    .btn--yellow {
+      background: var(--yellow);
+      color: #111 !important;
+      box-shadow: 0 14px 28px rgba(255,204,0,.28);
+    }
+    .btn--light {
+      background: #fff;
+      color: var(--navy) !important;
+    }
+    .btn--outline {
+      background: transparent;
+      color: var(--navy) !important;
+      border-color: var(--line);
+    }
+    .btn--outline:hover {
+      background: var(--yellow-soft);
+      border-color: rgba(255,204,0,.55);
+    }
+
+    .section {
+      padding: 70px 0;
+    }
+    .section--soft {
+      background: var(--bg);
+    }
+    .breadcrumbs {
+      padding-top: 22px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .breadcrumbs a {
+      color: var(--navy);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .article-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 330px;
+      gap: 30px;
+      align-items: start;
+    }
+    .article-content {
+      min-width: 0;
+    }
+    .article-content section,
+    .article,
+    .side-card {
+      background: var(--card);
+      border: 1px solid var(--line-soft);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .article-content section {
+      padding: 30px;
+      margin-bottom: 24px;
+    }
+    .article-content h2 {
+      margin: 0 0 16px;
+      color: var(--navy);
+      font-size: clamp(26px, 3vw, 36px);
+      line-height: 1.12;
+      letter-spacing: -.035em;
+    }
+    .article-content h3 {
+      margin: 24px 0 10px;
+      color: var(--navy);
+      font-size: 22px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+    }
+    .article-content p,
+    .article-content li {
+      font-size: 17px;
+      line-height: 1.78;
+      color: #334155;
+    }
+    .article-content p {
+      margin: 0 0 14px;
+    }
+    .article-content ul,
+    .article-content ol {
+      margin: 12px 0 0;
+      padding-left: 22px;
+    }
+    .article-content a {
+      color: var(--navy);
+      font-weight: 800;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-decoration-color: rgba(255,204,0,.7);
+      text-underline-offset: 3px;
+    }
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+      color: rgba(255,255,255,.72);
+      font-size: 14px;
+    }
+    .article-meta span {
+      padding: 7px 10px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+    }
+
+    .note {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,204,0,.5);
+      background: var(--yellow-soft);
+      margin: 20px 0;
+    }
+    .note strong {
+      display: block;
+      color: var(--navy);
+      margin-bottom: 6px;
+      font-size: 16px;
+    }
+    .note p {
+      margin: 0;
+      color: #374151;
+      font-size: 16px;
+    }
+    .warning {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid rgba(220,38,38,.22);
+      background: #FEF2F2;
+      margin: 20px 0;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .check-card {
+      padding: 18px;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+    .check-card strong {
+      display: block;
+      color: var(--navy);
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+    .check-card p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin: 20px 0 4px;
+    }
+    .metric {
+      padding: 18px;
+      border-radius: 20px;
+      background: linear-gradient(180deg, #fff, #F8FAFC);
+      border: 1px solid var(--line);
+    }
+    .metric span {
+      display: inline-flex;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--yellow-soft);
+      color: var(--navy);
+      font-weight: 900;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    .metric strong {
+      display: block;
+      color: var(--navy);
+      font-size: 18px;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .metric p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.62;
+    }
+
+    .steps {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .step {
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      gap: 16px;
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+    .step__no {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: var(--navy);
+      color: var(--yellow);
+      font-size: 20px;
+      font-weight: 900;
+    }
+    .step h3 {
+      margin: 0 0 6px;
+      font-size: 19px;
+    }
+    .step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    .cta-box,
+    .cta-band {
+      border-radius: var(--radius);
+      background:
+        radial-gradient(circle at 88% 18%, rgba(255,204,0,.28), transparent 30%),
+        linear-gradient(135deg, #0A1724 0%, var(--navy) 58%, var(--navy-2) 100%);
+      color: #fff;
+      box-shadow: var(--shadow-lg);
+      padding: 30px;
+      margin-top: 24px;
+    }
+    .article-content .cta-box h2,
+    .article-content .cta-band h2 {
+      color: #fff;
+      margin-top: 0;
+    }
+    .cta-box p,
+    .cta-band p {
+      color: rgba(255,255,255,.76) !important;
+      max-width: 850px;
+    }
+    .cta-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .faq-list details {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+      padding: 16px 18px;
+      margin: 12px 0;
+    }
+    .faq-list summary {
+      cursor: pointer;
+      color: var(--navy);
+      font-weight: 900;
+      line-height: 1.45;
+    }
+    .faq-list details p {
+      margin-top: 12px;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .related-card {
+      display: block;
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: #fff;
+      text-decoration: none !important;
+    }
+    .related-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-bottom: 8px;
+    }
+    .related-card strong {
+      color: var(--navy);
+      line-height: 1.35;
+    }
+
+    .article-sidebar {
+      position: sticky;
+      top: 98px;
+    }
+    .side-card {
+      padding: 22px;
+      margin-bottom: 18px;
+    }
+    .side-card h3 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: 19px;
+    }
+    .side-card p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 15px;
+    }
+    .toc {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .toc li + li {
+      margin-top: 8px;
+    }
+    .toc a {
+      display: block;
+      padding: 9px 10px;
+      border-radius: 12px;
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .toc a:hover {
+      background: var(--yellow-soft);
+      color: var(--navy);
+    }
+    .side-card--dark {
+      background: var(--navy);
+      color: #fff;
+      border-color: rgba(255,255,255,.1);
+    }
+    .side-card--dark h3 {
+      color: #fff;
+    }
+    .side-card--dark p {
+      color: rgba(255,255,255,.74);
+    }
+
+    .footer {
+      background: #071421;
+      color: rgba(255,255,255,.74);
+      padding: 48px 0 28px;
+    }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr .8fr;
+      gap: 30px;
+    }
+    .footer h4 {
+      margin: 0 0 12px;
+      color: #fff;
+    }
+    .footer p,
+    .footer li {
+      line-height: 1.7;
+      font-size: 14px;
+    }
+    .footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer a {
+      color: rgba(255,255,255,.78);
+      text-decoration: none;
+    }
+    .footer a:hover {
+      color: var(--yellow);
+    }
+    .footer__bottom {
+      border-top: 1px solid rgba(255,255,255,.12);
+      margin-top: 28px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      color: rgba(255,255,255,.56);
+    }
+
+    .cookie {
+      position: fixed;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      z-index: 80;
+      display: none;
+    }
+    .cookie__inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(7,20,33,.96);
+      color: rgba(255,255,255,.78);
+      box-shadow: var(--shadow-lg);
+    }
+    .cookie p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .cookie a {
+      color: var(--yellow);
+    }
+    .cookie__actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 980px) {
+      .hero__grid,
+      .article-layout,
+      .footer__grid {
+        grid-template-columns: 1fr;
+      }
+      .article-sidebar {
+        position: static;
+        order: -1;
+      }
+      .metric-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 760px) {
+      .container {
+        width: min(100% - 32px, var(--max));
+      }
+      .nav__inner {
+        height: 72px;
+      }
+      .menu {
+        position: fixed;
+        inset: 78px 16px auto 16px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: var(--shadow-lg);
+      }
+      .menu.is-active { display: flex; }
+      .menu a {
+        display: block;
+        padding: 11px 12px;
+      }
+      .menu .panel,
+      .menu .contact {
+        text-align: center;
+      }
+      .burger {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero {
+        padding: 54px 0 56px;
+      }
+      .hero h1 {
+        font-size: clamp(38px, 11vw, 52px);
+      }
+      .lead {
+        font-size: 18px;
+      }
+      .proof,
+      .check-grid,
+      .metric-grid,
+      .related-grid {
+        grid-template-columns: 1fr;
+      }
+      .article-content section {
+        padding: 22px;
+      }
+      .step {
+        grid-template-columns: 1fr;
+      }
+      .cookie__inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .footer__bottom {
+        flex-direction: column;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BlogPosting",
+    "headline":"Raporty zarządcze dla spółki z o.o. – co powinien widzieć zarząd co miesiąc?",
+    "description":"Praktyczny przewodnik dla właścicieli i zarządów spółek z o.o.: jakie KPI, dane o cash flow, kosztach, należnościach i rentowności warto analizować co miesiąc.",
+    "image":"https://pracowniarachunkowosci.pl/blog/raporty-kpi-canva.png",
+    "author":{"@type":"Organization","name":"Pracownia Rachunkowości"},
+    "publisher":{
+      "@type":"Organization",
+      "name":"Pracownia Rachunkowości",
+      "logo":{"@type":"ImageObject","url":"https://pracowniarachunkowosci.pl/assets/og-image.jpg"}
+    },
+    "datePublished":"2025-10-22",
+    "dateModified":"2026-05-24",
+    "mainEntityOfPage":"https://pracowniarachunkowosci.pl/blog/controlling-kpi.html"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Strona główna","item":"https://pracowniarachunkowosci.pl/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://pracowniarachunkowosci.pl/blog/"},
+      {"@type":"ListItem","position":3,"name":"Raporty zarządcze dla spółki z o.o.","item":"https://pracowniarachunkowosci.pl/blog/controlling-kpi.html"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Co powinien zawierać raport zarządczy dla spółki z o.o.?",
+        "acceptedAnswer":{"@type":"Answer","text":"Raport zarządczy powinien pokazywać wynik, przychody, koszty, marżę, cash flow, należności, zobowiązania, podatki oraz najważniejsze odchylenia od poprzednich miesięcy lub planu. Zakres raportu warto dopasować do modelu działalności spółki."}
+      },
+      {
+        "@type":"Question",
+        "name":"Czy raporty zarządcze są częścią księgowości?",
+        "acceptedAnswer":{"@type":"Answer","text":"Nie zawsze. Standardowa księgowość koncentruje się na ewidencji, podatkach i obowiązkach sprawozdawczych. Raportowanie zarządcze wykorzystuje dane księgowe i operacyjne do podejmowania decyzji biznesowych."}
+      },
+      {
+        "@type":"Question",
+        "name":"Jak często zarząd powinien analizować KPI?",
+        "acceptedAnswer":{"@type":"Answer","text":"W większości spółek praktycznym minimum jest analiza miesięczna. Przy firmach z dużą dynamiką sprzedaży, sezonowością, e-commerce lub problemami z płynnością część wskaźników warto monitorować częściej."}
+      },
+      {
+        "@type":"Question",
+        "name":"Czy mała spółka z o.o. potrzebuje raportów zarządczych?",
+        "acceptedAnswer":{"@type":"Answer","text":"Tak, jeśli zarząd chce lepiej kontrolować wynik, koszty, płynność i rentowność. Raport nie musi być rozbudowany. Czasem wystarczy kilka dobrze dobranych wskaźników, które są omawiane regularnie."}
+      },
+      {
+        "@type":"Question",
+        "name":"Czy raporty zarządcze można prowadzić online?",
+        "acceptedAnswer":{"@type":"Answer","text":"Tak. Raporty zarządcze można przygotowywać w modelu online na podstawie danych księgowych i operacyjnych. Ważne jest jednak, aby wcześniej ustalić zakres danych, terminy przekazywania informacji i sposób omawiania wyników z zarządem."}
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC88L2GJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <a href="#main" class="skip">Przejdź do treści</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="../" class="logo" aria-label="Pracownia Rachunkowości - strona główna">
+        <span class="logo__mark">PR</span>
+        <span>PRACOWNIA<br>RACHUNKOWOŚCI</span>
+      </a>
+
+      <button class="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mainMenu">
+        <span></span>
+      </button>
+
+      <nav aria-label="Główne menu">
+        <ul class="menu" id="mainMenu">
+          <li><a href="../">Strona główna</a></li>
+          <li><a href="../oferta.html">Oferta</a></li>
+          <li><a href="../ksiegowosc-spolka-z-oo.html">Księgowość spółki z o.o.</a></li>
+          <li><a href="./" aria-current="page">Blog</a></li>
+          <li><a href="https://panel.pracowniarachunkowosci.pl" class="panel" target="_blank" rel="noopener noreferrer">Panel klienta</a></li>
+          <li><a href="https://calendly.com/pracowniarachunkowosci/30min" class="contact js-track-calendly" target="_blank" rel="noopener noreferrer">Umów konsultację</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container breadcrumbs" aria-label="Okruszki">
+        <a href="../">Strona główna</a> / <a href="./">Blog</a> / Raporty zarządcze dla spółki z o.o.
+      </div>
+
+      <div class="container hero__grid">
+        <div>
+          <span class="badge">Raporty zarządcze / KPI / cash flow</span>
+          <h1>Raporty zarządcze dla spółki z o.o. – co powinien widzieć zarząd co miesiąc?</h1>
+          <p class="lead">
+            Dobrze prowadzona księgowość nie powinna kończyć się na informacji, jaki podatek trzeba zapłacić.
+            Zarząd spółki potrzebuje danych do decyzji: o marży, kosztach, płynności, należnościach,
+            zobowiązaniach i rentowności. Właśnie temu służą raporty zarządcze i KPI.
+          </p>
+
+          <div class="article-meta">
+            <span>Controlling</span>
+            <span>Aktualizacja: 24 maja 2026</span>
+            <span>Autor: Pracownia Rachunkowości</span>
+          </div>
+
+          <div class="hero__cta">
+            <a class="btn btn--yellow" href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer">Porozmawiajmy o raportach</a>
+            <a class="btn btn--light" href="#kpi">Zobacz najważniejsze KPI</a>
+          </div>
+
+          <div class="proof" aria-label="Najważniejsze elementy raportowania">
+            <div class="proof__item"><strong>cash flow</strong><span>ile środków realnie zostaje w firmie</span></div>
+            <div class="proof__item"><strong>marża</strong><span>które usługi, projekty lub kanały sprzedaży zarabiają</span></div>
+            <div class="proof__item"><strong>koszty</strong><span>gdzie pieniądze uciekają szybciej niż przychody</span></div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Raporty zarządcze i KPI">
+          <img src="raporty-kpi-canva.png" alt="Raporty zarządcze i KPI dla spółki z o.o." loading="eager" width="1200" height="750" />
+          <div class="hero-card__body">
+            <h2>Księgowość, która wspiera decyzje</h2>
+            <p>
+              Raport zarządczy ma odpowiedzieć na proste pytania: czy firma zarabia, czy ma płynność,
+              które koszty rosną i jakie decyzje warto podjąć w kolejnym miesiącu.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container article-layout">
+        <article class="article-content">
+
+          <section id="w-skrocie">
+            <h2>Raporty zarządcze w skrócie</h2>
+            <p>
+              W wielu spółkach zarząd otrzymuje od księgowości głównie informację o podatkach, deklaracjach i terminach.
+              To oczywiście ważne, ale często za mało, żeby spokojnie zarządzać firmą. W praktyce przedsiębiorca chce wiedzieć
+              nie tylko „ile zapłacić”, ale też: dlaczego wynik jest taki, a nie inny, czy firma ma płynność i które obszary
+              wymagają reakcji.
+            </p>
+            <p>
+              <strong>Raporty zarządcze</strong> porządkują dane finansowe tak, aby zarząd mógł szybciej ocenić sytuację
+              spółki. Nie chodzi o tworzenie skomplikowanych tabel dla samej tabeli. Dobry raport ma być czytelny,
+              powtarzalny i przydatny w rozmowie o decyzjach.
+            </p>
+            <div class="note">
+              <strong>W praktyce</strong>
+              <p>
+                Nawet prosty miesięczny raport z wynikiem, marżą, kosztami, należnościami i cash flow daje więcej wartości
+                niż kilkanaście zestawień, których nikt nie analizuje.
+              </p>
+            </div>
+          </section>
+
+          <section id="ksiegowosc-a-raportowanie">
+            <h2>Księgowość podatkowa a raportowanie zarządcze – jaka jest różnica?</h2>
+            <p>
+              Księgowość podatkowa ma przede wszystkim zapewnić prawidłowe ewidencje, deklaracje, pliki JPK, rozliczenia
+              z urzędami i sprawozdawczość. Raportowanie zarządcze wykorzystuje te dane w innym celu: żeby pomóc właścicielowi
+              i zarządowi zrozumieć, co dzieje się w firmie.
+            </p>
+            <p>
+              To różnica między pytaniem: <strong>„czy podatek został policzony?”</strong> a pytaniem:
+              <strong>„czy model biznesowy działa i gdzie tracimy pieniądze?”</strong>.
+            </p>
+
+            <div class="check-grid">
+              <div class="check-card">
+                <strong>Księgowość podatkowa</strong>
+                <p>Deklaracje, JPK, księgi rachunkowe, sprawozdania, terminy, rozliczenia z urzędami.</p>
+              </div>
+              <div class="check-card">
+                <strong>Raportowanie zarządcze</strong>
+                <p>Wynik, cash flow, marża, odchylenia, rentowność, należności, zobowiązania i ryzyka.</p>
+              </div>
+            </div>
+
+            <p>
+              Najlepszy efekt pojawia się wtedy, gdy te dwa światy są połączone. Księgowość dostarcza wiarygodnych danych,
+              a raporty przekładają je na informacje, które można wykorzystać w zarządzaniu spółką.
+            </p>
+          </section>
+
+          <section id="co-w-raporcie">
+            <h2>Co powinien zawierać miesięczny raport zarządczy?</h2>
+            <p>
+              Nie ma jednego wzoru raportu dobrego dla każdej firmy. Inne dane będą najważniejsze dla spółki usługowej,
+              inne dla e-commerce, a jeszcze inne dla firmy projektowej lub podmiotu medycznego. Są jednak elementy,
+              które w większości spółek warto analizować regularnie.
+            </p>
+
+            <div class="metric-grid">
+              <div class="metric">
+                <span>01</span>
+                <strong>Wynik miesiąca</strong>
+                <p>Przychody, koszty, wynik operacyjny i wynik netto. Bez tego trudno ocenić, czy firma realnie zarabia.</p>
+              </div>
+              <div class="metric">
+                <span>02</span>
+                <strong>Cash flow</strong>
+                <p>Ile środków wpływa i wypływa z firmy oraz czy gotówka wystarczy na podatki, wynagrodzenia i zobowiązania.</p>
+              </div>
+              <div class="metric">
+                <span>03</span>
+                <strong>Marża</strong>
+                <p>Rentowność sprzedaży, usług, projektów, klientów lub kanałów sprzedaży — zależnie od modelu biznesowego.</p>
+              </div>
+              <div class="metric">
+                <span>04</span>
+                <strong>Koszty stałe</strong>
+                <p>Poziom kosztów, których nie da się łatwo wyłączyć, gdy sprzedaż chwilowo spada.</p>
+              </div>
+              <div class="metric">
+                <span>05</span>
+                <strong>Należności</strong>
+                <p>Kto zalega z płatnością, ile dni trwa spływ pieniędzy i czy rośnie ryzyko problemów z płynnością.</p>
+              </div>
+              <div class="metric">
+                <span>06</span>
+                <strong>Zobowiązania i podatki</strong>
+                <p>Co firma musi zapłacić w najbliższych tygodniach i czy zarząd widzi te kwoty odpowiednio wcześnie.</p>
+              </div>
+            </div>
+
+            <div class="warning">
+              <p>
+                <strong>Najczęstszy problem:</strong> spółka ma zysk w księgach, ale brakuje jej gotówki. Dlatego wynik
+                i cash flow trzeba analizować razem. Sam zysk nie oznacza jeszcze bezpieczeństwa finansowego.
+              </p>
+            </div>
+          </section>
+
+          <section id="kpi">
+            <h2>Najważniejsze KPI dla zarządu spółki z o.o.</h2>
+            <p>
+              KPI, czyli kluczowe wskaźniki efektywności, powinny być dobrane do konkretnej działalności. W praktyce
+              zarząd nie potrzebuje kilkudziesięciu mierników. Potrzebuje kilku lub kilkunastu wskaźników, które pokazują,
+              czy firma idzie w dobrą stronę.
+            </p>
+
+            <h3>KPI finansowe</h3>
+            <ul>
+              <li><strong>przychód miesięczny</strong> i zmiana względem poprzednich okresów,</li>
+              <li><strong>marża brutto</strong> lub marża na usługach/projektach,</li>
+              <li><strong>wynik operacyjny</strong> i wynik netto,</li>
+              <li><strong>koszty stałe</strong> jako procent przychodu,</li>
+              <li><strong>cash flow</strong> i saldo środków pieniężnych,</li>
+              <li><strong>poziom należności</strong> oraz opóźnienia w płatnościach.</li>
+            </ul>
+
+            <h3>KPI operacyjne</h3>
+            <ul>
+              <li>rentowność projektów, klientów albo kanałów sprzedaży,</li>
+              <li>średni czas spływu należności,</li>
+              <li>udział kosztów wynagrodzeń w przychodach,</li>
+              <li>koszt pozyskania klienta, jeśli firma mierzy marketing i sprzedaż,</li>
+              <li>wartość zapasów i rotacja towaru w e-commerce.</li>
+            </ul>
+
+            <p>
+              Dobrze dobrane KPI powinny prowadzić do rozmowy: co trzeba poprawić, co działa dobrze, a co wymaga decyzji
+              zarządu. Jeżeli raport nie prowadzi do żadnej decyzji, zwykle jest zbyt ogólny albo źle dopasowany.
+            </p>
+          </section>
+
+          <section id="przyklady">
+            <h2>Przykłady decyzji, które można podjąć dzięki raportom</h2>
+            <p>
+              Raporty zarządcze mają sens wtedy, gdy pomagają w konkretnych sytuacjach. Poniżej kilka przykładów,
+              które często pojawiają się w spółkach z o.o.
+            </p>
+
+            <div class="check-grid">
+              <div class="check-card">
+                <strong>Rosną przychody, ale spada gotówka</strong>
+                <p>Raport pokazuje, że problemem nie jest sprzedaż, tylko wolny spływ należności lub zbyt wysokie zapasy.</p>
+              </div>
+              <div class="check-card">
+                <strong>Jedna usługa wygląda dobrze tylko na papierze</strong>
+                <p>Po doliczeniu kosztów pracy i obsługi okazuje się, że marża jest dużo niższa, niż zakładał zarząd.</p>
+              </div>
+              <div class="check-card">
+                <strong>Koszty stałe rosną szybciej niż sprzedaż</strong>
+                <p>Widać moment, w którym firma musi zwiększyć przychody albo zatrzymać część wydatków.</p>
+              </div>
+              <div class="check-card">
+                <strong>Spółka planuje estoński CIT</strong>
+                <p>Raporty pomagają monitorować wypłaty, cash flow, transakcje ze wspólnikami i ryzyka ukrytych zysków.</p>
+              </div>
+            </div>
+
+            <p>
+              Właśnie dlatego raportowanie zarządcze dobrze łączy się z pełną księgowością spółki z o.o. Dane są już
+              w systemie, ale trzeba je uporządkować i przedstawić w sposób, który pomaga zarządzać.
+            </p>
+          </section>
+
+          <section id="wdrozenie">
+            <h2>Jak wdrożyć raportowanie zarządcze bez chaosu?</h2>
+            <p>
+              Wdrożenie raportów nie musi zaczynać się od rozbudowanego systemu BI. Często lepiej zacząć od prostego,
+              powtarzalnego raportu miesięcznego, który odpowiada na najważniejsze pytania zarządu.
+            </p>
+
+            <div class="steps">
+              <div class="step">
+                <div class="step__no">1</div>
+                <div>
+                  <h3>Ustalenie celu raportu</h3>
+                  <p>Najpierw trzeba ustalić, co zarząd chce widzieć: wynik, cash flow, projekty, koszty, marżę, należności czy podatki.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__no">2</div>
+                <div>
+                  <h3>Sprawdzenie jakości danych</h3>
+                  <p>Raport jest tak dobry, jak dane, na których się opiera. Dlatego warto sprawdzić plan kont, opisy dokumentów i podział kosztów.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__no">3</div>
+                <div>
+                  <h3>Dobór KPI i układu raportu</h3>
+                  <p>Lepiej zacząć od kilku wskaźników, które są naprawdę używane, niż budować rozbudowany dashboard, do którego nikt nie wraca.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__no">4</div>
+                <div>
+                  <h3>Cykliczne omówienie wyników</h3>
+                  <p>Największą wartość daje regularność: comiesięczne porównanie wyniku, kosztów, płynności i odchyleń od planu.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="note">
+              <strong>Jak pracujemy w praktyce</strong>
+              <p>
+                Raporty przygotowujemy na podstawie danych księgowych i operacyjnych, korzystając ze sprawdzonych narzędzi
+                księgowych oraz rozwiązań Microsoft. Zakres raportowania ustalamy indywidualnie, bo innego zestawu danych
+                potrzebuje spółka usługowa, innego e-commerce, a jeszcze innego firma projektowa.
+              </p>
+            </div>
+          </section>
+
+          <section id="bledy">
+            <h2>Najczęstsze błędy w raportowaniu zarządczym</h2>
+            <p>
+              Sam fakt przygotowania raportu nie oznacza jeszcze, że zarząd dostaje dobrą informację. W praktyce najczęściej
+              pojawiają się błędy, które sprawiają, że raport staje się kolejnym plikiem, a nie narzędziem zarządzania.
+            </p>
+
+            <ul>
+              <li><strong>Za dużo danych, za mało wniosków</strong> — zarząd dostaje tabelę, ale nie widzi, co z niej wynika.</li>
+              <li><strong>Brak porównania miesiąc do miesiąca</strong> — bez trendu trudno ocenić, czy sytuacja się poprawia.</li>
+              <li><strong>Mylenie zysku z gotówką</strong> — firma może mieć dodatni wynik i jednocześnie problem z płynnością.</li>
+              <li><strong>Brak podziału kosztów</strong> — jeśli wszystko wpada do jednego worka, nie wiadomo, gdzie szukać problemu.</li>
+              <li><strong>Nieregularność</strong> — raport przygotowany raz na kwartał często pokazuje problem zbyt późno.</li>
+            </ul>
+          </section>
+
+          <section id="online">
+            <h2>Czy raporty zarządcze można prowadzić online?</h2>
+            <p>
+              Tak. Raportowanie zarządcze bardzo dobrze działa w modelu online, jeśli proces jest uporządkowany.
+              Dokumenty i dane można przekazywać elektronicznie, a raporty omawiać zdalnie podczas regularnych spotkań
+              z zarządem.
+            </p>
+            <p>
+              Ważne jest jednak, żeby „online” nie oznaczało tylko wysyłania faktur mailem. Przy raportowaniu zarządczym
+              liczy się ustalony rytm pracy, zakres danych, terminy zamknięcia miesiąca i jasne odpowiedzi na pytania
+              właścicieli spółki.
+            </p>
+
+            <div class="check-grid">
+              <div class="check-card">
+                <strong>Dane w jednym rytmie</strong>
+                <p>Miesiąc powinien być zamykany według powtarzalnego harmonogramu, żeby raport był porównywalny.</p>
+              </div>
+              <div class="check-card">
+                <strong>Omówienie z zarządem</strong>
+                <p>Najlepszy raport to taki, który jest omawiany i prowadzi do decyzji, a nie tylko trafia do folderu.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="dla-kogo">
+            <h2>Dla kogo raporty zarządcze mają największy sens?</h2>
+            <p>
+              Raporty zarządcze są szczególnie przydatne w spółkach, które przekroczyły etap „kilku faktur miesięcznie”
+              i potrzebują lepszej kontroli nad finansami. Nie chodzi tylko o duże firmy. Często właśnie mniejsze spółki
+              najbardziej zyskują na prostym, regularnym raporcie.
+            </p>
+
+            <ul>
+              <li>spółki z o.o. z rosnącą sprzedażą i kosztami,</li>
+              <li>firmy usługowe, które chcą znać rentowność klientów lub projektów,</li>
+              <li>e-commerce i marketplace, gdzie liczy się marża, zapasy i cash flow,</li>
+              <li>spółki rozważające estoński CIT,</li>
+              <li>firmy po zmianie biura rachunkowego, które chcą uporządkować dane,</li>
+              <li>zarządy, które chcą podejmować decyzje na podstawie liczb, a nie intuicji.</li>
+            </ul>
+
+            <p>
+              Jeśli obecna księgowość przekazuje głównie deklaracje i kwoty podatków, a brakuje rozmowy o wyniku,
+              marży i płynności, to raportowanie zarządcze może być naturalnym kolejnym krokiem.
+            </p>
+          </section>
+
+          <section id="podsumowanie">
+            <h2>Podsumowanie</h2>
+            <p>
+              <strong>Raporty zarządcze dla spółki z o.o.</strong> pomagają przejść od księgowości rozumianej jako obowiązek
+              do księgowości, która wspiera decyzje. Zarząd powinien regularnie widzieć nie tylko podatek do zapłaty,
+              ale też wynik, cash flow, marżę, koszty, należności, zobowiązania i najważniejsze odchylenia.
+            </p>
+            <p>
+              Nie trzeba od razu budować bardzo rozbudowanego systemu raportowania. W wielu firmach wystarczy dobrze
+              ustawiony raport miesięczny, kilka najważniejszych KPI i regularna rozmowa o tym, co wynika z danych.
+            </p>
+
+            <div class="cta-box">
+              <h2>Chcesz wiedzieć więcej niż tylko „ile podatku do zapłaty”?</h2>
+              <p>
+                W Pracowni Rachunkowości wspieramy spółki z o.o. w pełnej księgowości, raportowaniu zarządczym
+                i porządkowaniu danych finansowych. Jeśli chcesz sprawdzić, jakie raporty mają sens w Twojej spółce,
+                zapraszamy do rozmowy.
+              </p>
+              <div class="cta-actions">
+                <a class="btn btn--yellow js-track-calendly" href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer">Umów konsultację</a>
+                <a class="btn btn--light" href="../ksiegowosc-spolka-z-oo.html">Zobacz księgowość dla spółki z o.o.</a>
+              </div>
+            </div>
+          </section>
+
+          <section id="faq">
+            <h2>FAQ – najczęstsze pytania o raporty zarządcze</h2>
+            <div class="faq-list">
+              <details>
+                <summary>Co powinien zawierać raport zarządczy dla spółki z o.o.?</summary>
+                <p>
+                  Raport powinien pokazywać wynik, przychody, koszty, marżę, cash flow, należności, zobowiązania,
+                  podatki oraz najważniejsze odchylenia od poprzednich miesięcy lub planu. Zakres raportu warto dopasować
+                  do modelu działalności spółki.
+                </p>
+              </details>
+              <details>
+                <summary>Czy raporty zarządcze są częścią księgowości?</summary>
+                <p>
+                  Nie zawsze. Standardowa księgowość koncentruje się na ewidencji, podatkach i obowiązkach sprawozdawczych.
+                  Raportowanie zarządcze wykorzystuje dane księgowe i operacyjne do podejmowania decyzji biznesowych.
+                </p>
+              </details>
+              <details>
+                <summary>Jak często zarząd powinien analizować KPI?</summary>
+                <p>
+                  W większości spółek praktycznym minimum jest analiza miesięczna. Przy firmach z dużą dynamiką sprzedaży,
+                  sezonowością, e-commerce lub problemami z płynnością część wskaźników warto monitorować częściej.
+                </p>
+              </details>
+              <details>
+                <summary>Czy mała spółka z o.o. potrzebuje raportów zarządczych?</summary>
+                <p>
+                  Tak, jeśli zarząd chce lepiej kontrolować wynik, koszty, płynność i rentowność. Raport nie musi być
+                  rozbudowany. Czasem wystarczy kilka dobrze dobranych wskaźników, które są omawiane regularnie.
+                </p>
+              </details>
+              <details>
+                <summary>Czy raporty zarządcze można prowadzić online?</summary>
+                <p>
+                  Tak. Raporty zarządcze można przygotowywać w modelu online na podstawie danych księgowych i operacyjnych.
+                  Ważne jest jednak, aby wcześniej ustalić zakres danych, terminy przekazywania informacji i sposób
+                  omawiania wyników z zarządem.
+                </p>
+              </details>
+            </div>
+          </section>
+
+          <section id="powiazane">
+            <h2>Przeczytaj też</h2>
+            <div class="related-grid">
+              <a class="related-card" href="pelna-ksiegowosc-spolki-z-oo-online.html">
+                <span>Księgowość online</span>
+                <strong>Pełna księgowość spółki z o.o. online – jak wybrać biuro?</strong>
+              </a>
+              <a class="related-card" href="zmiana-biura.html">
+                <span>Zmiana biura</span>
+                <strong>Zmiana biura rachunkowego bez chaosu</strong>
+              </a>
+              <a class="related-card" href="estonski-cit-wdrozenie.html">
+                <span>Estoński CIT</span>
+                <strong>Estoński CIT w spółce z o.o. – wdrożenie krok po kroku</strong>
+              </a>
+              <a class="related-card" href="ksef-gotowosc.html">
+                <span>KSeF</span>
+                <strong>KSeF 2026–2027: co musi przygotować firma?</strong>
+              </a>
+            </div>
+          </section>
+
+        </article>
+
+        <aside class="article-sidebar" aria-label="Panel boczny artykułu">
+          <div class="side-card">
+            <h3>W tym artykule</h3>
+            <ul class="toc">
+              <li><a href="#w-skrocie">Raporty w skrócie</a></li>
+              <li><a href="#ksiegowosc-a-raportowanie">Księgowość a raportowanie</a></li>
+              <li><a href="#co-w-raporcie">Co w raporcie?</a></li>
+              <li><a href="#kpi">Najważniejsze KPI</a></li>
+              <li><a href="#przyklady">Przykłady decyzji</a></li>
+              <li><a href="#wdrozenie">Wdrożenie</a></li>
+              <li><a href="#bledy">Błędy</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="side-card side-card--dark">
+            <h3>Raporty dla zarządu spółki</h3>
+            <p>
+              Sprawdzimy, jakie dane warto raportować co miesiąc: wynik, cash flow, marżę, koszty, należności,
+              zobowiązania i KPI dopasowane do Twojej działalności.
+            </p>
+            <a class="btn btn--yellow js-track-calendly" href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer">Umów rozmowę</a>
+          </div>
+
+          <div class="side-card">
+            <h3>Powiązana usługa</h3>
+            <p>
+              Raportowanie zarządcze najlepiej działa jako część dobrze prowadzonej pełnej księgowości spółki z o.o.
+            </p>
+            <a class="btn btn--outline" href="../ksiegowosc-spolka-z-oo.html">Księgowość spółki z o.o.</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="cookie-banner" class="cookie" role="dialog" aria-live="polite" aria-label="Informacja o plikach cookies">
+    <div class="cookie__inner">
+      <p>
+        Używamy plików cookies do analityki (GA4) i marketingu. Możesz zaakceptować wszystkie zgody albo pozostać
+        przy plikach niezbędnych. Więcej w <a href="../#privacy">Polityce prywatności</a>.
+      </p>
+      <div class="cookie__actions">
+        <button id="acceptAll" class="btn btn--yellow" type="button">Akceptuję wszystkie</button>
+        <button id="acceptEssential" class="btn btn--light" type="button">Tylko niezbędne</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" id="privacy">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="../" class="logo" style="color:#fff;margin-bottom:18px;">
+            <span class="logo__mark">PR</span>
+            <span>PRACOWNIA<br>RACHUNKOWOŚCI</span>
+          </a>
+          <p>Blog Pracowni Rachunkowości: księgowość spółek z o.o., raporty zarządcze, estoński CIT, KSeF, VAT-OSS i e-commerce.</p>
+          <p><strong style="color:#fff;">PRACOWNIA RACHUNKOWOŚCI SP. Z O.O.</strong><br>ul. Trawowa 19/1, 54-614 Wrocław<br>NIP 8943197084</p>
+        </div>
+        <div>
+          <h4>Artykuły</h4>
+          <ul>
+            <li><a href="pelna-ksiegowosc-spolki-z-oo-online.html">Pełna księgowość spółki z o.o. online</a></li>
+            <li><a href="spolka-z-oo-2026.html">Spółka z o.o. w 2026 roku</a></li>
+            <li><a href="estonski-cit-wdrozenie.html">Estoński CIT</a></li>
+            <li><a href="vat-oss-amazon.html">VAT-OSS i Amazon FBA</a></li>
+            <li><a href="controlling-kpi.html">Controlling i KPI</a></li>
+            <li><a href="zmiana-biura.html">Zmiana biura rachunkowego</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="tel:+48504853962">+48 504 853 962</a></li>
+            <li><a href="https://wa.me/48504853962" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer" class="js-track-calendly">Umów konsultację</a></li>
+            <li><a href="../#privacy">Polityka prywatności</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Pracownia Rachunkowości. Wszelkie prawa zastrzeżone.</span>
+        <span>Treści mają charakter informacyjny i nie stanowią indywidualnej porady podatkowej.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    const burger = document.querySelector('.burger');
+    const menu = document.getElementById('mainMenu');
+
+    if (burger && menu) {
+      burger.addEventListener('click', () => {
+        const isOpen = menu.classList.toggle('is-active');
+        burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        burger.setAttribute('aria-label', isOpen ? 'Zamknij menu' : 'Otwórz menu');
+      });
+
+      menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.remove('is-active');
+          burger.setAttribute('aria-expanded', 'false');
+          burger.setAttribute('aria-label', 'Otwórz menu');
+        });
+      });
+    }
+
+    const banner = document.getElementById('cookie-banner');
+    const acceptAll = document.getElementById('acceptAll');
+    const acceptEssential = document.getElementById('acceptEssential');
+    const consentKey = 'cookieConsent';
+
+    function updateConsent(granted) {
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', {
+          ad_storage: granted ? 'granted' : 'denied',
+          analytics_storage: granted ? 'granted' : 'denied',
+          ad_user_data: granted ? 'granted' : 'denied',
+          ad_personalization: granted ? 'granted' : 'denied'
+        });
+      }
+    }
+
+    function hideBanner() {
+      if (banner) banner.style.display = 'none';
+    }
+
+    function showBanner() {
+      if (banner) banner.style.display = 'block';
+    }
+
+    const savedConsent = localStorage.getItem(consentKey);
+
+    if (!savedConsent) {
+      showBanner();
+    } else if (savedConsent === 'all') {
+      updateConsent(true);
+      hideBanner();
+    } else {
+      updateConsent(false);
+      hideBanner();
+    }
+
+    if (acceptAll) {
+      acceptAll.addEventListener('click', () => {
+        localStorage.setItem(consentKey, 'all');
+        updateConsent(true);
+        hideBanner();
+      });
+    }
+
+    if (acceptEssential) {
+      acceptEssential.addEventListener('click', () => {
+        localStorage.setItem(consentKey, 'essential');
+        updateConsent(false);
+        hideBanner();
+      });
+    }
+
+    document.querySelectorAll('.js-track-calendly').forEach(link => {
+      link.addEventListener('click', () => {
+        if (typeof gtag === 'function') {
+          gtag('event', 'click_calendly', {
+            event_category: 'lead',
+            event_label: window.location.pathname
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
