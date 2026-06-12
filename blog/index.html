@@ -1,0 +1,1385 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Consent Mode v2: domyślne zgody przed GTM/GA4 -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      wait_for_update: 500
+    });
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WC88L2GJ');
+  </script>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H210DZ34Y8"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-H210DZ34Y8', { anonymize_ip: true });
+  </script>
+
+  <title>Blog o księgowości spółek z o.o. | Pracownia Rachunkowości</title>
+  <meta name="description" content="Blog Pracowni Rachunkowości: księgowość online dla spółek z o.o., raporty zarządcze, estoński CIT, KSeF, podatki i zmiana biura." />
+  <link rel="canonical" href="https://pracowniarachunkowosci.pl/blog/" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="author" content="Pracownia Rachunkowości" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:title" content="Blog o księgowości spółek z o.o. | Pracownia Rachunkowości" />
+  <meta property="og:description" content="Praktyczne artykuły dla zarządów spółek z o.o.: księgowość online, raporty zarządcze, estoński CIT, KSeF, podatki i zmiana biura." />
+  <meta property="og:url" content="https://pracowniarachunkowosci.pl/blog/" />
+  <meta property="og:site_name" content="Pracownia Rachunkowości" />
+  <meta property="og:image" content="https://pracowniarachunkowosci.pl/assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
+
+  <style>
+    :root {
+      --navy: #0D1B2A;
+      --navy-2: #13263A;
+      --navy-3: #20364D;
+      --yellow: #FFCC00;
+      --yellow-soft: #FFF6CC;
+      --green: #10B981;
+      --blue: #2563EB;
+      --red: #DC2626;
+      --bg: #F5F7FA;
+      --card: #FFFFFF;
+      --text: #111827;
+      --muted: #667085;
+      --line: #E5E7EB;
+      --line-soft: #EEF2F7;
+      --shadow: 0 12px 34px rgba(13,27,42,.08);
+      --shadow-lg: 0 28px 80px rgba(13,27,42,.16);
+      --radius: 22px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; height: auto; }
+    button { font: inherit; }
+
+    .container {
+      width: min(var(--max), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .skip {
+      position: absolute;
+      top: 10px;
+      left: -999px;
+      z-index: 99999;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: var(--yellow);
+      color: #111;
+      font-weight: 900;
+    }
+    .skip:focus { left: 10px; }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(13,27,42,.07);
+    }
+    .nav__inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--navy);
+      font-weight: 900;
+      letter-spacing: -.025em;
+      text-decoration: none;
+      line-height: 1.05;
+    }
+    .logo__mark {
+      width: 38px;
+      height: 38px;
+      flex: 0 0 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 11px;
+      background: var(--navy);
+      color: var(--yellow);
+      font-size: 12px;
+      font-weight: 900;
+      box-shadow: 0 8px 22px rgba(13,27,42,.16);
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .menu a {
+      color: #334155;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .menu a:hover,
+    .menu a[aria-current="page"] { color: var(--navy); }
+    .menu .panel {
+      padding: 11px 17px;
+      border-radius: 13px;
+      color: #fff;
+      background: var(--navy);
+      box-shadow: 0 12px 26px rgba(13,27,42,.14);
+    }
+    .menu .contact {
+      padding: 11px 17px;
+      border-radius: 13px;
+      border: 1px solid var(--line);
+      background: #fff;
+      box-shadow: 0 8px 18px rgba(13,27,42,.04);
+    }
+    .burger {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 12px;
+      background: var(--bg);
+      cursor: pointer;
+    }
+    .burger span,
+    .burger span::before,
+    .burger span::after {
+      display: block;
+      width: 22px;
+      height: 2px;
+      margin: 0 auto;
+      border-radius: 999px;
+      background: var(--navy);
+      content: "";
+      transition: .18s ease;
+    }
+    .burger span::before { transform: translateY(-7px); }
+    .burger span::after { transform: translateY(5px); }
+    .burger.is-active span { background: transparent; }
+    .burger.is-active span::before { transform: translateY(1px) rotate(45deg); }
+    .burger.is-active span::after { transform: translateY(-1px) rotate(-45deg); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 48px;
+      padding: 13px 21px;
+      border-radius: 14px;
+      border: 1px solid transparent;
+      font-weight: 900;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn--yellow {
+      background: var(--yellow);
+      color: #111 !important;
+      box-shadow: 0 18px 40px rgba(255,204,0,.28);
+    }
+    .btn--dark {
+      background: var(--navy);
+      color: #fff !important;
+      box-shadow: 0 18px 40px rgba(13,27,42,.18);
+    }
+    .btn--outline {
+      background: #fff;
+      color: var(--navy) !important;
+      border-color: var(--line);
+    }
+
+    .breadcrumbs {
+      padding: 16px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .breadcrumbs a {
+      color: var(--navy);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 78% 14%, rgba(255,204,0,.20), transparent 30%),
+        radial-gradient(circle at 80% 88%, rgba(32,54,77,.95), transparent 36%),
+        linear-gradient(135deg, #0A1724 0%, #0D1B2A 48%, #13263A 100%);
+      color: #fff;
+      padding: 78px 0 76px;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.08) 1px, transparent 0);
+      background-size: 28px 28px;
+      opacity: .32;
+      pointer-events: none;
+      mask-image: linear-gradient(90deg, #000 0%, #000 45%, transparent 88%);
+    }
+    .hero__grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(340px, .95fr);
+      gap: 54px;
+      align-items: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 22px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,204,0,.48);
+      background: rgba(255,204,0,.13);
+      color: #FFE88A;
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 6px rgba(16,185,129,.14);
+    }
+    .hero h1 {
+      max-width: 790px;
+      margin: 0 0 22px;
+      color: #fff;
+      font-size: clamp(42px, 5.1vw, 68px);
+      line-height: .99;
+      letter-spacing: -.055em;
+      font-weight: 900;
+    }
+    .highlight { color: var(--yellow); }
+    .lead {
+      max-width: 720px;
+      margin: 0 0 30px;
+      color: rgba(255,255,255,.78);
+      font-size: 20px;
+      line-height: 1.72;
+      font-weight: 500;
+    }
+    .lead strong { color: #fff; }
+    .hero__cta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .hero-card {
+      position: relative;
+      padding: 28px;
+      border-radius: 28px;
+      border: 1px solid rgba(255,255,255,.15);
+      background: rgba(255,255,255,.95);
+      color: var(--navy);
+      box-shadow: 0 40px 110px rgba(0,0,0,.34);
+    }
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      z-index: -1;
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(255,204,0,.78), transparent 34%, rgba(255,255,255,.5));
+    }
+    .hero-card h2 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: 26px;
+      line-height: 1.15;
+      letter-spacing: -.04em;
+      font-weight: 900;
+    }
+    .hero-card p {
+      margin: 0 0 16px;
+      color: #475569;
+      line-height: 1.7;
+      font-weight: 600;
+    }
+    .hero-kpis {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 18px 0;
+    }
+    .hero-kpi {
+      padding: 14px;
+      border-radius: 16px;
+      background: var(--bg);
+      border: 1px solid var(--line-soft);
+    }
+    .hero-kpi strong {
+      display: block;
+      color: var(--navy);
+      font-size: 20px;
+      font-weight: 900;
+    }
+    .hero-kpi span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      margin-top: 2px;
+    }
+
+    .section { padding: 72px 0; }
+    .section--soft { background: var(--bg); }
+    .section__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+    .section__head h2 {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(30px, 3.8vw, 46px);
+      line-height: 1;
+      letter-spacing: -.05em;
+      font-weight: 900;
+    }
+    .section__head p {
+      max-width: 600px;
+      margin: 10px 0 0;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .grid { display: grid; gap: 18px; }
+    .grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      padding: 24px;
+      border-radius: var(--radius);
+      background: #fff;
+      border: 1px solid var(--line-soft);
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(255,204,0,.62);
+    }
+    .card h3 {
+      margin: 12px 0 10px;
+      color: var(--navy);
+      font-size: 21px;
+      line-height: 1.18;
+      letter-spacing: -.035em;
+      font-weight: 900;
+    }
+    .card p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      line-height: 1.68;
+      font-weight: 500;
+    }
+    .card .btn { margin-top: auto; align-self: flex-start; }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      gap: 7px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: var(--yellow-soft);
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 900;
+    }
+    .tag--dark {
+      background: var(--navy);
+      color: #fff;
+    }
+    .tag--blue {
+      background: #EFF6FF;
+      color: #1D4ED8;
+    }
+    .tag--green {
+      background: #ECFDF5;
+      color: #047857;
+    }
+
+    .featured {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
+      gap: 24px;
+      padding: 30px;
+      border-radius: 30px;
+      background:
+        radial-gradient(circle at 92% 8%, rgba(255,204,0,.22), transparent 28%),
+        linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%);
+      border: 1px solid var(--line-soft);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+    }
+    .featured h2 {
+      margin: 14px 0 14px;
+      color: var(--navy);
+      font-size: clamp(32px, 4vw, 52px);
+      line-height: 1;
+      letter-spacing: -.06em;
+      font-weight: 900;
+    }
+    .featured p {
+      max-width: 700px;
+      margin: 0 0 20px;
+      color: #475569;
+      line-height: 1.75;
+      font-size: 17px;
+      font-weight: 600;
+    }
+    .featured__visual {
+      display: flex;
+      min-height: 360px;
+      align-items: stretch;
+    }
+    .report-preview {
+      width: 100%;
+      padding: 24px;
+      border-radius: 24px;
+      background: var(--navy);
+      color: #fff;
+      box-shadow: 0 34px 80px rgba(13,27,42,.22);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .report-preview__top {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: start;
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+    .report-preview__label {
+      color: rgba(255,255,255,.7);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .report-preview__title {
+      margin-top: 6px;
+      font-size: 24px;
+      line-height: 1.1;
+      font-weight: 900;
+      letter-spacing: -.035em;
+    }
+    .report-preview__pill {
+      white-space: nowrap;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,204,0,.14);
+      color: var(--yellow);
+      font-size: 12px;
+      font-weight: 900;
+    }
+    .report-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      color: rgba(255,255,255,.76);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .report-row strong {
+      color: #fff;
+      text-align: right;
+    }
+
+    .category-card {
+      padding: 24px;
+      border-radius: var(--radius);
+      background: #fff;
+      border: 1px solid var(--line-soft);
+      box-shadow: var(--shadow);
+    }
+    .category-card h3 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: -.035em;
+    }
+    .category-card p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.68;
+    }
+    .category-card a {
+      color: var(--navy);
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .category-card span {
+      color: var(--navy);
+      font-weight: 900;
+      text-decoration: none;
+    }
+    a.category-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+    a.category-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(255,204,0,.62);
+    }
+
+
+    .cta-band {
+      background:
+        radial-gradient(circle at 84% 20%, rgba(255,204,0,.18), transparent 26%),
+        linear-gradient(135deg, #0A1724 0%, #0D1B2A 100%);
+      color: #fff;
+      border-radius: 30px;
+      padding: 42px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 24px;
+      align-items: center;
+      box-shadow: var(--shadow-lg);
+    }
+    .cta-band h2 {
+      margin: 0 0 10px;
+      color: #fff;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1;
+      letter-spacing: -.055em;
+      font-weight: 900;
+    }
+    .cta-band p {
+      margin: 0;
+      max-width: 760px;
+      color: rgba(255,255,255,.76);
+      line-height: 1.72;
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .faq details {
+      border: 1px solid var(--line-soft);
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: var(--shadow);
+      margin: 12px 0;
+      overflow: hidden;
+    }
+    .faq summary {
+      cursor: pointer;
+      padding: 18px 20px;
+      color: var(--navy);
+      font-weight: 900;
+      list-style: none;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq details p {
+      margin: 0;
+      padding: 0 20px 18px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .footer {
+      background: var(--navy);
+      color: #fff;
+      padding: 44px 0;
+    }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr .8fr .8fr;
+      gap: 26px;
+    }
+    .footer h3,
+    .footer h4 {
+      margin: 0 0 12px;
+      color: #fff;
+      font-weight: 900;
+    }
+    .footer p,
+    .footer li {
+      color: rgba(255,255,255,.72);
+      line-height: 1.7;
+      font-size: 14px;
+    }
+    .footer a {
+      color: var(--yellow);
+      text-decoration: none;
+      font-weight: 800;
+    }
+    .footer ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .cookie-banner {
+      display: none;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      background: var(--navy);
+      color: #fff;
+      padding: 18px;
+      box-shadow: 0 -18px 50px rgba(13,27,42,.22);
+    }
+    .cookie-banner__inner {
+      width: min(var(--max), calc(100% - 32px));
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .cookie-banner p {
+      margin: 0;
+      color: rgba(255,255,255,.8);
+      line-height: 1.55;
+      max-width: 760px;
+    }
+
+    @media (max-width: 960px) {
+      .burger { display: inline-flex; align-items: center; justify-content: center; }
+      .menu {
+        position: fixed;
+        top: 72px;
+        right: 0;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px 24px 24px;
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+        box-shadow: var(--shadow-lg);
+      }
+      .menu.active { display: flex; }
+      .menu li { width: 100%; }
+      .menu a {
+        display: flex;
+        width: 100%;
+        padding: 14px 0;
+      }
+      .hero__grid,
+      .featured,
+      .grid--3,
+      .grid--2,
+      .cta-band,
+      .footer__grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-card { margin-top: 18px; }
+      .section__head { display: block; }
+      .featured__visual { min-height: 280px; }
+      .cta-band { padding: 30px; }
+    }
+
+    @media (max-width: 560px) {
+      .container { width: min(var(--max), calc(100% - 32px)); }
+      .hero { padding: 56px 0; }
+      .hero h1 { font-size: 42px; }
+      .lead { font-size: 18px; }
+      .section { padding: 54px 0; }
+      .hero-kpis { grid-template-columns: 1fr; }
+      .featured { padding: 22px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Strona główna","item":"https://pracowniarachunkowosci.pl/"},
+      {"@type":"ListItem","position":2,"name":"Blog","item":"https://pracowniarachunkowosci.pl/blog/"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Blog",
+    "name":"Blog Pracowni Rachunkowości",
+    "description":"Blog o księgowości spółek z o.o. online, pełnej księgowości, raportach zarządczych, KSeF, podatkach, estońskim CIT i zmianie biura rachunkowego.",
+    "url":"https://pracowniarachunkowosci.pl/blog/",
+    "publisher":{"@type":"Organization","name":"Pracownia Rachunkowości","url":"https://pracowniarachunkowosci.pl/"}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":"Polecane artykuły blogowe Pracowni Rachunkowości",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Raport miesięczny dla zarządu spółki z o.o. — co powinien zawierać?","url":"https://pracowniarachunkowosci.pl/blog/raport-miesieczny-dla-zarzadu-spolki-z-oo.html"},
+      {"@type":"ListItem","position":2,"name":"Spółka na estońskim CIT — co trzeba kontrolować co miesiąc?","url":"https://pracowniarachunkowosci.pl/blog/spolka-na-estonskim-cit-co-kontrolowac.html"},
+      {"@type":"ListItem","position":3,"name":"Ile kosztuje księgowość spółki z o.o. w 2026 roku?","url":"https://pracowniarachunkowosci.pl/blog/ile-kosztuje-ksiegowosc-spolki-z-oo.html"},
+      {"@type":"ListItem","position":4,"name":"Pełna księgowość spółki z o.o. online – jak wybrać biuro?","url":"https://pracowniarachunkowosci.pl/blog/pelna-ksiegowosc-spolki-z-oo-online.html"},
+      {"@type":"ListItem","position":5,"name":"KSeF 2026–2027: fakty, mity i co realnie zmienia w firmie","url":"https://pracowniarachunkowosci.pl/blog/ksef-gotowosc.html"},
+      {"@type":"ListItem","position":6,"name":"Audyt księgowości przed zmianą biura rachunkowego","url":"https://pracowniarachunkowosci.pl/blog/audyt-ksiegowosci-przed-zmiana-biura.html"},
+      {"@type":"ListItem","position":7,"name":"Jak wypłacać pieniądze ze spółki z o.o.?","url":"https://pracowniarachunkowosci.pl/blog/jak-wyplacac-pieniadze-ze-spolki-z-oo.html"},
+      {"@type":"ListItem","position":8,"name":"Raporty zarządcze i KPI dla zarządu","url":"https://pracowniarachunkowosci.pl/blog/controlling-kpi.html"},
+      {"@type":"ListItem","position":9,"name":"Jak wdrożyć estoński CIT w spółce?","url":"https://pracowniarachunkowosci.pl/blog/estonski-cit-wdrozenie.html"},
+      {"@type":"ListItem","position":10,"name":"Koszty samochodu w spółce od 2026 r.","url":"https://pracowniarachunkowosci.pl/blog/koszty-samochodu.html"},
+      {"@type":"ListItem","position":11,"name":"JDG czy spółka z o.o. w 2026 roku?","url":"https://pracowniarachunkowosci.pl/blog/jdg-spolka-z-oo-2025.html"},
+      {"@type":"ListItem","position":12,"name":"VAT-OSS i Amazon FBA w e-commerce","url":"https://pracowniarachunkowosci.pl/blog/vat-oss-amazon.html"},
+      {"@type":"ListItem","position":13,"name":"Zmiana biura rachunkowego bez przestojów","url":"https://pracowniarachunkowosci.pl/blog/zmiana-biura.html"},
+      {"@type":"ListItem","position":14,"name":"SRK w placówce medycznej: obowiązek, księgowość online i raporty zarządcze","url":"https://pracowniarachunkowosci.pl/blog/srk-obowiazek-kogo-dotyczy.html"}
+    ]
+  }
+  </script>
+
+  </head>
+
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC88L2GJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <a class="skip" href="#main">Przejdź do treści</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="logo" href="../index.html" aria-label="Pracownia Rachunkowości - strona główna">
+        <span class="logo__mark">PR</span>
+        <span>PRACOWNIA<br>RACHUNKOWOŚCI</span>
+      </a>
+
+      <button class="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mainMenu">
+        <span></span>
+      </button>
+
+      <ul class="menu" id="mainMenu">
+        <li><a href="../index.html">Strona główna</a></li>
+        <li><a href="../index.html#dla-kogo">Dla kogo</a></li>
+        <li><a href="../oferta.html">Oferta</a></li>
+        <li><a href="index.html" aria-current="page">Blog</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
+        <li><a class="panel" href="https://konto.insert.com.pl/#/login" target="_blank" rel="noopener">Panel klienta</a></li>
+        <li><a class="contact" href="../index.html#kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Okruszki">
+        <a href="../index.html">Strona główna</a> / Blog
+      </nav>
+    </div>
+
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <span class="badge">Blog o księgowości spółek z o.o., podatkach i raportach</span>
+          <h1>Blog o <span class="highlight">księgowości spółek z o.o.</span>, raportach i podatkach.</h1>
+          <p class="lead">Praktyczne artykuły dla właścicieli firm i zarządów spółek z o.o. z całej Polski. Tłumaczymy pełną księgowość online, raporty zarządcze, KSeF, estoński CIT i zmianę biura tak, żeby dane pomagały podejmować decyzje.</p>
+          <div class="hero__cta">
+            <a class="btn btn--yellow" href="#polecany">Zobacz polecany temat</a>
+            <a class="btn btn--outline" href="#artykuly">Przeglądaj artykuły</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Najważniejsze obszary bloga">
+          <span class="tag tag--dark">Księgowość spółek z o.o. + raporty</span>
+          <h2>Nie tylko rozliczenia. Liczby, które pomagają zarządzać firmą.</h2>
+          <p>Na blogu łączymy pełną księgowość spółek z o.o. online, obieg dokumentów, raporty zarządcze, KSeF i podatki w jeden praktyczny system wiedzy dla przedsiębiorców.</p>
+          <div class="hero-kpis">
+            <div class="hero-kpi">
+              <strong>sp. z o.o.</strong>
+              <span>pełna księgowość</span>
+            </div>
+            <div class="hero-kpi">
+              <strong>KSeF</strong>
+              <span>e-faktury i procesy</span>
+            </div>
+            <div class="hero-kpi">
+              <strong>KPI</strong>
+              <span>raporty zarządcze</span>
+            </div>
+            <div class="hero-kpi">
+              <strong>online</strong>
+              <span>księgowość zdalna</span>
+            </div>
+          </div>
+          <a class="btn btn--dark" href="../index.html#kontakt">Porozmawiajmy o księgowości</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="polecany">
+      <div class="container">
+        <article class="featured">
+          <div>
+            <span class="tag">Polecany artykuł</span>
+            <h2>Raport miesięczny dla zarządu spółki z o.o. — co powinien zawierać?</h2>
+            <p>Zobacz, jak może wyglądać prosty raport miesięczny dla zarządu: wynik, cash-flow, należności, zobowiązania, podatki, KPI i alerty decyzyjne. W artykule pokazujemy też interaktywny przykład raportu w wersji light i premium.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <a class="btn btn--yellow" href="raport-miesieczny-dla-zarzadu-spolki-z-oo.html">Czytaj artykuł</a>
+              <a class="btn btn--outline" href="../ksiegowosc-spolka-z-oo.html">Księgowość dla spółek z o.o.</a>
+            </div>
+          </div>
+
+          <div class="featured__visual" aria-hidden="true">
+            <div class="report-preview">
+              <div class="report-preview__top">
+                <div>
+                  <div class="report-preview__label">Raport miesięczny</div>
+                  <div class="report-preview__title">Dane dla zarządu</div>
+                </div>
+                <span class="report-preview__pill">KPI + CASH-FLOW</span>
+              </div>
+              <div>
+                <div class="report-row"><span>Wynik miesiąca</span><strong>czytelnie</strong></div>
+                <div class="report-row"><span>Należności i zobowiązania</span><strong>pod kontrolą</strong></div>
+                <div class="report-row"><span>Cash-flow</span><strong>decyzyjnie</strong></div>
+                <div class="report-row"><span>Alerty dla zarządu</span><strong>co wymaga reakcji</strong></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="artykuly">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Najnowsze i najważniejsze artykuły</h2>
+            <p>Tematy, które najczęściej wracają w rozmowach z przedsiębiorcami: obowiązki, podatki, pełna księgowość, zmiana biura i raportowanie dla zarządu.</p>
+          </div>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <span class="tag tag--dark">Raporty zarządcze</span>
+            <div class="meta"><span>Zarząd</span><span>•</span><span>Cash-flow i KPI</span></div>
+            <h3>Raport miesięczny dla zarządu spółki z o.o. — co powinien zawierać?</h3>
+            <p>Wynik, przychody, koszty, marża, należności, zobowiązania, cash-flow, podatki i alerty decyzyjne w jednym praktycznym raporcie.</p>
+            <a class="btn btn--outline" href="raport-miesieczny-dla-zarzadu-spolki-z-oo.html">Czytaj</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">Estoński CIT</span>
+            <div class="meta"><span>Spółka z o.o.</span><span>•</span><span>Bieżąca kontrola</span></div>
+            <h3>Spółka na estońskim CIT — co trzeba kontrolować co miesiąc?</h3>
+            <p>Ukryte zyski, wydatki niezwiązane z działalnością, wypłaty dla wspólników, samochody, pożyczki i raportowanie przy estońskim CIT.</p>
+            <a class="btn btn--outline" href="spolka-na-estonskim-cit-co-kontrolowac.html">Czytaj</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">Cena księgowości</span>
+            <div class="meta"><span>Spółka z o.o.</span><span>•</span><span>Cennik w praktyce</span></div>
+            <h3>Ile kosztuje księgowość spółki z o.o. w 2026 roku?</h3>
+            <p>Od czego zależy cena pełnej księgowości, dlaczego sama liczba faktur nie wystarcza do wyceny i kiedy warto poprosić o indywidualną ofertę.</p>
+            <a class="btn btn--outline" href="ile-kosztuje-ksiegowosc-spolki-z-oo.html">Czytaj</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">Pełna księgowość</span>
+            <div class="meta"><span>Spółka z o.o.</span><span>•</span><span>Online</span></div>
+            <h3>Pełna księgowość spółki z o.o. online — jak wybrać biuro?</h3>
+            <p>Co powinna obejmować obsługa pełnych ksiąg, kiedy księgowość online ma sens i jakie sygnały ostrzegawcze sprawdzić przed podpisaniem umowy.</p>
+            <a class="btn btn--outline" href="pelna-ksiegowosc-spolki-z-oo-online.html">Czytaj</a>
+          </article>
+
+          <article class="card">
+            <span class="tag tag--blue">KSeF</span>
+            <div class="meta"><span>Podatki</span><span>•</span><span>Obieg dokumentów</span></div>
+            <h3>KSeF 2026–2027: fakty, mity i co zmienia w firmie</h3>
+            <p>Harmonogram, tryb offline24, najczęstsze błędy i test gotowości firmy do faktur ustrukturyzowanych.</p>
+            <a class="btn btn--outline" href="ksef-gotowosc.html">Czytaj</a>
+          </article>
+
+          <article class="card">
+            <span class="tag tag--green">Zmiana biura</span>
+            <div class="meta"><span>Audyt</span><span>•</span><span>Checklista</span></div>
+            <h3>Audyt księgowości przed zmianą biura rachunkowego</h3>
+            <p>25 punktów, czerwone flagi i plan bezpiecznego przejęcia księgowości spółki z o.o.</p>
+            <a class="btn btn--outline" href="audyt-ksiegowosci-przed-zmiana-biura.html">Czytaj</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">Wypłaty ze spółki</span>
+            <div class="meta"><span>Spółka z o.o.</span><span>•</span><span>Podatki</span></div>
+            <h3>Jak wypłacać pieniądze ze spółki z o.o.?</h3>
+            <p>Dywidenda, wynagrodzenie z powołania, umowy ze spółką i inne legalne formy wypłaty środków — bez mieszania kasy firmowej z prywatną.</p>
+            <a class="btn btn--outline" href="jak-wyplacac-pieniadze-ze-spolki-z-oo.html">Czytaj</a>
+          </article>
+
+          <article class="card">
+            <span class="tag tag--dark">Controlling</span>
+            <div class="meta"><span>KPI</span><span>•</span><span>Zarząd</span></div>
+            <h3>Raporty zarządcze i KPI — co naprawdę mierzyć?</h3>
+            <p>Jak wyjść poza sam wynik księgowy i przygotować dane, które pomagają zarządzać firmą.</p>
+            <a class="btn btn--outline" href="controlling-kpi.html">Czytaj</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">Estoński CIT</span>
+            <div class="meta"><span>Spółka z o.o.</span><span>•</span><span>Wdrożenie</span></div>
+            <h3>Jak wdrożyć estoński CIT w spółce?</h3>
+            <p>Warunki, ryzyka, dokumenty i praktyczne przygotowanie spółki do ryczałtu od dochodów spółek.</p>
+            <a class="btn btn--outline" href="estonski-cit-wdrozenie.html">Czytaj</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">Samochód firmowy</span>
+            <div class="meta"><span>CIT</span><span>•</span><span>Leasing</span></div>
+            <h3>Koszty samochodu w spółce od 2026 r.</h3>
+            <p>Limity kosztów, emisja CO₂, leasing, amortyzacja i przykład liczbowy dla spółki z o.o.</p>
+            <a class="btn btn--outline" href="koszty-samochodu.html">Czytaj</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">Spółka z o.o.</span>
+            <div class="meta"><span>JDG</span><span>•</span><span>Case study</span></div>
+            <h3>JDG czy spółka z o.o. w 2026 roku?</h3>
+            <p>Dwa praktyczne scenariusze: e-commerce i firma budowlana. Kiedy zmiana formy naprawdę ma sens?</p>
+            <a class="btn btn--outline" href="jdg-spolka-z-oo-2025.html">Czytaj</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">E-commerce</span>
+            <div class="meta"><span>VAT-OSS</span><span>•</span><span>Amazon FBA</span></div>
+            <h3>VAT-OSS i Amazon FBA — praktyczny poradnik</h3>
+            <p>Sprzedaż zagraniczna, marketplace, magazyny i rozliczenia VAT w e-commerce.</p>
+            <a class="btn btn--outline" href="vat-oss-amazon.html">Czytaj</a>
+          </article>
+
+          <article class="card">
+            <span class="tag tag--green">Przejęcie księgowości</span>
+            <div class="meta"><span>Proces</span><span>•</span><span>Bez przestojów</span></div>
+            <h3>Zmiana biura rachunkowego bez przestojów</h3>
+            <p>Jak przygotować dane, przekazać dokumenty i uniknąć chaosu w trakcie zmiany obsługi księgowej.</p>
+            <a class="btn btn--outline" href="zmiana-biura.html">Czytaj</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">Medycyna / SRK</span>
+            <div class="meta"><span>Księgowość online</span><span>•</span><span>Raporty zarządcze</span></div>
+            <h3>Obowiązek SRK w placówce medycznej — kogo dotyczy?</h3>
+            <p>Najważniejsza zasada, ustawowe wyłączenia, przykłady i podejście do raportów zarządczych dla podmiotu leczniczego.</p>
+            <a class="btn btn--outline" href="srk-obowiazek-kogo-dotyczy.html">Czytaj</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="szukane-tematy">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Najczęściej szukane tematy</h2>
+            <p>Rozwijamy treści wokół tematów, których najczęściej szukają właściciele i zarządy spółek z o.o.: księgowości online, ceny obsługi, raportów zarządczych, estońskiego CIT i zmiany biura rachunkowego.</p>
+          </div>
+        </div>
+
+        <div class="grid grid--3">
+          <a class="category-card" href="../ksiegowosc-spolka-z-oo.html">
+            <h3>Księgowość online dla spółek z o.o.</h3>
+            <p>Oferta dla zarządów spółek z o.o. z całej Polski, które potrzebują pełnej księgowości, terminowości, komunikacji i danych do decyzji.</p>
+            <span>Zobacz ofertę →</span>
+          </a>
+          <a class="category-card" href="ile-kosztuje-ksiegowosc-spolki-z-oo.html">
+            <h3>Cena księgowości spółki z o.o.</h3>
+            <p>Od czego zależy koszt pełnej księgowości, dlaczego sam limit faktur nie wystarcza i co warto porównać w ofertach biur.</p>
+            <span>Sprawdź cennik w praktyce →</span>
+          </a>
+          <a class="category-card" href="raport-miesieczny-dla-zarzadu-spolki-z-oo.html">
+            <h3>Raporty zarządcze i KPI</h3>
+            <p>Jakie dane powinien otrzymywać zarząd: wynik, cash-flow, należności, zobowiązania, podatki i alerty decyzyjne.</p>
+            <span>Zobacz przykład raportu →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kategorie">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>Kategorie tematyczne</h2>
+            <p>Wybierz obszar, który najlepiej pasuje do Twojej firmy albo aktualnego problemu księgowego.</p>
+          </div>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="category-card">
+            <h3>Księgowość online i raporty</h3>
+            <p>Obieg dokumentów, pełna księgowość online, raporty zarządcze, cash-flow, KPI i controlling.</p>
+            <a href="raport-miesieczny-dla-zarzadu-spolki-z-oo.html">Zobacz raport miesięczny →</a>
+          </div>
+          <div class="category-card">
+            <h3>Placówki medyczne i SRK</h3>
+            <p>Standard Rachunku Kosztów, OPK, koszty procedur, NFZ, komercja i zarządzanie rentownością.</p>
+            <a href="srk-obowiazek-kogo-dotyczy.html">Zobacz SRK →</a>
+          </div>
+          <div class="category-card">
+            <h3>Spółka z o.o. i podatki</h3>
+            <p>Pełna księgowość, cena obsługi spółki, estoński CIT, samochody firmowe, przejście z JDG i decyzje właścicielskie.</p>
+            <a href="spolka-na-estonskim-cit-co-kontrolowac.html">Zobacz estoński CIT →</a>
+          </div>
+          <div class="category-card">
+            <h3>KSeF i obieg dokumentów</h3>
+            <p>Faktury ustrukturyzowane, uprawnienia, procedury awaryjne i przygotowanie firmy do zmian.</p>
+            <a href="ksef-gotowosc.html">Zobacz KSeF →</a>
+          </div>
+          <div class="category-card">
+            <h3>Zmiana biura rachunkowego</h3>
+            <p>Audyt, checklista, przekazanie ksiąg, rozrachunki i płynne przejęcie obsługi księgowej.</p>
+            <a href="audyt-ksiegowosci-przed-zmiana-biura.html">Zobacz checklistę →</a>
+          </div>
+          <div class="category-card">
+            <h3>E-commerce i VAT</h3>
+            <p>VAT-OSS, marketplace, Amazon FBA, sprzedaż zagraniczna i rozliczenia firm internetowych.</p>
+            <a href="vat-oss-amazon.html">Zobacz e-commerce →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2>Chcesz, żeby księgowość dawała Ci więcej niż deklaracje?</h2>
+            <p>Pomagamy firmom i placówkom medycznym poukładać księgowość online, obieg dokumentów, raporty miesięczne, SRK, KSeF i komunikację z zarządem — tak, żeby dane księgowe wspierały decyzje.</p>
+          </div>
+          <a class="btn btn--yellow" href="../index.html#kontakt">Umów rozmowę</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>FAQ</h2>
+            <p>Najkrótsze odpowiedzi na pytania, które często pojawiają się przy księgowości online, raportach i zmianie biura.</p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Czym różni się księgowość online od zwykłego wysyłania dokumentów mailem?</summary>
+            <p>Księgowość online to nie tylko przesyłanie dokumentów. To uporządkowany obieg faktur, dostęp do danych, integracje, terminy, komunikacja i raporty, które można regularnie analizować.</p>
+          </details>
+          <details>
+            <summary>Czy raport miesięczny jest potrzebny małej spółce z o.o.?</summary>
+            <p>Tak, jeśli zarząd chce rozumieć wynik, marżę, koszty, płynność i kierunek rozwoju. Raport nie musi być rozbudowany — ważne, żeby był czytelny, powtarzalny i pomagał podejmować decyzje.</p>
+          </details>
+          <details>
+            <summary>Czy SRK dotyczy każdej placówki medycznej?</summary>
+            <p>Nie każdej. Kluczowe są umowa z NFZ, zakres świadczeń i ustawowe wyłączenia. Dlatego najlepiej zacząć od krótkiej checklisty obowiązku SRK.</p>
+          </details>
+          <details>
+            <summary>Czy można zmienić biuro rachunkowe w trakcie roku?</summary>
+            <p>Tak. Ważne jest przygotowanie danych, rozrachunków, deklaracji, dostępów i planu przejęcia, żeby nie tworzyć przerw w obsłudze księgowej.</p>
+          </details>
+
+          <details>
+            <summary>Ile kosztuje księgowość spółki z o.o.?</summary>
+            <p>Cena zależy od zakresu obsługi, liczby dokumentów, VAT, kadr, sprzedaży zagranicznej, raportowania i stanu ksiąg. Dlatego najlepiej potraktować cennik jako punkt wyjścia do indywidualnej wyceny.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h3>PRACOWNIA RACHUNKOWOŚCI SP. Z O.O.</h3>
+        <p>Nowoczesne biuro rachunkowe specjalizujące się w pełnej księgowości, księgowości online, raportach zarządczych, spółkach z o.o., SRK, KSeF i e-commerce.</p>
+        <p>ul. Trawowa 19/1, 54-614 Wrocław<br>NIP 8943197084</p>
+      </div>
+      <div>
+        <h4>Nawigacja</h4>
+        <ul>
+          <li><a href="../index.html">Strona główna</a></li>
+          <li><a href="../oferta.html">Oferta</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="../index.html#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tematy</h4>
+        <ul>
+          <li><a href="raport-miesieczny-dla-zarzadu-spolki-z-oo.html">Raport miesięczny dla zarządu</a></li>
+          <li><a href="spolka-na-estonskim-cit-co-kontrolowac.html">Estoński CIT — bieżąca kontrola</a></li>
+          <li><a href="ksef-gotowosc.html">KSeF</a></li>
+          <li><a href="audyt-ksiegowosci-przed-zmiana-biura.html">Zmiana biura</a></li>
+          <li><a href="ile-kosztuje-ksiegowosc-spolki-z-oo.html">Cena księgowości</a></li>
+          <li><a href="jak-wyplacac-pieniadze-ze-spolki-z-oo.html">Wypłaty ze spółki z o.o.</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:biuro@accounting-lab.pl">biuro@accounting-lab.pl</a></li>
+          <li><a href="tel:+48504853962">+48 504 853 962</a></li>
+          <li><a href="/polityka-prywatnosci.html">Polityka prywatności</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-banner__inner">
+      <p>Używamy plików cookies do analityki i marketingu. Możesz zaakceptować wszystkie lub pozostać przy niezbędnych. Szczegóły znajdziesz w polityce prywatności.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <button id="acceptAll" class="btn btn--yellow" type="button">Akceptuję wszystkie</button>
+        <button id="acceptEssential" class="btn btn--outline" type="button">Tylko niezbędne</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var menu = document.getElementById("mainMenu");
+      var toggleBtn = document.querySelector(".burger");
+
+      function setMenuState(open) {
+        if (!menu || !toggleBtn) return;
+        menu.classList.toggle("active", open);
+        document.body.classList.toggle("menu-open", open);
+        toggleBtn.setAttribute("aria-expanded", open ? "true" : "false");
+        toggleBtn.setAttribute("aria-label", open ? "Zamknij menu" : "Otwórz menu");
+        toggleBtn.classList.toggle("is-active", open);
+      }
+
+      if (toggleBtn && menu) {
+        toggleBtn.addEventListener("click", function () {
+          setMenuState(!menu.classList.contains("active"));
+        });
+
+        menu.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            setMenuState(false);
+          });
+        });
+
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") setMenuState(false);
+        });
+
+        var desktopMq = window.matchMedia("(min-width: 961px)");
+        var handleViewportChange = function (event) {
+          if (event.matches) setMenuState(false);
+        };
+
+        if (desktopMq.addEventListener) {
+          desktopMq.addEventListener("change", handleViewportChange);
+        } else if (desktopMq.addListener) {
+          desktopMq.addListener(handleViewportChange);
+        }
+
+        setMenuState(false);
+      }
+
+      var consentKey = "cookieConsent";
+      var banner = document.getElementById("cookie-banner");
+      var acceptAll = document.getElementById("acceptAll");
+      var acceptEssential = document.getElementById("acceptEssential");
+
+      function updateGoogleConsent(granted) {
+        if (typeof gtag !== "function") return;
+        gtag("consent", "update", {
+          ad_storage: granted ? "granted" : "denied",
+          analytics_storage: granted ? "granted" : "denied",
+          ad_user_data: granted ? "granted" : "denied",
+          ad_personalization: granted ? "granted" : "denied"
+        });
+      }
+
+      function loadMetaPixel() {
+        if (window.fbq) return;
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+        (window, document,"script","https://connect.facebook.net/en_US/fbevents.js");
+        fbq("init", "2249646038845826");
+        fbq("track", "PageView");
+      }
+
+      function hideBanner() {
+        if (banner) banner.style.display = "none";
+      }
+
+      function showBanner() {
+        if (banner) banner.style.display = "block";
+      }
+
+      function applySavedConsent() {
+        var consent = localStorage.getItem(consentKey);
+        if (!consent) {
+          showBanner();
+          return;
+        }
+
+        if (consent === "all") {
+          updateGoogleConsent(true);
+          loadMetaPixel();
+        } else {
+          updateGoogleConsent(false);
+        }
+        hideBanner();
+      }
+
+      if (acceptAll) {
+        acceptAll.addEventListener("click", function () {
+          localStorage.setItem(consentKey, "all");
+          updateGoogleConsent(true);
+          loadMetaPixel();
+          hideBanner();
+        });
+      }
+
+      if (acceptEssential) {
+        acceptEssential.addEventListener("click", function () {
+          localStorage.setItem(consentKey, "essential");
+          updateGoogleConsent(false);
+          hideBanner();
+        });
+      }
+
+      window.resetCookieConsent = function () {
+        localStorage.removeItem(consentKey);
+        window.location.reload();
+      };
+
+      applySavedConsent();
+    });
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"O czym jest blog Pracowni Rachunkowości?",
+        "acceptedAnswer":{"@type":"Answer","text":"Blog skupia się na księgowości spółek z o.o., podatkach, KSeF, raportach miesięcznych dla zarządu, estońskim CIT i bezpiecznej zmianie biura rachunkowego."}
+      },
+      {
+        "@type":"Question",
+        "name":"Dla kogo są artykuły na blogu?",
+        "acceptedAnswer":{"@type":"Answer","text":"Artykuły są pisane dla właścicieli firm, zarządów spółek z o.o. i osób odpowiedzialnych za finanse, które chcą lepiej rozumieć księgowość, podatki i raportowanie."}
+      },
+      {
+        "@type":"Question",
+        "name":"Czy Pracownia Rachunkowości prowadzi księgowość spółek z o.o. online?",
+        "acceptedAnswer":{"@type":"Answer","text":"Tak. Pracownia Rachunkowości obsługuje spółki z o.o. zdalnie, łącząc pełną księgowość, elektroniczny obieg dokumentów, raporty zarządcze i bieżące wsparcie."}
+
+      },
+      {
+        "@type":"Question",
+        "name":"Czy Pracownia Rachunkowości ?",
+        "acceptedAnswer":{"@type":"Answer","text":"Tak. Pracownia Rachunkowości ma siedzibę we Wrocławiu i obsługuje spółki z o.o. lokalnie oraz online, łącząc pełną księgowość, elektroniczny obieg dokumentów, raporty zarządcze i stałą komunikację z zarządem."}
+,
+      {
+        "@type":"Question",
+        "name":"Ile kosztuje księgowość spółki z o.o.?",
+        "acceptedAnswer":{"@type":"Answer","text":"Cena księgowości spółki z o.o. zależy od zakresu obsługi, liczby dokumentów, VAT, kadr, sprzedaży zagranicznej, raportowania i stanu ksiąg. Dlatego cennik warto traktować jako punkt wyjścia do indywidualnej wyceny."}
+      },
+      {
+        "@type":"Question",
+        "name":"Czy treści na blogu są indywidualną poradą podatkową?",
+        "acceptedAnswer":{"@type":"Answer","text":"Nie. Artykuły mają charakter informacyjny i edukacyjny. Przy decyzjach podatkowych lub zmianie biura rachunkowego warto przeanalizować konkretną sytuację firmy."}
+      }
+    ]
+  }
+  </script>
+</body>
+</html>
