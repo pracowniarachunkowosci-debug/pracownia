@@ -312,5 +312,13 @@
     const burger=document.querySelector('.burger');const menu=document.getElementById('mainMenu');if(burger&&menu){burger.addEventListener('click',()=>{const isOpen=menu.classList.toggle('is-active');burger.setAttribute('aria-expanded',isOpen?'true':'false');burger.setAttribute('aria-label',isOpen?'Zamknij menu':'Otwórz menu')});menu.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>{menu.classList.remove('is-active');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Otwórz menu')})})}
     const banner=document.getElementById('cookie-banner');const acceptAll=document.getElementById('acceptAll');const acceptEssential=document.getElementById('acceptEssential');const consentKey='cookieConsent';function updateConsent(granted){if(typeof gtag==='function'){gtag('consent','update',{ad_storage:granted?'granted':'denied',analytics_storage:granted?'granted':'denied',ad_user_data:granted?'granted':'denied',ad_personalization:granted?'granted':'denied'})}}function hideBanner(){if(banner)banner.style.display='none'}function showBanner(){if(banner)banner.style.display='block'}const savedConsent=localStorage.getItem(consentKey);if(!savedConsent){showBanner()}else if(savedConsent==='all'){updateConsent(true);hideBanner()}else{updateConsent(false);hideBanner()}if(acceptAll){acceptAll.addEventListener('click',()=>{localStorage.setItem(consentKey,'all');updateConsent(true);hideBanner()})}if(acceptEssential){acceptEssential.addEventListener('click',()=>{localStorage.setItem(consentKey,'essential');updateConsent(false);hideBanner()})}document.querySelectorAll('.js-track-calendly').forEach(link=>{link.addEventListener('click',()=>{if(typeof gtag==='function'){gtag('event','click_calendly',{event_category:'lead',event_label:window.location.pathname})}})})
   </script>
+  <!-- GrowthOS public lead chat -->
+  <script
+    async
+    src="https://growthos-mu.vercel.app/lead-chat.js"
+    data-api-base="https://growthos-mu.vercel.app"
+    data-privacy-url="https://pracowniarachunkowosci.pl/polityka-prywatnosci.html"
+    data-bottom="104px"
+  ></script>
 </body>
 </html>
