@@ -746,7 +746,8 @@
       background: radial-gradient(circle, rgba(255,204,0,.18), transparent 66%);
     }
     .cta-band > * { position: relative; z-index: 1; }
-    .cta-band h2 {
+    .cta-band h2,
+    .cta-band h3 {
       margin: 0 0 10px;
       color: #fff;
       font-size: clamp(28px, 4vw, 42px);
@@ -1050,7 +1051,7 @@
 
           <div class="hero__cta">
             <a class="btn btn--yellow js-track-calendly" href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer">Umów konsultację</a>
-            <a class="btn btn--light" href="#zakres">Zobacz przykładowe wskaźniki</a>
+            <a class="btn btn--light js-track-demo" href="https://pracowniarachunkowosci-debug.github.io/Accounting-Office-Automation/demo.html" target="_blank" rel="noopener noreferrer">Zobacz panel demonstracyjny</a>
           </div>
 
           <div class="proof" aria-label="Najważniejsze elementy raportów zarządczych">
@@ -1141,6 +1142,43 @@
               <tr><td><strong>KPI i odchylenia</strong></td><td>Wybrane wskaźniki oraz różnice względem planu lub poprzednich miesięcy.</td><td>Pomaga szybko wychwycić zmiany, które wymagają decyzji zarządu.</td></tr>
             </tbody>
           </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="demo">
+      <div class="container">
+        <div class="head">
+          <span class="eyebrow">Panel demonstracyjny</span>
+          <h2>Zobacz raportowanie zarządcze w praktyce.</h2>
+          <p>Demo pokazuje przykładowy sposób pracy z danymi zarządczymi. Wszystkie firmy, kwoty i dokumenty widoczne w panelu są fikcyjne i służą wyłącznie prezentacji układu raportowania.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card service">
+            <div class="icon">📊</div>
+            <h3>Kokpit finansowy</h3>
+            <p>Przykładowy widok wyniku, cash-flow, marży, kosztów, należności i zobowiązań w jednym miejscu.</p>
+            <div class="tags"><span class="tag">cash-flow</span><span class="tag">marża</span><span class="tag">KPI</span></div>
+          </article>
+          <article class="card service">
+            <div class="icon">💬</div>
+            <h3>Komentarz i rekomendacje CFO</h3>
+            <p>Demo pokazuje, jak obok liczb mogą pojawić się komentarze, priorytety i rekomendacje do decyzji zarządu.</p>
+            <div class="tags"><span class="tag">komentarz CFO</span><span class="tag">rekomendacje</span></div>
+          </article>
+          <article class="card service">
+            <div class="icon">🧾</div>
+            <h3>Podatki i brakujące dokumenty</h3>
+            <p>Przykładowe statusy podatków, terminów i brakujących dokumentów pokazują, co warto monitorować poza samym wynikiem.</p>
+            <div class="tags"><span class="tag">podatki</span><span class="tag">terminy</span><span class="tag">dokumenty</span></div>
+          </article>
+        </div>
+        <div class="cta-band" style="margin-top:28px;">
+          <div>
+            <h3>Otwórz przykładowy panel i sprawdź układ danych.</h3>
+            <p>Panel demonstracyjny otworzy się w nowej karcie. To fikcyjny zestaw danych, przygotowany po to, żeby pokazać logikę raportowania zarządczego.</p>
+          </div>
+          <a class="btn btn--yellow js-track-demo" href="https://pracowniarachunkowosci-debug.github.io/Accounting-Office-Automation/demo.html" target="_blank" rel="noopener noreferrer">Otwórz demonstracyjny panel klienta</a>
         </div>
       </div>
     </section>
@@ -1315,6 +1353,17 @@
             });
           }
           if (typeof fbq === 'function') fbq('track', 'Contact');
+        });
+      });
+
+      document.querySelectorAll('.js-track-demo').forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'demo_portal_click', {
+              event_category: 'engagement',
+              event_label: 'raporty_demo_portal'
+            });
+          }
         });
       });
 
