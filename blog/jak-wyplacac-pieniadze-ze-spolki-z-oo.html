@@ -669,5 +669,13 @@
     if(acceptEssential){acceptEssential.addEventListener('click',()=>{localStorage.setItem(consentKey,'essential');updateConsent(false);hideBanner()})}
     document.querySelectorAll('.js-track-calendly').forEach(link=>{link.addEventListener('click',()=>{if(typeof gtag==='function'){gtag('event','click_calendly',{event_category:'lead',event_label:window.location.pathname})}})})
   </script>
+  <!-- GrowthOS public lead chat -->
+  <script
+    async
+    src="https://growthos-mu.vercel.app/lead-chat.js"
+    data-api-base="https://growthos-mu.vercel.app"
+    data-privacy-url="https://pracowniarachunkowosci.pl/polityka-prywatnosci.html"
+    data-bottom="104px"
+  ></script>
 </body>
 </html>
