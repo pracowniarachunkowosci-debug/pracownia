@@ -38,7 +38,7 @@
   <meta name="description" content="Raport miesięczny dla zarządu spółki z o.o.: wynik, koszty, cash-flow, należności, zobowiązania i podatki. Sprawdź, co warto mierzyć." />
   <link rel="canonical" href="https://pracowniarachunkowosci.pl/blog/raport-miesieczny-dla-zarzadu-spolki-z-oo.html" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
-  <meta name="author" content="Pracownia Rachunkowości" />
+  <meta name="author" content="Łukasz Sołtys" />
 
   <meta property="og:type" content="article" />
   <meta property="og:locale" content="pl_PL" />
@@ -49,7 +49,7 @@
   <meta property="og:image" content="https://pracowniarachunkowosci.pl/assets/og-image.jpg" />
   <meta property="article:published_time" content="2026-06-12" />
   <meta property="article:modified_time" content="2026-06-12" />
-  <meta property="article:author" content="Pracownia Rachunkowości" />
+  <meta property="article:author" content="Łukasz Sołtys" />
   <meta property="article:section" content="Raporty zarządcze" />
   <meta property="article:tag" content="raport miesięczny" />
   <meta property="article:tag" content="spółka z o.o." />
@@ -204,7 +204,7 @@
       .cookie__actions{flex-direction:column;width:100%}
       .cookie__actions .btn{width:100%}
     }
-  
+
     .report-table{width:100%;border-collapse:separate;border-spacing:0;margin:22px 0;border:1px solid var(--lineSoft);border-radius:18px;overflow:hidden;background:#fff}
     .report-table th,.report-table td{padding:14px 16px;border-bottom:1px solid var(--lineSoft);vertical-align:top;text-align:left}
     .report-table th{background:#F8FAFC;color:var(--navy);font-size:14px;letter-spacing:.01em}
@@ -219,7 +219,7 @@
       .report-table td::before{content:attr(data-label);display:block;font-weight:900;color:var(--navy);margin-bottom:4px}
     }
 
-  
+
 
 
 /* === Interaktywna wizualizacja raportu — polished UI === */
@@ -386,7 +386,16 @@
   .report-card__badge{font-size:.8rem}
 }
 
-</style>
+
+    .eeat-author-box{margin:56px 0 0;padding:22px;border:1px solid rgba(13,27,42,.1);border-radius:22px;background:#fff;box-shadow:0 18px 45px rgba(13,27,42,.08);display:grid;grid-template-columns:96px minmax(0,1fr);gap:18px;align-items:center}
+    .eeat-author-box img{width:96px;height:96px;border-radius:18px;object-fit:cover}
+    .eeat-author-box__eyebrow{margin:0 0 6px;font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#C99A00}
+    .eeat-author-box h2{margin:0;color:#071421;font-size:22px;line-height:1.2}
+    .eeat-author-box__role{margin:5px 0 10px;font-weight:900;color:#1f3a56}
+    .eeat-author-box__text{margin:0;color:#3a4856;line-height:1.7}
+    .eeat-author-box__link{display:inline-flex;margin-top:12px;font-weight:900;color:#071421;text-decoration-color:#FFCC00;text-decoration-thickness:3px;text-underline-offset:4px}
+    @media(max-width:700px){.eeat-author-box{grid-template-columns:1fr}.eeat-author-box img{width:88px;height:88px}}
+  </style>
 
   <script type="application/ld+json">
 {
@@ -444,9 +453,9 @@
   "description": "Praktyczny przewodnik dla zarządu spółki z o.o.: co powinien pokazywać miesięczny raport finansowy, jakie KPI warto mierzyć i czego oczekiwać od biura rachunkowego.",
   "image": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
   "author": {
-    "@type": "Organization",
-    "@id": "https://pracowniarachunkowosci.pl/#organization",
-    "name": "Pracownia Rachunkowości"
+    "@type": "Person",
+    "name": "Łukasz Sołtys",
+    "url": "https://pracowniarachunkowosci.pl/blog/#autor-lukasz-soltys"
   },
   "publisher": {
     "@id": "https://pracowniarachunkowosci.pl/#organization"
@@ -542,8 +551,8 @@
     </div>
   </header>
 
-  
-  
+
+
   <main id="main">
     <section class="hero">
       <div class="container breadcrumbs"><a href="../">Strona główna</a> / <a href="./">Blog</a> / Raport miesięczny dla zarządu</div>
@@ -552,7 +561,7 @@
           <span class="badge">Raportowanie / spółka z o.o. / cash-flow / KPI</span>
           <h1>Raport miesięczny dla zarządu spółki z o.o. — co powinien zawierać?</h1>
           <p class="lead">Sama informacja o podatkach to za mało, żeby spokojnie prowadzić spółkę. Zarząd potrzebuje danych o wyniku, kosztach, należnościach, zobowiązaniach i gotówce — najlepiej w jednym, czytelnym raporcie.</p>
-          <div class="article-meta"><span>Raporty zarządcze</span><span>Aktualizacja: czerwiec 2026</span><span>Autor: Pracownia Rachunkowości</span></div>
+          <div class="article-meta"><span>Autor: Łukasz Sołtys</span><span>Publikacja: <time datetime="2026-06-12">12 czerwca 2026</time></span></div>
           <div class="hero__cta">
             <a class="btn btn--yellow js-track-calendly" href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer">Zapytaj o księgowość z raportowaniem</a>
             <a class="btn btn--light" href="#w-skrocie">Zobacz, co powinien zawierać raport</a>
@@ -1232,7 +1241,18 @@
             <p class="sources">Artykuł ma charakter informacyjny i nie stanowi indywidualnej porady podatkowej, księgowej ani prawnej. Zakres raportowania warto dopasować do skali, branży i modelu działania konkretnej spółki.</p>
           </section>
 
-        </article>
+
+          <section class="eeat-author-box" aria-label="Autor artykułu">
+            <img src="../assets/images/lukasz-soltys-autor.webp" alt="Łukasz Sołtys, autor bloga Pracowni Rachunkowości" width="96" height="96" loading="lazy">
+            <div>
+              <p class="eeat-author-box__eyebrow">Autor</p>
+              <h2>Łukasz Sołtys</h2>
+              <p class="eeat-author-box__role">Założyciel Pracowni Rachunkowości</p>
+              <p class="eeat-author-box__text">Łukasz Sołtys — założyciel Pracowni Rachunkowości. Od ponad 12 lat pracuje w księgowości i finansach, obsługując m.in. spółki produkcyjne, e-commerce oraz podmioty z branży finansowej. Specjalizuje się w księgowości spółek z o.o., raportowaniu zarządczym i controllingu.</p>
+              <a class="eeat-author-box__link" href="/blog/#artykuly">Zobacz publikacje autora</a>
+            </div>
+          </section>
+</article>
 
         <aside class="side" aria-label="Spis treści i kontakt">
           <div class="side-card">
