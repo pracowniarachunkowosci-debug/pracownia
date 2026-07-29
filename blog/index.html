@@ -771,53 +771,168 @@
       .hero-kpis { grid-template-columns: 1fr; }
       .featured { padding: 22px; }
     }
+
+    .author-profile{display:grid;grid-template-columns:180px minmax(0,1fr);gap:28px;align-items:center;padding:30px;border:1px solid rgba(13,27,42,.08);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow)}
+    .author-profile__photo{width:180px;height:180px;border-radius:24px;object-fit:cover;box-shadow:0 18px 44px rgba(13,27,42,.14)}
+    .author-profile__eyebrow{margin:0 0 8px;font-size:13px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#C99A00}
+    .author-profile h2{margin:0;color:var(--navy);font-size:clamp(28px,4vw,42px);line-height:1.05;letter-spacing:-.035em}
+    .author-profile__role{margin:8px 0 14px;font-weight:900;color:#1f3a56}
+    .author-profile__bio{margin:0;color:#344054;line-height:1.75}
+    .author-profile__cta{margin-top:18px}
+    .card-author,.featured__author{margin:0 0 14px;color:#475467;font-size:14px;font-weight:800;line-height:1.55}
+    .card-author time,.featured__author time{font-weight:900}
+    @media(max-width:760px){.author-profile{grid-template-columns:1fr;padding:22px}.author-profile__photo{width:132px;height:132px;border-radius:20px}}
   </style>
 
   <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"BreadcrumbList",
-    "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Strona główna","item":"https://pracowniarachunkowosci.pl/"},
-      {"@type":"ListItem","position":2,"name":"Blog","item":"https://pracowniarachunkowosci.pl/blog/"}
-    ]
-  }
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://pracowniarachunkowosci.pl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://pracowniarachunkowosci.pl/blog/"
+    }
+  ]
+}
   </script>
 
   <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Blog",
-    "name":"Blog Pracowni Rachunkowości",
-    "description":"Blog o księgowości spółek z o.o. online, pełnej księgowości, raportach zarządczych, KSeF, podatkach, estońskim CIT i zmianie biura rachunkowego.",
-    "url":"https://pracowniarachunkowosci.pl/blog/",
-    "publisher":{"@type":"Organization","name":"Pracownia Rachunkowości","url":"https://pracowniarachunkowosci.pl/"}
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Blog Pracowni Rachunkowości",
+  "description": "Blog o księgowości spółek z o.o. online, pełnej księgowości, raportach zarządczych, KSeF, podatkach, estońskim CIT i zmianie biura rachunkowego.",
+  "url": "https://pracowniarachunkowosci.pl/blog/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pracownia Rachunkowości",
+    "url": "https://pracowniarachunkowosci.pl/"
   }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Łukasz Sołtys",
+  "jobTitle": "Założyciel Pracowni Rachunkowości",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Pracownia Rachunkowości",
+    "url": "https://pracowniarachunkowosci.pl/"
+  },
+  "image": "https://pracowniarachunkowosci.pl/assets/images/lukasz-soltys-autor.webp",
+  "url": "https://pracowniarachunkowosci.pl/blog/#autor-lukasz-soltys"
+}
   </script>
 
   <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"ItemList",
-    "name":"Polecane artykuły blogowe Pracowni Rachunkowości",
-    "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Jak wybrać biuro rachunkowe dla spółki z o.o.? 15 pytań","url":"https://pracowniarachunkowosci.pl/blog/jak-wybrac-biuro-rachunkowe-dla-spolki-z-oo.html"},
-      {"@type":"ListItem","position":2,"name":"Raport miesięczny dla zarządu spółki z o.o. — co powinien zawierać?","url":"https://pracowniarachunkowosci.pl/blog/raport-miesieczny-dla-zarzadu-spolki-z-oo.html"},
-      {"@type":"ListItem","position":3,"name":"Spółka na estońskim CIT — co trzeba kontrolować co miesiąc?","url":"https://pracowniarachunkowosci.pl/blog/spolka-na-estonskim-cit-co-kontrolowac.html"},
-      {"@type":"ListItem","position":4,"name":"Ile kosztuje księgowość spółki z o.o. w 2026 roku?","url":"https://pracowniarachunkowosci.pl/blog/ile-kosztuje-ksiegowosc-spolki-z-oo.html"},
-      {"@type":"ListItem","position":5,"name":"Pełna księgowość spółki z o.o. online – jak wybrać biuro?","url":"https://pracowniarachunkowosci.pl/blog/pelna-ksiegowosc-spolki-z-oo-online.html"},
-      {"@type":"ListItem","position":6,"name":"KSeF 2026–2027: fakty, mity i co realnie zmienia w firmie","url":"https://pracowniarachunkowosci.pl/blog/ksef-gotowosc.html"},
-      {"@type":"ListItem","position":7,"name":"Audyt księgowości przed zmianą biura rachunkowego","url":"https://pracowniarachunkowosci.pl/blog/audyt-ksiegowosci-przed-zmiana-biura.html"},
-      {"@type":"ListItem","position":8,"name":"Jak wypłacać pieniądze ze spółki z o.o.?","url":"https://pracowniarachunkowosci.pl/blog/jak-wyplacac-pieniadze-ze-spolki-z-oo.html"},
-      {"@type":"ListItem","position":9,"name":"Raporty zarządcze i KPI dla zarządu","url":"https://pracowniarachunkowosci.pl/blog/controlling-kpi.html"},
-      {"@type":"ListItem","position":10,"name":"Jak wdrożyć estoński CIT w spółce?","url":"https://pracowniarachunkowosci.pl/blog/estonski-cit-wdrozenie.html"},
-      {"@type":"ListItem","position":11,"name":"Koszty samochodu w spółce od 2026 r.","url":"https://pracowniarachunkowosci.pl/blog/koszty-samochodu.html"},
-      {"@type":"ListItem","position":12,"name":"JDG czy spółka z o.o. w 2026 roku?","url":"https://pracowniarachunkowosci.pl/blog/jdg-spolka-z-oo-2025.html"},
-      {"@type":"ListItem","position":13,"name":"VAT-OSS i Amazon FBA w e-commerce","url":"https://pracowniarachunkowosci.pl/blog/vat-oss-amazon.html"},
-      {"@type":"ListItem","position":14,"name":"Zmiana biura rachunkowego bez przestojów","url":"https://pracowniarachunkowosci.pl/blog/zmiana-biura.html"},
-      {"@type":"ListItem","position":15,"name":"SRK w placówce medycznej: obowiązek, księgowość online i raporty zarządcze","url":"https://pracowniarachunkowosci.pl/blog/srk-obowiazek-kogo-dotyczy.html"}
-    ]
-  }
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Polecane artykuły blogowe Pracowni Rachunkowości",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Jak wybrać biuro rachunkowe dla spółki z o.o.? 15 pytań",
+      "url": "https://pracowniarachunkowosci.pl/blog/jak-wybrac-biuro-rachunkowe-dla-spolki-z-oo.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Raport miesięczny dla zarządu spółki z o.o. — co powinien zawierać?",
+      "url": "https://pracowniarachunkowosci.pl/blog/raport-miesieczny-dla-zarzadu-spolki-z-oo.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Spółka na estońskim CIT — co trzeba kontrolować co miesiąc?",
+      "url": "https://pracowniarachunkowosci.pl/blog/spolka-na-estonskim-cit-co-kontrolowac.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Ile kosztuje księgowość spółki z o.o. w 2026 roku?",
+      "url": "https://pracowniarachunkowosci.pl/blog/ile-kosztuje-ksiegowosc-spolki-z-oo.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Pełna księgowość spółki z o.o. online – jak wybrać biuro?",
+      "url": "https://pracowniarachunkowosci.pl/blog/pelna-ksiegowosc-spolki-z-oo-online.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "KSeF 2026–2027: fakty, mity i co realnie zmienia w firmie",
+      "url": "https://pracowniarachunkowosci.pl/blog/ksef-gotowosc.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Audyt księgowości przed zmianą biura rachunkowego",
+      "url": "https://pracowniarachunkowosci.pl/blog/audyt-ksiegowosci-przed-zmiana-biura.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Jak wypłacać pieniądze ze spółki z o.o.?",
+      "url": "https://pracowniarachunkowosci.pl/blog/jak-wyplacac-pieniadze-ze-spolki-z-oo.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Raporty zarządcze i KPI dla zarządu",
+      "url": "https://pracowniarachunkowosci.pl/blog/controlling-kpi.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Jak wdrożyć estoński CIT w spółce?",
+      "url": "https://pracowniarachunkowosci.pl/blog/estonski-cit-wdrozenie.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Koszty samochodu w spółce od 2026 r.",
+      "url": "https://pracowniarachunkowosci.pl/blog/koszty-samochodu.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "JDG czy spółka z o.o. w 2026 roku?",
+      "url": "https://pracowniarachunkowosci.pl/blog/jdg-spolka-z-oo-2025.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "VAT-OSS i Amazon FBA w e-commerce",
+      "url": "https://pracowniarachunkowosci.pl/blog/vat-oss-amazon.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "Zmiana biura rachunkowego bez przestojów",
+      "url": "https://pracowniarachunkowosci.pl/blog/zmiana-biura.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "name": "SRK w placówce medycznej: obowiązek, księgowość online i raporty zarządcze",
+      "url": "https://pracowniarachunkowosci.pl/blog/srk-obowiazek-kogo-dotyczy.html"
+    }
+  ]
+}
   </script>
 
   </head>
@@ -901,6 +1016,7 @@
         <article class="featured">
           <div>
             <span class="tag">Polecany artykuł</span>
+            <p class="featured__author">Łukasz Sołtys · <time datetime="2026-06-12">12 czerwca 2026</time></p>
             <h2>Raport miesięczny dla zarządu spółki z o.o. — co powinien zawierać?</h2>
             <p>Zobacz, jak może wyglądać prosty raport miesięczny dla zarządu: wynik, cash-flow, należności, zobowiązania, podatki, KPI i alerty decyzyjne. W artykule pokazujemy też interaktywny przykład raportu w wersji light i premium.</p>
             <div style="display:flex;gap:12px;flex-wrap:wrap;">
@@ -929,6 +1045,23 @@
         </article>
       </div>
     </section>
+    <section class="section" id="autor-lukasz-soltys">
+      <div class="container">
+        <div class="author-profile">
+          <img class="author-profile__photo" src="../assets/images/lukasz-soltys-autor.webp" alt="Łukasz Sołtys, autor bloga Pracowni Rachunkowości" width="180" height="180" loading="lazy">
+          <div>
+            <p class="author-profile__eyebrow">Autor publikacji</p>
+            <h2>Łukasz Sołtys</h2>
+            <p class="author-profile__role">Założyciel Pracowni Rachunkowości</p>
+            <p class="author-profile__bio">Łukasz Sołtys od ponad 12 lat zajmuje się księgowością i finansami przedsiębiorstw. Doświadczenie zdobywał przy obsłudze dużych spółek z różnych branż, w tym firm e-commerce, przedsiębiorstw produkcyjnych zajmujących się prefabrykacją oraz podmiotów związanych z sektorem finansowym. Specjalizuje się w pełnej księgowości spółek z o.o., raportowaniu zarządczym i controllingu. Posiada dyplom potwierdzający specjalizację w controllingu. W Pracowni Rachunkowości łączy bieżącą księgowość z danymi potrzebnymi zarządom do podejmowania decyzji.</p>
+            <div class="author-profile__cta">
+              <a class="btn btn--yellow" href="#artykuly">Zobacz publikacje autora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <section class="section section--soft" id="artykuly">
       <div class="container">
@@ -943,6 +1076,7 @@
           <article class="card">
             <span class="tag tag--dark">Wybór biura</span>
             <div class="meta"><span>Spółka z o.o.</span><span>•</span><span>26 lipca 2026</span></div>
+            <p class="card-author">Łukasz Sołtys · <time datetime="2026-07-26">26 lipca 2026</time></p>
             <h3>Jak wybrać biuro rachunkowe dla spółki z o.o.? 15 pytań</h3>
             <p>15 pytań przed podpisaniem umowy: cena, zakres, odpowiedzialność, kontakt, raporty, KSeF i audyt ksiąg przed przejęciem.</p>
             <a class="btn btn--outline" href="jak-wybrac-biuro-rachunkowe-dla-spolki-z-oo.html">Czytaj</a>
@@ -951,6 +1085,7 @@
           <article class="card">
             <span class="tag tag--dark">Raporty zarządcze</span>
             <div class="meta"><span>Zarząd</span><span>•</span><span>Cash-flow i KPI</span></div>
+            <p class="card-author">Łukasz Sołtys · <time datetime="2026-06-12">12 czerwca 2026</time></p>
             <h3>Raport miesięczny dla zarządu spółki z o.o. — co powinien zawierać?</h3>
             <p>Wynik, przychody, koszty, marża, należności, zobowiązania, cash-flow, podatki i alerty decyzyjne w jednym praktycznym raporcie.</p>
             <a class="btn btn--outline" href="raport-miesieczny-dla-zarzadu-spolki-z-oo.html">Czytaj</a>
@@ -959,6 +1094,7 @@
           <article class="card">
             <span class="tag">Estoński CIT</span>
             <div class="meta"><span>Spółka z o.o.</span><span>•</span><span>Bieżąca kontrola</span></div>
+            <p class="card-author">Łukasz Sołtys · <time datetime="2026-06-12">12 czerwca 2026</time></p>
             <h3>Spółka na estońskim CIT — co trzeba kontrolować co miesiąc?</h3>
             <p>Ukryte zyski, wydatki niezwiązane z działalnością, wypłaty dla wspólników, samochody, pożyczki i raportowanie przy estońskim CIT.</p>
             <a class="btn btn--outline" href="spolka-na-estonskim-cit-co-kontrolowac.html">Czytaj</a>
@@ -967,6 +1103,7 @@
           <article class="card">
             <span class="tag">Cena księgowości</span>
             <div class="meta"><span>Spółka z o.o.</span><span>•</span><span>Cennik w praktyce</span></div>
+            <p class="card-author">Łukasz Sołtys · <time datetime="2026-05-31">31 maja 2026</time></p>
             <h3>Ile kosztuje księgowość spółki z o.o. w 2026 roku?</h3>
             <p>Od czego zależy cena pełnej księgowości, dlaczego sama liczba faktur nie wystarcza do wyceny i kiedy warto poprosić o indywidualną ofertę.</p>
             <a class="btn btn--outline" href="ile-kosztuje-ksiegowosc-spolki-z-oo.html">Czytaj</a>
@@ -975,6 +1112,7 @@
           <article class="card">
             <span class="tag">Pełna księgowość</span>
             <div class="meta"><span>Spółka z o.o.</span><span>•</span><span>Online</span></div>
+            <p class="card-author">Łukasz Sołtys · <time datetime="2026-05-17">17 maja 2026</time></p>
             <h3>Pełna księgowość spółki z o.o. online — jak wybrać biuro?</h3>
             <p>Co powinna obejmować obsługa pełnych ksiąg, kiedy księgowość online ma sens i jakie sygnały ostrzegawcze sprawdzić przed podpisaniem umowy.</p>
             <a class="btn btn--outline" href="pelna-ksiegowosc-spolki-z-oo-online.html">Czytaj</a>
@@ -983,6 +1121,7 @@
           <article class="card">
             <span class="tag tag--blue">KSeF</span>
             <div class="meta"><span>Podatki</span><span>•</span><span>Obieg dokumentów</span></div>
+            <p class="card-author">Łukasz Sołtys · <time datetime="2026-05-18">18 maja 2026</time></p>
             <h3>KSeF 2026–2027: fakty, mity i co zmienia w firmie</h3>
             <p>Harmonogram, tryb offline24, najczęstsze błędy i test gotowości firmy do faktur ustrukturyzowanych.</p>
             <a class="btn btn--outline" href="ksef-gotowosc.html">Czytaj</a>
@@ -991,6 +1130,7 @@
           <article class="card">
             <span class="tag tag--green">Zmiana biura</span>
             <div class="meta"><span>Audyt</span><span>•</span><span>Checklista</span></div>
+            <p class="card-author">Łukasz Sołtys · <time datetime="2026-05-18">18 maja 2026</time></p>
             <h3>Audyt księgowości przed zmianą biura rachunkowego</h3>
             <p>25 punktów, czerwone flagi i plan bezpiecznego przejęcia księgowości spółki z o.o.</p>
             <a class="btn btn--outline" href="audyt-ksiegowosci-przed-zmiana-biura.html">Czytaj</a>
@@ -999,6 +1139,7 @@
           <article class="card">
             <span class="tag">Wypłaty ze spółki</span>
             <div class="meta"><span>Spółka z o.o.</span><span>•</span><span>Podatki</span></div>
+            <p class="card-author">Łukasz Sołtys · <time datetime="2026-05-29">29 maja 2026</time></p>
             <h3>Jak wypłacać pieniądze ze spółki z o.o.?</h3>
             <p>Dywidenda, wynagrodzenie z powołania, umowy ze spółką i inne legalne formy wypłaty środków — bez mieszania kasy firmowej z prywatną.</p>
             <a class="btn btn--outline" href="jak-wyplacac-pieniadze-ze-spolki-z-oo.html">Czytaj</a>
@@ -1007,6 +1148,7 @@
           <article class="card">
             <span class="tag tag--dark">Controlling</span>
             <div class="meta"><span>KPI</span><span>•</span><span>Zarząd</span></div>
+            <p class="card-author">Łukasz Sołtys · <time datetime="2025-10-22">22 października 2025</time></p>
             <h3>Raporty zarządcze i KPI — co naprawdę mierzyć?</h3>
             <p>Jak wyjść poza sam wynik księgowy i przygotować dane, które pomagają zarządzać firmą.</p>
             <a class="btn btn--outline" href="controlling-kpi.html">Czytaj</a>
@@ -1015,6 +1157,7 @@
           <article class="card">
             <span class="tag">Estoński CIT</span>
             <div class="meta"><span>Spółka z o.o.</span><span>•</span><span>Wdrożenie</span></div>
+            <p class="card-author">Łukasz Sołtys · <time datetime="2026-05-18">18 maja 2026</time></p>
             <h3>Jak wdrożyć estoński CIT w spółce?</h3>
             <p>Warunki, ryzyka, dokumenty i praktyczne przygotowanie spółki do ryczałtu od dochodów spółek.</p>
             <a class="btn btn--outline" href="estonski-cit-wdrozenie.html">Czytaj</a>
@@ -1023,6 +1166,7 @@
           <article class="card">
             <span class="tag">Samochód firmowy</span>
             <div class="meta"><span>CIT</span><span>•</span><span>Leasing</span></div>
+            <p class="card-author">Łukasz Sołtys · <time datetime="2026-05-18">18 maja 2026</time></p>
             <h3>Koszty samochodu w spółce od 2026 r.</h3>
             <p>Limity kosztów, emisja CO₂, leasing, amortyzacja i przykład liczbowy dla spółki z o.o.</p>
             <a class="btn btn--outline" href="koszty-samochodu.html">Czytaj</a>
@@ -1031,6 +1175,7 @@
           <article class="card">
             <span class="tag">Spółka z o.o.</span>
             <div class="meta"><span>JDG</span><span>•</span><span>Case study</span></div>
+            <p class="card-author">Łukasz Sołtys · <time datetime="2026-05-18">18 maja 2026</time></p>
             <h3>JDG czy spółka z o.o. w 2026 roku?</h3>
             <p>Dwa praktyczne scenariusze: e-commerce i firma budowlana. Kiedy zmiana formy naprawdę ma sens?</p>
             <a class="btn btn--outline" href="jdg-spolka-z-oo-2025.html">Czytaj</a>
@@ -1039,6 +1184,7 @@
           <article class="card">
             <span class="tag">E-commerce</span>
             <div class="meta"><span>VAT-OSS</span><span>•</span><span>Amazon FBA</span></div>
+            <p class="card-author">Łukasz Sołtys · <time datetime="2025-10-22">22 października 2025</time></p>
             <h3>VAT-OSS i Amazon FBA — praktyczny poradnik</h3>
             <p>Sprzedaż zagraniczna, marketplace, magazyny i rozliczenia VAT w e-commerce.</p>
             <a class="btn btn--outline" href="vat-oss-amazon.html">Czytaj</a>
@@ -1047,6 +1193,7 @@
           <article class="card">
             <span class="tag tag--green">Przejęcie księgowości</span>
             <div class="meta"><span>Proces</span><span>•</span><span>Bez przestojów</span></div>
+            <p class="card-author">Łukasz Sołtys · <time datetime="2026-05-13">13 maja 2026</time></p>
             <h3>Zmiana biura rachunkowego bez przestojów</h3>
             <p>Jak przygotować dane, przekazać dokumenty i uniknąć chaosu w trakcie zmiany obsługi księgowej.</p>
             <a class="btn btn--outline" href="zmiana-biura.html">Czytaj</a>
@@ -1055,6 +1202,7 @@
           <article class="card">
             <span class="tag">Medycyna / SRK</span>
             <div class="meta"><span>Księgowość online</span><span>•</span><span>Raporty zarządcze</span></div>
+            <p class="card-author">Łukasz Sołtys · <time datetime="2026-01-10">10 stycznia 2026</time></p>
             <h3>Obowiązek SRK w placówce medycznej — kogo dotyczy?</h3>
             <p>Najważniejsza zasada, ustawowe wyłączenia, przykłady i podejście do raportów zarządczych dla podmiotu leczniczego.</p>
             <a class="btn btn--outline" href="srk-obowiazek-kogo-dotyczy.html">Czytaj</a>
@@ -1398,7 +1546,7 @@
     }
   ]
 }
-</script>
+  </script>
   <!-- GrowthOS public lead chat -->
   <script
     async
