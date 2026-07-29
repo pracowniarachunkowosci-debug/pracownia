@@ -703,6 +703,85 @@
     .hp-case__stat strong { display: block; color: #fff; font-size: 25px; line-height: 1; margin-bottom: 6px; }
     .hp-case__stat span { display: block; color: rgba(255,255,255,.63); font-size: 13px; line-height: 1.45; }
 
+    .hp-reviews {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .hp-review-card {
+      min-width: 0;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding: 26px;
+    }
+
+    .hp-review-stars {
+      color: var(--hp-yellow);
+      font-size: 18px;
+      line-height: 1;
+      letter-spacing: .08em;
+    }
+
+    .hp-review-card blockquote {
+      margin: 0;
+      color: #344054;
+      font-size: 15.5px;
+      line-height: 1.72;
+    }
+
+    .hp-review-card blockquote p {
+      margin: 0;
+    }
+
+    .hp-review-author {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-top: auto;
+      padding-top: 4px;
+    }
+
+    .hp-review-avatar {
+      width: 46px;
+      height: 46px;
+      flex: 0 0 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+      background: var(--hp-navy);
+      color: var(--hp-yellow);
+      font-weight: 900;
+      font-size: 14px;
+      letter-spacing: .04em;
+    }
+
+    .hp-review-author cite {
+      display: block;
+      color: var(--hp-navy);
+      font-style: normal;
+      font-weight: 900;
+      line-height: 1.25;
+    }
+
+    .hp-review-author span {
+      display: block;
+      margin-top: 4px;
+      color: var(--hp-muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .hp-reviews-cta {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
     .hp-packages {
       padding: 28px;
       border-radius: 24px;
@@ -1096,6 +1175,7 @@
       .hp-dashboard { display: none; }
       .hp-grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .hp-grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .hp-reviews { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .hp-contact__side { position: static; }
     }
 
@@ -1131,6 +1211,7 @@
       .hp-grid--4,
       .hp-fit,
       .hp-form-grid,
+      .hp-reviews,
       .hp-case__stats,
       .hp-footer__grid { grid-template-columns: 1fr; }
       .hp-section { padding: 66px 0; }
@@ -1640,6 +1721,64 @@
             <a class="hp-btn hp-btn--dark js-track-calendly" href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer">Umów rozmowę</a>
             <a class="hp-btn hp-btn--outline" href="ksiegowosc-spolka-z-oo.html">Oferta dla spółek</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hp-section hp-section--soft" id="opinie" aria-labelledby="opinie-title">
+      <div class="hp-container">
+        <div class="hp-head">
+          <span class="hp-eyebrow">Opinie klientów</span>
+          <h2 id="opinie-title">Klienci o Pracowni Rachunkowości</h2>
+          <p>Wybrane opinie przedsiębiorców, którzy powierzyli nam pełną księgowość spółki, przejęcie spraw po poprzednim biurze oraz bieżące wsparcie w analizie finansów.</p>
+        </div>
+
+        <div class="hp-reviews">
+          <article class="hp-card hp-review-card">
+            <div class="hp-review-stars" role="img" aria-label="Ocena 5 na 5">★★★★★</div>
+            <blockquote>
+              <p>„Współpracujemy z Pracownią Rachunkowości przy obsłudze księgowej spółki z o.o. i jesteśmy bardzo zadowoleni z jakości kontaktu oraz sposobu prowadzenia spraw. Dużym plusem jest to, że otrzymujemy nie tylko informacje o podatkach i terminach, ale też konkretne wyjaśnienia, co z czego wynika. Widać, że biuro zna specyfikę spółek i pełnej księgowości, a nie działa wyłącznie schematycznie.”</p>
+            </blockquote>
+            <div class="hp-review-author">
+              <div class="hp-review-avatar" aria-hidden="true">GM</div>
+              <div>
+                <cite>Gabriele Melluso</cite>
+                <span>Opinia opublikowana w Google</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-card hp-review-card">
+            <div class="hp-review-stars" role="img" aria-label="Ocena 5 na 5">★★★★★</div>
+            <blockquote>
+              <p>„Do Pracowni Rachunkowości trafiliśmy po wcześniejszych problemach z obsługą księgową. Przejęcie dokumentów i uporządkowanie spraw przebiegło sprawnie, a wszystkie najważniejsze kwestie zostały nam jasno wyjaśnione. Komunikacja jest szybka, konkretna i bez zbędnego komplikowania tematów. To biuro, które faktycznie pomaga uporządkować księgowość spółki, a nie tylko odbiera dokumenty.”</p>
+            </blockquote>
+            <div class="hp-review-author">
+              <div class="hp-review-avatar" aria-hidden="true">MC</div>
+              <div>
+                <cite>Monika Czarna</cite>
+                <span>Opinia opublikowana w Google</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="hp-card hp-review-card">
+            <div class="hp-review-stars" role="img" aria-label="Ocena 5 na 5">★★★★★</div>
+            <blockquote>
+              <p>„Jako spółka usługowa rozliczająca VAT kwartalnie doceniamy nie tylko poprawność rozliczeń, ale też wsparcie w analizie kosztów i bieżącej sytuacji finansowej. Pracownia Rachunkowości to nie tylko księgowość, ale realne partnerstwo biznesowe.”</p>
+            </blockquote>
+            <div class="hp-review-author">
+              <div class="hp-review-avatar" aria-hidden="true">PK</div>
+              <div>
+                <cite>Paweł Kiełbasa</cite>
+                <span>Opinia opublikowana w Google</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="hp-reviews-cta">
+          <a class="hp-btn hp-btn--dark" href="https://share.google/O2xpwUijUASrubysL" target="_blank" rel="noopener noreferrer" aria-label="Zobacz wszystkie opinie Pracowni Rachunkowości w Google">Zobacz wszystkie opinie w Google</a>
         </div>
       </div>
     </section>
