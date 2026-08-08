@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        analytics_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        wait_for_update: 500,
+      });
+    </script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WC88L2GJ");
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H210DZ34Y8"
+    ></script>
+    <script>
+      gtag("js", new Date());
+      gtag("config", "G-H210DZ34Y8", { anonymize_ip: true });
+    </script>
+    <title>Jak księgować Stripe, PayPal, PayU i Przelewy24?</title>
+    <meta
+      name="description"
+      content="Jak księgować Stripe, PayPal, PayU i Przelewy24 w e-commerce? Sprzedaż brutto, prowizje, wypłaty, zwroty, chargebacki i uzgodnienie salda."
+    />
+    <link
+      rel="canonical"
+      href="https://pracowniarachunkowosci.pl/blog/ksiegowanie-stripe-paypal-payu-przelewy24.html"
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="author" content="Łukasz Sołtys" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta
+      property="og:title"
+      content="Jak księgować Stripe, PayPal, PayU i Przelewy24?"
+    />
+    <meta
+      property="og:description"
+      content="Sprzedaż, prowizje, wypłaty, refundacje i chargebacki — praktyczny proces uzgodnienia operatorów płatności."
+    />
+    <meta
+      property="og:url"
+      content="https://pracowniarachunkowosci.pl/blog/ksiegowanie-stripe-paypal-payu-przelewy24.html"
+    />
+    <meta property="og:site_name" content="Pracownia Rachunkowości" />
+    <meta
+      property="og:image"
+      content="https://pracowniarachunkowosci.pl/blog/vat-oss-amazon.png"
+    />
+    <meta property="article:published_time" content="2026-08-08" />
+    <meta property="article:modified_time" content="2026-08-08" />
+    <meta property="article:section" content="E-commerce" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    />
+    <link rel="stylesheet" href="../assets/css/ecommerce-article.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": "https://pracowniarachunkowosci.pl/blog/ksiegowanie-stripe-paypal-payu-przelewy24.html",
+        "headline": "Jak księgować Stripe, PayPal, PayU i Przelewy24 w e-commerce?",
+        "description": "Praktyczny proces księgowania sprzedaży, prowizji, wypłat, zwrotów i chargebacków operatorów płatności.",
+        "image": "https://pracowniarachunkowosci.pl/blog/vat-oss-amazon.png",
+        "author": {
+          "@type": "Person",
+          "name": "Łukasz Sołtys",
+          "url": "https://pracowniarachunkowosci.pl/blog/#autor-lukasz-soltys"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pracownia Rachunkowości"
+        },
+        "datePublished": "2026-08-08",
+        "dateModified": "2026-08-08",
+        "inLanguage": "pl-PL",
+        "articleSection": "E-commerce, operatorzy płatności"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Strona główna",
+            "item": "https://pracowniarachunkowosci.pl/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://pracowniarachunkowosci.pl/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Księgowanie operatorów płatności",
+            "item": "https://pracowniarachunkowosci.pl/blog/ksiegowanie-stripe-paypal-payu-przelewy24.html"
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Czy wpływ netto ze Stripe lub PayU jest przychodem ze sprzedaży?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nie należy utożsamiać wypłaty netto z przychodem. Operator może potrącić prowizje, zwroty, chargebacki i inne opłaty, dlatego sprzedaż oraz potrącenia trzeba ująć oddzielnie."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy prowizje operatora płatności są kosztem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Prowizje i opłaty mogą stanowić koszt działalności, ale wymagają właściwego dokumentu, ujęcia podatkowego i — przy usługodawcy zagranicznym — analizy VAT oraz importu usług."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jak uzgodnić PayPal lub Stripe z rachunkiem bankowym?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Trzeba porównać saldo początkowe, wpływy od klientów, prowizje, refundacje, chargebacki, przewalutowania, wypłaty na bank i saldo końcowe operatora."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy każdy operator płatności powinien mieć osobne konto księgowe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Przy większej skali zwykle warto prowadzić osobne rozrachunki dla operatorów i walut, aby móc uzgodnić saldo oraz wychwycić brakujące wypłaty i niezaksięgowane opłaty."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WC88L2GJ"
+        title="Google Tag Manager"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe></noscript
+    ><a href="#main" class="skip">Przejdź do treści</a>
+    <header class="nav">
+      <div class="container nav__inner">
+        <a href="../" class="logo"
+          ><span class="logo__mark">PR</span
+          ><span>PRACOWNIA<br />RACHUNKOWOŚCI</span></a
+        ><button
+          class="hamburger"
+          type="button"
+          aria-label="Otwórz menu"
+          aria-expanded="false"
+          aria-controls="mainMenu"
+        >
+          ☰
+        </button>
+        <nav aria-label="Główne menu">
+          <ul class="menu" id="mainMenu">
+            <li><a href="../ksiegowosc-spolka-z-oo.html">Spółki z o.o.</a></li>
+            <li><a href="../ksiegowosc-ecommerce.html">E-commerce</a></li>
+            <li><a href="../oferta.html">Oferta</a></li>
+            <li><a href="./">Blog</a></li>
+            <li>
+              <a
+                class="contact js-track-calendly"
+                href="https://calendly.com/pracowniarachunkowosci/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Umów rozmowę</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="article-title">
+        <div class="container breadcrumbs">
+          <a href="../">Strona główna</a> / <a href="./">Blog</a> / Operatorzy
+          płatności
+        </div>
+        <div class="container hero__grid">
+          <div>
+            <span class="badge">E-commerce • Stripe • PayPal • PayU</span>
+            <h1 id="article-title">Jak księgować Stripe, PayPal, PayU i Przelewy24?</h1>
+            <p class="lead">
+              Kwota wpływająca z bramki płatniczej rzadko odpowiada wartości
+              sprzedaży. Pomiędzy zamówieniem a wypłatą pojawiają się prowizje,
+              refundacje, chargebacki, przewalutowania i opóźnienia — wszystkie
+              trzeba uzgodnić.
+            </p>
+            <div class="meta">
+              <span>Łukasz Sołtys</span><span>8 sierpnia 2026</span
+              ><span>Proces księgowy</span>
+            </div>
+            <div class="hero__cta">
+              <a class="btn btn--yellow" href="#schemat">Zobacz schemat</a
+              ><a class="btn btn--light" href="../ksiegowosc-ecommerce.html"
+                >Księgowość e-commerce</a
+              >
+            </div>
+          </div>
+          <aside class="hero-card">
+            <h2>Równanie kontrolne</h2>
+            <p>
+              <strong
+                >Saldo początkowe + płatności klientów − prowizje − refundacje −
+                chargebacki − wypłaty = saldo końcowe operatora.</strong
+              >
+            </p>
+            <p>
+              Jeżeli równanie się nie zgadza, nie powinno się zamykać miesiąca
+              „na kwotę z banku”.
+            </p>
+          </aside>
+        </div>
+      </section>
+      <section class="section" aria-label="Treść artykułu">
+        <div class="container article-layout">
+          <article class="article-content">
+            <section id="blad">
+              <h2>Dlaczego sama wypłata z operatora nie wystarcza?</h2>
+              <p>
+                Klient płaci 123 zł, ale na rachunek sklepu może trafić mniej.
+                Operator potrąca prowizję, czasem zatrzymuje rezerwę, kompensuje
+                wcześniejszy zwrot albo wypłaca kilka dni sprzedaży jednym
+                przelewem. Księgowanie wyłącznie wpływu z banku zaniża sprzedaż
+                i ukrywa koszty obsługi płatności.
+              </p>
+              <div class="note">
+                <p>
+                  <strong>Przykład:</strong> klienci zapłacili 12 300 zł.
+                  Operator potrącił 300 zł prowizji i wypłacił 12 000 zł.
+                  Sprzedaż nie wynosi 12 000 zł — trzeba oddzielnie ująć obrót
+                  oraz koszt prowizji.
+                </p>
+              </div>
+            </section>
+            <section id="schemat">
+              <h2>Schemat księgowania operatora płatności</h2>
+              <div class="steps">
+                <div class="step">
+                  <div class="step__no">1</div>
+                  <div>
+                    <h3>Ujmij sprzedaż z dokumentów źródłowych</h3>
+                    <p>
+                      Podstawą są dane zamówień, faktury, ewidencja sprzedaży i
+                      raporty podatkowe — nie przelew zbiorczy.
+                    </p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step__no">2</div>
+                  <div>
+                    <h3>Rozlicz należność przez operatora</h3>
+                    <p>
+                      Płatność klienta zmniejsza należność i tworzy saldo
+                      środków znajdujących się u Stripe, PayPal, PayU lub
+                      Przelewy24.
+                    </p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step__no">3</div>
+                  <div>
+                    <h3>Oddziel prowizje i pozostałe opłaty</h3>
+                    <p>
+                      Każde potrącenie powinno mieć typ, datę, walutę i dokument
+                      pozwalający ocenić jego ujęcie podatkowe.
+                    </p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step__no">4</div>
+                  <div>
+                    <h3>Uzgodnij wypłatę i saldo końcowe</h3>
+                    <p>
+                      Przelew na bank zmniejsza saldo operatora, ale nie tworzy
+                      drugi raz przychodu ze sprzedaży.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="dane">
+              <h2>Jakie raporty przekazywać do księgowości?</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Dane</th>
+                      <th>Do czego służą</th>
+                      <th>Najczęstszy błąd</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Transakcje klientów</strong></td>
+                      <td>
+                        Powiązanie płatności z zamówieniem, datą, walutą i
+                        kanałem sprzedaży.
+                      </td>
+                      <td>Raport zawiera wyłącznie wypłaty zbiorcze.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Opłaty i prowizje</strong></td>
+                      <td>
+                        Ujęcie kosztów operatora i kontrola rentowności kanału.
+                      </td>
+                      <td>Prowizja „znika” w niższej wypłacie.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Refundacje</strong></td>
+                      <td>Powiązanie zwrotu środków z korektą sprzedaży.</td>
+                      <td>
+                        Zwrot jest zaksięgowany, ale sprzedaż nie została
+                        skorygowana.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><strong>Chargebacki i spory</strong></td>
+                      <td>
+                        Kontrola środków spornych, opłat i końcowego wyniku
+                        sprawy.
+                      </td>
+                      <td>
+                        Chargeback jest traktowany automatycznie jak zwykły
+                        zwrot.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><strong>Wypłaty i saldo</strong></td>
+                      <td>Uzgodnienie operatora z rachunkiem bankowym.</td>
+                      <td>
+                        Saldo pozostające u operatora nie jest wykazywane.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section id="operatorzy">
+              <h2>Stripe, PayPal, PayU i Przelewy24 — co je różni księgowo?</h2>
+              <p>
+                Logika uzgodnienia jest podobna, ale raporty i przepływ
+                pieniędzy mogą się różnić. Stripe często obsługuje wiele walut i
+                cykliczne płatności. PayPal może pełnić również rolę portfela z
+                własnym saldem. PayU i Przelewy24 zwykle agregują szybkie
+                płatności oraz wypłacają środki paczkami.
+              </p>
+              <div class="grid">
+                <div class="card">
+                  <strong>Stripe</strong>
+                  <p>
+                    Kontroluj walutę transakcji, walutę wypłaty, opłaty,
+                    refundacje i datę dostępności środków.
+                  </p>
+                </div>
+                <div class="card">
+                  <strong>PayPal</strong>
+                  <p>
+                    Uzgadniaj saldo portfela, transfery na bank, przewalutowania
+                    i opłaty.
+                  </p>
+                </div>
+                <div class="card">
+                  <strong>PayU</strong>
+                  <p>
+                    Łącz wypłaty zbiorcze z listą transakcji, zwrotów i
+                    prowizji.
+                  </p>
+                </div>
+                <div class="card">
+                  <strong>Przelewy24</strong>
+                  <p>
+                    Kontroluj raport rozliczeniowy i zgodność paczek wypłat z
+                    rachunkiem.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section id="vat">
+              <h2>Prowizje zagranicznego operatora a VAT</h2>
+              <p>
+                Przy Stripe lub PayPal trzeba ustalić, który podmiot wystawił
+                dokument, gdzie ma siedzibę i jaki rodzaj usługi rozlicza.
+                Usługa od zagranicznego kontrahenta może wymagać rozpoznania
+                importu usług i odpowiedniego ujęcia VAT. Nie należy księgować
+                wszystkich potrąceń jednym zbiorczym kosztem bez sprawdzenia
+                dokumentów.
+              </p>
+              <div class="warning">
+                <p>
+                  Raport transakcyjny i faktura za prowizje pełnią różne
+                  funkcje. Pierwszy służy do uzgodnienia rozrachunków, drugi
+                  dokumentuje opłatę operatora.
+                </p>
+              </div>
+            </section>
+            <section id="waluty">
+              <h2>Waluty i różnice kursowe</h2>
+              <p>
+                Jeżeli klient płaci w EUR, operator prowadzi saldo w EUR, a
+                wypłata trafia w PLN, w jednym procesie występują co najmniej
+                trzy wartości: sprzedaż, środki u operatora oraz transfer na
+                bank. Trzeba zachować kwoty w walucie, kursy i daty
+                poszczególnych zdarzeń.
+              </p>
+              <p>
+                Samo porównanie wartości złotowej zamówienia z wartością wypłaty
+                nie pozwala rozdzielić prowizji od efektu przewalutowania i
+                różnic kursowych.
+              </p>
+            </section>
+            <section id="miesiac">
+              <h2>Zamknięcie miesiąca — checklista</h2>
+              <ul>
+                <li>sprzedaż jest kompletna i zgodna z kanałami sklepu,</li>
+                <li>
+                  płatności klientów są przypisane do zamówień lub należności,
+                </li>
+                <li>prowizje i opłaty mają dokumenty,</li>
+                <li>refundacje są powiązane z korektami sprzedaży,</li>
+                <li>chargebacki i spory mają aktualny status,</li>
+                <li>wypłaty operatora zgadzają się z bankiem,</li>
+                <li>
+                  saldo końcowe każdego operatora i każdej waluty jest
+                  wyjaśnione,
+                </li>
+                <li>przeliczono waluty oraz oceniono różnice kursowe,</li>
+                <li>uzgodniono wartości z raportami VAT i VAT OSS.</li>
+              </ul>
+            </section>
+            <section id="faq">
+              <h2>FAQ — księgowanie bramek płatniczych</h2>
+              <div class="faq">
+                <details open>
+                  <summary>
+                    Czy wpływ netto ze Stripe lub PayU jest przychodem ze
+                    sprzedaży?
+                  </summary>
+                  <p>
+                    Nie należy utożsamiać wypłaty netto z przychodem. Operator
+                    może potrącić prowizje, zwroty, chargebacki i inne opłaty,
+                    dlatego sprzedaż oraz potrącenia ujmuje się oddzielnie.
+                  </p>
+                </details>
+                <details>
+                  <summary>Czy prowizje operatora płatności są kosztem?</summary>
+                  <p>
+                    Mogą stanowić koszt działalności, ale wymagają właściwego
+                    dokumentu, oceny podatkowej i — przy usługodawcy
+                    zagranicznym — analizy VAT oraz importu usług.
+                  </p>
+                </details>
+                <details>
+                  <summary>
+                    Jak uzgodnić PayPal lub Stripe z rachunkiem bankowym?
+                  </summary>
+                  <p>
+                    Porównaj saldo początkowe, płatności klientów, prowizje,
+                    refundacje, chargebacki, przewalutowania, wypłaty na bank i
+                    saldo końcowe operatora.
+                  </p>
+                </details>
+                <details>
+                  <summary>
+                    Czy każdy operator płatności powinien mieć osobne konto
+                    księgowe?
+                  </summary>
+                  <p>
+                    Przy większej skali zwykle warto prowadzić osobne
+                    rozrachunki dla operatorów i walut, aby uzgadniać salda i
+                    wykrywać brakujące wypłaty lub opłaty.
+                  </p>
+                </details>
+              </div>
+            </section>
+            <section class="cta-box">
+              <h2>Operatorzy płatności nie chcą się uzgodnić?</h2>
+              <p>
+                Pomagamy ustawić miesięczny proces łączący sprzedaż, wypłaty,
+                prowizje, zwroty, waluty i raportowanie rentowności.
+              </p>
+              <div class="cta-actions">
+                <a
+                  class="btn btn--yellow js-track-calendly"
+                  href="https://calendly.com/pracowniarachunkowosci/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Umów rozmowę</a
+                ><a class="btn btn--light" href="../ksiegowosc-ecommerce.html"
+                  >Zobacz księgowość e-commerce</a
+                >
+              </div>
+            </section>
+            <section id="powiazane">
+              <h2>Przeczytaj także</h2>
+              <div class="related">
+                <a href="ksef-ecommerce-b2c-faktury.html"
+                  ><span>KSeF</span
+                  ><strong>KSeF w e-commerce — B2C i B2B</strong></a
+                ><a href="vat-oss-amazon.html"
+                  ><span>VAT OSS</span><strong>VAT OSS i Amazon FBA</strong></a
+                ><a href="marza-cash-flow-ecommerce.html"
+                  ><span>Wyniki</span
+                  ><strong>Marża i cash-flow w e-commerce</strong></a
+                ><a href="../ksiegowosc-ecommerce.html"
+                  ><span>Usługa</span
+                  ><strong>Księgowość e-commerce i VAT OSS</strong></a
+                >
+              </div>
+            </section>
+            <section class="author">
+              <img
+                src="../assets/images/lukasz-soltys-autor.webp"
+                alt="Łukasz Sołtys"
+                width="88"
+                height="88"
+                loading="lazy"
+              />
+              <div>
+                <h2>Łukasz Sołtys</h2>
+                <p>
+                  Założyciel Pracowni Rachunkowości. Od ponad 12 lat pracuje w
+                  księgowości i finansach, specjalizując się w spółkach,
+                  e-commerce, raportowaniu zarządczym i controllingu.
+                </p>
+              </div>
+            </section>
+          </article>
+          <aside class="sidebar" aria-label="Nawigacja artykułu i oferta">
+            <div class="side-card">
+              <h2>W artykule</h2>
+              <ul class="toc">
+                <li><a href="#blad">Dlaczego wypłata nie wystarcza?</a></li>
+                <li><a href="#schemat">Schemat księgowania</a></li>
+                <li><a href="#dane">Potrzebne raporty</a></li>
+                <li><a href="#operatorzy">Różnice operatorów</a></li>
+                <li><a href="#vat">Prowizje i VAT</a></li>
+                <li><a href="#waluty">Waluty</a></li>
+                <li><a href="#miesiac">Checklista miesiąca</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="side-card side-card--dark">
+              <h3>Księgowość e-commerce</h3>
+              <p>
+                Uzgodnienia Stripe, PayPal, PayU, Przelewy24, marketplace i
+                rachunków bankowych.
+              </p>
+              <a class="btn btn--yellow" href="../ksiegowosc-ecommerce.html"
+                >Zobacz zakres</a
+              >
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <div id="cookie-banner" class="cookie" role="dialog">
+      <div class="cookie__inner">
+        <p>
+          Używamy cookies do analityki i marketingu. Więcej w
+          <a href="../polityka-prywatnosci.html">polityce prywatności</a>.
+        </p>
+        <div class="cookie__actions">
+          <button id="acceptAll" class="btn btn--yellow" type="button">
+            Akceptuję wszystkie</button
+          ><button id="acceptEssential" class="btn btn--light" type="button">
+            Tylko niezbędne
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <a href="../" class="logo" style="color: #fff"
+              ><span class="logo__mark">PR</span
+              ><span>PRACOWNIA<br />RACHUNKOWOŚCI</span></a
+            >
+            <p>
+              Pełna księgowość spółek i e-commerce, VAT OSS, KSeF, raporty
+              zarządcze i controlling.
+            </p>
+          </div>
+          <div>
+            <h4>E-commerce</h4>
+            <ul>
+              <li>
+                <a href="../ksiegowosc-ecommerce.html">Księgowość e-commerce</a>
+              </li>
+              <li><a href="vat-oss-amazon.html">VAT OSS i Amazon FBA</a></li>
+              <li>
+                <a href="marza-cash-flow-ecommerce.html">Marża i cash-flow</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Kontakt</h4>
+            <ul>
+              <li><a href="tel:+48504853962">+48 504 853 962</a></li>
+              <li>
+                <a href="mailto:biuro@accounting-lab.pl"
+                  >biuro@accounting-lab.pl</a
+                >
+              </li>
+              <li>
+                <a href="https://calendly.com/pracowniarachunkowosci/30min"
+                  >Umów rozmowę</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© <span id="year"></span> Pracownia Rachunkowości</span
+          ><span>Treści informacyjne — nie stanowią indywidualnej porady.</span>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+    <script
+      async
+      src="https://growthos-mu.vercel.app/lead-chat-ai.js"
+      data-api-base="https://growthos-mu.vercel.app"
+      data-privacy-url="https://pracowniarachunkowosci.pl/polityka-prywatnosci.html"
+      data-bottom="104px"
+    ></script>
+  </body>
+</html>
