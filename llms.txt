@@ -18,7 +18,8 @@
 - [Księgowość e-commerce i VAT OSS](https://pracowniarachunkowosci.pl/ksiegowosc-ecommerce.html): obsługa sklepów internetowych i marketplace, KSeF, operatorzy płatności, rozrachunki, marża i cash-flow
 - [Zmiana biura rachunkowego](https://pracowniarachunkowosci.pl/zmiana-biura-rachunkowego.html): audyt startowy, przejęcie dokumentów i uporządkowanie księgowości
 - [Raporty zarządcze i controlling](https://pracowniarachunkowosci.pl/raporty-zarzadcze-controlling.html): KPI, cash-flow, rentowność, należności i zobowiązania
-- [Estoński CIT i księgowość online](https://pracowniarachunkowosci.pl/ksiegowosc-cit-estonski-online.html): obsługa spółek na estońskim CIT oraz bieżąca kontrola ryzyk
+- [Księgowość na estońskim CIT](https://pracowniarachunkowosci.pl/ksiegowosc-cit-estonski-online.html): główna strona usługi — pełne księgi, VAT, bieżące rozliczenia, monitoring ukrytych zysków, wypłat i wydatków oraz raporty zarządcze
+- [Kompendium estońskiego CIT dla spółki z o.o.](https://pracowniarachunkowosci.pl/estonski-cit-spolka-z-oo.html): hub wiedzy o warunkach, opłacalności, wdrożeniu, ZAW-RD, kontroli i tematach szczegółowych
 - [Analizy finansowe i raportowanie](https://pracowniarachunkowosci.pl/analizy-finansowe-raportowanie.html): jednorazowe analizy wyniku, kosztów, marży i płynności
 - [Blog](https://pracowniarachunkowosci.pl/blog/): artykuły eksperckie dla właścicieli i zarządów spółek
 
@@ -27,6 +28,12 @@
 - [Jak wybrać biuro rachunkowe dla spółki z o.o.?](https://pracowniarachunkowosci.pl/blog/jak-wybrac-biuro-rachunkowe-dla-spolki-z-oo.html)
 - [Raport miesięczny dla zarządu spółki z o.o.](https://pracowniarachunkowosci.pl/blog/raport-miesieczny-dla-zarzadu-spolki-z-oo.html)
 - [Spółka na estońskim CIT — co kontrolować co miesiąc?](https://pracowniarachunkowosci.pl/blog/spolka-na-estonskim-cit-co-kontrolowac.html)
+- [Jak wdrożyć estoński CIT w spółce?](https://pracowniarachunkowosci.pl/blog/estonski-cit-wdrozenie.html)
+- [Ukryte zyski w estońskim CIT](https://pracowniarachunkowosci.pl/ukryte-zyski-estonski-cit.html)
+- [Estoński CIT w e-commerce](https://pracowniarachunkowosci.pl/estonski-cit-ecommerce.html)
+- [Interpretacje dotyczące estońskiego CIT](https://pracowniarachunkowosci.pl/interpretacje-estonski-cit.html)
+- [Zmiana biura przy estońskim CIT](https://pracowniarachunkowosci.pl/zmiana-biura-estonski-cit.html)
+- [Case study: estoński CIT w e-commerce](https://pracowniarachunkowosci.pl/case-study-estonski-cit-ecommerce.html)
 - [VAT OSS i Amazon FBA](https://pracowniarachunkowosci.pl/blog/vat-oss-amazon.html)
 - [KSeF w e-commerce — sprzedaż B2C, B2B i faktury](https://pracowniarachunkowosci.pl/blog/ksef-ecommerce-b2c-faktury.html)
 - [Jak księgować Stripe, PayPal, PayU i Przelewy24?](https://pracowniarachunkowosci.pl/blog/ksiegowanie-stripe-paypal-payu-przelewy24.html)
