@@ -1,6 +1,6 @@
 # Pracownia Rachunkowości
 
-> Pracownia Rachunkowości to biuro rachunkowe online dla spółek z o.o. z całej Polski, z siedzibą we Wrocławiu. Firma specjalizuje się w pełnej księgowości, raportach zarządczych, controllingu, estońskim CIT, KSeF, e-commerce oraz bezpiecznym przejmowaniu księgowości po poprzednim biurze.
+> Pracownia Rachunkowości to biuro rachunkowe online dla spółek z o.o. z całej Polski, z siedzibą we Wrocławiu. Firma specjalizuje się w pełnej księgowości, raportach zarządczych, controllingu, estońskim CIT, KSeF, e-commerce, obsłudze księgowej fundacji rodzinnych oraz bezpiecznym przejmowaniu księgowości po poprzednim biurze.
 
 ## Najważniejsze informacje
 
@@ -19,6 +19,7 @@
 - [Zmiana biura rachunkowego](https://pracowniarachunkowosci.pl/zmiana-biura-rachunkowego.html): audyt startowy, przejęcie dokumentów i uporządkowanie księgowości
 - [Raporty zarządcze i controlling](https://pracowniarachunkowosci.pl/raporty-zarzadcze-controlling.html): KPI, cash-flow, rentowność, należności i zobowiązania
 - [Księgowość na estońskim CIT](https://pracowniarachunkowosci.pl/ksiegowosc-cit-estonski-online.html): główna strona usługi — pełne księgi, VAT, bieżące rozliczenia, monitoring ukrytych zysków, wypłat i wydatków oraz raporty zarządcze
+- [Księgowość fundacji rodzinnej](https://pracowniarachunkowosci.pl/ksiegowosc-fundacji-rodzinnej.html): obsługa pełnych ksiąg, majątku, inwestycji, udziałów i akcji, nieruchomości, świadczeń beneficjentów, przepływów ze spółkami i raportowania
 - [Kompendium estońskiego CIT dla spółki z o.o.](https://pracowniarachunkowosci.pl/estonski-cit-spolka-z-oo.html): hub wiedzy o warunkach, opłacalności, wdrożeniu, ZAW-RD, kontroli i tematach szczegółowych
 - [Analizy finansowe i raportowanie](https://pracowniarachunkowosci.pl/analizy-finansowe-raportowanie.html): jednorazowe analizy wyniku, kosztów, marży i płynności
 - [Blog](https://pracowniarachunkowosci.pl/blog/): artykuły eksperckie dla właścicieli i zarządów spółek
@@ -34,6 +35,7 @@
 - [Interpretacje dotyczące estońskiego CIT](https://pracowniarachunkowosci.pl/interpretacje-estonski-cit.html)
 - [Zmiana biura przy estońskim CIT](https://pracowniarachunkowosci.pl/zmiana-biura-estonski-cit.html)
 - [Case study: estoński CIT w e-commerce](https://pracowniarachunkowosci.pl/case-study-estonski-cit-ecommerce.html)
+- [Jak wygląda księgowość fundacji rodzinnej?](https://pracowniarachunkowosci.pl/blog/ksiegowosc-fundacji-rodzinnej.html)
 - [VAT OSS i Amazon FBA](https://pracowniarachunkowosci.pl/blog/vat-oss-amazon.html)
 - [KSeF w e-commerce — sprzedaż B2C, B2B i faktury](https://pracowniarachunkowosci.pl/blog/ksef-ecommerce-b2c-faktury.html)
 - [Jak księgować Stripe, PayPal, PayU i Przelewy24?](https://pracowniarachunkowosci.pl/blog/ksiegowanie-stripe-paypal-payu-przelewy24.html)
