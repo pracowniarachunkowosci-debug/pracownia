@@ -48,7 +48,7 @@
   <meta property="og:site_name" content="Pracownia Rachunkowości" />
   <meta property="og:image" content="https://pracowniarachunkowosci.pl/assets/og-image.jpg" />
   <meta property="article:published_time" content="2026-06-12" />
-  <meta property="article:modified_time" content="2026-06-12" />
+  <meta property="article:modified_time" content="2026-08-30" />
   <meta property="article:author" content="Łukasz Sołtys" />
   <meta property="article:section" content="Raporty zarządcze" />
   <meta property="article:tag" content="raport miesięczny" />
@@ -124,8 +124,8 @@
     .mini-list li:before{content:"✓";position:absolute;left:12px;top:11px;color:var(--navy);font-weight:900}
     .section{padding:52px 0}
     .section--soft{background:var(--bg)}
-    .article-layout{display:grid;grid-template-columns:minmax(0,760px) 340px;gap:34px;align-items:start}
-    .article-content{background:#fff;border:1px solid var(--lineSoft);border-radius:var(--radius);padding:34px;box-shadow:var(--shadow)}
+    .article-layout{display:grid;grid-template-columns:minmax(0,760px) 340px;gap:34px;align-items:start;min-width:0}
+    .article-content{background:#fff;border:1px solid var(--lineSoft);border-radius:var(--radius);padding:34px;box-shadow:var(--shadow);min-width:0;overflow:hidden}
     .article-content h2{font-size:clamp(25px,3vw,34px);line-height:1.15;letter-spacing:-.03em;color:var(--navy);margin:44px 0 14px}
     .article-content h2:first-child{margin-top:0}
     .article-content h3{font-size:21px;line-height:1.25;color:var(--navy);margin:26px 0 10px}
@@ -161,7 +161,7 @@
     .faq-panel p{margin:14px 0 0;color:var(--text);font-size:16px;line-height:1.75}
     .sources{font-size:14px;color:var(--muted)}
     .sources li{margin-bottom:8px}
-    .side{position:sticky;top:96px;display:grid;gap:16px}
+    .side{position:sticky;top:96px;display:grid;gap:16px;min-width:0}
     .side-card{background:#fff;border:1px solid var(--lineSoft);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
     .side-card h3{margin:0 0 10px;color:var(--navy);font-size:20px;line-height:1.2}
     .side-card p{margin:0 0 14px;color:var(--muted)}
@@ -450,16 +450,16 @@
     "@id": "https://pracowniarachunkowosci.pl/blog/raport-miesieczny-dla-zarzadu-spolki-z-oo.html"
   },
   "headline": "Raport miesięczny dla zarządu spółki z o.o. — co powinien zawierać?",
-  "description": "Praktyczny przewodnik dla zarządu spółki z o.o.: co powinien pokazywać miesięczny raport finansowy, jakie KPI warto mierzyć i czego oczekiwać od biura rachunkowego.",
+  "description": "Praktyczny przewodnik dla zarządu spółki z o.o.: co powinien zawierać miesięczny raport zarządczy, jak pokazać wynik, marżę, cash-flow, rozrachunki, podatki i KPI.",
   "image": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
   "author": {"@id":"https://pracowniarachunkowosci.pl/#lukasz-soltys"},
   "publisher": {
     "@id": "https://pracowniarachunkowosci.pl/#organization"
   },
   "datePublished": "2026-06-12",
-  "dateModified": "2026-06-12",
+  "dateModified": "2026-08-30",
   "inLanguage": "pl-PL",
-  "articleSection": "Raporty zarządcze, księgowość spółki z o.o., controlling",
+  "articleSection": "Raporty zarządcze, księgowość spółki z o.o.",
   "keywords": "raport miesięczny dla zarządu spółki z o.o., raporty zarządcze dla spółki z o.o., księgowość z raportowaniem, cash-flow w spółce, KPI dla zarządu"
 }
   </script>
@@ -469,54 +469,11 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Co powinien zawierać miesięczny raport dla zarządu spółki z o.o.?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Raport miesięczny powinien pokazywać wynik finansowy, przychody, koszty, marżę, cash-flow, należności, zobowiązania, podatki, najważniejsze KPI oraz sprawy wymagające decyzji zarządu."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Czy biuro rachunkowe powinno przygotowywać raporty zarządcze?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Dobre biuro rachunkowe może przygotowywać raporty zarządcze lub dane, na których zarząd opiera decyzje. Ważne, żeby raport był czytelny, powtarzalny i dopasowany do modelu działania spółki."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Czym różni się raport księgowy od raportu zarządczego?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Raport księgowy pokazuje dane wynikające z ksiąg, deklaracji i rozliczeń. Raport zarządczy tłumaczy te dane w sposób decyzyjny: co się zmieniło, dlaczego, jakie są ryzyka i co wymaga reakcji zarządu."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Jak często zarząd powinien analizować raport finansowy?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Najczęściej wystarczy raport miesięczny przygotowywany po zamknięciu miesiąca. W spółkach z większą dynamiką sprzedaży, problemami z płynnością albo dużą liczbą należności warto dodatkowo monitorować wybrane dane tygodniowo."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Czy mała spółka z o.o. potrzebuje raportowania?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Tak, ale raport nie musi być rozbudowany. Nawet prosta spółka powinna widzieć wynik, koszty, należności, zobowiązania, podatki i saldo gotówki. Raport można rozwijać razem z firmą."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kiedy brak raportowania jest powodem do zmiany biura rachunkowego?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Warto rozważyć zmianę biura, jeśli zarząd dostaje tylko informację o podatkach, nie ma dostępu do czytelnego wyniku, nie widzi należności i zobowiązań, a księgowość nie pomaga wyjaśniać kosztów, marży i przepływów pieniężnych."
-      }
-    }
+    {"@type":"Question","name":"Co powinien zawierać miesięczny raport dla zarządu spółki z o.o.?","acceptedAnswer":{"@type":"Answer","text":"Raport powinien pokazywać wynik finansowy, przychody, koszty, marżę, cash-flow, należności, zobowiązania, podatki, najważniejsze KPI oraz sprawy wymagające decyzji zarządu."}},
+    {"@type":"Question","name":"Czym różni się raport księgowy od raportu zarządczego?","acceptedAnswer":{"@type":"Answer","text":"Raport księgowy pokazuje dane z ksiąg i rozliczeń. Raport zarządczy tłumaczy je decyzyjnie: co się zmieniło, dlaczego, jakie są ryzyka i co wymaga reakcji."}},
+    {"@type":"Question","name":"Jak często zarząd powinien analizować raport finansowy?","acceptedAnswer":{"@type":"Answer","text":"Najczęściej wystarczy raport miesięczny po zamknięciu miesiąca. Przy problemach z płynnością lub dużej liczbie należności wybrane dane warto monitorować częściej."}},
+    {"@type":"Question","name":"Czy mała spółka z o.o. potrzebuje raportowania?","acceptedAnswer":{"@type":"Answer","text":"Tak, ale raport nie musi być rozbudowany. Nawet mała spółka powinna widzieć wynik, koszty, należności, zobowiązania, podatki i saldo gotówki."}},
+    {"@type":"Question","name":"Po czym poznać, że raport zarządczy jest użyteczny?","acceptedAnswer":{"@type":"Answer","text":"Pokazuje zmianę względem poprzedniego okresu lub planu, wyjaśnia najważniejsze odchylenia i kończy się listą spraw wymagających decyzji."}}
   ]
 }
   </script>
@@ -557,10 +514,10 @@
           <span class="badge">Raportowanie / spółka z o.o. / cash-flow / KPI</span>
           <h1>Raport miesięczny dla zarządu spółki z o.o. — co powinien zawierać?</h1>
           <p class="lead">Sama informacja o podatkach to za mało, żeby spokojnie prowadzić spółkę. Zarząd potrzebuje danych o wyniku, kosztach, należnościach, zobowiązaniach i gotówce — najlepiej w jednym, czytelnym raporcie.</p>
-          <div class="article-meta"><span>Autor: Łukasz Sołtys</span><span>Publikacja: <time datetime="2026-06-12">12 czerwca 2026</time></span></div>
+          <div class="article-meta"><span>Autor: Łukasz Sołtys</span><span>Publikacja: <time datetime="2026-06-12">12 czerwca 2026</time></span><span>Aktualizacja: <time datetime="2026-08-30">30 sierpnia 2026</time></span></div>
           <div class="hero__cta">
             <a class="btn btn--yellow js-track-calendly" href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer">Zapytaj o księgowość z raportowaniem</a>
-            <a class="btn btn--light" href="#w-skrocie">Zobacz, co powinien zawierać raport</a>
+            <a class="btn btn--light" href="#wstep">Zobacz, co powinien zawierać raport</a>
           </div>
           <div class="proof">
             <div class="proof__item"><strong>wynik</strong><span>zarząd widzi, czy spółka realnie zarabia</span></div>
@@ -585,651 +542,136 @@
       <div class="container article-layout">
         <article class="article-content">
 
-          <section id="wstep">
-            <h2>Dlaczego sama informacja o podatkach to za mało?</h2>
-            <p>W wielu spółkach z o.o. komunikacja z księgowością sprowadza się do krótkiej informacji: ile zapłacić VAT, CIT, ZUS i do kiedy zrobić przelew. To ważne dane, ale z punktu widzenia zarządu są tylko fragmentem większego obrazu.</p>
-            <p>Zarząd potrzebuje wiedzieć nie tylko, jakie podatki trzeba zapłacić, ale też czy spółka zarabia, gdzie rosną koszty, czy klienci płacą na czas, jak wygląda saldo zobowiązań i czy za kilka tygodni wystarczy gotówki na wynagrodzenia, leasingi, podatki i dostawców.</p>
-            <p>Dlatego raport miesięczny dla zarządu spółki z o.o. powinien łączyć księgowość z praktycznym spojrzeniem na prowadzenie firmy. Nie musi być skomplikowany. Powinien być przede wszystkim czytelny, powtarzalny i przygotowany w taki sposób, żeby zarząd mógł szybciej podejmować decyzje.</p>
-          </section>
-
-          <section id="w-skrocie">
-            <h2>W skrócie</h2>
-            <div class="note">
-              <strong>Raport miesięczny dla zarządu powinien pokazywać nie tylko wynik w księgach, ale też bezpieczeństwo finansowe spółki.</strong>
-              <p>Najważniejsze pytanie brzmi: czy po zamknięciu miesiąca zarząd rozumie, co wydarzyło się w firmie i co powinien zrobić w kolejnym miesiącu?</p>
-            </div>
-            <div class="checklist">
-              <div><strong>Wynik:</strong> przychody, koszty, wynik miesiąca i wynik narastająco od początku roku.</div>
-              <div><strong>Marża:</strong> które obszary działalności zarabiają, a które wymagają sprawdzenia.</div>
-              <div><strong>Koszty:</strong> największe pozycje kosztowe, koszty jednorazowe i odchylenia od typowego poziomu.</div>
-              <div><strong>Należności:</strong> kto zalega z płatnością, ile dni po terminie i jaka kwota jest zagrożona.</div>
-              <div><strong>Zobowiązania:</strong> co spółka musi zapłacić w najbliższych tygodniach.</div>
-              <div><strong>Cash-flow:</strong> czy na rachunku będzie wystarczająco środków na bieżące zobowiązania.</div>
-              <div><strong>Podatki:</strong> VAT, CIT, ZUS, PIT oraz inne obowiązki w najbliższych terminach.</div>
-              <div><strong>Decyzje:</strong> sprawy, które wymagają reakcji zarządu, np. windykacja, ograniczenie kosztów lub zmiana cen.</div>
-            </div>
-          </section>
-
-          <section id="co-powinien-pokazywac">
+<section id="wstep">
             <h2>Co powinien pokazywać miesięczny raport dla zarządu?</h2>
-            <p>Nie ma jednego raportu, który będzie idealny dla każdej spółki. Inne dane będą kluczowe dla firmy usługowej, inne dla e-commerce, a jeszcze inne dla spółki z zespołem, magazynem lub dużą liczbą projektów. Są jednak obszary, które warto uwzględnić w większości spółek z o.o.</p>
-
-            <h3>1. Wynik miesiąca i wynik narastająco</h3>
-            <p>Pierwszy element to wynik finansowy. Raport powinien pokazywać, jakie przychody i koszty spółka osiągnęła w danym miesiącu oraz jaki jest wynik od początku roku.</p>
-            <p>Warto rozdzielić wynik miesięczny i narastający, bo pojedynczy miesiąc może być nietypowy. Jeden duży koszt, opóźniona faktura sprzedażowa albo jednorazowy przychód mogą zaburzyć obraz. Wynik narastająco pomaga zobaczyć trend, a nie tylko jednorazowe zdarzenie.</p>
-            <p>Dla zarządu ważne jest też, żeby wynik był pokazany prostym językiem. Nie wystarczy przesłać zestawienia obrotów i sald. Raport powinien wyjaśniać, czy wynik jest lepszy czy gorszy niż w poprzednim miesiącu i z czego to wynika.</p>
-
-            <h3>2. Przychody, koszty i marża</h3>
-            <p>Drugi obszar to struktura przychodów i kosztów. W wielu spółkach problem nie polega na tym, że firma nie sprzedaje. Problem polega na tym, że sprzedaż rośnie razem z kosztami, a marża zostaje w miejscu albo spada.</p>
-            <p>Raport miesięczny powinien więc pokazywać nie tylko sumę przychodów, ale też ich podział — na przykład według usług, projektów, kanałów sprzedaży, klientów lub typów działalności. Im bardziej spółka rośnie, tym ważniejsze staje się pytanie: na czym realnie zarabiamy?</p>
-            <p>Podobnie z kosztami. Zarząd powinien widzieć największe pozycje kosztowe, koszty stałe, koszty jednorazowe i te koszty, które zaczynają rosnąć szybciej niż sprzedaż.</p>
-
-            <h3>3. Należności, czyli pieniądze, których jeszcze nie ma na koncie</h3>
-            <p>Wynik księgowy może wyglądać dobrze, a spółka nadal może mieć problem z płynnością. Dzieje się tak wtedy, gdy sprzedaż została zafakturowana, ale klienci nie zapłacili w terminie.</p>
-            <p>Dlatego w raporcie dla zarządu bardzo ważna jest tabela należności. Powinna pokazywać, kto zalega z płatnością, jaka jest kwota, ile dni minęło od terminu płatności i czy sprawa wymaga działania.</p>
-            <p>W praktyce taki prosty element raportu często daje więcej niż rozbudowana analiza. Jeżeli zarząd co miesiąc widzi przeterminowane należności, szybciej podejmuje decyzję o kontakcie z klientem, zmianie limitu kredytowego albo wprowadzeniu przedpłat.</p>
-
-            <h3>4. Zobowiązania, czyli co spółka musi zapłacić</h3>
-            <p>Druga strona rozrachunków to zobowiązania. Spółka powinna wiedzieć, jakie faktury od dostawców, raty leasingowe, wynagrodzenia, podatki i inne płatności przypadają w najbliższych tygodniach.</p>
-            <p>Raport nie musi zastępować systemu bankowego ani kalendarza płatności, ale powinien pokazywać skalę obciążeń. Dzięki temu zarząd może planować przelewy, rozmawiać z dostawcami i unikać sytuacji, w której płynność jest oceniana dopiero w dniu płatności.</p>
-
-            <h3>5. Cash-flow i bezpieczeństwo płynności</h3>
-            <p>Cash-flow to obszar, którego często brakuje w komunikacji między księgowością a zarządem. Tymczasem dla właściciela spółki pytanie „ile zarobiliśmy?” jest tylko jednym z pytań. Drugie brzmi: „czy mamy pieniądze?”.</p>
-            <p>Raport miesięczny powinien pokazywać saldo środków pieniężnych, istotne wpływy i wydatki oraz przewidywane obciążenia w najbliższym czasie. W bardziej rozwiniętej wersji można dodać prostą prognozę cash-flow na kolejne 4–8 tygodni.</p>
-            <p>Nie chodzi o skomplikowany model finansowy. Często wystarczy przejrzyste zestawienie: ile mamy na rachunkach, ile powinni zapłacić klienci, ile my musimy zapłacić i czy po tych operacjach zostaje bezpieczny bufor.</p>
-
-            <h3>6. Podatki i najbliższe terminy</h3>
-            <p>Podatki nadal są ważną częścią raportu, ale nie powinny być jedyną informacją. W raporcie warto pokazać VAT, CIT, PIT, ZUS oraz inne zobowiązania publicznoprawne, które spółka musi zapłacić.</p>
-            <p>Dobrze, gdy obok kwot znajduje się krótki komentarz. Przykład: dlaczego VAT w tym miesiącu jest wyższy, skąd wynika niższy CIT, czy pojawił się koszt jednorazowy, który wpłynął na wynik, albo czy w kolejnym miesiącu można spodziewać się większego obciążenia.</p>
-
-            <h3>7. Sprawy wymagające decyzji zarządu</h3>
-            <p>Najlepszy raport to nie tylko podsumowanie przeszłości. To także lista tematów, które wymagają decyzji.</p>
-            <p>Mogą to być na przykład: zaległa płatność od dużego klienta, koszt, który znacząco wzrósł, umowa wymagająca doprecyzowania, ryzyko podatkowe, brak dokumentu, nietypowa płatność kartą albo faktura, której nie da się jednoznacznie przypisać do projektu.</p>
-            <p>Dzięki temu raport nie jest archiwum danych. Staje się narzędziem zarządzania.</p>
+            <p>Miesięczny raport zarządczy dla spółki z o.o. powinien w jednym miejscu pokazywać wynik finansowy, bezpieczeństwo gotówkowe i sprawy, które wymagają decyzji. Nie chodzi o przeniesienie całych ksiąg do kolejnego pliku, ale o czytelne podsumowanie zakończone komentarzem: co się zmieniło, dlaczego i co z tego wynika.</p>
+            <p>Zakres raportu warto ustalić raz i powtarzać co miesiąc. Dzięki temu zarząd może porównać dane z poprzednim okresem, budżetem lub planem oraz szybko wychwycić odchylenia.</p>
+            <div class="note"><strong>Minimum dobrego raportu</strong><p>Wynik i marża, przychody i koszty, cash-flow, należności, zobowiązania, podatki, kilka KPI oraz krótka lista najważniejszych wniosków i decyzji.</p></div>
           </section>
 
-          <section id="przyklad-raportu">
-            <h2>Jak może wyglądać prosty raport miesięczny?</h2>
-            <p>Dobry raport nie musi mieć kilkudziesięciu stron. W wielu spółkach najlepiej działa krótki, powtarzalny układ, który zarząd jest w stanie przeczytać w kilka minut.</p>
+          <section id="wynik-marza">
+            <h2>Wynik finansowy, przychody, koszty i marża</h2>
+            <p>Pierwsza część raportu powinna wyjaśniać, ile spółka sprzedała, jakie koszty poniosła i jaki wynik osiągnęła. Warto pokazać miesiąc, narastająco od początku roku oraz porównanie z poprzednim miesiącem lub planem.</p>
+            <ul>
+              <li>przychody według głównych produktów, usług, klientów lub kanałów,</li>
+              <li>koszty bezpośrednie i stałe, z zaznaczeniem kosztów jednorazowych,</li>
+              <li>wynik miesiąca i wynik narastająco, z wyjaśnieniem odchyleń,</li>
+              <li>marżę brutto lub marżę na sprzedaży, jeśli dane pozwalają ją wiarygodnie policzyć.</li>
+            </ul>
+            <p>Sama marża procentowa może mylić. Dobrze pokazać także wartość kwotową i wskazać, czy zmiana wynika z cen, miksu sprzedaży, kosztów materiałów, podwykonawców lub innych pozycji.</p>
+          </section>
 
-<div class="report-visual-intro">
-              <strong>Przykład poniżej jest poglądowy.</strong> Pokazuje, jak raport może prowadzić zarząd od liczb do decyzji: najpierw szybki widok light, a niżej bardziej zarządczy dashboard premium.
-            </div>
+          <section id="cash-flow">
+            <h2>Cash-flow i stan gotówki</h2>
+            <p>Wynik księgowy nie odpowiada na pytanie, czy spółka ma środki na najbliższe płatności. Raport powinien więc zawierać saldo rachunków i kasy, najważniejsze wpływy i wydatki oraz przewidywane obciążenia w kolejnych tygodniach.</p>
+            <ul>
+              <li>saldo gotówki na koniec miesiąca i zmiany względem poprzedniego okresu,</li>
+              <li>wpływy od klientów oraz planowane większe płatności,</li>
+              <li>wynagrodzenia, leasingi, dostawców, podatki i inne zobowiązania stałe,</li>
+              <li>krótką prognozę płynności przed inwestycją lub okresem słabszej sprzedaży.</li>
+            </ul>
+            <div class="expert"><strong>Wniosek dla zarządu</strong><p>Jeżeli spółka ma zysk, ale gotówka spada, raport powinien pokazać przyczynę: wzrost należności, spłatę zobowiązań, inwestycję, zapasów albo inne przesunięcie między wynikiem a przepływem pieniędzy.</p></div>
+          </section>
 
-            <div class="report-showcase" aria-label="Interaktywne wizualizacje raportu miesięcznego">
+          <section id="naleznosci">
+            <h2>Należności i zobowiązania</h2>
+            <p>Rozrachunki powinny być pokazane tak, aby można było ustalić priorytety. Łączna suma nie wystarczy: zarząd potrzebuje struktury wiekowej, informacji o największych pozycjach i wskazania spraw, które wymagają kontaktu lub decyzji.</p>
+            <div class="table-wrap"><table>
+              <thead><tr><th>Obszar</th><th>W raporcie pokaż</th><th>Praktyczne pytanie</th></tr></thead>
+              <tbody>
+                <tr><td>Należności</td><td>saldo, przedziały przeterminowania, największych dłużników</td><td>które płatności zagrażają płynności?</td></tr>
+                <tr><td>Zobowiązania</td><td>dostawców, raty, wynagrodzenia i terminy płatności</td><td>jakie przelewy trzeba zabezpieczyć?</td></tr>
+                <tr><td>Rozrachunki ze wspólnikami</td><td>pożyczki, zaliczki i inne nierozliczone pozycje</td><td>czy każda pozycja ma dokument i uzasadnienie?</td></tr>
+              </tbody>
+            </table></div>
+            <p>Dobrym uzupełnieniem jest DSO, czyli średni czas spływu należności, ale tylko wtedy, gdy sposób liczenia jest stały. Jeden KPI nie zastąpi listy konkretnych faktur i odpowiedzialności za ich odzyskanie.</p>
+          </section>
 
-  <section class="report-card report-card--light report-interactive" data-widget="light">
-    <div class="report-card__head">
-      <h3 class="report-card__title">Wersja light — prosty raport miesięczny</h3>
-      <span class="report-card__badge">Kliknij i zmieniaj widok danych</span>
-    </div>
-    <div class="report-card__body">
-      <div class="kpi-grid">
-        <div class="kpi" id="kpi-przychody">
-          <div class="kpi__label">Przychody</div>
-          <div class="kpi__value">248 000 zł</div>
-          <div class="kpi__meta">+8,4% vs poprzedni miesiąc</div>
-        </div>
-        <div class="kpi" id="kpi-koszty">
-          <div class="kpi__label">Koszty</div>
-          <div class="kpi__value">187 500 zł</div>
-          <div class="kpi__meta">w tym stałe 96 000 zł</div>
-        </div>
-        <div class="kpi" id="kpi-wynik">
-          <div class="kpi__label">Wynik netto</div>
-          <div class="kpi__value">41 900 zł</div>
-          <div class="kpi__meta">marża netto 16,9%</div>
-        </div>
-        <div class="kpi" id="kpi-gotowka">
-          <div class="kpi__label">Saldo gotówki</div>
-          <div class="kpi__value">128 400 zł</div>
-          <div class="kpi__meta">bezpieczny bufor płynności</div>
-        </div>
-      </div>
-
-      <p class="report-hint">Kliknij zakładki, aby przełączać dane i komentarze do raportu.</p>
-      <div class="report-tabs" role="tablist" aria-label="Wybór danych raportu light">
-        <button type="button" class="report-tab is-active" role="tab" aria-selected="true" data-target="light-przychody" data-focus="kpi-przychody,kpi-koszty,kpi-wynik">Przychody i koszty</button>
-        <button type="button" class="report-tab" role="tab" aria-selected="false" data-target="light-cashflow" data-focus="kpi-gotowka">Cash-flow</button>
-        <button type="button" class="report-tab" role="tab" aria-selected="false" data-target="light-naleznosci" data-focus="kpi-przychody,kpi-gotowka">Należności</button>
-        <button type="button" class="report-tab" role="tab" aria-selected="false" data-target="light-podatki" data-focus="kpi-koszty,kpi-gotowka">Podatki</button>
-      </div>
-
-      <div id="light-przychody" class="report-panel is-active">
-        <div class="chart-layout">
-          <div class="chart-box">
-            <p class="chart-title">Przychody vs koszty — ostatnie 4 miesiące</p>
-            <div class="metric-head">
-              <div>
-                <div class="metric-big">+60 500 zł</div>
-                <div class="metric-sub">nadwyżki operacyjnej w ostatnim miesiącu</div>
-              </div>
-            </div>
-            <div class="bar-chart" role="img" aria-label="Wykres przychodów i kosztów za 4 miesiące">
-              <div class="bar-col"><div class="bar-stack"><div class="bar dark" style="height:120px"></div><div class="bar alt" style="height:92px"></div></div><div class="bar-label">I</div></div>
-              <div class="bar-col"><div class="bar-stack"><div class="bar dark" style="height:134px"></div><div class="bar alt" style="height:98px"></div></div><div class="bar-label">II</div></div>
-              <div class="bar-col"><div class="bar-stack"><div class="bar dark" style="height:128px"></div><div class="bar alt" style="height:104px"></div></div><div class="bar-label">III</div></div>
-              <div class="bar-col"><div class="bar-stack"><div class="bar dark" style="height:152px"></div><div class="bar alt" style="height:108px"></div></div><div class="bar-label">IV</div></div>
-            </div>
-            <div class="legend">
-              <span><i style="background:#0D1B2A"></i>Przychody</span>
-              <span><i style="background:#FFCC00"></i>Koszty</span>
-            </div>
-          </div>
-          <div class="chart-box">
-            <p class="chart-title">Najważniejsze liczby</p>
-            <div class="side-list">
-              <div class="side-row"><span class="side-label">Należności</span><span class="side-value">76 200 zł</span></div>
-              <div class="side-row"><span class="side-label">Zobowiązania</span><span class="side-value">49 800 zł</span></div>
-              <div class="side-row"><span class="side-label">VAT / ZUS / CIT</span><span class="side-value">21 450 zł</span></div>
-              <div class="side-row"><span class="side-label">Przeterminowane 30+ dni</span><span class="side-value">11 000 zł</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="note-box">
-          <h4>Na co zarząd powinien zwrócić uwagę?</h4>
-          <ul>
-            <li>marża wzrosła mimo wyższych kosztów, bo poprawił się poziom sprzedaży,</li>
-            <li>należności przeterminowane powyżej 30 dni wymagają kontaktu z 2 klientami,</li>
-            <li>większa inwestycja wymagałaby planu cash-flow na kolejne 6 tygodni.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="light-cashflow" class="report-panel">
-        <div class="chart-layout">
-          <div class="chart-box">
-            <p class="chart-title">Cash-flow operacyjny — ostatnie 4 miesiące</p>
-            <div class="metric-head">
-              <div>
-                <div class="metric-big">37 800 zł</div>
-                <div class="metric-sub">dodatniego cash-flow operacyjnego</div>
-              </div>
-            </div>
-            <div class="bar-chart" role="img" aria-label="Wykres cash-flow za 4 miesiące">
-              <div class="bar-col"><div class="bar dark" style="height:92px"></div><div class="bar-label">I</div></div>
-              <div class="bar-col"><div class="bar dark" style="height:110px"></div><div class="bar-label">II</div></div>
-              <div class="bar-col"><div class="bar dark" style="height:96px"></div><div class="bar-label">III</div></div>
-              <div class="bar-col"><div class="bar dark" style="height:126px"></div><div class="bar-label">IV</div></div>
-            </div>
-          </div>
-          <div class="chart-box">
-            <p class="chart-title">Płynność</p>
-            <div class="side-list">
-              <div class="side-row"><span class="side-label">Saldo gotówki</span><span class="side-value">128 400 zł</span></div>
-              <div class="side-row"><span class="side-label">Runway</span><span class="side-value">2,7 mies.</span></div>
-              <div class="side-row"><span class="side-label">Wpływy w 14 dni</span><span class="side-value">43 000 zł</span></div>
-              <div class="side-row"><span class="side-label">Wydatki stałe / mies.</span><span class="side-value">96 000 zł</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="note-box">
-          <h4>Wniosek</h4>
-          <p>Na dziś płynność jest bezpieczna, ale przy większych płatnościach inwestycyjnych warto pilnować harmonogramu wpływów i zobowiązań tygodniowych.</p>
-        </div>
-      </div>
-
-      <div id="light-naleznosci" class="report-panel">
-        <div class="chart-layout">
-          <div class="chart-box">
-            <p class="chart-title">Struktura należności</p>
-            <div class="metric-head">
-              <div>
-                <div class="metric-big">76 200 zł</div>
-                <div class="metric-sub">łącznych należności na koniec miesiąca</div>
-              </div>
-            </div>
-            <div class="bar-chart" role="img" aria-label="Wiekowanie należności">
-              <div class="bar-col"><div class="bar dark" style="height:150px"></div><div class="bar-label">0–14 dni</div></div>
-              <div class="bar-col"><div class="bar dark" style="height:116px"></div><div class="bar-label">15–30</div></div>
-              <div class="bar-col"><div class="bar alt" style="height:74px"></div><div class="bar-label">31–60</div></div>
-              <div class="bar-col"><div class="bar alt" style="height:44px"></div><div class="bar-label">60+</div></div>
-            </div>
-          </div>
-          <div class="chart-box">
-            <p class="chart-title">Kluczowe dane</p>
-            <div class="side-list">
-              <div class="side-row"><span class="side-label">DSO</span><span class="side-value">34 dni</span></div>
-              <div class="side-row"><span class="side-label">Największa faktura</span><span class="side-value">18 900 zł</span></div>
-              <div class="side-row"><span class="side-label">Po terminie 30+ dni</span><span class="side-value">11 000 zł</span></div>
-              <div class="side-row"><span class="side-label">Klienci do kontaktu</span><span class="side-value">2</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="note-box">
-          <h4>Wniosek</h4>
-          <p>Najwięcej uwagi wymaga należność 60+ dni. Taki widok pozwala szybko odróżnić zwykłe oczekiwanie na płatność od realnego ryzyka dla cash-flow.</p>
-        </div>
-      </div>
-
-      <div id="light-podatki" class="report-panel">
-        <div class="chart-layout">
-          <div class="chart-box">
-            <p class="chart-title">Obciążenia podatkowe i publicznoprawne</p>
-            <div class="metric-head">
-              <div>
-                <div class="metric-big">21 450 zł</div>
-                <div class="metric-sub">łącznych płatności VAT / ZUS / CIT</div>
-              </div>
-            </div>
-            <div class="bar-chart" role="img" aria-label="Podział obciążeń podatkowych">
-              <div class="bar-col"><div class="bar dark" style="height:158px"></div><div class="bar-label">VAT</div></div>
-              <div class="bar-col"><div class="bar alt" style="height:88px"></div><div class="bar-label">ZUS</div></div>
-              <div class="bar-col"><div class="bar dark" style="height:62px"></div><div class="bar-label">CIT</div></div>
-              <div class="bar-col"><div class="bar alt" style="height:40px"></div><div class="bar-label">Inne</div></div>
-            </div>
-          </div>
-          <div class="chart-box">
-            <p class="chart-title">Status rozliczeń</p>
-            <div class="side-list">
-              <div class="side-row"><span class="side-label">Zaległości</span><span class="side-value">brak</span></div>
-              <div class="side-row"><span class="side-label">Najbliższy termin</span><span class="side-value">20. dzień miesiąca</span></div>
-              <div class="side-row"><span class="side-label">Korekty</span><span class="side-value">0</span></div>
-              <div class="side-row"><span class="side-label">Alert</span><span class="side-value">sprawdź cash-flow</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="note-box">
-          <h4>Wniosek</h4>
-          <p>Zarząd nie potrzebuje samych terminów. Potrzebuje wiedzieć, jak wysokość podatków wpływa na gotówkę i które płatności należy zsynchronizować z wpływami od klientów.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="report-card report-card--premium report-interactive" data-widget="premium">
-    <div class="report-card__head">
-      <h3 class="report-card__title">Wersja premium — dashboard dla zarządu</h3>
-      <span class="report-card__badge">Raport + controlling</span>
-    </div>
-    <div class="report-card__body">
-      <div class="kpi-grid">
-        <div class="kpi" id="pkpi-ebitda">
-          <div class="kpi__label">EBITDA</div>
-          <div class="kpi__value">58 300 zł</div>
-          <div class="kpi__meta">23,5% przychodów</div>
-        </div>
-        <div class="kpi" id="pkpi-cash">
-          <div class="kpi__label">Cash-flow operacyjny</div>
-          <div class="kpi__value">37 800 zł</div>
-          <div class="kpi__meta">pozytywny 4. miesiąc</div>
-        </div>
-        <div class="kpi" id="pkpi-dso">
-          <div class="kpi__label">DSO</div>
-          <div class="kpi__value">34 dni</div>
-          <div class="kpi__meta">cel: poniżej 30 dni</div>
-        </div>
-        <div class="kpi" id="pkpi-runway">
-          <div class="kpi__label">Runway gotówki</div>
-          <div class="kpi__value">2,7 mies.</div>
-          <div class="kpi__meta">przy obecnych wydatkach</div>
-        </div>
-      </div>
-
-      <p class="report-hint">Poniżej możesz przełączać widok między wynikiem, płynnością i alertami zarządczymi.</p>
-      <div class="report-tabs" role="tablist" aria-label="Wybór danych raportu premium">
-        <button type="button" class="report-tab is-active" role="tab" aria-selected="true" data-target="premium-wynik" data-focus="pkpi-ebitda">Wynik i marża</button>
-        <button type="button" class="report-tab" role="tab" aria-selected="false" data-target="premium-plynnosc" data-focus="pkpi-cash,pkpi-runway">Płynność</button>
-        <button type="button" class="report-tab" role="tab" aria-selected="false" data-target="premium-klienci" data-focus="pkpi-dso">Klienci i należności</button>
-        <button type="button" class="report-tab" role="tab" aria-selected="false" data-target="premium-alerty" data-focus="pkpi-ebitda,pkpi-cash,pkpi-dso,pkpi-runway">Alerty zarządcze</button>
-      </div>
-
-      <div id="premium-wynik" class="report-panel is-active">
-        <div class="chart-layout">
-          <div class="chart-box">
-            <p class="chart-title">Struktura wyniku w 4 miesiącach</p>
-            <div class="metric-head">
-              <div>
-                <div class="metric-big">16,9%</div>
-                <div class="metric-sub">marży netto w ostatnim miesiącu</div>
-              </div>
-            </div>
-            <div class="bar-chart" role="img" aria-label="Wynik i koszty w ujęciu 4 miesięcznym">
-              <div class="bar-col"><div class="bar-stack"><div class="bar soft" style="height:118px"></div><div class="bar alt" style="height:92px"></div></div><div class="bar-label">I</div></div>
-              <div class="bar-col"><div class="bar-stack"><div class="bar soft" style="height:126px"></div><div class="bar alt" style="height:96px"></div></div><div class="bar-label">II</div></div>
-              <div class="bar-col"><div class="bar-stack"><div class="bar soft" style="height:129px"></div><div class="bar alt" style="height:102px"></div></div><div class="bar-label">III</div></div>
-              <div class="bar-col"><div class="bar-stack"><div class="bar soft" style="height:148px"></div><div class="bar alt" style="height:106px"></div></div><div class="bar-label">IV</div></div>
-            </div>
-            <div class="legend">
-              <span><i style="background:#8FB7FF"></i>Przychody</span>
-              <span><i style="background:#FFCC00"></i>Koszty</span>
-            </div>
-          </div>
-          <div class="chart-box">
-            <p class="chart-title">Komentarz CFO</p>
-            <div class="side-list">
-              <div class="side-row"><span class="side-label">Największy plus</span><span class="side-value">wzrost sprzedaży</span></div>
-              <div class="side-row"><span class="side-label">Presja kosztowa</span><span class="side-value">usługi zewnętrzne</span></div>
-              <div class="side-row"><span class="side-label">Marża brutto</span><span class="side-value">31,2%</span></div>
-              <div class="side-row"><span class="side-label">Priorytet</span><span class="side-value">utrzymać cenę</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="note-box">
-          <h4>Interpretacja</h4>
-          <p>Ten widok łączy dane księgowe z komentarzem zarządczym. Nie tylko pokazuje liczby, ale pomaga od razu odpowiedzieć na pytanie: co się poprawiło, co pogarsza rentowność i gdzie potrzebna jest decyzja.</p>
-        </div>
-      </div>
-
-      <div id="premium-plynnosc" class="report-panel">
-        <div class="chart-layout">
-          <div class="chart-box">
-            <p class="chart-title">Płynność i gotówka</p>
-            <div class="metric-head">
-              <div>
-                <div class="metric-big">128 400 zł</div>
-                <div class="metric-sub">gotówki na koniec miesiąca</div>
-              </div>
-            </div>
-            <div class="bar-chart" role="img" aria-label="Widok płynności">
-              <div class="bar-col"><div class="bar soft" style="height:84px"></div><div class="bar-label">Wpływy</div></div>
-              <div class="bar-col"><div class="bar alt" style="height:68px"></div><div class="bar-label">Wydatki</div></div>
-              <div class="bar-col"><div class="bar soft" style="height:112px"></div><div class="bar-label">Saldo</div></div>
-              <div class="bar-col"><div class="bar alt" style="height:58px"></div><div class="bar-label">Podatki</div></div>
-            </div>
-          </div>
-          <div class="chart-box">
-            <p class="chart-title">Decyzje</p>
-            <div class="side-list">
-              <div class="side-row"><span class="side-label">Runway</span><span class="side-value">2,7 mies.</span></div>
-              <div class="side-row"><span class="side-label">Duża płatność</span><span class="side-value">za 12 dni</span></div>
-              <div class="side-row"><span class="side-label">Wpływy do końca tyg.</span><span class="side-value">31 000 zł</span></div>
-              <div class="side-row"><span class="side-label">Rekomendacja</span><span class="side-value">plan 6 tygodni</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="note-box">
-          <h4>Interpretacja</h4>
-          <p>To widok szczególnie przydatny zarządowi, który chce szybko ocenić bezpieczeństwo gotówkowe spółki i wpływ planowanych wydatków na płynność.</p>
-        </div>
-      </div>
-
-      <div id="premium-klienci" class="report-panel">
-        <div class="chart-layout">
-          <div class="chart-box">
-            <p class="chart-title">Portfel należności</p>
-            <div class="metric-head">
-              <div>
-                <div class="metric-big">34 dni</div>
-                <div class="metric-sub">średniego okresu spływu należności</div>
-              </div>
-            </div>
-            <div class="bar-chart" role="img" aria-label="Struktura należności premium">
-              <div class="bar-col"><div class="bar soft" style="height:134px"></div><div class="bar-label">Klient A</div></div>
-              <div class="bar-col"><div class="bar soft" style="height:102px"></div><div class="bar-label">Klient B</div></div>
-              <div class="bar-col"><div class="bar alt" style="height:78px"></div><div class="bar-label">30+ dni</div></div>
-              <div class="bar-col"><div class="bar alt" style="height:48px"></div><div class="bar-label">60+ dni</div></div>
-            </div>
-          </div>
-          <div class="chart-box">
-            <p class="chart-title">Alerty handlowe</p>
-            <div class="side-list">
-              <div class="side-row"><span class="side-label">Największy klient</span><span class="side-value">18 900 zł</span></div>
-              <div class="side-row"><span class="side-label">Koncentracja</span><span class="side-value">26% portfela</span></div>
-              <div class="side-row"><span class="side-label">Po terminie 60+</span><span class="side-value">4 000 zł</span></div>
-              <div class="side-row"><span class="side-label">Akcja</span><span class="side-value">follow-up</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="note-box">
-          <h4>Interpretacja</h4>
-          <p>Raport zarządczy nie kończy się na księgach. Pokazuje również, jak zachowują się klienci, czy nie rośnie koncentracja przychodów i które należności stanowią realne ryzyko.</p>
-        </div>
-      </div>
-
-      <div id="premium-alerty" class="report-panel">
-        <div class="chart-layout">
-          <div class="chart-box">
-            <p class="chart-title">Panel alertów zarządczych</p>
-            <div class="metric-head">
-              <div>
-                <div class="metric-big">3 alerty</div>
-                <div class="metric-sub">wymagające decyzji w tym miesiącu</div>
-              </div>
-            </div>
-            <div class="side-list">
-              <div class="side-row"><span class="side-label">Koszty usług</span><span class="side-value">+12%</span></div>
-              <div class="side-row"><span class="side-label">Należności 30+ dni</span><span class="side-value">11 000 zł</span></div>
-              <div class="side-row"><span class="side-label">Inwestycja</span><span class="side-value">wpływ na cash-flow</span></div>
-              <div class="side-row"><span class="side-label">Podatki</span><span class="side-value">bez zaległości</span></div>
-            </div>
-          </div>
-          <div class="chart-box">
-            <p class="chart-title">Szybka rekomendacja</p>
-            <div class="note-box" style="margin-top:0">
-              <h4>Co warto zrobić?</h4>
-              <ul>
-                <li>przeanalizować wzrost kosztów usług zewnętrznych,</li>
-                <li>skontaktować się z klientami opóźniającymi płatności,</li>
-                <li>przed inwestycją rozpisać wpływy i wydatki na 6 tygodni.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
-
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Obszar raportu</th>
-                    <th>Co pokazuje?</th>
-                    <th>Po co zarządowi ta informacja?</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Wynik finansowy</td>
-                    <td>Przychody, koszty, wynik miesiąca i wynik narastająco</td>
-                    <td>Żeby ocenić, czy spółka zarabia i czy wynik jest stabilny</td>
-                  </tr>
-                  <tr>
-                    <td>Sprzedaż i marża</td>
-                    <td>Podział przychodów, kosztów bezpośrednich i marży</td>
-                    <td>Żeby wiedzieć, które usługi, projekty lub kanały sprzedaży są rentowne</td>
-                  </tr>
-                  <tr>
-                    <td>Koszty</td>
-                    <td>Największe koszty, koszty stałe, koszty jednorazowe i odchylenia</td>
-                    <td>Żeby szybciej zauważyć, gdzie pieniądze zaczynają uciekać</td>
-                  </tr>
-                  <tr>
-                    <td>Należności</td>
-                    <td>Faktury niezapłacone, przeterminowane i zagrożone</td>
-                    <td>Żeby reagować na opóźnienia klientów i chronić płynność</td>
-                  </tr>
-                  <tr>
-                    <td>Zobowiązania</td>
-                    <td>Faktury do zapłaty, podatki, leasingi i inne płatności</td>
-                    <td>Żeby planować przelewy i unikać zatorów</td>
-                  </tr>
-                  <tr>
-                    <td>Cash-flow</td>
-                    <td>Saldo gotówki, wpływy, wydatki i przewidywane obciążenia</td>
-                    <td>Żeby ocenić, czy spółka ma bezpieczny bufor finansowy</td>
-                  </tr>
-                  <tr>
-                    <td>Podatki i terminy</td>
-                    <td>VAT, CIT, ZUS, PIT i inne obowiązki</td>
-                    <td>Żeby zarząd wcześniej wiedział, ile środków trzeba zabezpieczyć</td>
-                  </tr>
-                  <tr>
-                    <td>Wnioski</td>
-                    <td>Komentarz księgowy i lista spraw do decyzji</td>
-                    <td>Żeby raport kończył się działaniem, a nie tylko tabelą</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <section id="podatki">
+            <h2>Podatki i zobowiązania publicznoprawne</h2>
+            <p>Raport powinien przypominać o najbliższych płatnościach, ale nie może ograniczać się do samej kwoty podatku. Warto wskazać rodzaj zobowiązania, termin, szacowaną kwotę i wpływ na plan gotówki.</p>
+            <ul>
+              <li>VAT, CIT oraz ewentualne korekty i dopłaty,</li>
+              <li>ZUS, PIT od wynagrodzeń i inne obowiązki płatnika,</li>
+              <li>terminy przelewów i informację, czy środki są zabezpieczone,</li>
+              <li>niestandardowe zdarzenia, które mogą zmienić rozliczenie w kolejnym miesiącu.</li>
+            </ul>
+            <p>Jeżeli kwota jest jeszcze szacunkiem, trzeba to wyraźnie oznaczyć. Zarząd powinien wiedzieć, które dane są zamknięte, a które mogą się zmienić.</p>
           </section>
 
           <section id="kpi">
-            <h2>Jakie KPI warto mierzyć w spółce z o.o.?</h2>
-            <p>KPI, czyli kluczowe wskaźniki efektywności, powinny wynikać z modelu biznesowego spółki. Nie warto mierzyć wszystkiego. Lepiej wybrać kilka wskaźników, które rzeczywiście pomagają zarządowi podejmować decyzje.</p>
-            <p>W mniejszej spółce dobrym początkiem mogą być:</p>
-            <ul>
-              <li>przychody miesiąca i przychody narastająco,</li>
-              <li>marża brutto lub marża na projektach,</li>
-              <li>udział kosztów stałych w przychodach,</li>
-              <li>saldo należności przeterminowanych,</li>
-              <li>średni czas płatności od klientów,</li>
-              <li>saldo zobowiązań do zapłaty w najbliższych 30 dniach,</li>
-              <li>saldo gotówki i bufor płynności,</li>
-              <li>wartość podatków do zapłaty w kolejnym miesiącu.</li>
-            </ul>
-            <p>W spółkach usługowych warto dodać rentowność projektów, koszt zespołu i wykorzystanie czasu pracy. W e-commerce ważne mogą być marża po kosztach dostawy, koszty reklam, rotacja zapasów i zwroty. W spółkach z dużą liczbą kontraktów — przychód powtarzalny, koszty obsługi klienta i rentowność poszczególnych umów.</p>
-            <p>Najważniejsze jest to, żeby KPI były zrozumiałe dla zarządu. Jeżeli raport zawiera wskaźniki, których nikt nie używa przy podejmowaniu decyzji, raport staje się formalnością.</p>
-          </section>
-
-          <section id="controlling">
-            <h2>Raport miesięczny a controlling — od czego zacząć?</h2>
-            <p>Nie każda spółka potrzebuje od razu rozbudowanego controllingu. Czasem lepiej zacząć od prostego raportu miesięcznego, który porządkuje podstawowe dane i pozwala zarządowi złapać rytm pracy na liczbach.</p>
-            <p>Dobry pierwszy etap to raport po zamknięciu miesiąca: wynik, koszty, należności, zobowiązania, cash-flow, podatki i komentarz. Dopiero później warto rozbudowywać raport o budżet, porównanie planu do wykonania, rentowność działów, analizę projektów albo prognozę finansową.</p>
-            <p>W praktyce często widzimy, że największy efekt daje nie bardzo zaawansowany arkusz, ale regularność. Jeżeli zarząd co miesiąc dostaje te same dane w tym samym układzie, zaczyna szybciej zauważać odchylenia i zadawać lepsze pytania.</p>
-          </section>
-
-          <section id="bledy">
-            <h2>Najczęstsze błędy przy raportowaniu dla zarządu</h2>
-            <p>Pierwszy błąd to raportowanie wyłącznie podatków. Zarząd wie, ile ma zapłacić do urzędu, ale nie wie, czy spółka ma dobrą marżę, gdzie rosną koszty i czy klienci płacą na czas.</p>
-            <p>Drugi błąd to zbyt szczegółowy raport. Jeżeli raport ma kilkadziesiąt tabel i żadnego komentarza, zarząd często nie korzysta z niego w praktyce. Dane są dostępne, ale nie prowadzą do decyzji.</p>
-            <p>Trzeci błąd to brak porównywalności. Co miesiąc raport wygląda inaczej, dane są ułożone w innej kolejności, a kategorie kosztów zmieniają nazwy. Wtedy trudno ocenić trend.</p>
-            <p>Czwarty błąd to raport przygotowywany zbyt późno. Informacja o wyniku sprzed dwóch miesięcy ma ograniczoną wartość decyzyjną. Raport powinien trafiać do zarządu możliwie szybko po zamknięciu miesiąca.</p>
-            <p>Piąty błąd to brak odpowiedzialności za dane. Raport powinien mieć właściciela: osobę lub biuro, które przygotowuje dane, wyjaśnia różnice i wskazuje tematy wymagające decyzji.</p>
-          </section>
-
-          <section id="rola-biura">
-            <h2>Czego zarząd powinien oczekiwać od biura rachunkowego?</h2>
-            <p>Biuro rachunkowe nie zastąpi zarządu w podejmowaniu decyzji biznesowych. Może jednak przygotować dane w taki sposób, żeby te decyzje były spokojniejsze i bardziej świadome.</p>
-            <p>W praktyce dobre biuro rachunkowe powinno:</p>
-            <ul>
-              <li>księgować dokumenty w sposób pozwalający analizować koszty i przychody,</li>
-              <li>uzgadniać rozrachunki i wskazywać niejasne salda,</li>
-              <li>przygotowywać czytelną informację o podatkach i terminach,</li>
-              <li>sygnalizować nietypowe koszty lub braki w dokumentach,</li>
-              <li>pomagać ustalić kategorie raportowe dopasowane do spółki,</li>
-              <li>przekazywać zarządowi raport w powtarzalnym układzie,</li>
-              <li>omawiać najważniejsze wnioski, a nie tylko wysyłać plik.</li>
-            </ul>
-            <p>To szczególnie ważne w spółkach z o.o., gdzie zarząd odpowiada za prowadzenie spraw spółki i potrzebuje danych nie tylko do rozliczeń, ale też do kontroli sytuacji finansowej.</p>
-          </section>
-
-          <section id="zmiana-biura">
-            <h2>Kiedy brak raportowania może być powodem do zmiany biura?</h2>
-            <p>Zmiana biura rachunkowego nie zawsze jest potrzebna. Czasem wystarczy ustalić nowy zakres współpracy i jasno powiedzieć, jakiego raportowania oczekuje zarząd. Są jednak sytuacje, w których brak raportowania jest sygnałem ostrzegawczym.</p>
-            <p>Warto przyjrzeć się współpracy, jeżeli:</p>
-            <ul>
-              <li>zarząd dostaje tylko kwoty podatków do zapłaty,</li>
-              <li>nikt nie wyjaśnia, z czego wynika wynik miesiąca,</li>
-              <li>nie ma regularnej informacji o należnościach i zobowiązaniach,</li>
-              <li>księgowość nie pomaga rozdzielać kosztów według projektów, działów lub typów działalności,</li>
-              <li>raporty są nieczytelne albo przygotowywane z dużym opóźnieniem,</li>
-              <li>zarząd nie wie, czy dane w księgach są kompletne,</li>
-              <li>biuro nie sygnalizuje braków w dokumentach i nietypowych operacji,</li>
-              <li>rozmowa o raporcie kończy się na stwierdzeniu, że „wszystko jest w systemie”.</li>
-            </ul>
-            <p>Jeżeli zarząd musi sam wyciągać dane z wielu miejsc, składać je w arkuszu i zgadywać, co oznaczają, księgowość nie daje pełnej wartości decyzyjnej. W takiej sytuacji warto porozmawiać o zmianie sposobu współpracy albo o przejęciu księgowości przez biuro, które od początku uwzględnia raportowanie.</p>
-          </section>
-
-          <section id="jak-wdrozyc">
-            <h2>Jak wdrożyć raport miesięczny bez chaosu?</h2>
-            <p>Najlepiej zacząć prosto. Nie trzeba od razu budować rozbudowanego systemu controllingowego. W pierwszym kroku warto ustalić, jakie decyzje zarząd podejmuje co miesiąc i jakich danych mu do tego brakuje.</p>
-            <p>Dobry proces wdrożenia może wyglądać tak:</p>
-            <ol>
-              <li>ustalenie, jakie obszary działalności spółki mają być raportowane,</li>
-              <li>sprawdzenie obecnego planu kont i sposobu księgowania kosztów,</li>
-              <li>ustalenie kategorii raportowych, np. projekty, działy, typy usług, kanały sprzedaży,</li>
-              <li>uzgodnienie terminu dostarczania raportu po zamknięciu miesiąca,</li>
-              <li>przygotowanie pierwszej wersji raportu,</li>
-              <li>omówienie raportu z zarządem i uproszczenie tego, co nie jest potrzebne,</li>
-              <li>regularne raportowanie w tym samym układzie.</li>
-            </ol>
-            <p>Raport powinien żyć razem ze spółką. Na początku może być prosty, a wraz z rozwojem firmy można dodawać kolejne elementy: budżet, prognozę cash-flow, rentowność projektów, analizę zespołu, wskaźniki sprzedażowe czy dane o zapasach.</p>
-          </section>
-
-          <section id="linkowanie">
-            <h2>Co warto przeczytać dalej?</h2>
-            <p>Jeżeli temat raportowania jest dla Ciebie ważny, mogą Cię zainteresować również:</p>
-            <ul>
-              <li><a href="controlling-kpi.html">Raporty zarządcze i KPI — co naprawdę mierzyć w spółce?</a></li>
-              <li><a href="pelna-ksiegowosc-spolki-z-oo-online.html">Pełna księgowość spółki z o.o. online — jak wybrać biuro?</a></li>
-              <li><a href="audyt-ksiegowosci-przed-zmiana-biura.html">Audyt księgowości przed zmianą biura rachunkowego</a></li>
-              <li><a href="spolka-na-estonskim-cit-co-kontrolowac.html">Spółka na estońskim CIT — co trzeba kontrolować co miesiąc?</a></li>
-              <li><a href="../ksiegowosc-spolka-z-oo.html">Księgowość dla spółki z o.o.</a></li>
-            </ul>
-          </section>
-
-          <section id="podsumowanie">
-            <h2>Podsumowanie</h2>
-            <p>Raport miesięczny dla zarządu spółki z o.o. powinien pomagać w podejmowaniu decyzji, a nie tylko spełniać formalny obowiązek. Najważniejsze są: wynik, przychody, koszty, marża, należności, zobowiązania, cash-flow, podatki i sprawy wymagające reakcji.</p>
-            <p>Dobrze przygotowany raport daje zarządowi spokojniejszy obraz firmy. Pokazuje, czy spółka zarabia, czy ma gotówkę, które koszty rosną, kto zalega z płatnością i jakie decyzje warto podjąć w kolejnym miesiącu.</p>
-            <p>W Pracowni Rachunkowości wspieramy spółki z o.o. nie tylko w bieżącej księgowości, ale też w raportowaniu zarządczym, kontroli rozrachunków i przygotowaniu danych do decyzji. Jeżeli chcesz, żeby księgowość Twojej spółki dawała więcej niż informację o podatkach, porozmawiajmy o tym, jak może wyglądać miesięczny raport dla Twojej firmy.</p>
-            <div class="cta-box">
-              <h3>Chcesz mieć księgowość z raportowaniem?</h3>
-              <p>Umów krótką rozmowę. Sprawdzimy, jakie dane są najważniejsze dla zarządu Twojej spółki i jak można uporządkować raport miesięczny.</p>
-              <a class="btn btn--yellow js-track-calendly" href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer">Umów rozmowę</a>
+            <h2>Najważniejsze KPI dla zarządu</h2>
+            <p>Nie ma jednej listy wskaźników dla każdej spółki. Lepiej wybrać kilka KPI związanych z modelem biznesowym niż tworzyć dashboard, którego nikt nie analizuje. Każdy wskaźnik powinien mieć definicję, źródło danych, okres porównawczy i osobę odpowiedzialną za reakcję.</p>
+            <div class="checklist">
+              <div><strong>Rentowność:</strong> marża, wynik operacyjny lub EBITDA, jeżeli sposób liczenia jest stały.</div>
+              <div><strong>Płynność:</strong> saldo gotówki, cash-flow operacyjny i prognoza najbliższych płatności.</div>
+              <div><strong>Sprzedaż:</strong> przychody, dynamika, średnia wartość transakcji lub koncentracja klientów.</div>
+              <div><strong>Rozrachunki:</strong> DSO, należności po terminie i udział zobowiązań wymagalnych.</div>
+              <div><strong>Operacje:</strong> KPI charakterystyczne dla branży, np. obłożenie, terminowość lub koszt realizacji.</div>
             </div>
+          </section>
+
+          <section id="przyklad-raportu">
+            <h2>Przykład miesięcznego raportu / dashboardu</h2>
+            <p>Poniższy przykład pokazuje logiczny układ raportu. Liczby są ilustracyjne; najważniejsza jest relacja między wynikiem, gotówką i rozrachunkami.</p>
+            <section class="report-card report-card--light" aria-label="Przykładowy miesięczny raport zarządczy">
+              <div class="report-card__head"><h3 class="report-card__title">Raport za kwiecień — spółka z o.o.</h3><span class="report-card__badge">Widok dla zarządu</span></div>
+              <div class="report-card__body">
+                <div class="kpi-grid">
+                  <div class="kpi"><div class="kpi__label">Przychody</div><div class="kpi__value">248 000 zł</div><div class="kpi__meta">+8% m/m</div></div>
+                  <div class="kpi"><div class="kpi__label">Wynik operacyjny</div><div class="kpi__value">58 300 zł</div><div class="kpi__meta">marża 23,5%</div></div>
+                  <div class="kpi"><div class="kpi__label">Gotówka</div><div class="kpi__value">128 400 zł</div><div class="kpi__meta">na koniec miesiąca</div></div>
+                  <div class="kpi"><div class="kpi__label">Należności 30+</div><div class="kpi__value">11 000 zł</div><div class="kpi__meta">2 pozycje do kontaktu</div></div>
+                </div>
+                <div class="table-wrap"><table>
+                  <thead><tr><th>Temat</th><th>Dane</th><th>Wniosek / działanie</th></tr></thead>
+                  <tbody>
+                    <tr><td>Wynik i marża</td><td>wynik wyższy o 9 400 zł m/m</td><td>sprawdzić, czy wzrost utrzyma się po zakończeniu projektu</td></tr>
+                    <tr><td>Cash-flow</td><td>dodatni operacyjny, 128 400 zł gotówki</td><td>uwzględnić ratę inwestycyjną w prognozie 6 tygodni</td></tr>
+                    <tr><td>Należności</td><td>11 000 zł po terminie 30 dni</td><td>wyznaczyć właściciela kontaktu z klientami</td></tr>
+                    <tr><td>Podatki</td><td>VAT / CIT / ZUS: 21 450 zł</td><td>potwierdzić zabezpieczenie środków przed terminem</td></tr>
+                  </tbody>
+                </table></div>
+              </div>
+            </section>
+          </section>
+
+          <section id="interpretacja">
+            <h2>Jak interpretować dane, a nie tylko je prezentować?</h2>
+            <p>Każdy istotny odchył powinien mieć opis przyczyny i proponowane działanie. Komentarz zarządczy nie musi być długi: wystarczy wskazać, co się zmieniło, jaki jest skutek i kto powinien zareagować.</p>
+            <ol>
+              <li>Porównaj miesiąc z poprzednim okresem i planem.</li>
+              <li>Znajdź największe odchylenia kwotowe, nie tylko procentowe.</li>
+              <li>Oddziel zdarzenia jednorazowe od trendów.</li>
+              <li>Połącz wynik z cash-flow i rozrachunkami.</li>
+              <li>Zakończ raport listą decyzji, terminów i osób odpowiedzialnych.</li>
+            </ol>
+            <p>Jeżeli spółka potrzebuje szerszego systemu raportowania, zobacz materiał o <a href="controlling-kpi.html">controllingu i KPI</a>. Miesięczny raport może być jego podstawą, ale nie musi opisywać całej usługi controllingowej.</p>
+          </section>
+
+          <section id="checklista">
+            <h2>Checklista dobrego raportu miesięcznego</h2>
+            <div class="checklist">
+              <div><strong>Kompletność:</strong> wynik, przychody, koszty, marża, cash-flow, należności, zobowiązania, podatki i KPI są w jednym widoku.</div>
+              <div><strong>Porównywalność:</strong> raport ma stały układ, definicje i okresy porównawcze.</div>
+              <div><strong>Rzetelność:</strong> wiadomo, które dane są zamknięte, a które są szacunkiem.</div>
+              <div><strong>Czytelność:</strong> najważniejsze liczby i alerty można znaleźć bez przeglądania całych ksiąg.</div>
+              <div><strong>Decyzyjność:</strong> komentarz wskazuje przyczynę, ryzyko, działanie i termin.</div>
+            </div>
+            <p>Raport powinien być wystarczająco krótki, aby zarząd chciał go czytać, i wystarczająco szczegółowy, aby można było przejść od sygnału do konkretnej decyzji.</p>
           </section>
 
           <section id="faq" class="faq faq-accordion">
             <h2>FAQ</h2>
+            <div class="faq-item"><button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-1">Co powinien zawierać miesięczny raport dla zarządu spółki z o.o.?</button><div class="faq-panel" id="faq-1" hidden><p>Raport powinien pokazywać wynik finansowy, przychody, koszty, marżę, cash-flow, należności, zobowiązania, podatki, najważniejsze KPI oraz sprawy wymagające decyzji zarządu.</p></div></div>
+            <div class="faq-item"><button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-2">Czym różni się raport księgowy od raportu zarządczego?</button><div class="faq-panel" id="faq-2" hidden><p>Raport księgowy pokazuje dane z ksiąg i rozliczeń. Raport zarządczy tłumaczy je decyzyjnie: co się zmieniło, dlaczego, jakie są ryzyka i co wymaga reakcji.</p></div></div>
+            <div class="faq-item"><button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-3">Jak często zarząd powinien analizować raport finansowy?</button><div class="faq-panel" id="faq-3" hidden><p>Najczęściej wystarczy raport miesięczny po zamknięciu miesiąca. Przy problemach z płynnością lub dużej liczbie należności wybrane dane warto monitorować częściej.</p></div></div>
+            <div class="faq-item"><button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-4">Czy mała spółka z o.o. potrzebuje raportowania?</button><div class="faq-panel" id="faq-4" hidden><p>Tak, ale raport nie musi być rozbudowany. Nawet mała spółka powinna widzieć wynik, koszty, należności, zobowiązania, podatki i saldo gotówki.</p></div></div>
+            <div class="faq-item"><button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-5">Po czym poznać, że raport zarządczy jest użyteczny?</button><div class="faq-panel" id="faq-5" hidden><p>Pokazuje zmianę względem poprzedniego okresu lub planu, wyjaśnia najważniejsze odchylenia i kończy się listą spraw wymagających decyzji.</p></div></div>
+          </section>
 
-            <div class="faq-item">
-              <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-1">
-                Co powinien zawierać miesięczny raport dla zarządu spółki z o.o.?
-              </button>
-              <div class="faq-panel" id="faq-1" hidden>
-                <p>Raport powinien pokazywać wynik finansowy, przychody, koszty, marżę, cash-flow, należności, zobowiązania, podatki, najważniejsze KPI oraz sprawy wymagające decyzji zarządu.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-2">
-                Czy biuro rachunkowe powinno przygotowywać raporty zarządcze?
-              </button>
-              <div class="faq-panel" id="faq-2" hidden>
-                <p>Może i w wielu spółkach warto tego oczekiwać. Biuro rachunkowe ma dostęp do danych księgowych, rozrachunków i podatków, więc może przygotować podstawę do raportu zarządczego. Ważne, żeby zakres raportu był ustalony z zarządem.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-3">
-                Czym różni się raport księgowy od raportu zarządczego?
-              </button>
-              <div class="faq-panel" id="faq-3" hidden>
-                <p>Raport księgowy pokazuje dane wynikające z ksiąg, deklaracji i rozliczeń. Raport zarządczy tłumaczy te dane w sposób praktyczny: co się zmieniło, dlaczego, jakie są ryzyka i co wymaga decyzji.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-4">
-                Jak często zarząd powinien analizować raport finansowy?
-              </button>
-              <div class="faq-panel" id="faq-4" hidden>
-                <p>Najczęściej wystarczy raport miesięczny przygotowywany po zamknięciu miesiąca. W spółkach z dużą dynamiką sprzedaży, problemami z płynnością albo dużą liczbą należności warto dodatkowo monitorować wybrane dane tygodniowo.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-5">
-                Czy mała spółka z o.o. potrzebuje raportowania?
-              </button>
-              <div class="faq-panel" id="faq-5" hidden>
-                <p>Tak, ale raport nie musi być rozbudowany. Nawet mała spółka powinna widzieć wynik, koszty, należności, zobowiązania, podatki i saldo gotówki. Raport można rozwijać razem z firmą.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-6">
-                Kiedy brak raportowania jest powodem do zmiany biura rachunkowego?
-              </button>
-              <div class="faq-panel" id="faq-6" hidden>
-                <p>Warto to rozważyć, jeśli zarząd dostaje wyłącznie informację o podatkach, nie ma czytelnego wyniku, nie widzi należności i zobowiązań, a księgowość nie pomaga wyjaśniać kosztów, marży i przepływów pieniężnych.</p>
-              </div>
-            </div>
+          <section id="kontakt">
+            <div class="note"><strong>Potrzebujesz uporządkować raport dla zarządu?</strong><p>Możemy pomóc dopasować zakres raportu do modelu spółki i połączyć dane księgowe z rozrachunkami, cash-flow oraz KPI.</p><p><a class="btn btn--yellow js-track-calendly" href="https://calendly.com/pracowniarachunkowosci/30min" target="_blank" rel="noopener noreferrer">Umów konsultację</a> <a class="btn btn--outline" href="../ksiegowosc-spolka-z-oo.html">Księgowość spółki z o.o.</a></p></div>
           </section>
 
           <section id="zrodla">
@@ -1237,16 +679,9 @@
             <p class="sources">Artykuł ma charakter informacyjny i nie stanowi indywidualnej porady podatkowej, księgowej ani prawnej. Zakres raportowania warto dopasować do skali, branży i modelu działania konkretnej spółki.</p>
           </section>
 
-
           <section class="eeat-author-box" aria-label="Autor artykułu">
             <img src="../assets/images/lukasz-soltys-autor.webp" alt="Łukasz Sołtys, autor bloga Pracowni Rachunkowości" width="96" height="96" loading="lazy">
-            <div>
-              <p class="eeat-author-box__eyebrow">Autor</p>
-              <h2>Łukasz Sołtys</h2>
-              <p class="eeat-author-box__role">Założyciel Pracowni Rachunkowości</p>
-              <p class="eeat-author-box__text">Łukasz Sołtys — założyciel Pracowni Rachunkowości. Od ponad 12 lat pracuje w księgowości i finansach, obsługując m.in. spółki produkcyjne, e-commerce oraz podmioty z branży finansowej. Specjalizuje się w księgowości spółek z o.o., raportowaniu zarządczym i controllingu.</p>
-              <a class="eeat-author-box__link" href="/blog/#artykuly">Zobacz publikacje autora</a>
-            </div>
+            <div><p class="eeat-author-box__eyebrow">Autor</p><h2>Łukasz Sołtys</h2><p class="eeat-author-box__role">Założyciel Pracowni Rachunkowości</p><p class="eeat-author-box__text">Łukasz Sołtys — założyciel Pracowni Rachunkowości. Od ponad 12 lat pracuje w księgowości i finansach, obsługując m.in. spółki produkcyjne, e-commerce oraz podmioty z branży finansowej. Specjalizuje się w księgowości spółek z o.o., raportowaniu zarządczym i controllingu.</p><a class="eeat-author-box__link" href="/blog/#artykuly">Zobacz publikacje autora</a></div>
           </section>
 </article>
 
@@ -1254,13 +689,15 @@
           <div class="side-card">
             <h3>Spis treści</h3>
             <ul>
-              <li><a href="#w-skrocie">W skrócie</a></li>
-              <li><a href="#co-powinien-pokazywac">Co powinien pokazywać raport?</a></li>
-              <li><a href="#przyklad-raportu">Przykład raportu</a></li>
-              <li><a href="#kpi">KPI dla zarządu</a></li>
-              <li><a href="#controlling">Raport a controlling</a></li>
-              <li><a href="#bledy">Najczęstsze błędy</a></li>
-              <li><a href="#rola-biura">Rola biura rachunkowego</a></li>
+              <li><a href="#wstep">Co powinien pokazywać raport?</a></li>
+              <li><a href="#wynik-marza">Wynik i marża</a></li>
+              <li><a href="#cash-flow">Cash-flow i gotówka</a></li>
+              <li><a href="#naleznosci">Należności i zobowiązania</a></li>
+              <li><a href="#podatki">Podatki</a></li>
+              <li><a href="#kpi">Najważniejsze KPI</a></li>
+              <li><a href="#przyklad-raportu">Przykład dashboardu</a></li>
+              <li><a href="#interpretacja">Interpretacja danych</a></li>
+              <li><a href="#checklista">Checklista</a></li>
               <li><a href="#faq">FAQ</a></li>
             </ul>
           </div>
