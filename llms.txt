@@ -20,7 +20,7 @@
 - [Księgowość e-commerce i VAT OSS](https://pracowniarachunkowosci.pl/ksiegowosc-ecommerce.html): obsługa sklepów internetowych i marketplace, KSeF, operatorzy płatności, rozrachunki, marża i cash-flow
 - [Zmiana biura rachunkowego](https://pracowniarachunkowosci.pl/zmiana-biura-rachunkowego.html): audyt startowy, przejęcie dokumentów i uporządkowanie księgowości
 - [Raporty zarządcze i controlling](https://pracowniarachunkowosci.pl/raporty-zarzadcze-controlling.html): KPI, cash-flow, rentowność, należności i zobowiązania
-- [Księgowość na estońskim CIT](https://pracowniarachunkowosci.pl/ksiegowosc-cit-estonski-online.html): główna strona usługi — pełne księgi, VAT, bieżące rozliczenia, monitoring ukrytych zysków, wypłat i wydatków oraz raporty zarządcze
+- [Księgowość na estońskim CIT](https://pracowniarachunkowosci.pl/ksiegowosc-cit-estonski-online.html): główna strona usługi — pełne księgi, VAT, bieżące rozliczenia, monitoring ukrytych zysków, wypłat i wydatków oraz wybrane raporty; rozbudowane raportowanie pozostaje w pakiecie Strategia
 - [Księgowość fundacji rodzinnej](https://pracowniarachunkowosci.pl/ksiegowosc-fundacji-rodzinnej.html): obsługa pełnych ksiąg, majątku, inwestycji, udziałów i akcji, nieruchomości, świadczeń beneficjentów, przepływów ze spółkami i raportowania
 - [Kompendium estońskiego CIT dla spółki z o.o.](https://pracowniarachunkowosci.pl/estonski-cit-spolka-z-oo.html): hub wiedzy o warunkach, opłacalności, wdrożeniu, ZAW-RD, kontroli i tematach szczegółowych
 - [Analizy finansowe i raportowanie](https://pracowniarachunkowosci.pl/analizy-finansowe-raportowanie.html): jednorazowe analizy wyniku, kosztów, marży i płynności
