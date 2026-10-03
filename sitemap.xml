@@ -95,7 +95,7 @@
 
   <url>
     <loc>https://pracowniarachunkowosci.pl/blog/</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-10-03</lastmod>
   </url>
 
   <url>
@@ -160,7 +160,7 @@
 
   <url>
     <loc>https://pracowniarachunkowosci.pl/blog/ksef-gotowosc.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-10-03</lastmod>
   </url>
 
   <url>
@@ -198,6 +198,11 @@
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pracowniarachunkowosci.pl/blog/ksef-2027-numer-ksef-w-przelewie.html</loc>
+    <lastmod>2026-10-03</lastmod>
   </url>
 
   <url>

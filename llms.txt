@@ -43,6 +43,7 @@
 - [Jak wygląda księgowość fundacji rodzinnej?](https://pracowniarachunkowosci.pl/blog/ksiegowosc-fundacji-rodzinnej.html)
 - [VAT OSS i Amazon FBA](https://pracowniarachunkowosci.pl/blog/vat-oss-amazon.html)
 - [KSeF w e-commerce — sprzedaż B2C, B2B i faktury](https://pracowniarachunkowosci.pl/blog/ksef-ecommerce-b2c-faktury.html)
+- [KSeF 2027 — numer KSeF w przelewie i nowe obowiązki przedsiębiorców](https://pracowniarachunkowosci.pl/blog/ksef-2027-numer-ksef-w-przelewie.html): numer KSeF, identyfikator zbiorczy, MPP i przygotowanie obiegu płatności
 - [Jak księgować Stripe, PayPal, PayU i Przelewy24?](https://pracowniarachunkowosci.pl/blog/ksiegowanie-stripe-paypal-payu-przelewy24.html)
 - [Marża i cash-flow w e-commerce](https://pracowniarachunkowosci.pl/blog/marza-cash-flow-ecommerce.html)
 - [Audyt księgowości przed zmianą biura](https://pracowniarachunkowosci.pl/blog/audyt-ksiegowosci-przed-zmiana-biura.html)
