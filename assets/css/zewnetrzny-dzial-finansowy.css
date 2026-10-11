@@ -404,3 +404,5 @@ a { text-underline-offset: 4px; }
   *, *::before, *::after { transition: none !important; }
   .btn:hover { transform: none; }
 }
+
+.availability { color: #e0e6ec; border-left: 3px solid var(--yellow); padding-left: 16px; font-size: 14px; max-width: 590px; }

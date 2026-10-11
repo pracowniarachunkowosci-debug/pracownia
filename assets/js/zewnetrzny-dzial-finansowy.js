@@ -29,24 +29,27 @@
         });
       }
 
+      function hasAnalyticsConsent() {
+        try { return localStorage.getItem('cookieConsent') === 'all'; } catch (error) { return false; }
+      }
+
       document.querySelectorAll('.js-track-calendly').forEach(function (link) {
         link.addEventListener('click', function () {
-          if (typeof gtag === 'function') {
+          if (typeof gtag === 'function' && hasAnalyticsConsent()) {
             gtag('event', 'click_calendly', {
-              event_category: 'lead',
+              event_category: 'engagement',
               event_label: 'zewnetrzny_dzial_finansowy_calendly',
               cta_location: link.dataset.ctaLocation || 'footer'
             });
           }
-          if (typeof fbq === 'function') fbq('track', 'Contact');
         });
       });
 
       document.querySelectorAll('.js-track-contact').forEach(function (link) {
         link.addEventListener('click', function () {
-          if (typeof gtag === 'function') {
+          if (typeof gtag === 'function' && hasAnalyticsConsent()) {
             gtag('event', 'click_contact', {
-              event_category: 'lead',
+              event_category: 'engagement',
               event_label: 'zewnetrzny_dzial_finansowy_form',
               cta_location: link.dataset.ctaLocation
             });

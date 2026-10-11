@@ -39,7 +39,7 @@
   <meta property="og:description" content="Księgowość online dla spółek z o.o. w całej Polsce: raporty zarządcze, controlling, estoński CIT, KSeF, e-commerce i fundacje rodzinne. Siedziba biura mieści się we Wrocławiu." />
   <meta property="og:url" content="https://pracowniarachunkowosci.pl/" />
   <meta property="og:site_name" content="Pracownia Rachunkowości" />
-  <meta property="og:image" content="https://pracowniarachunkowosci.pl/assets/og-image.jpg" />
+  <meta property="og:image" content="https://pracowniarachunkowosci.pl/ig-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="icon" type="image/png" href="favicon.png" />
@@ -1258,6 +1258,11 @@
       .hp-cookie { padding: 16px; }
       .hp-cookie p { font-size: 13px; line-height: 1.45; }
     }
+    #lead-status:not(:empty) { padding: 16px; background: #F5F7FA; border-left: 4px solid #0D1B2A; color: #111827; }
+    #lead-status[data-state="error"] { border-color: #B91C1C; }
+    #lead-status:focus-visible, .hp-form-note:focus-visible { outline: 3px solid #946700; outline-offset: 4px; }
+    #kontakt { scroll-margin-top: 84px; }
+    @media (max-width: 1100px) { .hp-contact--zdf .hp-form-card { order: -1; } }
   </style>
 
   <script type="application/ld+json">
@@ -1277,7 +1282,7 @@
       ],
       "url": "https://pracowniarachunkowosci.pl/",
       "logo": "https://pracowniarachunkowosci.pl/assets/logo.png",
-      "image": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+      "image": "https://pracowniarachunkowosci.pl/ig-image.jpg",
       "description": "Pracownia Rachunkowości to biuro rachunkowe online dla spółek z o.o. obsługujące firmy z całej Polski, z siedzibą we Wrocławiu. Specjalizuje się w obszarach: pełna księgowość, raporty zarządcze, controlling, estoński CIT, KSeF, e-commerce, fundacje rodzinne oraz zmiana biura rachunkowego.",
       "telephone": "+48 504 853 962",
       "priceRange": "$$",
@@ -1408,7 +1413,7 @@
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://pracowniarachunkowosci.pl/assets/og-image.jpg"
+        "url": "https://pracowniarachunkowosci.pl/ig-image.jpg"
       },
       "inLanguage": "pl-PL"
     },
@@ -1922,9 +1927,10 @@
         <div class="hp-form-card">
           <div class="hp-form-note"><strong>Formularz jest opcjonalny.</strong> Najszybsza droga to Calendly, ale jeśli chcesz od razu opisać sytuację spółki, wyślij zapytanie poniżej.</div>
 
-          <form action="https://api.web3forms.com/submit" method="POST" id="leadForm" target="web3forms-hidden-frame">
+          <form action="https://api.web3forms.com/submit" method="POST" id="leadForm">
             <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
             <input type="hidden" name="access_key" value="e4e94134-5946-445a-8f0a-7406585ec73e" />
+            <input type="hidden" name="inquiry_source" value="strona-glowna" />
             <input type="hidden" name="subject" value="Strona główna - nowe zapytanie" />
             <input type="hidden" name="utm_source" />
             <input type="hidden" name="utm_medium" />
@@ -1961,6 +1967,7 @@
                 <label class="hp-label" for="topic">Temat</label>
                 <select class="hp-select" id="topic" name="topic">
                   <option>Księgowość spółki z o.o.</option>
+                  <option>Zewnętrzny dział finansowy</option>
                   <option>Zmiana biura rachunkowego</option>
                   <option>Estoński CIT</option>
                   <option>E-commerce / VAT-OSS / Amazon FBA</option>
@@ -1991,10 +1998,12 @@
               <span>Wyrażam zgodę na kontakt w celu obsługi zapytania. Administratorem danych jest PRACOWNIA RACHUNKOWOŚCI SP. Z O.O. Szczegóły w polityce prywatności.</span>
             </label>
 
+            <p id="lead-status" role="status" aria-live="polite" tabindex="-1"></p>
+            <p id="lead-next" hidden><a href="/thank-you.html">Informacje po wysłaniu zapytania →</a></p>
+            <noscript><p>Po wysłaniu formularza status zapytania wyświetli Web3Forms.</p></noscript>
             <button class="hp-btn hp-btn--dark hp-submit" type="submit">Wyślij zapytanie</button>
           </form>
 
-          <iframe name="web3forms-hidden-frame" title="Ukryta ramka wysyłki formularza" style="display:none;"></iframe>
         </div>
       </div>
     </section>
@@ -2083,45 +2092,18 @@
         if (input && params.get(param)) input.value = params.get(param);
       });
 
-      var form = document.getElementById('leadForm');
-      var formRedirectTimer = null;
-
-      if (form) {
-        form.addEventListener('submit', function () {
-          var submitButton = form.querySelector('button[type="submit"]');
-
-          if (submitButton) {
-            submitButton.disabled = true;
-            submitButton.textContent = 'Wysyłanie...';
-          }
-
-          if (typeof gtag === 'function') {
-            gtag('event', 'generate_lead', {
-              event_category: 'lead',
-              event_label: 'home_form'
-            });
-          }
-
-          if (typeof fbq === 'function') {
-            fbq('track', 'Lead');
-          }
-
-          clearTimeout(formRedirectTimer);
-          formRedirectTimer = setTimeout(function () {
-            window.location.href = 'https://pracowniarachunkowosci.pl/thank-you.html';
-          }, 1600);
-        });
+      function analyticsConsentGranted() {
+        try { return localStorage.getItem('cookieConsent') === 'all'; } catch (error) { return false; }
       }
 
       document.querySelectorAll('.js-track-calendly').forEach(function (link) {
         link.addEventListener('click', function () {
-          if (typeof gtag === 'function') {
+          if (typeof gtag === 'function' && analyticsConsentGranted()) {
             gtag('event', 'click_calendly', {
-              event_category: 'lead',
+              event_category: 'engagement',
               event_label: 'home_calendly_v3'
             });
           }
-          if (typeof fbq === 'function') fbq('track', 'Contact');
         });
       });
 
@@ -2174,7 +2156,8 @@
       }
 
       function applySavedConsent() {
-        var savedConsent = localStorage.getItem(consentKey);
+        var savedConsent;
+        try { savedConsent = localStorage.getItem(consentKey); } catch (error) { /* Ask again if storage is unavailable. */ }
         if (savedConsent === 'all') {
           updateGoogleConsent(true);
           loadMetaPixel();
@@ -2191,7 +2174,7 @@
 
       if (acceptAll) {
         acceptAll.addEventListener('click', function () {
-          localStorage.setItem(consentKey, 'all');
+          try { localStorage.setItem(consentKey, 'all'); } catch (error) { /* Session-only consent. */ }
           updateGoogleConsent(true);
           loadMetaPixel();
           hideBanner();
@@ -2200,20 +2183,21 @@
 
       if (acceptEssential) {
         acceptEssential.addEventListener('click', function () {
-          localStorage.setItem(consentKey, 'essential');
+          try { localStorage.setItem(consentKey, 'essential'); } catch (error) { /* Session-only consent. */ }
           updateGoogleConsent(false);
           hideBanner();
         });
       }
 
       window.resetCookieConsent = function () {
-        localStorage.removeItem(consentKey);
+        try { localStorage.removeItem(consentKey); } catch (error) { /* Already unavailable. */ }
         window.location.reload();
       };
 
       applySavedConsent();
     });
   </script>
+  <script src="/assets/js/contact-form.js" defer></script>
   <!-- GrowthOS public lead chat -->
   <script
     async
