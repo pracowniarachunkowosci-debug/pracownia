@@ -4,13 +4,16 @@
 
 Testowany commit: `4738e56847d32ae972fa2ebe0fef99bf48dad6ab`, gałąź `codex/zewnetrzny-dzial-finansowy`. Podgląd lokalny `http://127.0.0.1:8767`; wejście z landingu do formularza głównej przez `/?service=zewnetrzny-dzial-finansowy#kontakt`. Użyto zatwierdzonych danych kontaktowych oraz oznaczenia **TEST ODBIORCZY ZDF — NIE JEST TO LEAD**. Dane kontaktowe, pełny payload, klucz Web3Forms i token sesji GTM Preview nie są częścią tego raportu.
 
+**Aktualizacja właściciela:** w [komentarzu z 11.10.2026](https://github.com/pracowniarachunkowosci-debug/pracownia/pull/19#issuecomment-6108684288) potwierdzono odbiór jednej wiadomości o **13:30 CEST**, z tematem, kontekstem usługi i wypełnionymi polami. Nie wykonano kolejnej rzeczywistej wysyłki. [Etap 3: diagnoza i przygotowane poprawki](stage3/README.md) nie jest jeszcze potwierdzeniem naprawienia pomiaru w Google.
+
 ## Status odbioru
 
 | Etap | Wynik | Dowód / granica potwierdzenia |
 | --- | --- | --- |
 | **API accepted** | **TAK** | Jedna rzeczywista próba; HTTP **200**, JSON **`success: true`** |
-| **E-mail received** | **NIEPOTWIERDZONY** | Wymaga odpowiedzi właściciela po sprawdzeniu skrzynki i spamu; odpowiedź API nie dowodzi dostarczenia |
+| **E-mail received** | **TAK** | Właściciel potwierdził odbiór jednej wiadomości o 13:30 CEST; źródło potwierdzenia wskazano powyżej |
 | **GA4 measured** | **NIEPOTWIERDZONY — test pomiaru niezaliczony** | Jedno `generate_lead` w dataLayer, ale Tag Assistant dla `G-H210DZ34Y8` nie pokazuje wysłanego działania; brak tego zdarzenia w GA4 DebugView |
+| **Google Ads premature firing** | **DO NAPRAWY** | Etap 3 potwierdził wspólny trigger `form_submit` dla tagów Ads 5 i 9; konfiguracja GTM pozostaje bez zmian |
 | **PR published** | **NIE** | Lokalny podgląd; bez merge, publikacji strony i publikacji kontenera GTM |
 
 Początek jedynej próby: **11.10.2026, 13:29:54.116 Europe/Warsaw (CEST)**, czyli **2026-10-11T11:29:54.116Z**. Nie ponowiono rzeczywistej wysyłki. Kolejna próba wymaga nowej zgody właściciela.
@@ -48,12 +51,14 @@ W GTM Preview/Tag Assistant widać wywołanie `gtag("event", "generate_lead", {.
 
 Wykryto też istniejącą regułę GTM: **„TechSol - Formularz kontaktowy 45209”** (konwersja Google Ads) uruchomiła się raz przy **`gtm.formSubmit`**, przed potwierdzonym sukcesem API. Na tym samym zdarzeniu uruchomił się **„Google Ads User-provided Data Event roz. konwersja”**. Taki wyzwalacz nie potwierdza przyjęcia zapytania przez API i wymaga oddzielnego przeglądu. Nie utożsamiamy liczby wpisów tagów Ads z liczbą zaksięgowanych konwersji; nie sprawdzano raportów Ads. Nie było drugiej wysyłki Web3Forms ani drugiego własnego `generate_lead`.
 
+**Doprecyzowanie etapu 3:** powyższa nazwa `gtm.formSubmit` była wcześniejszym opisem momentu submit. Odczyt właściwej definicji reguły **6** w GTM ustalił nazwę **`form_submit`** (Custom Event, wszystkie zdarzenia, bez warunku sukcesu API). To ona jest przypisana do obu tagów. Zasadniczy wynik — przedwczesny sygnał — pozostaje bez zmian.
+
 Obszar roboczy GTM miał przed testem 0 oczekujących zmian. Nie edytowano ani nie publikowano reguł. Brak wcześniejszego dostępu do GTM/GA4 opisany w automatycznym QA został w tym teście zastąpiony rzeczywistym odczytem Preview i DebugView. Nie sprawdzano GSC.
 
 ## Dalszy krok
 
-1. **Czekamy na właściciela:** potwierdzenie odbioru oznaczonej wiadomości w skrzynce odbiorczej lub spamie, kompletności pól i tematu. Do tego czasu status odbioru pozostaje niepotwierdzony.
-2. Osobno zatwierdzić zakres naprawy przekazywania `generate_lead` do GA4 oraz przedwczesnego wyzwalacza Ads. Najpierw diagnoza i testy bez kolejnej rzeczywistej wysyłki; ponowny test Web3Forms wyłącznie po nowej zgodzie.
+1. **Odbiór potwierdzony przez właściciela.** Nie czekamy już na wiadomość i nie ponawiamy rzeczywistego testu.
+2. Diagnozę i lokalne testy wykonano w etapie 3. Pozostaje odrębna zgoda na zmiany prywatnego GTM oraz wybór sposobu obsługi enhanced conversions; szczegóły w [planie etapu 3](stage3/README.md). Ponowny test Web3Forms wyłącznie po nowej zgodzie.
 3. Publikacja strony, merge i publikacja GTM nadal wymagają odrębnej decyzji. Nie wykonano rezerwacji Calendly ani wiadomości GrowthOS.
 
 Ta aktualizacja PR obejmuje tylko dokumentację i dowód QA. Wyniki wcześniejszych 22 prób z atrapami API pozostają osobnym zestawem testów regresji; nie zastępują niniejszej jednej rzeczywistej próby.

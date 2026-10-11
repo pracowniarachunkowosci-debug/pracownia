@@ -51,7 +51,7 @@ function pass(label) { report.checks.push(label); console.log('PASS ' + label); 
       await page.locator('#message').fill('Wyłącznie lokalny test z atrapą API.');
       await page.locator('[name="consent"]').check();
     }
-    async function leads(page) { return page.evaluate(() => ({ ga: (window.dataLayer || []).filter(x => x[0] === 'event' && x[1] === 'generate_lead').map(x => x[2]), fb: window.__fbEvents.filter(x => x[0] === 'track' && x[1] === 'Lead').length })); }
+    async function leads(page) { return page.evaluate(() => ({ ga: (window.dataLayer || []).filter(x => x.event === 'web3forms_success'), fb: window.__fbEvents.filter(x => x[0] === 'track' && x[1] === 'Lead').length })); }
     async function status(page, value) { await page.locator(`#lead-status[data-state="${value}"]`).waitFor(); }
     const base = process.env.ZDF_BASE_REF || '0bc0dec2f70753f2093fca645092de1910c32395';
     const old = execFileSync('git', ['show', base + ':index.html'], { cwd: root, encoding: 'utf8' });
@@ -100,7 +100,8 @@ function pass(label) { report.checks.push(label); console.log('PASS ' + label); 
     assert(await t.page.locator('#lead-next').isVisible());
     const measured = await leads(t.page);
     assert.equal(measured.ga.length, 1); assert.equal(measured.fb, 1);
-    assert.deepEqual(measured.ga[0], { event_category: 'lead', event_label: 'home_form', form_id: 'leadForm', inquiry_source: source });
+    assert.deepEqual(measured.ga[0], { event: 'web3forms_success', event_category: 'lead', event_label: 'home_form', form_id: 'leadForm', inquiry_source: source });
+    assert.equal(await t.page.evaluate(() => (window.dataLayer || []).filter(x => x[0] === 'event' && x[1] === 'generate_lead').length), 0, 'No parallel gtag conversion route');
     assert.equal(t.state.requests[0].inquiry_source, source);
     assert.equal(t.state.requests[0].subject, 'Zewnętrzny dział finansowy - nowe zapytanie');
     assert.equal(t.state.requests[0].email, 'qa@example.invalid');
@@ -116,7 +117,7 @@ function pass(label) { report.checks.push(label); console.log('PASS ' + label); 
     await t.page.reload(); assert.equal(await t.page.locator('script').count(), 0);
     await t.page.goBack(); assert.equal((await leads(t.page)).ga.length, 0);
     await t.ctx.close();
-    pass('Pending/double submit/revisit: one request; GA4 and Meta Lead only after 2xx + success=true; no PII in event; no timer redirect or thank-you conversion');
+    pass('Pending/double submit/revisit: one request; GTM success event and Meta Lead only after 2xx + success=true; no parallel gtag conversion, PII, timer redirect or thank-you conversion');
 
     for (const mode of ['rejected', '400', '403', '429', '500', 'malformed', 'network', 'timeout']) {
       t = await setup(); await fill(t.page);
@@ -152,7 +153,7 @@ function pass(label) { report.checks.push(label); console.log('PASS ' + label); 
     await t.ctx.close();
     pass('Unknown service values cannot enter inquiry_source or analytics (fixed allowlist; no internal UTM or new storage)');
     t = await setup(); await fill(t.page);
-    await t.page.evaluate(() => { window.gtag = window.fbq = () => { throw new Error('Simulated analytics failure'); }; });
+    await t.page.evaluate(() => { window.dataLayer.push = window.fbq = () => { throw new Error('Simulated analytics failure'); }; });
     await t.page.locator('#leadForm button').click(); await status(t.page, 'success');
     await t.ctx.close(); pass('Analytics exception cannot turn API acceptance into a false form error');
 

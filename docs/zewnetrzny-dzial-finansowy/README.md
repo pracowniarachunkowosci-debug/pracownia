@@ -1,16 +1,20 @@
-# Zewnętrzny dział finansowy — raport etapu 2
+# Zewnętrzny dział finansowy — raport etapów 2 i 3
 
 Data: **11 października 2026**. [Draft PR #19](https://github.com/pracowniarachunkowosci-debug/pracownia/pull/19), [zadanie #18](https://github.com/pracowniarachunkowosci-debug/pracownia/issues/18), [polecenie etapu 2](https://github.com/pracowniarachunkowosci-debug/pracownia/pull/19#issuecomment-6108001545).
 
 Gałąź: `codex/zewnetrzny-dzial-finansowy`. Porównanie regresji z `main`: `0bc0dec2f70753f2093fca645092de1910c32395`. Etap 2 aktualizuje ten sam PR. Nie wykonano merge ani publikacji.
 
-## Aktualizacja: jednorazowy test odbiorczy
+## Aktualizacja: etap 3 — pomiar GA4 / Ads
 
-**11.10.2026 o 13:29:54 CEST** wykonano dokładnie jedną zatwierdzoną rzeczywistą wysyłkę z lokalnego podglądu commitu `4738e56`: **API accepted: TAK (HTTP 200, `success: true`); e-mail received: NIEPOTWIERDZONY; GA4 measured: NIEPOTWIERDZONY; PR published: NIE**. Formularz pokazał sukces i zablokował ponowne wysłanie. W dataLayer wystąpił jeden `generate_lead`, ale Tag Assistant nie pokazał wysłanego działania GA4, a DebugView nie potwierdził zdarzenia. Dodatkowo istniejący tag Ads zadziałał już przy `gtm.formSubmit`.
+[Diagnoza, instrukcja GTM z identyfikatorami, testy i decyzje właściciela](stage3/README.md). **Odbiór e-maila potwierdzony przez właściciela.** Kod na gałęzi emituje teraz jeden `web3forms_success` po HTTP 2xx + `success: true` i zgodzie all. Przygotowano jawne mapowanie GTM → GA4 `generate_lead` / Ads, ale nie zapisano żadnych zmian w kontenerze. **GA4 measured: NIEPOTWIERDZONE; Google Ads premature firing: DO NAPRAWY.** Testy lokalne: 23 kontrole PASS, 30 atrap, 0 kolejnych rzeczywistych wysyłek i 0 testowych konwersji do Google. Nie publikować samego kodu jako zakończonej naprawy pomiaru.
 
-Szczegóły, ograniczenia i dowód: **[raport rzeczywistej próby](acceptance-2026-10-11.md)**. Czekamy na potwierdzenie wiadomości przez właściciela. **Nie ponawiać rzeczywistej wysyłki bez nowej zgody.** Nie zmieniono konfiguracji usług ani kodu strony w ramach tego testu.
+## Jednorazowy test odbiorczy etapu 2
 
-## Zmiany i naprawione usterki
+**11.10.2026 o 13:29:54 CEST** wykonano dokładnie jedną zatwierdzoną rzeczywistą wysyłkę z lokalnego podglądu commitu `4738e56`: **API accepted: TAK (HTTP 200, `success: true`); e-mail received: TAK (potwierdzenie właściciela); GA4 measured: NIEPOTWIERDZONY; PR published: NIE**. Formularz pokazał sukces i zablokował ponowne wysłanie. W dataLayer wystąpił jeden `generate_lead`, ale Tag Assistant nie pokazał wysłanego działania GA4, a DebugView nie potwierdził zdarzenia. Istniejący tag Ads zadziałał już przy submit; w etapie 3 potwierdzono nazwę wyzwalacza `form_submit`.
+
+Szczegóły, ograniczenia i dowód: **[raport rzeczywistej próby](acceptance-2026-10-11.md)**. Odbiór potwierdzono w [komentarzu właściciela](https://github.com/pracowniarachunkowosci-debug/pracownia/pull/19#issuecomment-6108684288). **Nie ponawiać rzeczywistej wysyłki bez nowej zgody.** W ramach samej rzeczywistej próby nie zmieniono konfiguracji usług ani kodu strony.
+
+## Zmiany etapu 2 (historia; aktualny kontrakt pomiaru opisano w etapie 3)
 
 1. **Dostępność:** zbieramy teraz zgłoszenia na rozpoczęcie pełnej księgowości od stycznia 2027. Dokładny termin zależy od oceny dokumentów, sald i rozrachunków. Zgodne informacje znajdują się w hero, procesie, CTA, FAQ, JSON-LD oraz kontekstowej informacji przy formularzu. Usunięto sugestię przejęcia ksiąg w trakcie 2026. Osobne raportowanie, controlling, audyt lub uporządkowanie ksiąg pozostają możliwe po odrębnym ustaleniu zakresu, wyceny i terminu.
 2. **Formularz:** wcześniejszy skrypt zgłaszał `generate_lead` i Meta Lead już przy `submit`, a po 1600 ms przekierowywał do podziękowania bez sprawdzania odpowiedzi. Nowy skrypt wymaga odpowiedzi HTTP 2xx i dokładnie `success: true` z Web3Forms. Pokazuje rzeczywisty stan przy formularzu; błąd zachowuje dane i pozwala ponowić wysłanie. Podczas oczekiwania oraz po sukcesie blokuje podwójne wysłanie. Limit 30 s kończy się komunikatem o braku potwierdzenia, nie pozornym sukcesem. W razie niepewnego odbioru sugeruje kontakt przed ponowną wysyłką.
@@ -27,7 +31,7 @@ GTM/GA4 i domyślne odmowy Consent Mode v2 na głównej oraz raportach są ident
 
 `service` przyjmuje wyłącznie jedną znaną wartość. Do wiadomości Web3Forms trafia `inquiry_source=zewnetrzny-dzial-finansowy` i temat „Zewnętrzny dział finansowy - nowe zapytanie”. Pozostałe wejścia otrzymują `strona-glowna`. To informacja o kontekście bieżącego zapytania, nie pełna atrybucja pierwszego kontaktu.
 
-Potwierdzony `generate_lead` ma wyłącznie stałe parametry: `event_category`, `event_label`, `form_id`, `inquiry_source`. Nie przekazuje pól formularza, URL, nazwiska, firmy, telefonu, adresu e-mail ani wiadomości. Nie dodano cookies, pamięci sesji, wewnętrznych UTM czy identyfikatora użytkownika. Wycofana zgoda lub niedostępny zapis zgody oznacza brak własnej konwersji analitycznej, lecz formularz nadal działa. Bez JS pozostaje natywny POST i status po stronie Web3Forms; automatyczne rozpoznanie źródła i własne zdarzenie analityczne wymagają JS.
+W etapie 3 kod emituje `web3forms_success` z nazwą zdarzenia i stałymi parametrami: `event_category`, `event_label`, `form_id`, `inquiry_source`. Docelowy `generate_lead` w GA4 wymaga opisanej konfiguracji GTM. Komunikat nie przekazuje pól formularza, URL, nazwiska, firmy, telefonu, adresu e-mail ani wiadomości. Nie dodano cookies, pamięci sesji, wewnętrznych UTM czy identyfikatora użytkownika. Wycofana zgoda lub niedostępny zapis zgody oznacza brak własnej konwersji analitycznej, lecz formularz nadal działa. Bez JS pozostaje natywny POST i status po stronie Web3Forms; automatyczne rozpoznanie źródła i własne zdarzenie analityczne wymagają JS.
 
 **Rekomendacja:** zachować jeden formularz z kontekstem. Nadal istnieje dodatkowa nawigacja, ale użytkownik trafia bezpośrednio do właściwego miejsca, a obsługa zapytań ma jeden punkt utrzymania. Wariant do późniejszej decyzji: formularz bezpośrednio na landingu korzystający ze wspólnego modułu obsługi, jeśli rzeczywiste dane wykażą porzucenia między CTA a wysłaniem. Nie powielano formularza ani konfiguracji kluczy.
 
@@ -104,8 +108,8 @@ Skrypty JS mają opcjonalne `ZDF_BASE_REF`; zapisane wyniki i audyt Python poró
 
 ## Otwarte ryzyka i sprawy poza zakresem nowej ścieżki
 
-- API Web3Forms przyjęło jedną rzeczywistą próbę, ale odbiór e-maila nadal wymaga potwierdzenia właściciela. Odczytano konfigurację Web3Forms: pole ograniczenia domen jest puste; niczego nie zmieniono ani nie obchodzono ograniczeń.
-- Odczyt GTM Preview i GA4 DebugView wykazał brak potwierdzonego przekazania `generate_lead` do GA4 oraz uruchomienie istniejącej konwersji Ads przy `gtm.formSubmit`. Pomiar nie przeszedł testu odbiorczego; wymaga osobnej diagnozy i naprawy. Nie przeprowadzono pełnego audytu reguł ani konfiguracji kluczowych zdarzeń. Parametr `inquiry_source` może wymagać rejestracji jako wymiar niestandardowy w GA4.
+- API Web3Forms przyjęło jedną rzeczywistą próbę, a właściciel potwierdził odbiór e-maila. Odczytano konfigurację Web3Forms: pole ograniczenia domen jest puste; niczego nie zmieniono ani nie obchodzono ograniczeń. Odbiór leada nie jest potwierdzeniem poprawnego trackingu.
+- Odczyt GTM Preview i GA4 DebugView wykazał brak potwierdzonego przekazania `generate_lead` do GA4 oraz przedwczesną konwersję Ads. Diagnoza etapu 3 ustaliła przypisanie tagów do `form_submit` i brak jawnego mapowania potwierdzonego sukcesu na GA4. Przygotowany kod i instrukcja GTM nie stanowią jeszcze naprawy w usługach Google. Parametr `inquiry_source` może wymagać rejestracji jako wymiar niestandardowy w GA4.
 - Inne, niezmieniane landingi nadal mają historyczny pomiar przy `submit` i przekierowanie po 1600 ms: `case-study-estonski-cit-ecommerce.html`, `estonski-cit-ecommerce.html`, `estonski-cit-spolka-z-oo.html`, `interpretacje-estonski-cit.html`, `ksiegowosc-ecommerce.html`, `ksiegowosc-spolka-z-oo.html`, `ukryte-zyski-estonski-cit.html`, `zmiana-biura-estonski-cit.html`. Ten PR naprawia wymagany przepływ nowy landing → główna → sukces oraz wspólne podziękowanie. Rozszerzenie modułu na pozostałe formularze powinno mieć osobny zakres i testy odbioru; ich konwersji nie można obecnie uznać za zweryfikowane.
 - Audyt całego serwisu wykazał **33 wcześniejsze wystąpienia brakujących zasobów/kotwic na 19 stronach** poza sześcioma stronami zakresu, w tym grafiki metadanych, nieistniejące kotwice oferty/CIT i stary URL promocji. Szczegóły są w `seo-audit.json`. Nie wykonano masowej zmiany klastrów SEO. Pozostało też 9 wcześniejszych wskazań HTML na kontrolowanych starych stronach.
 - Źródło jest przenoszone tylko przez bezpośrednie CTA. Wejście do formularza później inną drogą będzie oznaczone jako główna. Bez JS formularz działa, lecz źródło nie jest automatycznie zmieniane. To świadome ograniczenie rozwiązania bez utrwalania identyfikatorów.
@@ -113,7 +117,7 @@ Skrypty JS mają opcjonalne `ZDF_BASE_REF`; zapisane wyniki i audyt Python poró
 
 ## Kontrolowany test właściciela — przed decyzją o publikacji
 
-**Aktualny stan:** jedyna zatwierdzona rzeczywista próba ze zgodą `all` została wykonana i opisana w [raporcie odbiorczym](acceptance-2026-10-11.md). Pozostaje potwierdzenie skrzynki oraz naprawa pomiaru. Poniższa pierwotna checklista jest planem dalszej weryfikacji, nie poleceniem ponowienia wysyłki. Każda kolejna rzeczywista wysyłka, rezerwacja lub wiadomość czatu wymaga osobnej zgody. Ten PR nie uruchamia wdrożenia.
+**Aktualny stan:** jedyna zatwierdzona rzeczywista próba ze zgodą `all` została wykonana, a odbiór wiadomości potwierdzono; szczegóły w [raporcie odbiorczym](acceptance-2026-10-11.md). Pozostaje naprawa i odbiór pomiaru zgodnie z etapem 3. Poniższa pierwotna checklista jest planem dalszej weryfikacji, nie poleceniem ponowienia wysyłki. Każda kolejna rzeczywista wysyłka, rezerwacja lub wiadomość czatu wymaga osobnej zgody. Ten PR nie uruchamia wdrożenia.
 
 1. Otworzyć wersję z gałęzi w zaakceptowanym środowisku, na telefonie i komputerze. W nowym profilu wybrać tylko niezbędne cookies. Z hero oraz końcowego CTA przejść do kontaktu; sprawdzić temat, komunikat stycznia 2027 i widoczność pierwszego pola.
 2. Wysłać jedno oznaczone zapytanie „TEST WŁAŚCICIELA — ZDF”, z własnym dostępnym e-mailem i telefonem. W Network potwierdzić POST do tego samego API, HTTP 2xx i `success: true`. Sprawdzić komunikat przy formularzu oraz faktyczny odbiór jednej wiadomości w skrzynce (także spam), komplet pól, `inquiry_source` i temat. Nie publikować klucza ani danych kontaktowych w zrzutach QA.
@@ -126,7 +130,7 @@ Skrypty JS mają opcjonalne `ZDF_BASE_REF`; zapisane wyniki i audyt Python poró
 ## Decyzje właściciela
 
 - Ocenić gotowy wariant jednego formularza. Rekomendowane pozostawienie wdrożonego rozwiązania; formularz na landingu rozważyć dopiero przy danych o porzuceniach.
-- Potwierdzić odbiór jednej wykonanej wiadomości testowej; zdecydować o osobnej naprawie przekazywania zdarzenia GA4 i przedwczesnej konwersji Ads. Dalsza rzeczywista wysyłka oraz testy rezerwacji Calendly/wiadomości GrowthOS wymagają nowej zgody. Odczyt GSC pozostaje potrzebny do analizy SEO.
+- Zatwierdzić konkretne zmiany GTM i wariant enhanced conversions opisane w etapie 3 oraz ewentualny test odbioru w kolektorze Google. Dalsza rzeczywista wysyłka oraz testy rezerwacji Calendly/wiadomości GrowthOS wymagają nowej zgody. Odbiór pierwszego e-maila jest już potwierdzony. Odczyt GSC pozostaje potrzebny do analizy SEO.
 - Ustalić priorytet osobnej naprawy pozostałych formularzy oraz starych odwołań/HTML. Nie traktować ich jako zweryfikowanych w tym etapie.
 - Wyznaczyć osobę i termin ręcznego przeglądu dostępności **przed styczniem 2027 lub wcześniej, jeśli zmienią się możliwości obsługi**. Aktualizacja obejmuje hero, proces, CTA, FAQ i JSON-LD w `zewnetrzny-dzial-finansowy.html` oraz notę w `assets/js/contact-form.js`. Data nie zmieni się automatycznie.
 - Podjąć odrębną decyzję o merge i publikacji po recenzji oraz testach odbioru. Aktualny PR pozostaje draftem.

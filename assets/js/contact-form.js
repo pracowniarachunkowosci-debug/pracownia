@@ -43,7 +43,11 @@
       if (!consent) return;
       // Analytics failure must never turn an accepted request into a form error.
       try {
-        if (typeof gtag === 'function') gtag('event', 'generate_lead', {
+        // GTM owns delivery to GA4/Ads. One explicit success event avoids relying
+        // on gtag's default destination group or firing conversions on submit.
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'web3forms_success',
           event_category: 'lead', event_label: 'home_form',
           form_id: 'leadForm', inquiry_source: source
         });
