@@ -1,4 +1,4 @@
-import json, re, subprocess, xml.etree.ElementTree as ET
+import json, os, re, subprocess, xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit,unquote
@@ -91,5 +91,5 @@ for e in sitemap:
 allowed=['https://pracowniarachunkowosci.pl/'+name for name in ['', 'oferta.html','raporty-zarzadcze-controlling.html','analizy-finansowe-raportowanie.html','zewnetrzny-dzial-finansowy.html']]
 assert set(changed_dates)==set(allowed)
 report['sitemap']['changedLastmodOnlyEditedPages']=True
-output=root/'docs/zewnetrzny-dzial-finansowy/seo-audit.json';output.write_bytes((json.dumps(report,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
+output=Path(os.environ.get('ZDF_QA_OUTPUT',root/'docs/zewnetrzny-dzial-finansowy'))/'seo-audit.json';output.parent.mkdir(parents=True,exist_ok=True);output.write_bytes((json.dumps(report,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
 print(json.dumps({'pages':len(docs),'introducedBrokenLinks':len(report['newBrokenLinks']),'existingBrokenLinks':sum(len(v) for v in report['sitewideExistingIssues'].values()),'scope':{n:d['brokenLinks'] for n,d in report['scope'].items()},'sitemap':report['sitemap']},ensure_ascii=False))

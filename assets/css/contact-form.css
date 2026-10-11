@@ -1,0 +1,11 @@
+[data-form-status]:not(:empty) {
+  margin: 16px 0;
+  padding: 16px;
+  background: #f5f7fa;
+  border-left: 4px solid #0d1b2a;
+  color: #111827;
+  overflow-wrap: anywhere;
+}
+[data-form-status][data-state="error"] { border-color: #b91c1c; }
+[data-form-status]:focus-visible { outline: 3px solid #946700; outline-offset: 4px; }
+form[data-contact-form] button:disabled { cursor: default; opacity: .75; }

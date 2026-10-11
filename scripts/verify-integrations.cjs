@@ -11,7 +11,7 @@ function counts(result){const all={};for(const r of result.results)for(const m o
 (async()=>{
  try {
   const validator=new HtmlValidate({extends:['html-validate:standard'],rules:{'void-style':'off'}});
-  for(const name of ['index.html','oferta.html','raporty-zarzadcze-controlling.html','analizy-finansowe-raportowanie.html','thank-you.html','zewnetrzny-dzial-finansowy.html']){
+  for(const name of ['index.html','oferta.html','raporty-zarzadcze-controlling.html','analizy-finansowe-raportowanie.html','thank-you.html','zewnetrzny-dzial-finansowy.html','case-study-estonski-cit-ecommerce.html','estonski-cit-ecommerce.html','estonski-cit-spolka-z-oo.html','interpretacje-estonski-cit.html','ksiegowosc-ecommerce.html','ksiegowosc-spolka-z-oo.html','ukryte-zyski-estonski-cit.html','zmiana-biura-estonski-cit.html']){
    const text=read(name);
    const after=counts(await validator.validateString(text));
    const before=name==='zewnetrzny-dzial-finansowy.html'?{}:counts(await validator.validateString(original(name)));

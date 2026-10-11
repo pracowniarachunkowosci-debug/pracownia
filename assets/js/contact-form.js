@@ -1,33 +1,49 @@
 /* Shared contact form. Routing/key stay in HTML; no persistent attribution storage. */
 (function () {
   function init() {
-    var form = document.getElementById('leadForm');
-    if (!form) return;
-    var fromFinance = new URLSearchParams(window.location.search).get('service') === 'zewnetrzny-dzial-finansowy';
-    var source = fromFinance ? 'zewnetrzny-dzial-finansowy' : 'strona-glowna';
-    form.elements.inquiry_source.value = source;
+    // Explicit contracts preserve each DOM id while distinguishing pages in GTM.
+    var contracts = {
+      home: {id: 'leadForm', source: 'strona-glowna', label: 'home_form'},
+      ecommerce: {id: 'ecommerceForm', source: 'ksiegowosc-ecommerce', label: 'landing_ecommerce_form'},
+      spolka: {id: 'spolkaForm', source: 'ksiegowosc-spolka-z-oo', label: 'landing_spolka_z_oo_form'}
+    };
+    document.querySelectorAll('form[data-contact-form]').forEach(function (form) {
+      var contract = Object.prototype.hasOwnProperty.call(contracts, form.dataset.contactForm) && contracts[form.dataset.contactForm];
+      if (!contract || form.dataset.contactInitialized) return;
+      form.dataset.contactInitialized = 'true';
+      initForm(form, contract);
+    });
+  }
+
+  function initForm(form, contract) {
+    var fromFinance = form.dataset.contactForm === 'home' && new URLSearchParams(window.location.search).get('service') === 'zewnetrzny-dzial-finansowy';
+    var source = fromFinance ? 'zewnetrzny-dzial-finansowy' : contract.source;
+    if (form.elements.inquiry_source) form.elements.inquiry_source.value = source;
     if (fromFinance) {
       form.setAttribute('aria-label', 'Zapytanie o zewnętrzny dział finansowy');
       var note = document.querySelector('.hp-form-note');
-      note.setAttribute('tabindex', '-1');
+      if (note) note.setAttribute('tabindex', '-1');
       function showContact() {
         // Avoid a long smooth scroll through the homepage; do not interrupt someone already using it.
-        if (window.location.hash !== '#kontakt' || document.activeElement !== document.body) return;
+        if (!note || window.location.hash !== '#kontakt' || document.activeElement !== document.body) return;
         document.getElementById('kontakt').scrollIntoView({behavior: 'instant', block: 'start'});
         note.focus({preventScroll: true});
       }
       if (document.readyState === 'complete') showContact();
       else window.addEventListener('load', showContact, {once: true});
-      form.elements.topic.value = 'Zewnętrzny dział finansowy';
-      form.elements.subject.value = 'Zewnętrzny dział finansowy - nowe zapytanie';
-      document.querySelector('.hp-contact').classList.add('hp-contact--zdf');
-      document.querySelector('.hp-form-note').textContent = 'Zapytanie o zewnętrzny dział finansowy. Pełna księgowość: zgłoszenia na start od stycznia 2027, z terminem potwierdzanym po ocenie dokumentów. Raportowanie, controlling i audyt możemy omówić osobno.';
+      if (form.elements.topic) form.elements.topic.value = 'Zewnętrzny dział finansowy';
+      if (form.elements.subject) form.elements.subject.value = 'Zewnętrzny dział finansowy - nowe zapytanie';
+      var contact = document.querySelector('.hp-contact');
+      if (contact) contact.classList.add('hp-contact--zdf');
+      if (note) note.textContent = 'Zapytanie o zewnętrzny dział finansowy. Pełna księgowość: zgłoszenia na start od stycznia 2027, z terminem potwierdzanym po ocenie dokumentów. Raportowanie, controlling i audyt możemy omówić osobno.';
     }
     // Without these APIs the unchanged action/method still submit directly to Web3Forms.
     if (!window.fetch || !window.FormData || !window.AbortController) return;
     var button = form.querySelector('button[type="submit"]');
-    var status = document.getElementById('lead-status');
-    var next = document.getElementById('lead-next');
+    var status = form.querySelector('[data-form-status]');
+    var next = form.querySelector('[data-form-next]');
+    if (!button || !status) return;
+    var buttonLabel = button.textContent;
     var pending = false;
     var completed = false;
 
@@ -48,8 +64,8 @@
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
           event: 'web3forms_success',
-          event_category: 'lead', event_label: 'home_form',
-          form_id: 'leadForm', inquiry_source: source
+          event_category: 'lead', event_label: contract.label,
+          form_id: contract.id, inquiry_source: source
         });
       } catch (error) { /* The API acceptance remains authoritative. */ }
       try { if (typeof fbq === 'function') fbq('track', 'Lead'); } catch (error) { /* As above. */ }
@@ -74,13 +90,13 @@
           body: JSON.stringify(payload), signal: controller.signal
         });
         var result = await response.json();
-        if (!response.ok || result.success !== true) {
+        if (!response.ok || !result || result.success !== true) {
           setStatus('System nie potwierdził przyjęcia zapytania. Dane pozostały w formularzu. Spróbuj później lub skontaktuj się z nami telefonicznie: +48 504 853 962.', 'error');
           return;
         }
         completed = true;
         setStatus('System przyjął Twoje zapytanie. Dziękujemy — skontaktujemy się w sprawie dalszych ustaleń.', 'success');
-        next.hidden = false;
+        if (next) next.hidden = false;
         form.reset();
         measureSuccess();
       } catch (error) {
@@ -90,7 +106,7 @@
         pending = false;
         form.removeAttribute('aria-busy');
         button.disabled = completed;
-        button.textContent = completed ? 'Zapytanie przyjęte' : 'Wyślij zapytanie';
+        button.textContent = completed ? 'Zapytanie przyjęte' : buttonLabel;
         status.focus();
       }
     });

@@ -662,6 +662,7 @@
   ]
 }
   </script>
+<link rel="stylesheet" href="assets/css/contact-form.css">
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -1019,9 +1020,10 @@
             <a href="https://calendly.com/pracowniarachunkowosci/30min" class="btn btn-primary js-track-calendly" target="_blank" rel="noopener noreferrer">Umów termin w Calendly</a>
           </div>
 
-          <form action="https://api.web3forms.com/submit" method="POST" id="leadForm" target="web3forms-hidden-frame">
+          <form action="https://api.web3forms.com/submit" method="POST" id="leadForm" data-contact-form="spolka">
             <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
             <input type="hidden" name="access_key" value="e4e94134-5946-445a-8f0a-7406585ec73e" />
+            <input type="hidden" name="inquiry_source" value="ksiegowosc-spolka-z-oo" />
             <input type="hidden" name="subject" value="Landing spółka z o.o. - nowe zapytanie" />
             <input type="hidden" name="utm_source" />
             <input type="hidden" name="utm_medium" />
@@ -1045,11 +1047,12 @@
             </div>
             <div class="form-group"><label for="message">Dodatkowe informacje</label><textarea id="message" name="message" placeholder="Krótko opisz sytuację: obecne biuro, liczba dokumentów, branża, problem, oczekiwany start..."></textarea></div>
             <label class="consent"><input type="checkbox" name="consent" required /><span>Wyrażam zgodę na kontakt w celu obsługi zapytania. Administratorem danych jest PRACOWNIA RACHUNKOWOŚCI SP. Z O.O. Szczegóły w polityce prywatności.</span></label>
+            <p id="lead-status" data-form-status role="status" aria-live="polite" tabindex="-1"></p>
             <button type="submit" class="btn-submit">Wyślij zapytanie</button>
             <p class="form-note">Twoje dane wykorzystamy wyłącznie do kontaktu w sprawie zapytania.</p>
           </form>
 
-          <iframe name="web3forms-hidden-frame" title="Ukryta ramka wysyłki formularza" style="display:none;"></iframe>
+
         </div>
       </div>
     </section>
@@ -1105,41 +1108,12 @@
       var year = document.getElementById('year');
       if (year) year.textContent = new Date().getFullYear();
 
-      var form = document.getElementById('leadForm');
-      var formRedirectTimer = null;
       var params = new URLSearchParams(window.location.search);
 
       ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'].forEach(function (param) {
         var input = document.querySelector('input[name="' + param + '"]');
         if (input && params.get(param)) input.value = params.get(param);
       });
-
-      if (form) {
-        form.addEventListener('submit', function () {
-          var submitButton = form.querySelector('button[type="submit"]');
-
-          if (submitButton) {
-            submitButton.disabled = true;
-            submitButton.textContent = 'Wysyłanie...';
-          }
-
-          if (typeof gtag === 'function') {
-            gtag('event', 'generate_lead', {
-              event_category: 'lead',
-              event_label: 'landing_spolka_z_oo_form'
-            });
-          }
-
-          if (typeof fbq === 'function') {
-            fbq('track', 'Lead');
-          }
-
-          clearTimeout(formRedirectTimer);
-          formRedirectTimer = setTimeout(function () {
-            window.location.href = 'https://pracowniarachunkowosci.pl/thank-you.html';
-          }, 1600);
-        });
-      }
 
       document.querySelectorAll('.js-track-calendly').forEach(function (link) {
         link.addEventListener('click', function () {
@@ -1203,7 +1177,8 @@
       }
 
       function applySavedConsent() {
-        var savedConsent = localStorage.getItem(consentKey);
+        var savedConsent = null;
+        try { savedConsent = localStorage.getItem(consentKey); } catch (error) { /* Keep default denial. */ }
 
         if (savedConsent === 'all') {
           updateGoogleConsent(true);
@@ -1223,7 +1198,7 @@
 
       if (acceptAll) {
         acceptAll.addEventListener('click', function () {
-          localStorage.setItem(consentKey, 'all');
+          try { localStorage.setItem(consentKey, 'all'); } catch (error) { /* Storage may be unavailable. */ }
           updateGoogleConsent(true);
           loadMetaPixel();
           hideBanner();
@@ -1232,14 +1207,14 @@
 
       if (acceptEssential) {
         acceptEssential.addEventListener('click', function () {
-          localStorage.setItem(consentKey, 'essential');
+          try { localStorage.setItem(consentKey, 'essential'); } catch (error) { /* Storage may be unavailable. */ }
           updateGoogleConsent(false);
           hideBanner();
         });
       }
 
       window.resetCookieConsent = function () {
-        localStorage.removeItem(consentKey);
+        try { localStorage.removeItem(consentKey); } catch (error) { /* Storage may be unavailable. */ }
         window.location.reload();
       };
 
@@ -1254,5 +1229,6 @@
     data-privacy-url="https://pracowniarachunkowosci.pl/polityka-prywatnosci.html"
     data-bottom="104px"
   ></script>
+<script src="assets/js/contact-form.js" defer></script>
 </body>
 </html>

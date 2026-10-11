@@ -1927,7 +1927,7 @@
         <div class="hp-form-card">
           <div class="hp-form-note"><strong>Formularz jest opcjonalny.</strong> Najszybsza droga to Calendly, ale jeśli chcesz od razu opisać sytuację spółki, wyślij zapytanie poniżej.</div>
 
-          <form action="https://api.web3forms.com/submit" method="POST" id="leadForm">
+          <form action="https://api.web3forms.com/submit" method="POST" id="leadForm" data-contact-form="home">
             <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
             <input type="hidden" name="access_key" value="e4e94134-5946-445a-8f0a-7406585ec73e" />
             <input type="hidden" name="inquiry_source" value="strona-glowna" />
@@ -1998,8 +1998,8 @@
               <span>Wyrażam zgodę na kontakt w celu obsługi zapytania. Administratorem danych jest PRACOWNIA RACHUNKOWOŚCI SP. Z O.O. Szczegóły w polityce prywatności.</span>
             </label>
 
-            <p id="lead-status" role="status" aria-live="polite" tabindex="-1"></p>
-            <p id="lead-next" hidden><a href="/thank-you.html">Informacje po wysłaniu zapytania →</a></p>
+            <p id="lead-status" data-form-status role="status" aria-live="polite" tabindex="-1"></p>
+            <p id="lead-next" data-form-next hidden><a href="/thank-you.html">Informacje po wysłaniu zapytania →</a></p>
             <noscript><p>Po wysłaniu formularza status zapytania wyświetli Web3Forms.</p></noscript>
             <button class="hp-btn hp-btn--dark hp-submit" type="submit">Wyślij zapytanie</button>
           </form>

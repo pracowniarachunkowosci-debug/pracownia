@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-11T14:42:49.603Z",
+  "page": "/",
+  "checks": [
+    "/: storage unavailable before page initialization; success works, no conversion or JS error",
+    "/: repeat script load does not duplicate handling; non-leadForm DOM id and absent optional next-link supported",
+    "/: 320/390/768/1024/1440 without horizontal overflow; form axe WCAG A/AA zero violations after success",
+    "/: script-free rendering retains visible native POST path; no real submission performed",
+    "/ksiegowosc-ecommerce.html: storage unavailable before page initialization; success works, no conversion or JS error",
+    "/ksiegowosc-ecommerce.html: repeat script load does not duplicate handling; non-leadForm DOM id and absent optional next-link supported",
+    "/ksiegowosc-ecommerce.html: 320/390/768/1024/1440 without horizontal overflow; form axe WCAG A/AA zero violations after success",
+    "/ksiegowosc-ecommerce.html: script-free rendering retains visible native POST path; no real submission performed",
+    "/ksiegowosc-spolka-z-oo.html: storage unavailable before page initialization; success works, no conversion or JS error",
+    "/ksiegowosc-spolka-z-oo.html: repeat script load does not duplicate handling; non-leadForm DOM id and absent optional next-link supported",
+    "/ksiegowosc-spolka-z-oo.html: 320/390/768/1024/1440 without horizontal overflow; form axe WCAG A/AA zero violations after success",
+    "/ksiegowosc-spolka-z-oo.html: script-free rendering retains visible native POST path; no real submission performed",
+    "case-study-estonski-cit-ecommerce.html: actual DOM has no form; no false lead; existing Calendly navigation retained",
+    "estonski-cit-ecommerce.html: actual DOM has no form; no false lead; existing Calendly navigation retained",
+    "estonski-cit-spolka-z-oo.html: actual DOM has no form; no false lead; existing Calendly navigation retained",
+    "interpretacje-estonski-cit.html: actual DOM has no form; no false lead; existing Calendly navigation retained",
+    "ukryte-zyski-estonski-cit.html: actual DOM has no form; no false lead; existing Calendly navigation retained",
+    "zmiana-biura-estonski-cit.html: actual DOM has no form; no false lead; existing Calendly navigation retained"
+  ],
+  "mockedSubmissions": 6,
+  "liveSubmissions": 0,
+  "liveAnalyticsRequests": 0,
+  "networkPolicy": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'none'; frame-src 'self'; object-src 'none'; base-uri 'self'",
+  "status": "PASS"
+}

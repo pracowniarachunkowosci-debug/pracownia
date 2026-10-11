@@ -1,5 +1,7 @@
 # Etap 4 — konfiguracja GTM w osobnym workspace
 
+> **Korekta z etapu 5 (11.10.2026):** poniższy raport historyczny błędnie utożsamiał 8 wystąpień starego kodu obsługi z 8 formularzami. Inwentaryzacja DOM i HTML potwierdziła tylko 2 rzeczywiste formularze (`ksiegowosc-ecommerce.html`, `ksiegowosc-spolka-z-oo.html`); pozostałe 6 stron zawierało martwy handler i linki Calendly. Aktualny zakres, wariant A i stan workspace opisuje [raport etapu 5](../stage5/README.md). Nie traktować starego stanu UPD ani liczby zmian poniżej jako aktualnej konfiguracji.
+
 Data: **11.10.2026**. [Draft PR #19](https://github.com/pracowniarachunkowosci-debug/pracownia/pull/19), [polecenie właściciela](https://github.com/pracowniarachunkowosci-debug/pracownia/pull/19#issuecomment-6109121441). Badany kod strony: `6ce63dc2e9a48b58bd0fc5d5e1bf5fb48b063162`, gałąź `codex/zewnetrzny-dzial-finansowy`.
 
 **Konfiguracja zapisana i sprawdzona w Preview, bez publikacji. GA4 measured: NIEPOTWIERDZONE.** W tym etapie nie zmieniano kodu strony, cen, pakietów, formularzy ani pozostałych integracji produkcyjnych. Nowe skrypty służą wyłącznie lokalnemu QA. Nie wykonano merge, wdrożenia, rzeczywistej wysyłki Web3Forms, rezerwacji ani wiadomości GrowthOS. Nie zmieniono enhanced conversions ani ustawień konta Ads.

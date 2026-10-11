@@ -1702,41 +1702,12 @@
       var year = document.getElementById('year');
       if (year) year.textContent = new Date().getFullYear();
 
-      var form = document.getElementById('leadForm');
-      var formRedirectTimer = null;
       var params = new URLSearchParams(window.location.search);
 
       ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'].forEach(function (param) {
         var input = document.querySelector('input[name="' + param + '"]');
         if (input && params.get(param)) input.value = params.get(param);
       });
-
-      if (form) {
-        form.addEventListener('submit', function () {
-          var submitButton = form.querySelector('button[type="submit"]');
-
-          if (submitButton) {
-            submitButton.disabled = true;
-            submitButton.textContent = 'Wysyłanie...';
-          }
-
-          if (typeof gtag === 'function') {
-            gtag('event', 'generate_lead', {
-              event_category: 'lead',
-              event_label: 'landing_spolka_z_oo_form'
-            });
-          }
-
-          if (typeof fbq === 'function') {
-            fbq('track', 'Lead');
-          }
-
-          clearTimeout(formRedirectTimer);
-          formRedirectTimer = setTimeout(function () {
-            window.location.href = 'https://pracowniarachunkowosci.pl/thank-you.html';
-          }, 1600);
-        });
-      }
 
       document.querySelectorAll('.js-track-calendly').forEach(function (link) {
         link.addEventListener('click', function () {

@@ -11,6 +11,7 @@ const fixture = `(() => {
   localStorage.removeItem('cookieConsent');
   if (consent && consent !== 'none') localStorage.setItem('cookieConsent', consent);
   const q = window.__qa = { mode: 'success', requests: 0, fb: [], errors: [], checks: {} };
+  if (consent === 'blocked') Object.defineProperty(window, 'localStorage', {get() { throw new Error('QA unavailable storage'); }});
   window.fbq = (...args) => q.fb.push(args);
   window.addEventListener('error', e => { if (e.message) q.errors.push(e.message); });
   const timer = window.setTimeout;
@@ -22,8 +23,10 @@ const fixture = `(() => {
     if (url !== 'https://api.web3forms.com/submit') return Promise.reject(new Error('External request blocked by QA'));
     q.requests++;
     const payload = JSON.parse(options.body);
+    const expected = Object.fromEntries(new FormData(document.querySelector('form[data-contact-form]')));
     q.checks = { source: payload.inquiry_source, correctMethod: options.method === 'POST',
-      testPayload: payload.email === 'qa@example.invalid', hasKey: !!payload.access_key };
+      testPayload: payload.email === 'qa@example.invalid', hasKey: !!payload.access_key,
+      fieldsPreserved: Object.keys(expected).every(key => payload[key] === expected[key]) };
     return new Promise((resolve, reject) => {
       q.resolve = (status = 200, body = {success:true}) => resolve(new Response(JSON.stringify(body), {status}));
       options.signal.addEventListener('abort', () => reject(new DOMException('QA timeout', 'AbortError')), {once:true});
@@ -50,11 +53,15 @@ http.createServer((req, res) => {
       try {
         const report = JSON.parse(raw);
         // Persist only the declared result schema, never form data or raw browser logs.
-        const safe = {date: report.date, checks: report.checks, mockedSubmissions: report.mockedSubmissions,
+        const allowedPages = ['/', '/ksiegowosc-ecommerce.html', '/ksiegowosc-spolka-z-oo.html'];
+        if (!allowedPages.includes(report.page)) throw new Error();
+        const safe = {date: report.date, page:report.page, checks: report.checks, mockedSubmissions: report.mockedSubmissions,
           liveSubmissions: 0, liveAnalyticsRequests: 0, networkPolicy: csp, status: report.status};
         if (!Array.isArray(safe.checks) || safe.checks.some(x => typeof x !== 'string') || !Number.isInteger(safe.mockedSubmissions)) throw new Error();
         fs.mkdirSync(output, {recursive:true});
-        fs.writeFileSync(path.join(output, 'conversion-report.json'), JSON.stringify(safe, null, 2) + '\n');
+        const suffix = report.page === '/' ? '' : '-' + path.basename(report.page, '.html');
+        const reportName = report.kind === 'extended' ? 'extended-report' : 'conversion-report' + suffix;
+        fs.writeFileSync(path.join(output, reportName + '.json'), JSON.stringify(safe, null, 2) + '\n');
         res.writeHead(200, {'Content-Type':'application/json'}).end('{"saved":true}');
       } catch { res.writeHead(400).end(); }
     });
@@ -62,6 +69,8 @@ http.createServer((req, res) => {
   }
   if (req.method !== 'GET') { res.writeHead(405).end(); return; }
   if (url.pathname === '/__qa__/run') { res.writeHead(200, {'Content-Type':'text/html; charset=utf-8'}).end(page); return; }
+  if (url.pathname === '/__qa__/extended') { res.writeHead(200, {'Content-Type':'text/html; charset=utf-8'}).end(page.replace('/__qa__/runner.js','/scripts/extended-contact-qa-browser.js')); return; }
+  if (url.pathname === '/__qa__/axe.js') { res.writeHead(200, {'Content-Type':'text/javascript'}).end(fs.readFileSync(path.join(root,'../zdf-qa/node_modules/axe-core/axe.min.js'))); return; }
   if (url.pathname === '/__qa__/fixture.js') { res.writeHead(200, {'Content-Type':'text/javascript; charset=utf-8'}).end(fixture); return; }
   let filename;
   try { filename = path.resolve(root, '.' + decodeURIComponent(url.pathname)); } catch { res.writeHead(400).end(); return; }
@@ -72,7 +81,8 @@ http.createServer((req, res) => {
   if (!types[path.extname(filename)] || path.relative(root, filename).split(path.sep).some(p => p.startsWith('.'))) { res.writeHead(403).end(); return; }
   fs.readFile(filename, (err, data) => {
     if (err) { res.writeHead(404).end(); return; }
-    if (path.extname(filename) === '.html' && path.basename(filename) !== 'thank-you.html') data = Buffer.from(data.toString('utf8').replace('<head>', '<head><script src="/__qa__/fixture.js"></script>'));
+    if (path.extname(filename) === '.html' && url.searchParams.has('qa_nojs')) data = Buffer.from(data.toString('utf8').replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,''));
+    else if (path.extname(filename) === '.html' && path.basename(filename) !== 'thank-you.html') data = Buffer.from(data.toString('utf8').replace('<head>', '<head><script src="/__qa__/fixture.js"></script>'));
     res.writeHead(200, {'Content-Type':types[path.extname(filename)] + '; charset=utf-8'}).end(data);
   });
 }).listen(8768, '127.0.0.1', () => console.log('Offline-only QA: http://127.0.0.1:8768/__qa__/run'));

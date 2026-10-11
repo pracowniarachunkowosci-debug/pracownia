@@ -1,10 +1,14 @@
-# Zewnętrzny dział finansowy — raport etapów 2–4
+# Zewnętrzny dział finansowy — raport etapów 2–5
+
+## Aktualizacja: etap 5 — migracja formularzy i roboczy wariant A
+
+[Aktualny raport etapu 5](stage5/README.md) zawiera inwentaryzację 8 stron, testy, konfigurację workspace 6 oraz plan Google Ads. **Dwa formularze zmigrowano; sześć stron nie ma formularza i usunięto z nich martwy handler.** W roboczym GTM wstrzymano tag UPD 9, usunięto `user_data` z tagu Ads 5 i zamknięto allowlistę czterech par formularz/źródło. Globalne automatyczne UPD pozostaje aktywne poza workspace i wymaga osobno zatwierdzonego wyłączenia. **Nic nie opublikowano, aktywnych ustawień Ads nie zmieniono, GA4 measured nadal NIEPOTWIERDZONE.** Poniżej historia wcześniejszych etapów.
 
 Data: **11 października 2026**. [Draft PR #19](https://github.com/pracowniarachunkowosci-debug/pracownia/pull/19), [zadanie #18](https://github.com/pracowniarachunkowosci-debug/pracownia/issues/18), [polecenie etapu 2](https://github.com/pracowniarachunkowosci-debug/pracownia/pull/19#issuecomment-6108001545).
 
 Gałąź: `codex/zewnetrzny-dzial-finansowy`. Porównanie regresji z `main`: `0bc0dec2f70753f2093fca645092de1910c32395`. Etap 2 aktualizuje ten sam PR. Nie wykonano merge ani publikacji.
 
-## Aktualizacja: etap 4 — workspace GTM przygotowany, bez publikacji
+## Historia: etap 4 — workspace GTM przygotowany, bez publikacji
 
 [Raport etapu 4: konfiguracja, rzeczywisty Preview z blokadą kolektorów, starsze formularze i decyzje](stage4/README.md). W osobnym workspace **6** kontenera `GTM-WC88L2GJ` zapisano **5 zmian: 4 dodane obiekty i 1 zmodyfikowany tag**. Dodano DLV, CE `web3forms_success` i GA4 `generate_lead`; tag Ads 5 korzysta wyłącznie z nowego CE i wymaganych zgód. Tag 9, zmienna UPD oraz mapowanie `user_data` pozostały bez zmian. Nie opublikowano kontenera i nie zmieniono kodu produkcyjnego w tym etapie.
 

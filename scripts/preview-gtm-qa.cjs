@@ -52,11 +52,14 @@ const fixture = `(() => {
       } else if(q.scenario==='negative') {
         dataLayer.push({event:'web3forms_success',form_id:'otherForm',inquiry_source:'strona-glowna'});
         dataLayer.push({event:'web3forms_success',form_id:'leadForm',inquiry_source:'unknown'});
+        dataLayer.push({event:'web3forms_success',form_id:'leadForm',inquiry_source:'ksiegowosc-ecommerce'});
+        dataLayer.push({event:'web3forms_success',form_id:'ecommerceForm',inquiry_source:'ksiegowosc-spolka-z-oo'});
+        dataLayer.push({event:'web3forms_success',form_id:'spolkaForm',inquiry_source:'estonski-cit-spolka-z-oo'});
         dataLayer.push({event:'form_submit',form_id:'leadForm',inquiry_source:'strona-glowna'});
       } else {
-        for(const [id,value] of Object.entries({name:'TEST OFFLINE',company:'Fixture',email:'qa@example.invalid',phone:'000000000',message:'Local API mock only.'}))document.getElementById(id).value=value;
-        document.querySelector('[name="consent"]').checked=true;
-        const form=document.getElementById('leadForm');
+        const form=document.querySelector('form[data-contact-form]');
+        for(const [name,value] of Object.entries({name:'TEST OFFLINE',company:'Fixture',email:'qa@example.invalid',phone:'000000000',message:'Local API mock only.'}))form.elements[name].value=value;
+        form.elements.consent.checked=true;
         form.requestSubmit(); form.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}));
         nativeTimer(()=>{form.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}));render();},800);
       }
@@ -81,7 +84,7 @@ http.createServer((req,res)=>{
   if(!types[path.extname(filename)]||path.relative(root,filename).split(path.sep).some(p=>p.startsWith('.'))){res.writeHead(403).end();return;}
   fs.readFile(filename,(err,data)=>{
     if(err){res.writeHead(404).end();return;}
-    if(path.basename(filename)==='index.html')data=Buffer.from(data.toString('utf8').replace('<head>','<head><script src="/__gtm__/fixture.js"></script>'));
+    if(['index.html','ksiegowosc-ecommerce.html','ksiegowosc-spolka-z-oo.html'].includes(path.basename(filename)))data=Buffer.from(data.toString('utf8').replace('<head>','<head><script src="/__gtm__/fixture.js"></script>'));
     res.writeHead(200,{'Content-Type':types[path.extname(filename)]+'; charset=utf-8'}).end(data);
   });
 }).listen(8769,'127.0.0.1',()=>console.log('GTM Preview with collectors blocked: http://127.0.0.1:8769/'));

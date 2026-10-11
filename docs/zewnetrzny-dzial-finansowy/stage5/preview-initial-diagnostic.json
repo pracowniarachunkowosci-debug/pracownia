@@ -1,0 +1,12 @@
+{
+  "status": "CORRECTED AFTER TEST",
+  "reason": "Right-hand trigger macro was compared as literal; replaced by native composite template and anchored regex",
+  "mockedRequests": 1,
+  "globalUpdAttemptsBlocked": [
+    "https://www.google.com/ccm/form-data/17646661298",
+    "https://www.google.com/pagead/form-data/17646661298",
+    "https://google.com/ccm/form-data/17646661298",
+    "https://google.com/pagead/form-data/17646661298"
+  ],
+  "liveRequests": 0
+}

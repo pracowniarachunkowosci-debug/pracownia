@@ -1,0 +1,2357 @@
+{
+  "date": "2026-10-11T15:04:22.881Z",
+  "records": [
+    {
+      "name": "ZDF all success",
+      "consent": "all",
+      "scenario": "success",
+      "mockedRequests": 1,
+      "events": [
+        {
+          "event": "web3forms_success",
+          "form_id": "leadForm",
+          "inquiry_source": "zewnetrzny-dzial-finansowy"
+        }
+      ],
+      "blocked": [
+        {
+          "directive": "script-src-elem",
+          "url": "https://growthos-mu.vercel.app/lead-chat-ai.js"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://ad.doubleclick.net/ccm/s/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://ad.doubleclick.net/ccm/s/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://region1.analytics.google.com/g/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.pl/ads/ga-audiences"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.googleadservices.com/pagead/conversion/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://region1.analytics.google.com/g/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/1p-conversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googleadservices.com/ccm/conversion/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        }
+      ],
+      "observedScriptRequests": [
+        "http://127.0.0.1:8769/__gtm__/fixture.js",
+        "http://127.0.0.1:8769/assets/js/contact-form.js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "https://www.googletagmanager.com/debug/bootstrap",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://www.googletagmanager.com/gtag/js"
+      ],
+      "tagButtons": [
+        "  TechSol - Formularz kontaktowy 45209   Google Ads – śledzenie konwersji    - Nieaktywna    - Nie udało się uruchomić 1 raz    ",
+        "  GA4 - generate_lead - API success   Google Analytics: zdarzenie GA4    - Nieaktywna    - Uruchomiono 1 raz    ",
+        "  Google Ads User-provided Data Event roz. konwersja   Google Ads User-provided Data Event    - Nieaktywna    - Wstrzymano    "
+      ],
+      "liveSubmissions": 0,
+      "liveCollectorRequests": 0
+    },
+    {
+      "name": "Home all success",
+      "consent": "all",
+      "scenario": "success",
+      "mockedRequests": 1,
+      "events": [
+        {
+          "event": "web3forms_success",
+          "form_id": "leadForm",
+          "inquiry_source": "strona-glowna"
+        }
+      ],
+      "blocked": [
+        {
+          "directive": "script-src-elem",
+          "url": "https://growthos-mu.vercel.app/lead-chat-ai.js"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://ad.doubleclick.net/ccm/s/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://ad.doubleclick.net/ccm/s/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://region1.analytics.google.com/g/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.googleadservices.com/pagead/conversion/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://region1.analytics.google.com/g/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/1p-conversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googleadservices.com/ccm/conversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        }
+      ],
+      "observedScriptRequests": [
+        "http://127.0.0.1:8769/__gtm__/fixture.js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "http://127.0.0.1:8769/assets/js/contact-form.js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "https://www.googletagmanager.com/debug/bootstrap",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://www.googletagmanager.com/gtag/js"
+      ],
+      "tagButtons": [
+        "  TechSol - Formularz kontaktowy 45209   Google Ads – śledzenie konwersji    - Nieaktywna    - Nie udało się uruchomić 1 raz    ",
+        "  GA4 - generate_lead - API success   Google Analytics: zdarzenie GA4    - Nieaktywna    - Uruchomiono 1 raz    ",
+        "  Google Ads User-provided Data Event roz. konwersja   Google Ads User-provided Data Event    - Nieaktywna    - Wstrzymano    "
+      ],
+      "liveSubmissions": 0,
+      "liveCollectorRequests": 0
+    },
+    {
+      "name": "Ecommerce all success",
+      "consent": "all",
+      "scenario": "success",
+      "mockedRequests": 1,
+      "events": [
+        {
+          "event": "web3forms_success",
+          "form_id": "ecommerceForm",
+          "inquiry_source": "ksiegowosc-ecommerce"
+        }
+      ],
+      "blocked": [
+        {
+          "directive": "style-src-elem",
+          "url": "https://fonts.googleapis.com/css2"
+        },
+        {
+          "directive": "style-src-elem",
+          "url": "https://fonts.googleapis.com/css2"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://growthos-mu.vercel.app/lead-chat-ai.js"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://region1.analytics.google.com/g/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.googleadservices.com/pagead/conversion/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://region1.analytics.google.com/g/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/1p-conversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googleadservices.com/ccm/conversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        }
+      ],
+      "observedScriptRequests": [
+        "http://127.0.0.1:8769/__gtm__/fixture.js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "http://127.0.0.1:8769/assets/js/contact-form.js",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://www.googletagmanager.com/debug/bootstrap",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://www.googletagmanager.com/gtag/js"
+      ],
+      "tagButtons": [
+        "  TechSol - Formularz kontaktowy 45209   Google Ads – śledzenie konwersji    - Nieaktywna    - Nie udało się uruchomić 1 raz    ",
+        "  GA4 - generate_lead - API success   Google Analytics: zdarzenie GA4    - Nieaktywna    - Uruchomiono 1 raz    ",
+        "  Google Ads User-provided Data Event roz. konwersja   Google Ads User-provided Data Event    - Nieaktywna    - Wstrzymano    "
+      ],
+      "liveSubmissions": 0,
+      "liveCollectorRequests": 0
+    },
+    {
+      "name": "Spolka all success",
+      "consent": "all",
+      "scenario": "success",
+      "mockedRequests": 1,
+      "events": [
+        {
+          "event": "web3forms_success",
+          "form_id": "spolkaForm",
+          "inquiry_source": "ksiegowosc-spolka-z-oo"
+        }
+      ],
+      "blocked": [
+        {
+          "directive": "style-src-elem",
+          "url": "https://fonts.googleapis.com/css2"
+        },
+        {
+          "directive": "style-src-elem",
+          "url": "https://fonts.googleapis.com/css2"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://growthos-mu.vercel.app/lead-chat-ai.js"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://region1.analytics.google.com/g/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://ad.doubleclick.net/ccm/s/collect"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.pl/ads/ga-audiences"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://ad.doubleclick.net/ccm/s/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.googleadservices.com/pagead/conversion/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://region1.analytics.google.com/g/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/1p-conversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googleadservices.com/ccm/conversion/17646661298/"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        }
+      ],
+      "observedScriptRequests": [
+        "http://127.0.0.1:8769/__gtm__/fixture.js",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "http://127.0.0.1:8769/assets/js/contact-form.js",
+        "https://www.googletagmanager.com/debug/bootstrap",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://www.googletagmanager.com/gtag/js"
+      ],
+      "tagButtons": [
+        "  TechSol - Formularz kontaktowy 45209   Google Ads – śledzenie konwersji    - Nieaktywna    - Nie udało się uruchomić 1 raz    ",
+        "  GA4 - generate_lead - API success   Google Analytics: zdarzenie GA4    - Nieaktywna    - Uruchomiono 1 raz    ",
+        "  Google Ads User-provided Data Event roz. konwersja   Google Ads User-provided Data Event    - Nieaktywna    - Wstrzymano    "
+      ],
+      "liveSubmissions": 0,
+      "liveCollectorRequests": 0
+    },
+    {
+      "name": "Spolka essential success",
+      "consent": "essential",
+      "scenario": "success",
+      "mockedRequests": 1,
+      "events": [],
+      "blocked": [
+        {
+          "directive": "style-src-elem",
+          "url": "https://fonts.googleapis.com/css2"
+        },
+        {
+          "directive": "style-src-elem",
+          "url": "https://fonts.googleapis.com/css2"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://growthos-mu.vercel.app/lead-chat-ai.js"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://pagead2.googlesyndication.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://pagead2.googlesyndication.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://region1.google-analytics.com/g/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://pagead2.googlesyndication.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://pagead2.googlesyndication.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        }
+      ],
+      "observedScriptRequests": [
+        "http://127.0.0.1:8769/__gtm__/fixture.js",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "http://127.0.0.1:8769/assets/js/contact-form.js",
+        "https://www.googletagmanager.com/debug/bootstrap",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://www.googletagmanager.com/gtag/js"
+      ],
+      "tagButtons": [
+        "  TechSol - Formularz kontaktowy 45209   Google Ads – śledzenie konwersji    - Nieaktywna    - Wstrzymano    ",
+        "  Google Ads User-provided Data Event roz. konwersja   Google Ads User-provided Data Event    - Nieaktywna    - Wstrzymano    ",
+        "  GA4 - generate_lead - API success   Google Analytics: zdarzenie GA4    - Nieaktywna    - Wstrzymano    "
+      ],
+      "liveSubmissions": 0,
+      "liveCollectorRequests": 0
+    },
+    {
+      "name": "Synthetic allowed pair with denied consent",
+      "consent": "essential",
+      "scenario": "synthetic",
+      "mockedRequests": 0,
+      "events": [
+        {
+          "event": "web3forms_success",
+          "form_id": "leadForm",
+          "inquiry_source": "strona-glowna"
+        }
+      ],
+      "blocked": [
+        {
+          "directive": "script-src-elem",
+          "url": "https://growthos-mu.vercel.app/lead-chat-ai.js"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://pagead2.googlesyndication.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://pagead2.googlesyndication.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://region1.google-analytics.com/g/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://pagead2.googlesyndication.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://pagead2.googlesyndication.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        }
+      ],
+      "observedScriptRequests": [
+        "http://127.0.0.1:8769/__gtm__/fixture.js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "http://127.0.0.1:8769/assets/js/contact-form.js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "https://www.googletagmanager.com/debug/bootstrap",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://www.googletagmanager.com/gtag/js"
+      ],
+      "tagButtons": [
+        "- button \"TechSol - Formularz kontaktowy 45209 Google Ads – śledzenie konwersji\":",
+        "- button \"Google Ads User-provided Data Event roz. konwersja Google Ads User-provided Data Event - Wstrzymano\":",
+        "- 'button \"GA4 - generate_lead - API success Google Analytics: zdarzenie GA4\"':"
+      ],
+      "liveSubmissions": 0,
+      "liveCollectorRequests": 0
+    },
+    {
+      "name": "Unknown and mixed pairs plus legacy form_submit",
+      "consent": "all",
+      "scenario": "negative",
+      "mockedRequests": 0,
+      "events": [
+        {
+          "event": "web3forms_success",
+          "form_id": "otherForm",
+          "inquiry_source": "strona-glowna"
+        },
+        {
+          "event": "web3forms_success",
+          "form_id": "leadForm",
+          "inquiry_source": "unknown"
+        },
+        {
+          "event": "web3forms_success",
+          "form_id": "leadForm",
+          "inquiry_source": "ksiegowosc-ecommerce"
+        },
+        {
+          "event": "web3forms_success",
+          "form_id": "ecommerceForm",
+          "inquiry_source": "ksiegowosc-spolka-z-oo"
+        },
+        {
+          "event": "web3forms_success",
+          "form_id": "spolkaForm",
+          "inquiry_source": "estonski-cit-spolka-z-oo"
+        },
+        {
+          "event": "form_submit",
+          "form_id": "leadForm",
+          "inquiry_source": "strona-glowna"
+        }
+      ],
+      "blocked": [
+        {
+          "directive": "script-src-elem",
+          "url": "https://growthos-mu.vercel.app/lead-chat-ai.js"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://ad.doubleclick.net/ccm/s/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://ad.doubleclick.net/ccm/s/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://region1.analytics.google.com/g/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.pl/ads/ga-audiences"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        }
+      ],
+      "observedScriptRequests": [
+        "http://127.0.0.1:8769/__gtm__/fixture.js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "http://127.0.0.1:8769/assets/js/contact-form.js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "https://www.googletagmanager.com/debug/bootstrap",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://www.googletagmanager.com/gtag/js"
+      ],
+      "tagButtons": [
+        "- button \"TechSol - Formularz kontaktowy 45209 Google Ads – śledzenie konwersji\":",
+        "- button \"Google Ads User-provided Data Event roz. konwersja Google Ads User-provided Data Event - Wstrzymano\":",
+        "- 'button \"GA4 - generate_lead - API success Google Analytics: zdarzenie GA4\"':"
+      ],
+      "liveSubmissions": 0,
+      "liveCollectorRequests": 0
+    },
+    {
+      "name": "Ecommerce HTTP 500 and manual duplicate/retry",
+      "consent": "all",
+      "scenario": "error",
+      "mockedRequests": 2,
+      "events": [],
+      "blocked": [
+        {
+          "directive": "style-src-elem",
+          "url": "https://fonts.googleapis.com/css2"
+        },
+        {
+          "directive": "style-src-elem",
+          "url": "https://fonts.googleapis.com/css2"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://growthos-mu.vercel.app/lead-chat-ai.js"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://region1.analytics.google.com/g/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        }
+      ],
+      "observedScriptRequests": [
+        "http://127.0.0.1:8769/__gtm__/fixture.js",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "http://127.0.0.1:8769/assets/js/contact-form.js",
+        "https://www.googletagmanager.com/debug/bootstrap",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://www.googletagmanager.com/gtag/js"
+      ],
+      "tagButtons": [
+        "- button \"TechSol - Formularz kontaktowy 45209 Google Ads – śledzenie konwersji\":",
+        "- button \"Google Ads User-provided Data Event roz. konwersja Google Ads User-provided Data Event - Wstrzymano\":",
+        "- 'button \"GA4 - generate_lead - API success Google Analytics: zdarzenie GA4\"':"
+      ],
+      "liveSubmissions": 0,
+      "liveCollectorRequests": 0
+    },
+    {
+      "name": "Spolka timeout and duplicate pending",
+      "consent": "all",
+      "scenario": "timeout",
+      "mockedRequests": 1,
+      "events": [],
+      "blocked": [
+        {
+          "directive": "style-src-elem",
+          "url": "https://fonts.googleapis.com/css2"
+        },
+        {
+          "directive": "style-src-elem",
+          "url": "https://fonts.googleapis.com/css2"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://growthos-mu.vercel.app/lead-chat-ai.js"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://region1.analytics.google.com/g/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://ad.doubleclick.net/ccm/s/collect"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://ad.doubleclick.net/ccm/s/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://fonts.gstatic.com/s/i/googlematerialicons/more/v6/gm_blue-48dp/1x/gm_more_gm_blue_48dp.png"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/ccm/collect"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/pagead/form-data/17646661298"
+        },
+        {
+          "directive": "fixture-fetch",
+          "url": "https://google.com/ccm/form-data/17646661298"
+        },
+        {
+          "directive": "script-src-elem",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.google.com/rmkt/collect/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/a"
+        },
+        {
+          "directive": "img-src",
+          "url": "https://www.googletagmanager.com/td"
+        }
+      ],
+      "observedScriptRequests": [
+        "http://127.0.0.1:8769/__gtm__/fixture.js",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://growthos-mu.vercel.app/lead-chat-ai.js",
+        "http://127.0.0.1:8769/assets/js/contact-form.js",
+        "https://www.googletagmanager.com/debug/bootstrap",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://www.googletagmanager.com/gtm.js",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17646661298/",
+        "https://www.googletagmanager.com/gtag/js",
+        "https://www.googletagmanager.com/gtag/js"
+      ],
+      "tagButtons": [
+        "- button \"TechSol - Formularz kontaktowy 45209 Google Ads – śledzenie konwersji\":",
+        "- button \"Google Ads User-provided Data Event roz. konwersja Google Ads User-provided Data Event - Wstrzymano\":",
+        "- 'button \"GA4 - generate_lead - API success Google Analytics: zdarzenie GA4\"':"
+      ],
+      "liveSubmissions": 0,
+      "liveCollectorRequests": 0
+    }
+  ]
+}
