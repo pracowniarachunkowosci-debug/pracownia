@@ -1,6 +1,10 @@
-# Zewnętrzny dział finansowy — raport etapów 2–5
+# Zewnętrzny dział finansowy — raport etapów 2–6
 
-## Aktualizacja: etap 5 — migracja formularzy i roboczy wariant A
+## Aktualizacja: etap 6 — audyt odczytowy, test GA4 wstrzymany
+
+[Raport etapu 6](stage6/README.md) i [plan wymagający zatwierdzenia](stage6/approval-plan.md). Globalne UPD oraz EC WWW/leadów w Ads pozostają włączone. W audytowanym koncie Ads: **0 aktywnych kampanii, 2 wstrzymane korzystające z błędnego celu domyślnego „Rezerwacja terminu”, 0 celów niestandardowych**. Test GA4 zatrzymano **przed wysyłką (0 prób)**: brak odizolowanej właściwości, jedyny filtr produkcyjny jest w trybie Testing. **GA4 test: BLOCKED; GA4 produkcyjne: NIEPOTWIERDZONE.** Nie zmieniono kodu strony, GTM, GA4 ani ustawień Ads. Dokumentacja etapu 5 poniżej jest zapisem historycznym.
+
+## Historia: etap 5 — migracja formularzy i roboczy wariant A
 
 [Aktualny raport etapu 5](stage5/README.md) zawiera inwentaryzację 8 stron, testy, konfigurację workspace 6 oraz plan Google Ads. **Dwa formularze zmigrowano; sześć stron nie ma formularza i usunięto z nich martwy handler.** W roboczym GTM wstrzymano tag UPD 9, usunięto `user_data` z tagu Ads 5 i zamknięto allowlistę czterech par formularz/źródło. Globalne automatyczne UPD pozostaje aktywne poza workspace i wymaga osobno zatwierdzonego wyłączenia. **Nic nie opublikowano, aktywnych ustawień Ads nie zmieniono, GA4 measured nadal NIEPOTWIERDZONE.** Poniżej historia wcześniejszych etapów.
 
