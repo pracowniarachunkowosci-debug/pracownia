@@ -4,6 +4,12 @@ Data: **11 października 2026**. [Draft PR #19](https://github.com/pracowniarach
 
 Gałąź: `codex/zewnetrzny-dzial-finansowy`. Porównanie regresji z `main`: `0bc0dec2f70753f2093fca645092de1910c32395`. Etap 2 aktualizuje ten sam PR. Nie wykonano merge ani publikacji.
 
+## Aktualizacja: jednorazowy test odbiorczy
+
+**11.10.2026 o 13:29:54 CEST** wykonano dokładnie jedną zatwierdzoną rzeczywistą wysyłkę z lokalnego podglądu commitu `4738e56`: **API accepted: TAK (HTTP 200, `success: true`); e-mail received: NIEPOTWIERDZONY; GA4 measured: NIEPOTWIERDZONY; PR published: NIE**. Formularz pokazał sukces i zablokował ponowne wysłanie. W dataLayer wystąpił jeden `generate_lead`, ale Tag Assistant nie pokazał wysłanego działania GA4, a DebugView nie potwierdził zdarzenia. Dodatkowo istniejący tag Ads zadziałał już przy `gtm.formSubmit`.
+
+Szczegóły, ograniczenia i dowód: **[raport rzeczywistej próby](acceptance-2026-10-11.md)**. Czekamy na potwierdzenie wiadomości przez właściciela. **Nie ponawiać rzeczywistej wysyłki bez nowej zgody.** Nie zmieniono konfiguracji usług ani kodu strony w ramach tego testu.
+
 ## Zmiany i naprawione usterki
 
 1. **Dostępność:** zbieramy teraz zgłoszenia na rozpoczęcie pełnej księgowości od stycznia 2027. Dokładny termin zależy od oceny dokumentów, sald i rozrachunków. Zgodne informacje znajdują się w hero, procesie, CTA, FAQ, JSON-LD oraz kontekstowej informacji przy formularzu. Usunięto sugestię przejęcia ksiąg w trakcie 2026. Osobne raportowanie, controlling, audyt lub uporządkowanie ksiąg pozostają możliwe po odrębnym ustaleniu zakresu, wyceny i terminu.
@@ -47,7 +53,7 @@ Wspólne pojęcia księgowości, marży i cash-flow są uzasadnione relacją us�
 - raport indeksowania i map witryny, inspekcja obecnych URL (canonical wybrany przez Google), Core Web Vitals mobile/desktop;
 - po osobno zatwierdzonej publikacji: inspekcja nowego URL i porównanie zapytań/przepływu między stronami po zebraniu danych. Nowy URL nie ma jeszcze historii produkcyjnej w tym PR.
 
-## Wyniki QA
+## Wyniki wcześniejszego automatycznego QA (atrapy API)
 
 Dowody: [przeglądarka](browser-report.json), [formularz](contact-report.json), [HTML/JS/integracje](technical-report.json), [SEO i cały serwis](seo-audit.json), [wydajność](performance-report.json), [odczyt usług zewnętrznych](external-readonly.json).
 
@@ -71,7 +77,7 @@ Dowody: [przeglądarka](browser-report.json), [formularz](contact-report.json), 
 | Bezpieczne testy | 22 żądania formularza do atrap API; **0 prawdziwych leadów i 0 rezerwacji** |
 | Git | `git diff --check`: bez błędów whitespace; na PR nie ma skonfigurowanych checks CI — opisane testy wykonano lokalnie |
 
-Testy przechwytują wszystkie zewnętrzne żądania przeglądarki. Nie sprawdzają dostarczenia wiadomości, rzeczywistego kontenera GTM, GA4 DebugView, zapisu terminu ani odpowiedzi czatu. Publiczny odczyt HTTP 200 potwierdza dostępność adresu, nie kompletny proces dostawcy.
+Powyższe testy automatyczne przechwytują wszystkie zewnętrzne żądania przeglądarki. Nie sprawdzają dostarczenia wiadomości, rzeczywistego kontenera GTM, GA4 DebugView, zapisu terminu ani odpowiedzi czatu. Publiczny odczyt HTTP 200 potwierdza dostępność adresu, nie kompletny proces dostawcy. Późniejsza, jedna rzeczywista próba Web3Forms wraz z odczytem GTM/GA4 jest opisana osobno w aktualizacji na początku raportu.
 
 ### Wydajność: wyłącznie laboratorium
 
@@ -98,8 +104,8 @@ Skrypty JS mają opcjonalne `ZDF_BASE_REF`; zapisane wyniki i audyt Python poró
 
 ## Otwarte ryzyka i sprawy poza zakresem nowej ścieżki
 
-- Brak potwierdzonego odbioru w skrzynce Web3Forms, konfiguracji powiadomień i ograniczeń domeny klucza. Te warunki wymagają kontrolowanego testu właściciela.
-- Prywatne reguły GTM oraz konfiguracja kluczowych zdarzeń GA4 nie są dostępne. Trzeba sprawdzić, czy istniejący kontener nie zgłasza dodatkowego leada przy dowolnym `submit`, kliknięciu lub wizycie na podziękowaniu. Parametr `inquiry_source` może wymagać rejestracji jako wymiar niestandardowy w GA4.
+- API Web3Forms przyjęło jedną rzeczywistą próbę, ale odbiór e-maila nadal wymaga potwierdzenia właściciela. Odczytano konfigurację Web3Forms: pole ograniczenia domen jest puste; niczego nie zmieniono ani nie obchodzono ograniczeń.
+- Odczyt GTM Preview i GA4 DebugView wykazał brak potwierdzonego przekazania `generate_lead` do GA4 oraz uruchomienie istniejącej konwersji Ads przy `gtm.formSubmit`. Pomiar nie przeszedł testu odbiorczego; wymaga osobnej diagnozy i naprawy. Nie przeprowadzono pełnego audytu reguł ani konfiguracji kluczowych zdarzeń. Parametr `inquiry_source` może wymagać rejestracji jako wymiar niestandardowy w GA4.
 - Inne, niezmieniane landingi nadal mają historyczny pomiar przy `submit` i przekierowanie po 1600 ms: `case-study-estonski-cit-ecommerce.html`, `estonski-cit-ecommerce.html`, `estonski-cit-spolka-z-oo.html`, `interpretacje-estonski-cit.html`, `ksiegowosc-ecommerce.html`, `ksiegowosc-spolka-z-oo.html`, `ukryte-zyski-estonski-cit.html`, `zmiana-biura-estonski-cit.html`. Ten PR naprawia wymagany przepływ nowy landing → główna → sukces oraz wspólne podziękowanie. Rozszerzenie modułu na pozostałe formularze powinno mieć osobny zakres i testy odbioru; ich konwersji nie można obecnie uznać za zweryfikowane.
 - Audyt całego serwisu wykazał **33 wcześniejsze wystąpienia brakujących zasobów/kotwic na 19 stronach** poza sześcioma stronami zakresu, w tym grafiki metadanych, nieistniejące kotwice oferty/CIT i stary URL promocji. Szczegóły są w `seo-audit.json`. Nie wykonano masowej zmiany klastrów SEO. Pozostało też 9 wcześniejszych wskazań HTML na kontrolowanych starych stronach.
 - Źródło jest przenoszone tylko przez bezpośrednie CTA. Wejście do formularza później inną drogą będzie oznaczone jako główna. Bez JS formularz działa, lecz źródło nie jest automatycznie zmieniane. To świadome ograniczenie rozwiązania bez utrwalania identyfikatorów.
@@ -107,7 +113,7 @@ Skrypty JS mają opcjonalne `ZDF_BASE_REF`; zapisane wyniki i audyt Python poró
 
 ## Kontrolowany test właściciela — przed decyzją o publikacji
 
-Wykonać wyłącznie po zatwierdzeniu środowiska testu i użycia prawdziwego kontaktu testującego. Ten PR nie uruchamia wdrożenia ani tych wysyłek.
+**Aktualny stan:** jedyna zatwierdzona rzeczywista próba ze zgodą `all` została wykonana i opisana w [raporcie odbiorczym](acceptance-2026-10-11.md). Pozostaje potwierdzenie skrzynki oraz naprawa pomiaru. Poniższa pierwotna checklista jest planem dalszej weryfikacji, nie poleceniem ponowienia wysyłki. Każda kolejna rzeczywista wysyłka, rezerwacja lub wiadomość czatu wymaga osobnej zgody. Ten PR nie uruchamia wdrożenia.
 
 1. Otworzyć wersję z gałęzi w zaakceptowanym środowisku, na telefonie i komputerze. W nowym profilu wybrać tylko niezbędne cookies. Z hero oraz końcowego CTA przejść do kontaktu; sprawdzić temat, komunikat stycznia 2027 i widoczność pierwszego pola.
 2. Wysłać jedno oznaczone zapytanie „TEST WŁAŚCICIELA — ZDF”, z własnym dostępnym e-mailem i telefonem. W Network potwierdzić POST do tego samego API, HTTP 2xx i `success: true`. Sprawdzić komunikat przy formularzu oraz faktyczny odbiór jednej wiadomości w skrzynce (także spam), komplet pól, `inquiry_source` i temat. Nie publikować klucza ani danych kontaktowych w zrzutach QA.
@@ -120,7 +126,7 @@ Wykonać wyłącznie po zatwierdzeniu środowiska testu i użycia prawdziwego ko
 ## Decyzje właściciela
 
 - Ocenić gotowy wariant jednego formularza. Rekomendowane pozostawienie wdrożonego rozwiązania; formularz na landingu rozważyć dopiero przy danych o porzuceniach.
-- Zatwierdzić środowisko i wykonawcę kontrolowanego testu odbioru/GA4/Calendly/GrowthOS; udostępnić odpowiednie odczyty GSC i konfiguracji pomiaru.
+- Potwierdzić odbiór jednej wykonanej wiadomości testowej; zdecydować o osobnej naprawie przekazywania zdarzenia GA4 i przedwczesnej konwersji Ads. Dalsza rzeczywista wysyłka oraz testy rezerwacji Calendly/wiadomości GrowthOS wymagają nowej zgody. Odczyt GSC pozostaje potrzebny do analizy SEO.
 - Ustalić priorytet osobnej naprawy pozostałych formularzy oraz starych odwołań/HTML. Nie traktować ich jako zweryfikowanych w tym etapie.
 - Wyznaczyć osobę i termin ręcznego przeglądu dostępności **przed styczniem 2027 lub wcześniej, jeśli zmienią się możliwości obsługi**. Aktualizacja obejmuje hero, proces, CTA, FAQ i JSON-LD w `zewnetrzny-dzial-finansowy.html` oraz notę w `assets/js/contact-form.js`. Data nie zmieni się automatycznie.
 - Podjąć odrębną decyzję o merge i publikacji po recenzji oraz testach odbioru. Aktualny PR pozostaje draftem.
