@@ -28,7 +28,8 @@ function pass(text){report.checks.push(text);console.log('PASS '+text)}
    return route.fulfill({status:200,contentType:'application/javascript',body:''});
  });
  await ctx.addInitScript(()=>{
-   window.__cls=0;
+   window.__cls=0; window.__lcp=0;
+   new PerformanceObserver(list=>{for(const e of list.getEntries())window.__lcp=e.startTime;}).observe({type:'largest-contentful-paint',buffered:true});
    new PerformanceObserver(list=>{for(const e of list.getEntries())if(!e.hadRecentInput)window.__cls+=e.value;}).observe({type:'layout-shift',buffered:true});
  });
  const page=await ctx.newPage();
@@ -37,7 +38,7 @@ function pass(text){report.checks.push(text);console.log('PASS '+text)}
    await page.setViewportSize({width,height:900});
    await page.goto(origin+landing,{waitUntil:'networkidle'});
    if(await page.locator('#cookie-banner').isVisible())await page.locator('#acceptEssential').click();
-   const dims=await page.evaluate(()=>({viewport:innerWidth,scroll:document.documentElement.scrollWidth,cls:window.__cls}));
+   const dims=await page.evaluate(()=>({viewport:innerWidth,scroll:document.documentElement.scrollWidth,cls:window.__cls,lcpMs:window.__lcp}));
    assert(dims.scroll<=width,`Overflow ${width}: ${dims.scroll}`);
    assert(dims.cls < 0.01, `Unexpected layout shift at ${width}: ${dims.cls}`);
    assert.equal(await page.locator('h1').innerText(),'Zewnętrzny dział finansowy dla rozwijających się firm');
@@ -87,6 +88,7 @@ function pass(text){report.checks.push(text);console.log('PASS '+text)}
  assert.deepEqual(graph.map(g=>g['@type']),['Service','BreadcrumbList','FAQPage']);
  const visibleFaq=await page.locator('details').evaluateAll(els=>els.map(e=>({q:e.querySelector('summary').textContent,a:e.querySelector('p').textContent})));
  assert.deepEqual(graph[2].mainEntity.map(q=>({q:q.name,a:q.acceptedAnswer.text})),visibleFaq);
+ assert(visibleFaq.some(f=>f.a.includes('od stycznia 2027 roku')));
  pass('Service/BreadcrumbList/FAQ JSON-LD parses; all seven FAQ answers match visible content exactly');
  // Consent denied before GTM/GA4; accept essential, accept all, revisit, reset.
  await page.evaluate(()=>localStorage.clear());await page.reload();
@@ -111,6 +113,13 @@ function pass(text){report.checks.push(text);console.log('PASS '+text)}
  assert(await page.locator('#cookie-banner').isVisible());
  await page.locator('#acceptEssential').click();
  pass('Consent v2: denied defaults, both choices, persistence, reset and Meta load only after consent');
+ // No custom CTA events without analytics consent.
+ await page.evaluate(()=>{document.querySelectorAll('.js-track-contact,.js-track-calendly').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));});
+ await page.locator('.hero .js-track-contact').click();
+ await page.locator('.hero .js-track-calendly').click();
+ assert.equal(await page.evaluate(()=>dataLayer.filter(x=>x[0]==='event').length),0);
+ await page.evaluate(()=>localStorage.clear());await page.reload();await page.locator('#acceptAll').click();
+ pass('Essential-only consent emits no custom contact/calendar events');
  // Capture CTA dataLayer before following genuine links.
  await page.evaluate(()=>{document.querySelectorAll('.js-track-contact,.js-track-calendly').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));});
  for(const selector of ['.hero .js-track-contact','.hero .js-track-calendly','.contact-panel .js-track-contact','.contact-panel .js-track-calendly'])await page.locator(selector).click();
@@ -121,17 +130,24 @@ function pass(text){report.checks.push(text);console.log('PASS '+text)}
  assert(!events.some(x=>x[1]==='generate_lead'));
  pass('Hero/final CTAs emit one correctly labelled click each; navigation is not counted as a submitted lead');
  await page.goto(origin+landing);await page.locator('.hero .js-track-contact').click();
- await page.waitForURL(origin+'/#kontakt', {waitUntil:'domcontentloaded'});
+ await page.waitForURL(origin+'/?service=zewnetrzny-dzial-finansowy#kontakt', {waitUntil:'domcontentloaded'});
  assert(await page.locator('#leadForm').isVisible());
  assert.equal(await page.locator('#leadForm').getAttribute('action'),'https://api.web3forms.com/submit');
  assert.equal(await page.locator('#leadForm').evaluate(f=>f.checkValidity()),false);
  pass('Primary CTA reaches the existing required-field Web3Forms form');
- // Homepage and offer preserve metadata, scripts, form and all packages byte for byte.
+ // Protect existing commercial content; homepage form changes are tested separately.
  for(const filename of ['index.html','oferta.html']){
    const before=execFileSync('git',['show',`${baseline}:${filename}`],{cwd:root,encoding:'utf8'}).replace(/\r\n/g,'\n');
    const after=fs.readFileSync(path.join(root,filename),'utf8').replace(/\r\n/g,'\n');
    const withoutAddition=after.replace(/    <section class="(?:hp-)?section (?:hp-)?section--dark" id="zewnetrzny-dzial-finansowy"[\s\S]*?<\/section>\n\n/,'');
-   assert.equal(withoutAddition,before,`${filename} changed outside new section`);
+   if(filename==='oferta.html')assert.equal(withoutAddition,before,`${filename} changed outside new section`);
+   else {
+     for(const id of ['o-pracowni','uslugi','dla-kogo','proces','case-study','opinie','pakiety','landing-pages','blog','faq']) {
+       const section=new RegExp('<section[^>]*id="'+id+'"[^>]*>[\\s\\S]*?</section>');
+       assert.deepEqual(after.match(section)?.[0],before.match(section)?.[0],`Protected section ${id}`);
+     }
+     for(const rx of [/<title>[\s\S]*?<\/title>/,/<h1[\s\S]*?<\/h1>/,/<link rel="canonical"[^>]*>/,/<script\s+async\s+src="[^"]+"\s+data-[\s\S]*?<\/script>/])assert.deepEqual(after.match(rx)?.[0],before.match(rx)?.[0]);
+   }
    for(const width of [390,1440]){
      await page.setViewportSize({width,height:900});await page.goto(origin+'/'+filename,{waitUntil:'networkidle'});
      await page.locator('#zewnetrzny-dzial-finansowy').scrollIntoViewIfNeeded();
@@ -140,14 +156,14 @@ function pass(text){report.checks.push(text);console.log('PASS '+text)}
      await page.locator('#zewnetrzny-dzial-finansowy a').click();await page.waitForURL(origin+landing);
    }
  }
- pass('Homepage/offer additions work at mobile/desktop; all pre-existing bytes (including prices, scripts and form) preserved');
+ pass('Homepage/offer additions work at mobile/desktop; existing offer bytes, home commercial sections and SEO/GrowthOS configuration preserved');
  await ctx.close();
  const noJS=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});
  await noJS.route('**/*',r=>r.request().url().startsWith(origin)?r.continue():r.fulfill({status:200,body:''}));
  const fallback=await noJS.newPage();await fallback.goto(origin+landing);
  assert(await fallback.locator('#mainMenu a[href="/oferta.html"]').isVisible());
  await fallback.locator('summary').first().click();assert(await fallback.locator('details').first().getAttribute('open')!==null);
- await Promise.all([fallback.waitForURL(origin+'/#kontakt', {waitUntil:'domcontentloaded'}), fallback.locator('.hero .js-track-contact').click()]);
+ await Promise.all([fallback.waitForURL(origin+'/?service=zewnetrzny-dzial-finansowy#kontakt', {waitUntil:'domcontentloaded'}), fallback.locator('.hero .js-track-contact').click()]);
  pass('With JavaScript disabled: navigation, FAQ and contact link remain usable');
  await noJS.close();
  const deniedStorage=await browser.newContext();

@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-11T10:37:36.199Z",
+  "type": "local laboratory sample; not field Core Web Vitals",
+  "conditions": {
+    "cpuSlowdown": 4,
+    "latencyMs": 150,
+    "downloadBytesPerSecond": 200000,
+    "uploadBytesPerSecond": 93750,
+    "externalScripts": "stubbed",
+    "consent": "essential",
+    "runsPerWidth": 1
+  },
+  "samples": [
+    {
+      "width": 390,
+      "lcpMs": 1900,
+      "cls": 0,
+      "longTasks": [],
+      "events": [
+        {
+          "name": "pointerdown",
+          "duration": 88
+        },
+        {
+          "name": "pointerup",
+          "duration": 88
+        },
+        {
+          "name": "click",
+          "duration": 88
+        },
+        {
+          "name": "keydown",
+          "duration": 88
+        },
+        {
+          "name": "keyup",
+          "duration": 88
+        },
+        {
+          "name": "keydown",
+          "duration": 72
+        },
+        {
+          "name": "keypress",
+          "duration": 72
+        },
+        {
+          "name": "click",
+          "duration": 72
+        },
+        {
+          "name": "keyup",
+          "duration": 64
+        },
+        {
+          "name": "keydown",
+          "duration": 56
+        },
+        {
+          "name": "keypress",
+          "duration": 56
+        },
+        {
+          "name": "click",
+          "duration": 56
+        },
+        {
+          "name": "keyup",
+          "duration": 56
+        }
+      ],
+      "maxObservedInteractionMs": 88,
+      "interactionNote": "Duration of scripted menu/FAQ interactions; NOT field INP. Null means no event >=16 ms was reported."
+    },
+    {
+      "width": 1440,
+      "lcpMs": 1568,
+      "cls": 0,
+      "longTasks": [],
+      "events": [
+        {
+          "name": "keydown",
+          "duration": 32
+        },
+        {
+          "name": "keypress",
+          "duration": 32
+        },
+        {
+          "name": "click",
+          "duration": 32
+        },
+        {
+          "name": "keyup",
+          "duration": 16
+        },
+        {
+          "name": "keydown",
+          "duration": 16
+        },
+        {
+          "name": "keypress",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "keyup",
+          "duration": 16
+        }
+      ],
+      "maxObservedInteractionMs": 32,
+      "interactionNote": "Duration of scripted menu/FAQ interactions; NOT field INP. Null means no event >=16 ms was reported."
+    }
+  ]
+}

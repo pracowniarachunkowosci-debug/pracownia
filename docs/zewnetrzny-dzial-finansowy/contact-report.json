@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-11T10:44:12.018Z",
+  "checks": [
+    "Existing endpoint, POST, access key, contact fields, honeypot and campaign fields preserved",
+    "Five form widths: no overflow, contextual topic/source, mobile form first, keyboard order and required validation",
+    "Pending/double submit/revisit: one request; GA4 and Meta Lead only after 2xx + success=true; no PII in event; no timer redirect or thank-you conversion",
+    "Failure rejected: values retained, no conversion or redirect, manual retry succeeds",
+    "Failure 400: values retained, no conversion or redirect, manual retry succeeds",
+    "Failure 403: values retained, no conversion or redirect, manual retry succeeds",
+    "Failure 429: values retained, no conversion or redirect, manual retry succeeds",
+    "Failure 500: values retained, no conversion or redirect, manual retry succeeds",
+    "Failure malformed: values retained, no conversion or redirect, manual retry succeeds",
+    "Failure network: values retained, no conversion or redirect, manual retry succeeds",
+    "Failure timeout: values retained, no conversion or redirect, manual retry succeeds",
+    "Essential-only consent accepts the inquiry with source but emits no custom analytics/marketing conversion",
+    "Unknown service values cannot enter inquiry_source or analytics (fixed allowlist; no internal UTM or new storage)",
+    "Analytics exception cannot turn API acceptance into a false form error",
+    "Unavailable consent storage fails closed for measurement without blocking the form",
+    "No-JS fallback remains a native POST to the same provider (not submitted during test)"
+  ],
+  "errors": [],
+  "viewports": [
+    {
+      "viewport": 320,
+      "scroll": 320,
+      "formTop": 150.28125,
+      "sideTop": 1370.65625
+    },
+    {
+      "viewport": 390,
+      "scroll": 390,
+      "formTop": 150.4375,
+      "sideTop": 1308.0625
+    },
+    {
+      "viewport": 768,
+      "scroll": 768,
+      "formTop": 146.3125,
+      "sideTop": 1200.125
+    },
+    {
+      "viewport": 1024,
+      "scroll": 1024,
+      "formTop": 176.484375,
+      "sideTop": 917.609375
+    },
+    {
+      "viewport": 1440,
+      "scroll": 1440,
+      "formTop": 176.28125,
+      "sideTop": 176.28125
+    }
+  ],
+  "violations": [],
+  "mockedSubmissions": 22,
+  "liveSubmissions": 0
+}
