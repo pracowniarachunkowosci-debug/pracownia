@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-11T13:05:15.895Z",
+  "html": [
+    {
+      "page": "index.html",
+      "baseline": {
+        "element-required-attributes": 1,
+        "aria-label-misuse": 2,
+        "valid-autocomplete": 1
+      },
+      "current": {
+        "element-required-attributes": 1,
+        "aria-label-misuse": 2,
+        "valid-autocomplete": 1
+      },
+      "introduced": 0
+    },
+    {
+      "page": "oferta.html",
+      "baseline": {
+        "element-required-attributes": 1,
+        "aria-label-misuse": 1
+      },
+      "current": {
+        "element-required-attributes": 1,
+        "aria-label-misuse": 1
+      },
+      "introduced": 0
+    },
+    {
+      "page": "raporty-zarzadcze-controlling.html",
+      "baseline": {
+        "element-required-attributes": 1,
+        "aria-label-misuse": 1
+      },
+      "current": {
+        "element-required-attributes": 1,
+        "aria-label-misuse": 1
+      },
+      "introduced": 0
+    },
+    {
+      "page": "analizy-finansowe-raportowanie.html",
+      "baseline": {
+        "element-required-attributes": 1
+      },
+      "current": {
+        "element-required-attributes": 1
+      },
+      "introduced": 0
+    },
+    {
+      "page": "thank-you.html",
+      "baseline": {
+        "element-permitted-content": 1
+      },
+      "current": {},
+      "introduced": 0
+    },
+    {
+      "page": "zewnetrzny-dzial-finansowy.html",
+      "baseline": {},
+      "current": {},
+      "introduced": 0
+    }
+  ],
+  "checks": [
+    "No new standard HTML issues against main; all inline and changed external JS parse",
+    "GTM/GA4/Consent Mode bootstrap and GrowthOS endpoint/options unchanged; landing uses existing GrowthOS configuration",
+    "All three contact CTAs retain source; Calendly address unchanged; llms and breadcrumb hierarchy match landing",
+    "Thank-you direct/reload path has no conversion code, tracking pixel or indexing"
+  ],
+  "javascriptBlocks": 18
+}

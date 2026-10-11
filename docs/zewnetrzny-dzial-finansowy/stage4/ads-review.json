@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-11T13:21:25.720Z",
+  "method": "Read-only Google Ads UI, all 16 actions inspected across two pages, filter status All",
+  "modified": false,
+  "nativeFormConversion": {
+    "name": "TechSol - Formularz kontaktowy 69747",
+    "actionId": "7402979249",
+    "conversionId": "17646661298",
+    "label": "_YKtCLH_gcobELLdyt5B",
+    "gtmTagId": "5",
+    "gtmTagName": "TechSol - Formularz kontaktowy 45209",
+    "optimization": "Primary",
+    "count": "One",
+    "includedInAccountGoals": true,
+    "enhancedConversions": "Managed by GTM; not changed"
+  },
+  "formImport": {
+    "name": "pracownia (web) lead_formularz",
+    "actionId": "7382427293",
+    "source": "Google Analytics (GA4)",
+    "event": "lead_formularz",
+    "propertyName": "pracownia",
+    "optimization": "Secondary",
+    "count": "Every",
+    "includedInAccountGoals": false
+  },
+  "otherGa4Import": {
+    "name": "Rezerwacja terminu",
+    "actionId": "7372277673",
+    "event": "ads_conversion_Rezerwacja_terminu_1",
+    "optimization": "Primary",
+    "includedInAccountGoals": true,
+    "displayedRule": "Page load: /blog/zmiana-biura.html",
+    "finding": "Page load is not confirmation of a booking; separate owner decision required"
+  },
+  "generateLeadImportFound": false,
+  "limitations": [
+    "No measurement collector test",
+    "No campaign-specific or custom-goal audit",
+    "GA4 creation/modification rules for lead_formularz not inspected"
+  ],
+  "recommendation": "Keep one primary source for confirmed form leads. Do not add generate_lead as a second primary import. Review the existing primary booking action based on a page load."
+}

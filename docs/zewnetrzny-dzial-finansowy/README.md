@@ -1,10 +1,16 @@
-# Zewnętrzny dział finansowy — raport etapów 2 i 3
+# Zewnętrzny dział finansowy — raport etapów 2–4
 
 Data: **11 października 2026**. [Draft PR #19](https://github.com/pracowniarachunkowosci-debug/pracownia/pull/19), [zadanie #18](https://github.com/pracowniarachunkowosci-debug/pracownia/issues/18), [polecenie etapu 2](https://github.com/pracowniarachunkowosci-debug/pracownia/pull/19#issuecomment-6108001545).
 
 Gałąź: `codex/zewnetrzny-dzial-finansowy`. Porównanie regresji z `main`: `0bc0dec2f70753f2093fca645092de1910c32395`. Etap 2 aktualizuje ten sam PR. Nie wykonano merge ani publikacji.
 
-## Aktualizacja: etap 3 — pomiar GA4 / Ads
+## Aktualizacja: etap 4 — workspace GTM przygotowany, bez publikacji
+
+[Raport etapu 4: konfiguracja, rzeczywisty Preview z blokadą kolektorów, starsze formularze i decyzje](stage4/README.md). W osobnym workspace **6** kontenera `GTM-WC88L2GJ` zapisano **5 zmian: 4 dodane obiekty i 1 zmodyfikowany tag**. Dodano DLV, CE `web3forms_success` i GA4 `generate_lead`; tag Ads 5 korzysta wyłącznie z nowego CE i wymaganych zgód. Tag 9, zmienna UPD oraz mapowanie `user_data` pozostały bez zmian. Nie opublikowano kontenera i nie zmieniono kodu produkcyjnego w tym etapie.
+
+Preview potwierdził uruchomienie nowych tagów po sukcesie atrapy, brak nowej konwersji przy błędzie/timeout/starym submit oraz blokadę obu tagów przy odmowie zgód. Kolektory Google były zablokowane. **GA4 measured: nadal NIEPOTWIERDZONE.** Ponowna regresja formularza: **23 kontrole PASS / 30 atrap**; dodatkowo testy konfiguracji i Preview. Przed publikacją konieczna jest decyzja o migracji 8 starszych formularzy oraz enhanced conversions. Publikacja GTM, merge i wdrożenie pozostają niezatwierdzone.
+
+## Historia: etap 3 — pomiar GA4 / Ads
 
 [Diagnoza, instrukcja GTM z identyfikatorami, testy i decyzje właściciela](stage3/README.md). **Odbiór e-maila potwierdzony przez właściciela.** Kod na gałęzi emituje teraz jeden `web3forms_success` po HTTP 2xx + `success: true` i zgodzie all. Przygotowano jawne mapowanie GTM → GA4 `generate_lead` / Ads, ale nie zapisano żadnych zmian w kontenerze. **GA4 measured: NIEPOTWIERDZONE; Google Ads premature firing: DO NAPRAWY.** Testy lokalne: 23 kontrole PASS, 30 atrap, 0 kolejnych rzeczywistych wysyłek i 0 testowych konwersji do Google. Nie publikować samego kodu jako zakończonej naprawy pomiaru.
 
