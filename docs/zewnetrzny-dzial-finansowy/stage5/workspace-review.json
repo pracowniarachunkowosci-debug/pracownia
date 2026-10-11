@@ -1,0 +1,329 @@
+{
+  "date": "2026-10-11T14:57:11.133Z",
+  "status": "PASS",
+  "method": "Offline comparison of UI exports; no collector confirmation",
+  "checks": [
+    "Same container; one native pair template added; unrelated objects unchanged",
+    "Pair template and exact regex accept four pairs and deny unknown/mixed values",
+    "GA4 and Ads share only success trigger, once per event and explicit consent",
+    "Variant A: UPD paused, Ads user_data removed, attribution and value unchanged"
+  ],
+  "sha256": {
+    "before": "2db8a21914b9d07ca25bf87cb6d4d0c27a5ff851a72e9e364adcab631f7dd942",
+    "after": "a9463f02aad44bbdc7e22543169ccbc115d3c23ca45f1195e78a2f2f00c28239"
+  },
+  "container": "GTM-WC88L2GJ",
+  "workspaceId": "6",
+  "pairs": {
+    "zewnetrzny-dzial-finansowy": "leadForm",
+    "strona-glowna": "leadForm",
+    "ksiegowosc-ecommerce": "ecommerceForm",
+    "ksiegowosc-spolka-z-oo": "spolkaForm"
+  },
+  "objects": {
+    "trigger": {
+      "accountId": "6321819993",
+      "containerId": "234024853",
+      "triggerId": "13",
+      "name": "CE - web3forms_success - approved forms",
+      "type": "CUSTOM_EVENT",
+      "customEventFilter": [
+        {
+          "type": "EQUALS",
+          "parameter": [
+            {
+              "type": "TEMPLATE",
+              "key": "arg0",
+              "value": "{{_event}}"
+            },
+            {
+              "type": "TEMPLATE",
+              "key": "arg1",
+              "value": "web3forms_success"
+            }
+          ]
+        }
+      ],
+      "filter": [
+        {
+          "type": "MATCH_REGEX",
+          "parameter": [
+            {
+              "type": "TEMPLATE",
+              "key": "arg0",
+              "value": "{{Template - form pair}}"
+            },
+            {
+              "type": "TEMPLATE",
+              "key": "arg1",
+              "value": "^(leadForm\\|(strona-glowna|zewnetrzny-dzial-finansowy)|ecommerceForm\\|ksiegowosc-ecommerce|spolkaForm\\|ksiegowosc-spolka-z-oo)$"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1791730514055"
+    },
+    "ga4": {
+      "accountId": "6321819993",
+      "containerId": "234024853",
+      "tagId": "14",
+      "name": "GA4 - generate_lead - API success",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "BOOLEAN",
+          "key": "sendEcommerceData",
+          "value": "false"
+        },
+        {
+          "type": "LIST",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "MAP",
+              "map": [
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameter",
+                  "value": "event_category"
+                },
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameterValue",
+                  "value": "lead"
+                }
+              ]
+            },
+            {
+              "type": "MAP",
+              "map": [
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameter",
+                  "value": "event_label"
+                },
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameterValue",
+                  "value": "{{DLV - form_id}}"
+                }
+              ]
+            },
+            {
+              "type": "MAP",
+              "map": [
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameter",
+                  "value": "form_id"
+                },
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameterValue",
+                  "value": "{{DLV - form_id}}"
+                }
+              ]
+            },
+            {
+              "type": "MAP",
+              "map": [
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameter",
+                  "value": "inquiry_source"
+                },
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameterValue",
+                  "value": "{{DLV - inquiry_source}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "TEMPLATE",
+          "key": "eventName",
+          "value": "generate_lead"
+        },
+        {
+          "type": "TEMPLATE",
+          "key": "measurementIdOverride",
+          "value": "G-H210DZ34Y8"
+        }
+      ],
+      "fingerprint": "1791729878892",
+      "firingTriggerId": [
+        "13"
+      ],
+      "tagFiringOption": "ONCE_PER_EVENT",
+      "monitoringMetadata": {
+        "type": "MAP"
+      },
+      "consentSettings": {
+        "consentStatus": "NEEDED",
+        "consentType": {
+          "type": "LIST",
+          "list": [
+            {
+              "type": "TEMPLATE",
+              "value": "analytics_storage"
+            }
+          ]
+        }
+      }
+    },
+    "ads": {
+      "accountId": "6321819993",
+      "containerId": "234024853",
+      "tagId": "5",
+      "name": "TechSol - Formularz kontaktowy 45209",
+      "type": "awct",
+      "priority": {
+        "type": "INTEGER",
+        "value": "1"
+      },
+      "parameter": [
+        {
+          "type": "BOOLEAN",
+          "key": "enableNewCustomerReporting",
+          "value": "false"
+        },
+        {
+          "type": "BOOLEAN",
+          "key": "enableConversionLinker",
+          "value": "true"
+        },
+        {
+          "type": "BOOLEAN",
+          "key": "enableProductReporting",
+          "value": "false"
+        },
+        {
+          "type": "BOOLEAN",
+          "key": "enableShippingData",
+          "value": "false"
+        },
+        {
+          "type": "TEMPLATE",
+          "key": "conversionId",
+          "value": "17646661298"
+        },
+        {
+          "type": "TEMPLATE",
+          "key": "conversionLabel",
+          "value": "_YKtCLH_gcobELLdyt5B"
+        },
+        {
+          "type": "BOOLEAN",
+          "key": "rdp",
+          "value": "false"
+        }
+      ],
+      "fingerprint": "1791729829831",
+      "firingTriggerId": [
+        "13"
+      ],
+      "tagFiringOption": "ONCE_PER_EVENT",
+      "monitoringMetadata": {
+        "type": "MAP"
+      },
+      "consentSettings": {
+        "consentStatus": "NEEDED",
+        "consentType": {
+          "type": "LIST",
+          "list": [
+            {
+              "type": "TEMPLATE",
+              "value": "ad_storage"
+            },
+            {
+              "type": "TEMPLATE",
+              "value": "ad_user_data"
+            },
+            {
+              "type": "TEMPLATE",
+              "value": "ad_personalization"
+            }
+          ]
+        }
+      }
+    },
+    "upd": {
+      "accountId": "6321819993",
+      "containerId": "234024853",
+      "tagId": "9",
+      "name": "Google Ads User-provided Data Event roz. konwersja",
+      "type": "awud",
+      "priority": {
+        "type": "INTEGER",
+        "value": "1"
+      },
+      "parameter": [
+        {
+          "type": "TEMPLATE",
+          "key": "userDataVariable",
+          "value": "{{Dane przekazywane przez użytkowników}}"
+        },
+        {
+          "type": "BOOLEAN",
+          "key": "enableConversionLinker",
+          "value": "true"
+        },
+        {
+          "type": "TEMPLATE",
+          "key": "conversionId",
+          "value": "17646661298"
+        }
+      ],
+      "fingerprint": "1791729771361",
+      "firingTriggerId": [
+        "6"
+      ],
+      "tagFiringOption": "ONCE_PER_EVENT",
+      "paused": true,
+      "monitoringMetadata": {
+        "type": "MAP"
+      },
+      "consentSettings": {
+        "consentStatus": "NOT_SET"
+      }
+    },
+    "pair": {
+      "accountId": "6321819993",
+      "containerId": "234024853",
+      "variableId": "16",
+      "name": "Template - form pair",
+      "type": "c",
+      "parameter": [
+        {
+          "type": "TEMPLATE",
+          "key": "value",
+          "value": "{{DLV - form_id}}|{{DLV - inquiry_source}}"
+        }
+      ],
+      "fingerprint": "1791730442469",
+      "formatValue": {}
+    }
+  },
+  "unchanged": {
+    "tags": [
+      "4",
+      "7"
+    ],
+    "triggers": [
+      "3",
+      "6"
+    ],
+    "variables": [
+      "8",
+      "11",
+      "12"
+    ]
+  },
+  "unresolved": [
+    "Global Google tag automatic UPD remains enabled outside workspace; approval needed to disable",
+    "Active Ads goals unchanged",
+    "No live collector or delivery verification"
+  ]
+}

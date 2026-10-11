@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-11T10:38:20.641Z",
+  "viewports": [
+    {
+      "viewport": 320,
+      "scroll": 320,
+      "cls": 0,
+      "lcpMs": 456
+    },
+    {
+      "viewport": 390,
+      "scroll": 390,
+      "cls": 0,
+      "lcpMs": 108
+    },
+    {
+      "viewport": 768,
+      "scroll": 768,
+      "cls": 0,
+      "lcpMs": 280
+    },
+    {
+      "viewport": 900,
+      "scroll": 900,
+      "cls": 0,
+      "lcpMs": 100
+    },
+    {
+      "viewport": 1024,
+      "scroll": 1024,
+      "cls": 0,
+      "lcpMs": 1348
+    },
+    {
+      "viewport": 1440,
+      "scroll": 1440,
+      "cls": 0,
+      "lcpMs": 96
+    }
+  ],
+  "checks": [
+    "HTML validation: zero errors",
+    "Six viewport widths: no overflow; mobile menu/Escape/focus and FAQ work",
+    "26 unique internal links/assets/fragments return 200 and resolve",
+    "Service/BreadcrumbList/FAQ JSON-LD parses; all seven FAQ answers match visible content exactly",
+    "Consent v2: denied defaults, both choices, persistence, reset and Meta load only after consent",
+    "Essential-only consent emits no custom contact/calendar events",
+    "Hero/final CTAs emit one correctly labelled click each; navigation is not counted as a submitted lead",
+    "Primary CTA reaches the existing required-field Web3Forms form",
+    "Homepage/offer additions work at mobile/desktop; existing offer bytes, home commercial sections and SEO/GrowthOS configuration preserved",
+    "With JavaScript disabled: navigation, FAQ and contact link remain usable",
+    "Unavailable localStorage does not break consent controls"
+  ],
+  "violations": [],
+  "errors": [],
+  "externalRequests": [
+    "https://connect.facebook.net/en_US/fbevents.js",
+    "https://fonts.googleapis.com/css2",
+    "https://growthos-mu.vercel.app/lead-chat-ai.js",
+    "https://www.googletagmanager.com/gtag/js",
+    "https://www.googletagmanager.com/gtm.js"
+  ],
+  "notes": [
+    "Third-party requests stubbed in functional tests; no live lead or reservation is sent."
+  ]
+}

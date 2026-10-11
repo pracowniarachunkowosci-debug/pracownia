@@ -1,0 +1,323 @@
+{
+  "baseline": "872e7183f2128046136716a1300584d206cdf394",
+  "mode": "inventory-before-edit",
+  "pages": [
+    {
+      "page": "case-study-estonski-cit-ecommerce.html",
+      "baselineFormCount": 0,
+      "forms": [],
+      "legacySubmitCode": true,
+      "providerReceiver": "No form/key/receiver in this page",
+      "nativeBehaviour": "Calendly links; dead leadForm handler",
+      "liveDeliveryTested": false
+    },
+    {
+      "page": "estonski-cit-ecommerce.html",
+      "baselineFormCount": 0,
+      "forms": [],
+      "legacySubmitCode": true,
+      "providerReceiver": "No form/key/receiver in this page",
+      "nativeBehaviour": "Calendly links; dead leadForm handler",
+      "liveDeliveryTested": false
+    },
+    {
+      "page": "estonski-cit-spolka-z-oo.html",
+      "baselineFormCount": 0,
+      "forms": [],
+      "legacySubmitCode": true,
+      "providerReceiver": "No form/key/receiver in this page",
+      "nativeBehaviour": "Calendly links; dead leadForm handler",
+      "liveDeliveryTested": false
+    },
+    {
+      "page": "interpretacje-estonski-cit.html",
+      "baselineFormCount": 0,
+      "forms": [],
+      "legacySubmitCode": true,
+      "providerReceiver": "No form/key/receiver in this page",
+      "nativeBehaviour": "Calendly links; dead leadForm handler",
+      "liveDeliveryTested": false
+    },
+    {
+      "page": "ksiegowosc-ecommerce.html",
+      "baselineFormCount": 1,
+      "forms": [
+        {
+          "attributes": {
+            "action": "https://api.web3forms.com/submit",
+            "method": "POST",
+            "id": "leadForm",
+            "target": "web3forms-hidden-frame"
+          },
+          "controls": [
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "botcheck",
+              "style": "display:none",
+              "tabindex": "-1"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "access_key",
+              "value": "[present; not logged]"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "subject",
+              "value": "Landing e-commerce - nowe zapytanie"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "utm_source"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "utm_medium"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "utm_campaign"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "utm_term"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "utm_content"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "gclid"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "fbclid"
+            },
+            {
+              "tag": "input",
+              "id": "name",
+              "name": "name",
+              "type": "text",
+              "autocomplete": "name",
+              "required": null
+            },
+            {
+              "tag": "input",
+              "id": "company",
+              "name": "company",
+              "type": "text",
+              "autocomplete": "organization",
+              "required": null
+            },
+            {
+              "tag": "input",
+              "id": "email",
+              "name": "email",
+              "type": "email",
+              "autocomplete": "email",
+              "required": null
+            },
+            {
+              "tag": "input",
+              "id": "phone",
+              "name": "phone",
+              "type": "tel",
+              "autocomplete": "tel",
+              "required": null
+            },
+            {
+              "tag": "select",
+              "id": "orders",
+              "name": "orders"
+            },
+            {
+              "tag": "select",
+              "id": "foreign",
+              "name": "foreign"
+            },
+            {
+              "tag": "input",
+              "id": "channels",
+              "name": "channels",
+              "type": "text",
+              "placeholder": "np. Shopify, Allegro, Amazon, Stripe, PayU"
+            },
+            {
+              "tag": "textarea",
+              "id": "message",
+              "name": "message",
+              "placeholder": "Forma prawna, obecne biuro, VAT OSS, liczba dokumentów, oczekiwany start, potrzebne raporty..."
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "consent",
+              "required": null
+            }
+          ]
+        }
+      ],
+      "legacySubmitCode": true,
+      "providerReceiver": "Resolved by the preserved Web3Forms key; mailbox not inferred",
+      "nativeBehaviour": "POST into hidden iframe; submit conversion and 1600 ms redirect",
+      "liveDeliveryTested": false
+    },
+    {
+      "page": "ksiegowosc-spolka-z-oo.html",
+      "baselineFormCount": 1,
+      "forms": [
+        {
+          "attributes": {
+            "action": "https://api.web3forms.com/submit",
+            "method": "POST",
+            "id": "leadForm",
+            "target": "web3forms-hidden-frame"
+          },
+          "controls": [
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "botcheck",
+              "style": "display:none",
+              "tabindex": "-1",
+              "autocomplete": "off"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "access_key",
+              "value": "[present; not logged]"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "subject",
+              "value": "Landing spółka z o.o. - nowe zapytanie"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "utm_source"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "utm_medium"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "utm_campaign"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "utm_term"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "utm_content"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "gclid"
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "fbclid"
+            },
+            {
+              "tag": "input",
+              "id": "name",
+              "name": "name",
+              "autocomplete": "name",
+              "required": null
+            },
+            {
+              "tag": "input",
+              "id": "company",
+              "name": "company",
+              "autocomplete": "organization",
+              "required": null
+            },
+            {
+              "tag": "input",
+              "id": "email",
+              "name": "email",
+              "type": "email",
+              "autocomplete": "email",
+              "required": null
+            },
+            {
+              "tag": "input",
+              "id": "phone",
+              "name": "phone",
+              "type": "tel",
+              "autocomplete": "tel",
+              "required": null
+            },
+            {
+              "tag": "select",
+              "id": "documents",
+              "name": "documents"
+            },
+            {
+              "tag": "select",
+              "id": "topic",
+              "name": "topic"
+            },
+            {
+              "tag": "textarea",
+              "id": "message",
+              "name": "message",
+              "placeholder": "Krótko opisz sytuację: obecne biuro, liczba dokumentów, branża, problem, oczekiwany start..."
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "consent",
+              "required": null
+            }
+          ]
+        }
+      ],
+      "legacySubmitCode": true,
+      "providerReceiver": "Resolved by the preserved Web3Forms key; mailbox not inferred",
+      "nativeBehaviour": "POST into hidden iframe; submit conversion and 1600 ms redirect",
+      "liveDeliveryTested": false
+    },
+    {
+      "page": "ukryte-zyski-estonski-cit.html",
+      "baselineFormCount": 0,
+      "forms": [],
+      "legacySubmitCode": true,
+      "providerReceiver": "No form/key/receiver in this page",
+      "nativeBehaviour": "Calendly links; dead leadForm handler",
+      "liveDeliveryTested": false
+    },
+    {
+      "page": "zmiana-biura-estonski-cit.html",
+      "baselineFormCount": 0,
+      "forms": [],
+      "legacySubmitCode": true,
+      "providerReceiver": "No form/key/receiver in this page",
+      "nativeBehaviour": "Calendly links; dead leadForm handler",
+      "liveDeliveryTested": false
+    }
+  ],
+  "actualLegacyForms": 2
+}

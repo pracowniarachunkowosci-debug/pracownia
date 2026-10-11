@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-11T18:11:21.899880+00:00",
+  "status": "PASS_OFFLINE_CHECKS_ONLY",
+  "ga4Receipt": "UNCONFIRMED",
+  "unitTests": {
+    "beforeAttempt": 17,
+    "final": 18,
+    "passed": 18
+  },
+  "htmlPages": 14,
+  "javascriptBlocks": 50,
+  "newHtmlIssues": 0,
+  "integrationCheckGroups": 4,
+  "checks": [
+    "All stage7 JSON parses",
+    "32 local documentation links resolve",
+    "Result agrees with counters: one consumed attempt, zero external measurement, receipt unconfirmed",
+    "Workspace before/after comparison passes",
+    "Stage7 only documentation and local QA scripts; website files unchanged",
+    "Report text contains no email addresses, API secrets or auth tokens",
+    "git diff --check passes"
+  ],
+  "screenshotsVisuallyReviewed": 7,
+  "realWeb3formsPosts": 0,
+  "adsConversionAttempts": 0
+}

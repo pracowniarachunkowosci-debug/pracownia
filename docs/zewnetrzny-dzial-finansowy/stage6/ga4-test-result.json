@@ -1,0 +1,35 @@
+{
+  "audit_date": "2026-10-11",
+  "stage": 6,
+  "status": "BLOCKED_NOT_RUN",
+  "reason": "No isolated test property identified; production property has only an Internal Traffic exclusion in Testing mode, no active developer filter, and Ads links/destination.",
+  "authorization_limit": 1,
+  "attempts": 0,
+  "synthetic_data_layer_pushes": 0,
+  "preview_started": false,
+  "http_response": null,
+  "debug_view_receipt": null,
+  "ga4_test_received": "NOT_TESTED",
+  "ga4_production_received": "UNCONFIRMED",
+  "web3forms_real_test_submissions": 0,
+  "ads_test_conversion_attempts": 0,
+  "meta_test_leads": 0,
+  "active_settings_changed": false,
+  "gtm_workspace_changed": false,
+  "gtm_published": false,
+  "site_deployed": false,
+  "production_ga4": {
+    "account": "299785209",
+    "property": "424296976",
+    "stream": "6664086356",
+    "measurement_id": "G-H210DZ34Y8",
+    "filters": [{"name": "Internal Traffic", "type": "INTERNAL_TRAFFIC", "operation": "EXCLUDE", "state": "TESTING"}],
+    "other_stream": {"name": "Pracownia Form", "id": "15187827072", "isolated_test_environment": false},
+    "ads_links": [
+      {"customer_id": "555-488-5593", "type": "ADVERTISER", "personalized_advertising": false},
+      {"customer_id": "659-994-2321", "type": "MANAGER", "personalized_advertising": true}
+    ]
+  },
+  "next_step_requiring_approval": "Provide a dedicated isolated GA4 test property or approve creation of an independent property, stream and Google tag without Ads links/UPD, then execute at most one synthetic collector attempt after offline isolation checks.",
+  "limits": "Administrative UI was read only. Zero counts refer to test actions initiated in stage 6, not to unrelated administrative UI telemetry or other users' traffic. No production receipt claim."
+}

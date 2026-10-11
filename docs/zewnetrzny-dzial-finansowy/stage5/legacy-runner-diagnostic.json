@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-11T14:42:35.484Z",
+  "checks": [
+    "Existing endpoint, POST, access key, contact fields, honeypot and campaign fields preserved"
+  ],
+  "errors": [],
+  "viewports": [],
+  "violations": [],
+  "mockedSubmissions": 0,
+  "liveSubmissions": 0,
+  "failure": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:8765/?service=zewnetrzny-dzial-finansowy#kontakt\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:8765/?service=zewnetrzny-dzial-finansowy#kontakt\", waiting until \"networkidle\"\u001b[22m\n"
+}

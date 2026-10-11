@@ -1,0 +1,358 @@
+{
+  "date": "2026-10-11T13:23:05.857Z",
+  "status": "PASS",
+  "checks": [
+    "Only the intended objects added or modified; legacy tags and UPD untouched",
+    "Both DLVs use version 2 and exact keys without defaults",
+    "Strict custom event and allowlist filters, with no additional triggers",
+    "GA4 has exactly four approved parameters, correct property, event and consent",
+    "Ads ID, label, valuation and UPD mapping unchanged; only trigger/firing/consent changed"
+  ],
+  "method": "Static validation of UI-exported JSON, not a live measurement test",
+  "sha256": {
+    "baseline": "46759f6001e01b365fa9827be0229f908ffd40a692765f41eb2b097101f9060f",
+    "workspace": "04cde2ee9016fd2c00cc0308f830902f20fde596d49c3ee38449b0a901d99867"
+  },
+  "workspaceId": "6",
+  "container": "GTM-WC88L2GJ",
+  "objects": {
+    "trigger": {
+      "accountId": "6321819993",
+      "containerId": "234024853",
+      "triggerId": "13",
+      "name": "CE - web3forms_success - leadForm",
+      "type": "CUSTOM_EVENT",
+      "customEventFilter": [
+        {
+          "type": "EQUALS",
+          "parameter": [
+            {
+              "type": "TEMPLATE",
+              "key": "arg0",
+              "value": "{{_event}}"
+            },
+            {
+              "type": "TEMPLATE",
+              "key": "arg1",
+              "value": "web3forms_success"
+            }
+          ]
+        }
+      ],
+      "filter": [
+        {
+          "type": "EQUALS",
+          "parameter": [
+            {
+              "type": "TEMPLATE",
+              "key": "arg0",
+              "value": "{{DLV - form_id}}"
+            },
+            {
+              "type": "TEMPLATE",
+              "key": "arg1",
+              "value": "leadForm"
+            }
+          ]
+        },
+        {
+          "type": "MATCH_REGEX",
+          "parameter": [
+            {
+              "type": "TEMPLATE",
+              "key": "arg0",
+              "value": "{{DLV - inquiry_source}}"
+            },
+            {
+              "type": "TEMPLATE",
+              "key": "arg1",
+              "value": "^(zewnetrzny-dzial-finansowy|strona-glowna)$"
+            }
+          ]
+        }
+      ],
+      "fingerprint": "1791723154222"
+    },
+    "ga4": {
+      "accountId": "6321819993",
+      "containerId": "234024853",
+      "tagId": "14",
+      "name": "GA4 - generate_lead - API success",
+      "type": "gaawe",
+      "parameter": [
+        {
+          "type": "BOOLEAN",
+          "key": "sendEcommerceData",
+          "value": "false"
+        },
+        {
+          "type": "LIST",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "MAP",
+              "map": [
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameter",
+                  "value": "event_category"
+                },
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameterValue",
+                  "value": "lead"
+                }
+              ]
+            },
+            {
+              "type": "MAP",
+              "map": [
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameter",
+                  "value": "event_label"
+                },
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameterValue",
+                  "value": "home_form"
+                }
+              ]
+            },
+            {
+              "type": "MAP",
+              "map": [
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameter",
+                  "value": "form_id"
+                },
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameterValue",
+                  "value": "{{DLV - form_id}}"
+                }
+              ]
+            },
+            {
+              "type": "MAP",
+              "map": [
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameter",
+                  "value": "inquiry_source"
+                },
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameterValue",
+                  "value": "{{DLV - inquiry_source}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "TEMPLATE",
+          "key": "eventName",
+          "value": "generate_lead"
+        },
+        {
+          "type": "TEMPLATE",
+          "key": "measurementIdOverride",
+          "value": "G-H210DZ34Y8"
+        }
+      ],
+      "fingerprint": "1791723331992",
+      "firingTriggerId": [
+        "13"
+      ],
+      "tagFiringOption": "ONCE_PER_EVENT",
+      "monitoringMetadata": {
+        "type": "MAP"
+      },
+      "consentSettings": {
+        "consentStatus": "NEEDED",
+        "consentType": {
+          "type": "LIST",
+          "list": [
+            {
+              "type": "TEMPLATE",
+              "value": "analytics_storage"
+            }
+          ]
+        }
+      }
+    },
+    "ads": {
+      "accountId": "6321819993",
+      "containerId": "234024853",
+      "tagId": "5",
+      "name": "TechSol - Formularz kontaktowy 45209",
+      "type": "awct",
+      "priority": {
+        "type": "INTEGER",
+        "value": "1"
+      },
+      "parameter": [
+        {
+          "type": "BOOLEAN",
+          "key": "enableNewCustomerReporting",
+          "value": "false"
+        },
+        {
+          "type": "BOOLEAN",
+          "key": "enableConversionLinker",
+          "value": "true"
+        },
+        {
+          "type": "BOOLEAN",
+          "key": "enableProductReporting",
+          "value": "false"
+        },
+        {
+          "type": "LIST",
+          "key": "eventSettingsTable",
+          "list": [
+            {
+              "type": "MAP",
+              "map": [
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameter",
+                  "value": "user_data"
+                },
+                {
+                  "type": "TEMPLATE",
+                  "key": "parameterValue",
+                  "value": "{{Dane przekazywane przez użytkowników}}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BOOLEAN",
+          "key": "enableShippingData",
+          "value": "false"
+        },
+        {
+          "type": "TEMPLATE",
+          "key": "conversionId",
+          "value": "17646661298"
+        },
+        {
+          "type": "TEMPLATE",
+          "key": "conversionLabel",
+          "value": "_YKtCLH_gcobELLdyt5B"
+        },
+        {
+          "type": "BOOLEAN",
+          "key": "rdp",
+          "value": "false"
+        }
+      ],
+      "fingerprint": "1791723383929",
+      "firingTriggerId": [
+        "13"
+      ],
+      "tagFiringOption": "ONCE_PER_EVENT",
+      "monitoringMetadata": {
+        "type": "MAP"
+      },
+      "consentSettings": {
+        "consentStatus": "NEEDED",
+        "consentType": {
+          "type": "LIST",
+          "list": [
+            {
+              "type": "TEMPLATE",
+              "value": "ad_storage"
+            },
+            {
+              "type": "TEMPLATE",
+              "value": "ad_user_data"
+            },
+            {
+              "type": "TEMPLATE",
+              "value": "ad_personalization"
+            }
+          ]
+        }
+      }
+    },
+    "variables": [
+      {
+        "accountId": "6321819993",
+        "containerId": "234024853",
+        "variableId": "11",
+        "name": "DLV - form_id",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "form_id"
+          }
+        ],
+        "fingerprint": "1791723029062",
+        "formatValue": {}
+      },
+      {
+        "accountId": "6321819993",
+        "containerId": "234024853",
+        "variableId": "12",
+        "name": "DLV - inquiry_source",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "inquiry_source"
+          }
+        ],
+        "fingerprint": "1791723059770",
+        "formatValue": {}
+      }
+    ]
+  },
+  "unchanged": {
+    "tags": [
+      "4",
+      "7",
+      "9"
+    ],
+    "triggers": [
+      "3",
+      "6"
+    ],
+    "variables": [
+      "8"
+    ]
+  },
+  "unresolved": [
+    "Legacy forms do not emit web3forms_success",
+    "UPD tag9 and tag5 user_data remain configured",
+    "Ads account audit is separate: see ads-review.json",
+    "No collector receipt verified"
+  ]
+}

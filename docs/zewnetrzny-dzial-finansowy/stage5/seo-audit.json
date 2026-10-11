@@ -1,0 +1,274 @@
+{
+  "baseline": "0bc0dec2f70753f2093fca645092de1910c32395",
+  "scope": {
+    "analizy-finansowe-raportowanie.html": {
+      "brokenLinks": [],
+      "canonical": [
+        "https://pracowniarachunkowosci.pl/analizy-finansowe-raportowanie.html"
+      ],
+      "title": [
+        "Analiza finansowa firmy – rentowność, koszty i cash-flow"
+      ],
+      "h1Count": 1,
+      "duplicateIds": [],
+      "jsonValid": true,
+      "schemaBlocks": 2,
+      "description": "Jednorazowa analiza finansowa firmy: rentowność, koszty, cash-flow, należności i ryzyka. Konkretne wnioski dla zarządu spółki."
+    },
+    "index.html": {
+      "brokenLinks": [],
+      "canonical": [
+        "https://pracowniarachunkowosci.pl/"
+      ],
+      "title": [
+        "Biuro rachunkowe online dla spółek z o.o. | Pracownia Rachunkowości"
+      ],
+      "h1Count": 1,
+      "duplicateIds": [],
+      "jsonValid": true,
+      "schemaBlocks": 1,
+      "description": "Księgowość online dla spółek z o.o. w całej Polsce: raporty zarządcze, controlling, estoński CIT, KSeF, e-commerce i fundacje rodzinne."
+    },
+    "ksiegowosc-spolka-z-oo.html": {
+      "brokenLinks": [],
+      "canonical": [
+        "https://pracowniarachunkowosci.pl/ksiegowosc-spolka-z-oo.html"
+      ],
+      "title": [
+        "Księgowość spółki z o.o. Wrocław | Pracownia Rachunkowości"
+      ],
+      "h1Count": 1,
+      "duplicateIds": [],
+      "jsonValid": true,
+      "schemaBlocks": 1,
+      "description": "Pełna księgowość spółki z o.o. we Wrocławiu i online: raporty zarządcze, controlling, estoński CIT, KSeF. Umów konsultację."
+    },
+    "oferta.html": {
+      "brokenLinks": [],
+      "canonical": [
+        "https://pracowniarachunkowosci.pl/oferta.html"
+      ],
+      "title": [
+        "Oferta biura rachunkowego: księgowość, kadry i controlling | Pracownia Rachunkowości"
+      ],
+      "h1Count": 1,
+      "duplicateIds": [],
+      "jsonValid": true,
+      "schemaBlocks": 1,
+      "description": "Oferta biura rachunkowego: pełna księgowość spółek, kadry i płace, raporty zarządcze, controlling oraz usługi specjalistyczne. Wrocław i online."
+    },
+    "raporty-zarzadcze-controlling.html": {
+      "brokenLinks": [],
+      "canonical": [
+        "https://pracowniarachunkowosci.pl/raporty-zarzadcze-controlling.html"
+      ],
+      "title": [
+        "Raporty zarządcze i controlling dla spółek z o.o."
+      ],
+      "h1Count": 1,
+      "duplicateIds": [],
+      "jsonValid": true,
+      "schemaBlocks": 3,
+      "description": "Raporty zarządcze, cash-flow, marża, koszty, należności i KPI dla spółek z o.o. Księgowość z danymi do decyzji."
+    },
+    "zewnetrzny-dzial-finansowy.html": {
+      "brokenLinks": [],
+      "canonical": [
+        "https://pracowniarachunkowosci.pl/zewnetrzny-dzial-finansowy.html"
+      ],
+      "title": [
+        "Zewnętrzny dział finansowy | Pracownia Rachunkowości"
+      ],
+      "h1Count": 1,
+      "duplicateIds": [],
+      "jsonValid": true,
+      "schemaBlocks": 1,
+      "description": "Pełna księgowość, raporty zarządcze i controlling dla rozwijających się spółek. Produkcja, hurtownie i handel. Poznaj zakres współpracy i opowiedz nam o firmie."
+    }
+  },
+  "sitewideExistingIssues": {
+    "interpretacje-estonski-cit.html": [
+      {
+        "ref": "estonski-cit-spolka-z-oo.html#warunki",
+        "reason": "missing fragment"
+      },
+      {
+        "ref": "estonski-cit-spolka-z-oo.html#warunki",
+        "reason": "missing fragment"
+      },
+      {
+        "ref": "estonski-cit-spolka-z-oo.html#warunki",
+        "reason": "missing fragment"
+      },
+      {
+        "ref": "estonski-cit-spolka-z-oo.html#warunki",
+        "reason": "missing fragment"
+      },
+      {
+        "ref": "estonski-cit-spolka-z-oo.html#warunki",
+        "reason": "missing fragment"
+      },
+      {
+        "ref": "estonski-cit-spolka-z-oo.html#warunki",
+        "reason": "missing fragment"
+      }
+    ],
+    "ksiegowosc-ecommerce.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      }
+    ],
+    "ksiegowosc-fundacji-rodzinnej.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      }
+    ],
+    "ksiegowosc-online-spolka-z-oo.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      },
+      {
+        "ref": "/oferta.html#zmiana-biura",
+        "reason": "missing fragment"
+      },
+      {
+        "ref": "/oferta.html#controlling",
+        "reason": "missing fragment"
+      }
+    ],
+    "promocja-ksiegowosc.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/promocja-ksiegowosc-30.html",
+        "reason": "missing file"
+      }
+    ],
+    "przeksztalcenia-spzoo.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      },
+      {
+        "ref": "/oferta.html#zmiana-biura",
+        "reason": "missing fragment"
+      },
+      {
+        "ref": "/oferta.html#controlling",
+        "reason": "missing fragment"
+      }
+    ],
+    "zmiana-biura-rachunkowego-spolka-z-oo.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      }
+    ],
+    "zmiana-biura-rachunkowego.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      }
+    ],
+    "blog/audyt-ksiegowosci-spolki-z-oo.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      }
+    ],
+    "blog/jak-wybrac-biuro-rachunkowe-dla-spolki-z-oo.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      },
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      }
+    ],
+    "blog/jak-wyplacac-pieniadze-ze-spolki-z-oo.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      },
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      }
+    ],
+    "blog/jdg-spolka-z-oo-2025.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      }
+    ],
+    "blog/ksiegowosc-fundacji-rodzinnej.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      }
+    ],
+    "blog/nowa-spolka-z-oo-obowiazki-po-rejestracji.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      }
+    ],
+    "blog/pelna-ksiegowosc-spolki-z-oo-online.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      }
+    ],
+    "blog/spolka-z-oo-2026.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/blog/spolka-z-oo-2026.png",
+        "reason": "missing file"
+      },
+      {
+        "ref": "https://pracowniarachunkowosci.pl/blog/spolka-z-oo-2026.png",
+        "reason": "missing file"
+      }
+    ],
+    "blog/srk-obowiazek-kogo-dotyczy.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      },
+      {
+        "ref": "https://pracowniarachunkowosci.pl/assets/og-image.jpg",
+        "reason": "missing file"
+      }
+    ],
+    "blog/wydatki-swiateczne-w-firmie.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/blog/wydatki-swiateczne-w-firmie.jpg",
+        "reason": "missing file"
+      }
+    ],
+    "blog/zmiana-biura.html": [
+      {
+        "ref": "https://pracowniarachunkowosci.pl/blog/zmiana-biura.png",
+        "reason": "missing file"
+      },
+      {
+        "ref": "https://pracowniarachunkowosci.pl/blog/zmiana-biura.png",
+        "reason": "missing file"
+      }
+    ]
+  },
+  "newBrokenLinks": [],
+  "sitemap": {
+    "urls": 47,
+    "allTargetsExist": true,
+    "duplicates": 0,
+    "changedLastmodOnlyEditedPages": true
+  },
+  "htmlFilesAudited": 55,
+  "sitewideInvalidJsonLd": [],
+  "llms": {
+    "linksChecked": 35,
+    "allTargetsExist": true
+  }
+}
