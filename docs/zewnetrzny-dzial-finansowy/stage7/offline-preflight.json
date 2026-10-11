@@ -1,0 +1,18 @@
+{
+  "mode": "offline",
+  "measurementId": "G-CRJHZ0T8X9",
+  "syntheticEvents": 0,
+  "upstreamAttempts": 0,
+  "blocked": 0,
+  "preflight": true,
+  "collector": null,
+  "transportChecks": {
+    "connect": true,
+    "img": true,
+    "frame": true,
+    "top": true,
+    "popup": true,
+    "navigationProbeStarted": true,
+    "trapRequests": 0
+  }
+}

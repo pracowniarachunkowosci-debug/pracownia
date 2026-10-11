@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "workspace": 6,
+  "container": "GTM-WC88L2GJ",
+  "beforeExportTime": "2026-10-11 17:47:35",
+  "afterExportTime": "2026-10-11 18:04:25",
+  "rawSha256": {
+    "before": "390ef7ad32596ba9c257e41656b84a896b2b98837df33c1374cc81ecc0915057",
+    "after": "4ddd3c95e5199cc50f1f5e22b59c7c3eb7794ae33087a455fc370f7cdd3b61b1"
+  },
+  "normalizedSha256": "5e7139d8bb5337b36a2469f0196d0846cf8719dd8147a3aec4c54bae9d6a6867",
+  "ignoredMetadata": [
+    "exportTime",
+    "containerVersion.fingerprint"
+  ],
+  "configurationDeepEqual": true,
+  "objectFingerprintsCompared": true,
+  "productionMeasurementIdPreserved": true,
+  "qaMeasurementIdAbsent": true,
+  "updTagPaused": true,
+  "adsUserDataAbsent": true,
+  "successTriggerPreserved": true,
+  "tags": 5,
+  "triggers": 3,
+  "customVariables": 4,
+  "builtinVariables": 44,
+  "published": false
+}

@@ -1,0 +1,90 @@
+{
+  "stage": 7,
+  "date": "2026-10-11",
+  "status": "ATTEMPT_CONSUMED_NOT_RECEIVED",
+  "ga4_test_received": "UNCONFIRMED",
+  "ga4_production_received": "UNCONFIRMED",
+  "qa": {
+    "account": "299785209",
+    "property": "558476651",
+    "propertyName": "Pracownia — QA PR19",
+    "stream": "16107592543",
+    "measurementId": "G-CRJHZ0T8X9",
+    "googleTag": "GT-NMKN6VLT",
+    "createdProperties": 1,
+    "createdStreams": 1
+  },
+  "isolation": {
+    "adsLinks": 0,
+    "mccLinks": 0,
+    "connectedSiteTags": 0,
+    "googleTagDestinations": 1,
+    "productionTagShared": false,
+    "signalsEnabled": false,
+    "ga4UserProvidedDataEnabled": false,
+    "qaTagUpdEnabled": false,
+    "qaTagAutoDetectEnabled": false,
+    "userIdSent": false,
+    "enhancedMeasurementEnabled": false,
+    "adsPersonalizationAllowedRegions": 0,
+    "adsPersonalizationTotalRegions": 307,
+    "dataImportSources": 0,
+    "audiencesExportedToAds": false,
+    "newTermsAccepted": false,
+    "newApiSecretsCreated": false
+  },
+  "preflight": {
+    "unitChecksBeforeAttempt": 17,
+    "unitChecksPassedBeforeAttempt": 17,
+    "browserTransport": "PASS",
+    "localTrapRequests": 0
+  },
+  "attempt": {
+    "utc": "2026-10-11T17:59:40.597Z",
+    "syntheticWeb3formsSuccess": 1,
+    "localGtagEventCalls": 1,
+    "measurementRequestsReceivedByGate": 0,
+    "googleCollectorRequests": 0,
+    "collectorHttpStatus": null,
+    "debugViewDevices": 0,
+    "debugViewEvents": 0,
+    "debugViewParametersVerified": false,
+    "retryCount": 0,
+    "syntheticFuseConsumed": true,
+    "serverStopped": true,
+    "archivedRunnerPermanentlyClosed": true
+  },
+  "expectedEvent": {
+    "name": "generate_lead",
+    "parameters": {
+      "event_category": "lead",
+      "event_label": "leadForm",
+      "form_id": "leadForm",
+      "inquiry_source": "zewnetrzny-dzial-finansowy"
+    },
+    "debug_mode": true
+  },
+  "consent": {
+    "analytics_storage": "granted",
+    "ad_storage": "denied",
+    "ad_user_data": "denied",
+    "ad_personalization": "denied"
+  },
+  "externalSideEffects": {
+    "web3formsRealPosts": 0,
+    "adsConversionAttempts": 0,
+    "metaTestEmissions": 0,
+    "calendlyTestEmissions": 0,
+    "growthosTestEmissions": 0,
+    "productionGa4TestRequests": 0,
+    "gtmPublished": false,
+    "siteDeployed": false,
+    "merged": false,
+    "activeAdsModified": false,
+    "productionUpdModified": false
+  },
+  "limitation": "No measurement request observed at local gate. Exact native-library initialization/runtime cause not established. Queue call is not firing/transport/receipt confirmation. Another attempt needs new owner approval after offline diagnosis.",
+  "workspaceComparison": "workspace-comparison.json",
+  "networkEvidence": "network-result.json",
+  "debugViewEvidence": "qa-debugview-empty.png"
+}

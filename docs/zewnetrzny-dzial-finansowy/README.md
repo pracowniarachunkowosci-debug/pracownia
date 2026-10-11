@@ -1,6 +1,10 @@
-# Zewnętrzny dział finansowy — raport etapów 2–6
+# Zewnętrzny dział finansowy — raport etapów 2–7
 
-## Aktualizacja: etap 6 — audyt odczytowy, test GA4 wstrzymany
+## Aktualizacja: etap 7 — niezależna QA utworzona, odbiór niepotwierdzony
+
+[Raport etapu 7](stage7/README.md), [wynik próby](stage7/ga4-test-result.json) i [porównanie GTM](stage7/workspace-comparison.json). Utworzono jedną właściwość **Pracownia — QA PR19**, `558476651`, strumień `16107592543`, `G-CRJHZ0T8X9`. Zweryfikowano niezależny tag, brak Ads/MCC, wyłączone UPD i Signals. Preflight izolacji PASS. Wykonano **jedną lokalną próbę syntetyczną**, ale **0 żądań dotarło do bramki pomiarowej / 0 przekazano Google**, a DebugView pozostał pusty. Próby nie ponowiono; bezpiecznik zużyty i wykonanie online zablokowane w archiwum skryptu. **GA4 test received: NIEPOTWIERDZONE; GA4 production received: NIEPOTWIERDZONE.** Workspace 6 jest niezmieniony, bez publikacji. Utworzenie QA nie wymaga już zgody; każda następna próba wymaga nowej zgody po poprawieniu i sprawdzeniu inicjalizacji biblioteki całkowicie offline.
+
+## Historia: etap 6 — audyt odczytowy, test GA4 wstrzymany
 
 [Raport etapu 6](stage6/README.md) i [plan wymagający zatwierdzenia](stage6/approval-plan.md). Globalne UPD oraz EC WWW/leadów w Ads pozostają włączone. W audytowanym koncie Ads: **0 aktywnych kampanii, 2 wstrzymane korzystające z błędnego celu domyślnego „Rezerwacja terminu”, 0 celów niestandardowych**. Test GA4 zatrzymano **przed wysyłką (0 prób)**: brak odizolowanej właściwości, jedyny filtr produkcyjny jest w trybie Testing. **GA4 test: BLOCKED; GA4 produkcyjne: NIEPOTWIERDZONE.** Nie zmieniono kodu strony, GTM, GA4 ani ustawień Ads. Dokumentacja etapu 5 poniżej jest zapisem historycznym.
 
