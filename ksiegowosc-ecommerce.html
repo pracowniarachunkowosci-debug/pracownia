@@ -264,6 +264,7 @@
   ]
 }
   </script>
+<link rel="stylesheet" href="assets/css/contact-form.css">
 </head>
 <body>
   <noscript><iframe title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-WC88L2GJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -393,7 +394,7 @@
           <details class="faq-item"><summary>Czy raportujecie marżę według kanału?</summary><p>Możemy, jeśli dane pozwalają wiarygodnie przypisać sprzedaż, koszt towaru, prowizje, zwroty i inne koszty do kanału lub grupy produktów. Zakres raportu ustalamy podczas wdrożenia.</p></details>
           <details class="faq-item"><summary>Od czego zależy cena księgowości e-commerce?</summary><p>Od formy prawnej i opodatkowania, liczby zapisów księgowych, kanałów sprzedaży, operatorów płatności, walut, rynków zagranicznych, VAT OSS oraz oczekiwanego raportowania.</p></details>
           <details class="faq-item"><summary>Czy obsługujecie firmy z całej Polski?</summary><p>Tak. Biuro znajduje się we Wrocławiu, ale dokumenty i dane przyjmujemy elektronicznie, a spotkania prowadzimy online.</p></details>
-          <details class="faq-item"><summary>Czy można przenieść księgowość w trakcie roku?</summary><p>Tak. Przed przejęciem ustalamy stan ksiąg, dostępność danych, rozrachunki i odpowiedzialność za wcześniejsze okresy. W bardziej złożonych przypadkach potrzebny jest odrębny audyt lub projekt porządkowy.</p></details>
+          <details class="faq-item"><summary>Czy można przenieść księgowość w trakcie roku?</summary><p>Obecnie przyjmujemy zgłoszenia na rozpoczęcie pełnej księgowości od stycznia 2027 r. Termin potwierdzamy po wstępnej analizie ksiąg, sald, rozrachunków i dokumentów. Wcześniej możemy osobno ustalić audyt lub projekt przygotowania danych do przekazania.</p></details>
         </div>
       </div>
     </section>
@@ -403,9 +404,10 @@
         <div class="form-info"><div class="eyebrow">Bezpłatna konsultacja</div><h2>Opowiedz, jak sprzedajesz. Sprawdzimy, jaki zakres księgowości ma sens.</h2><p class="sub">Na pierwszej rozmowie mapujemy kanały, płatności, rynki oraz obecny sposób przekazywania danych. Potem możemy przygotować konkretną propozycję współpracy.</p><ul class="check-list"><li><span class="check">✓</span><span>kanały sprzedaży i operatorzy płatności,</span></li><li><span class="check">✓</span><span>sprzedaż krajowa, zagraniczna i VAT OSS,</span></li><li><span class="check">✓</span><span>liczba transakcji, zwroty i rozrachunki,</span></li><li><span class="check">✓</span><span>potrzeby dotyczące marży i cash-flow.</span></li></ul><div class="contact-strip"><div class="icon" style="margin:0;background:var(--yellow);color:var(--navy)">☎</div><div><span>Kontakt bezpośredni</span><strong><a href="tel:+48504853962">+48 504 853 962</a></strong></div></div></div>
         <div class="form-card">
           <div class="cta-row" style="margin-bottom:24px"><a href="https://calendly.com/pracowniarachunkowosci/30min" class="btn btn-primary js-track-calendly" target="_blank" rel="noopener noreferrer">Umów termin w Calendly</a></div>
-          <form action="https://api.web3forms.com/submit" method="POST" id="leadForm" target="web3forms-hidden-frame">
+          <form action="https://api.web3forms.com/submit" method="POST" id="leadForm" data-contact-form="ecommerce">
             <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" />
             <input type="hidden" name="access_key" value="e4e94134-5946-445a-8f0a-7406585ec73e" />
+            <input type="hidden" name="inquiry_source" value="ksiegowosc-ecommerce" />
             <input type="hidden" name="subject" value="Landing e-commerce - nowe zapytanie" />
             <input type="hidden" name="utm_source" /><input type="hidden" name="utm_medium" /><input type="hidden" name="utm_campaign" /><input type="hidden" name="utm_term" /><input type="hidden" name="utm_content" /><input type="hidden" name="gclid" /><input type="hidden" name="fbclid" />
             <div class="form-row"><div class="form-group"><label for="name">Imię i nazwisko <span class="req">*</span></label><input id="name" name="name" type="text" autocomplete="name" required /></div><div class="form-group"><label for="company">Firma <span class="req">*</span></label><input id="company" name="company" type="text" autocomplete="organization" required /></div></div>
@@ -414,8 +416,9 @@
             <div class="form-group"><label for="channels">Kanały i płatności</label><input id="channels" name="channels" type="text" placeholder="np. Shopify, Allegro, Amazon, Stripe, PayU" /></div>
             <div class="form-group"><label for="message">Dodatkowe informacje</label><textarea id="message" name="message" placeholder="Forma prawna, obecne biuro, VAT OSS, liczba dokumentów, oczekiwany start, potrzebne raporty..."></textarea></div>
             <label class="consent"><input type="checkbox" name="consent" required /><span>Wyrażam zgodę na kontakt w celu obsługi zapytania. Administratorem danych jest PRACOWNIA RACHUNKOWOŚCI SP. Z O.O. Szczegóły w polityce prywatności.</span></label>
+            <p id="lead-status" data-form-status role="status" aria-live="polite" tabindex="-1"></p>
             <button type="submit" class="btn-submit">Wyślij zapytanie</button><p class="form-note">Twoje dane wykorzystamy wyłącznie do kontaktu w sprawie zapytania.</p>
-          </form><iframe name="web3forms-hidden-frame" title="Ukryta ramka wysyłki formularza" style="display:none"></iframe>
+          </form>
         </div>
       </div>
     </section>
@@ -428,19 +431,19 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var year=document.getElementById('year'); if(year) year.textContent=new Date().getFullYear();
-      var form=document.getElementById('leadForm'); var timer=null; var params=new URLSearchParams(window.location.search);
+      var params=new URLSearchParams(window.location.search);
       ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'].forEach(function(param){var input=document.querySelector('input[name="'+param+'"]');if(input&&params.get(param))input.value=params.get(param)});
-      if(form){form.addEventListener('submit',function(){var button=form.querySelector('button[type="submit"]');if(button){button.disabled=true;button.textContent='Wysyłanie...'}if(typeof gtag==='function'){gtag('event','generate_lead',{event_category:'lead',event_label:'landing_ecommerce_form'})}if(typeof fbq==='function'){fbq('track','Lead')}clearTimeout(timer);timer=setTimeout(function(){window.location.href='https://pracowniarachunkowosci.pl/thank-you.html'},1600)})}
       document.querySelectorAll('.js-track-calendly').forEach(function(link){link.addEventListener('click',function(){if(typeof gtag==='function'){gtag('event','click_calendly',{event_category:'lead',event_label:'landing_ecommerce_calendly'})}if(typeof fbq==='function'){fbq('track','Contact')}})});
       var key='cookieConsent',banner=document.getElementById('cookie-banner'),all=document.getElementById('acceptAll'),essential=document.getElementById('acceptEssential'),pixelLoaded=false;
       function consent(granted){if(typeof gtag==='function'){gtag('consent','update',{ad_storage:granted?'granted':'denied',analytics_storage:granted?'granted':'denied',ad_user_data:granted?'granted':'denied',ad_personalization:granted?'granted':'denied'})}}
       function pixel(){if(pixelLoaded||window.fbq)return;pixelLoaded=true;!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','2249646038845826');fbq('track','PageView')}
       function hide(){if(banner)banner.style.display='none'}function show(){if(banner)banner.style.display='block'}
-      if(all)all.addEventListener('click',function(){localStorage.setItem(key,'all');consent(true);pixel();hide()});if(essential)essential.addEventListener('click',function(){localStorage.setItem(key,'essential');consent(false);hide()});
-      var saved=localStorage.getItem(key);if(saved==='all'){consent(true);pixel();hide()}else if(saved==='essential'){consent(false);hide()}else{show()}
-      window.resetCookieConsent=function(){localStorage.removeItem(key);window.location.reload()};
+      if(all)all.addEventListener('click',function(){try{localStorage.setItem(key,'all')}catch(error){/* Storage may be unavailable. */};consent(true);pixel();hide()});if(essential)essential.addEventListener('click',function(){try{localStorage.setItem(key,'essential')}catch(error){/* Storage may be unavailable. */};consent(false);hide()});
+      var saved=null;try{saved=localStorage.getItem(key)}catch(error){/* Keep default denial. */}if(saved==='all'){consent(true);pixel();hide()}else if(saved==='essential'){consent(false);hide()}else{show()}
+      window.resetCookieConsent=function(){try{localStorage.removeItem(key)}catch(error){/* Storage may be unavailable. */};window.location.reload()};
     });
   </script>
   <script async src="https://growthos-mu.vercel.app/lead-chat-ai.js" data-api-base="https://growthos-mu.vercel.app" data-privacy-url="https://pracowniarachunkowosci.pl/polityka-prywatnosci.html" data-bottom="104px"></script>
+<script src="assets/js/contact-form.js" defer></script>
 </body>
 </html>

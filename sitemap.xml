@@ -3,12 +3,12 @@
 
   <url>
     <loc>https://pracowniarachunkowosci.pl/</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
 
   <url>
     <loc>https://pracowniarachunkowosci.pl/oferta.html</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
 
   <url>
@@ -23,7 +23,7 @@
 
   <url>
     <loc>https://pracowniarachunkowosci.pl/analizy-finansowe-raportowanie.html</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
 
   <url>
@@ -85,7 +85,7 @@
 
   <url>
     <loc>https://pracowniarachunkowosci.pl/raporty-zarzadcze-controlling.html</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
 
   <url>
@@ -243,6 +243,11 @@
     <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pracowniarachunkowosci.pl/zewnetrzny-dzial-finansowy.html</loc>
+    <lastmod>2026-10-11</lastmod>
   </url>
 
 </urlset>
