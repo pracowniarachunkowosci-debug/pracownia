@@ -6,7 +6,7 @@ const { default: AxeBuilder } = require('@axe-core/playwright');
 const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
-const root = path.resolve(__dirname, '../..');
+const root = process.env.JANUARY_SITE_ROOT ? path.resolve(process.env.JANUARY_SITE_ROOT) : path.resolve(__dirname, '../..');
 const out = path.join(__dirname, 'preview');
 fs.mkdirSync(out, { recursive: true });
 const origin = 'http://campaign.test';
@@ -129,7 +129,7 @@ async function formScenario({ name, file = '/', service = 'zmiana-biura-2027', c
         const row = { file, width, ...evidence, brokenLinks: [...new Set(broken)], javascriptErrors: errors, accessibility: axe.violations.map(v => ({ id: v.id, impact: v.impact, nodes: v.nodes.map(n => ({ target: n.target, summary: n.failureSummary })) })) };
         delete row.links;
         report.layouts.push(row);
-        if (evidence.overflow || evidence.h1 !== 1 || evidence.duplicateIds.length || evidence.badEncoding || errors.length) report.failures.push({ file, width, problem: 'layout/structure/console', row });
+        if (evidence.overflow || evidence.h1 !== 1 || evidence.duplicateIds.length || evidence.badEncoding || errors.length || !evidence.faqMatches || broken.length || axe.violations.length) report.failures.push({ file, width, problem: 'layout/structure/console', row });
         const burger = page.locator('button[aria-controls=mainMenu]');
         if (width < 800 && await burger.count() && await burger.isVisible()) {
           await burger.click(); assert.equal(await burger.getAttribute('aria-expanded'), 'true');

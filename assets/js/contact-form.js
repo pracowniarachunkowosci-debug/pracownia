@@ -37,7 +37,7 @@
       if (form.elements.subject) form.elements.subject.value = fromTransfer ? 'Zmiana biura rachunkowego od stycznia 2027 - nowe zapytanie' : 'Zewnętrzny dział finansowy - nowe zapytanie';
       var contact = document.querySelector('.hp-contact');
       if (contact) contact.classList.add(fromTransfer ? 'hp-contact--transfer' : 'hp-contact--zdf');
-      if (note) note.textContent = fromTransfer ? 'Zgłoszenie na pełną księgowość od stycznia 2027. Opisz spółkę, skalę operacji i stan ksiąg. Termin i zakres potwierdzamy indywidualnie; audyt oraz zamknięcie 2026 ustalamy osobno.' : 'Zapytanie o zewnętrzny dział finansowy. Pełna księgowość: zgłoszenia na start od stycznia 2027, z terminem potwierdzanym po ocenie dokumentów. Raportowanie, controlling i audyt możemy omówić osobno.';
+      if (note) note.textContent = fromTransfer ? 'Zgłoszenie na pełną księgowość od stycznia 2027. Opisz spółkę, skalę operacji i stan ksiąg. Termin i zakres potwierdzamy indywidualnie. Sprawozdanie i CIT-8 za 2026 spółka ustala z dotychczasową obsługą; Pracownia nie przejmuje tych zadań. Audyt, weryfikację ksiąg i korekty wyceniamy osobno.' : 'Zapytanie o zewnętrzny dział finansowy. Pełna księgowość: zgłoszenia na start od stycznia 2027, z terminem potwierdzanym po ocenie dokumentów. Raportowanie, controlling i audyt możemy omówić osobno.';
     }
     // Without these APIs the unchanged action/method still submit directly to Web3Forms.
     if (!window.fetch || !window.FormData || !window.AbortController) return;

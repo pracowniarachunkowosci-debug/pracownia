@@ -1,6 +1,18 @@
 # Przejęcia pełnej księgowości od stycznia 2027
 
-Stan na 24 października 2026. Gałąź `feat/styczen-2027-przejecia` powstała z pobranego `origin/main` (`9053790`). Zmiany są przeznaczone do jednego draft PR. Merge do `main` uruchamia publikację GitHub Pages i wymaga decyzji właściciela.
+Stan na 24 października 2026. Gałąź `feat/styczen-2027-przejecia` powstała z pobranego `origin/main` (`9053790`). PR #21 jest źródłem zmian, dokumentacji i QA do weryfikacji. Do publikacji przeznaczona jest osobna gałąź `release/styczen-2027-site-only`, utworzona z aktualnego `main` i zawierająca dokładnie 11 zmienionych plików produkcyjnych. Nie mergować całego PR #21. Merge PR produkcyjnego do `main` uruchamia publikację GitHub Pages i wymaga osobnej zgody właściciela.
+
+
+## Ostatnia korekta przed wydaniem — różnice względem PR #21
+
+Punkt odniesienia: pierwotny commit PR #21 `4cc6a83efc23732397190051d5fc5f2314563e34`.
+
+- Osiem plików produkcyjnych: `index.html`, oba landingi zmiany biura, `blog/zmiana-biura.html`, `oferta.html`, `ksiegowosc-spolka-z-oo.html`, `llms.txt` i `assets/js/contact-form.js`. Zmiany obejmują wyłącznie komunikaty o odpowiedzialności za 2026, metadane głównego landingu oraz odpowiadające im treści FAQ/JSON-LD.
+- Usunięto sugestię możliwości zlecenia Pracowni sprawozdania finansowego i CIT-8 za 2026 za dodatkową opłatą. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą. Audyt, weryfikacja ksiąg i korekty pozostają odrębnie płatne.
+- Pozostałe trzy pliki produkcyjne z PR #21 (`sitemap.xml`, `zewnetrzny-dzial-finansowy.html`, artykuł o audycie) są bez zmian względem zatwierdzonej wersji. Daty `lastmod` nadal odpowiadają dacie wykonania korekt: 24 października 2026.
+- Potwierdzono identyczną strukturę HTML, CSS, H1, linki i canonicale oraz skrypty integracji względem pierwotnego PR #21. Wspólny JS formularza ma zmieniony tylko tekst informacji sezonowej; logika formularza i pomiaru jest identyczna.
+- Zaktualizowane podglądy i pełne wyniki regresji pozostają wyłącznie w gałęzi PR #21. Testy uruchomiono bezpośrednio na katalogu gałęzi release, a komplet 11 plików porównano bajt po bajcie z gałęzią źródłową. Sumy SHA-256 znajdują się w `release-verification.json`.
+- Przenoszenie UTM/GCLID między stronami oraz konfiguracja GA4/Ads nadal stanowią oddzielne zadanie. Bez produkcyjnych wysyłek formularza, merge i publikacji.
 
 ## Audyt architektury przed zmianami
 
@@ -28,7 +40,7 @@ Rekomendacja po takiej analizie: trwałe przekierowanie HTTP 301 z dłuższego a
 | Plik | Zmiana |
 | --- | --- |
 | `index.html` | Blok sezonowy bezpośrednio po istniejącym hero; CTA do głównej usługi; doprecyzowanie FAQ i zgodności JSON-LD; układ formularza sezonowego na mobile. H1, hero, nawigacja, karty usług, opinie i pakiety zachowane. |
-| `zmiana-biura-rachunkowego.html` | Start od stycznia 2027, harmonogram, dane do zgłoszenia, odrębne zamknięcie 2026 i wycena audytu, 9 pytań FAQ, link do poradnika, CTA do formularza sezonowego, metadane. |
+| `zmiana-biura-rachunkowego.html` | Start od stycznia 2027, harmonogram, dane do zgłoszenia, wyłączenie sprawozdania i CIT-8 za 2026 oraz osobna wycena audytu, 9 pytań FAQ, link do poradnika, CTA do formularza sezonowego, metadane. |
 | `assets/js/contact-form.js` | Dozwolony wariant `service=zmiana-biura-2027`, temat, subject, informacja i `inquiry_source`; dotychczasowe warianty zachowane. |
 | `blog/zmiana-biura.html` | Poradnik 2026/2027, podział obowiązków i dwa etapy przekazania danych, linki do usługi, data aktualizacji, FAQ schema; poprawiony kontrast podpisu „Autor”. |
 | `blog/audyt-ksiegowosci-przed-zmiana-biura.html` | Osobna wycena, link do głównej usługi, dateModified i zgodność FAQ. |
@@ -45,7 +57,7 @@ Rekomendacja po takiej analizie: trwałe przekierowanie HTTP 301 z dłuższego a
 | Home | Brak dedykowanego bloku sezonowego | „Planujesz zmianę biura rachunkowego od stycznia 2027?” → „Sprawdź możliwość współpracy od stycznia 2027”. |
 | Landing — początek | „Przejmujemy księgowość… Zaczynamy od audytu startowego” | Planowany start od stycznia, termin i zakres wymagają potwierdzenia; CTA „Opisz spółkę i planowany termin”. |
 | Landing — koniec | Konsultacja / ogólne zapytanie | Opis firmy i skali operacji do oceny możliwości współpracy; brak automatycznej akceptacji. |
-| Audyt i zamknięcie roku | Brak wyraźnego rozdzielenia od nowej obsługi | Audyt i zaległości odrębnie wyceniane; sprawozdanie, CIT-8 i inne zadania za 2026 wymagają osobnych ustaleń. |
+| Audyt i zamknięcie roku | Brak wyraźnego rozdzielenia od nowej obsługi | Audyt, weryfikacja ksiąg i korekty odrębnie wyceniane. Pracownia nie podejmuje się sporządzenia/podpisania sprawozdania ani przygotowania CIT-8 za 2026; spółka ustala wykonanie tych obowiązków z dotychczasową obsługą. |
 | Formularz | Domyślny home albo ZDF | Dodatkowy wariant sezonowy z `inquiry_source=zmiana-biura-2027`. |
 
 ## Podgląd i testy
@@ -66,12 +78,14 @@ Testy w `qa.cjs` przechwytują **wszystkie** żądania. Dokumenty i zasoby lokal
 
 **Wynik końcowy: 24/24 widoki i 17/17 scenariuszy funkcjonalnych — PASS. Brak niepoprawnych linków, rozbieżności FAQ, poziomego przewijania, błędów JS oraz naruszeń wykrytych przez axe.**
 
-Szczegółowe dowody: [qa-results.json](qa-results.json), [invariants.json](invariants.json). Testy wykonano z lokalnie dostępnymi Playwright 1.64.0 i axe 4.13.0, z kanałem Chrome. Zewnętrzne fonty/skrypty są blokowane, więc zrzuty używają dostępnych fontów zastępczych. Nie weryfikowano doręczenia e-maila przez produkcyjny Web3Forms, działania usług zewnętrznych ani konfiguracji kont analitycznych.
+Szczegółowe dowody: [weryfikacja czystego wydania i różnic względem pierwotnego PR #21](release-verification.json), [qa-results.json](qa-results.json), [invariants.json](invariants.json). Testy wykonano z lokalnie dostępnymi Playwright 1.64.0 i axe 4.13.0, z kanałem Chrome. Zewnętrzne fonty/skrypty są blokowane, więc zrzuty używają dostępnych fontów zastępczych. Nie weryfikowano doręczenia e-maila przez produkcyjny Web3Forms, działania usług zewnętrznych ani konfiguracji kont analitycznych.
 
 Uruchomienie na Windows (PowerShell), po udostępnieniu zależności testowych:
 
 ```powershell
 $env:NODE_PATH = 'ścieżka-do-testowych-node_modules'
+# Opcjonalnie: katalog gałęzi release; wyniki nadal zapiszą się przy dokumentacji PR #21.
+$env:JANUARY_SITE_ROOT = 'ścieżka-do-pracownia-styczen-2027-release'
 node docs/styczen-2027/qa.cjs
 node --check assets/js/contact-form.js
 git diff --check

@@ -1,0 +1,42 @@
+{
+  "baselinePR21": "4cc6a83efc23732397190051d5fc5f2314563e34",
+  "releaseBase": "9053790724107686890fbd4fdbaa014522a025c4",
+  "productionFiles": {
+    "assets/js/contact-form.js": "7b91d3366faeaa2868bbb9bb510a148f8395cfe1b384e7b756cd1ec28f5e6408",
+    "blog/audyt-ksiegowosci-przed-zmiana-biura.html": "2edc0c373aeddea5c3cc5dcca6c4b1510412c2d2890d178d6dccfe9d19f368a0",
+    "blog/zmiana-biura.html": "62af1bf969edc49aea55d93e025b1c62afbef4965a6669761299a3baba8840c6",
+    "index.html": "b87e7cf9a74bb6dadb1f6fe697b4e89124dc20b0241acd04e24c7d91c7e221ba",
+    "ksiegowosc-spolka-z-oo.html": "f7960086c5e573cacfb7abbbb468b8c53c9860414d05dbdc863d8b17f033b9b3",
+    "llms.txt": "014b4fd715af0dc19ca5fa7e23bcb8cb3695ac5d98178e8ae692cbf035cb2c4c",
+    "oferta.html": "335f77a4a1d7fb3edfb94e7d3bd500a774c302518672947416f7cfec6d2520a0",
+    "sitemap.xml": "8550f8a320d6db79a5946fe6cf54e5bc28406ce47e86796db117ddfacfcaae6c",
+    "zewnetrzny-dzial-finansowy.html": "4d6fbc307cba48f7723e5d38aefafec8e8d4156041ff3acdcd6e9e172e4b8567",
+    "zmiana-biura-rachunkowego-spolka-z-oo.html": "14a8f54355160695fde2d736b4c8f5b32c48e4417be94b440fc8a0cc61fbcc8d",
+    "zmiana-biura-rachunkowego.html": "f4242921c5363a74386a2573bade58069f6d52bf39370be642e4e852b4559856"
+  },
+  "correctedFiles": [
+    "assets/js/contact-form.js",
+    "blog/zmiana-biura.html",
+    "index.html",
+    "ksiegowosc-spolka-z-oo.html",
+    "llms.txt",
+    "oferta.html",
+    "zmiana-biura-rachunkowego-spolka-z-oo.html",
+    "zmiana-biura-rachunkowego.html"
+  ],
+  "checks": [
+    "Form logic unchanged; seasonal note text only",
+    "blog/audyt-ksiegowosci-przed-zmiana-biura.html: unchanged DOM, CSS, H1, links, canonical and integration scripts",
+    "blog/zmiana-biura.html: unchanged DOM, CSS, H1, links, canonical and integration scripts",
+    "index.html: unchanged DOM, CSS, H1, links, canonical and integration scripts",
+    "ksiegowosc-spolka-z-oo.html: unchanged DOM, CSS, H1, links, canonical and integration scripts",
+    "oferta.html: unchanged DOM, CSS, H1, links, canonical and integration scripts",
+    "zewnetrzny-dzial-finansowy.html: unchanged DOM, CSS, H1, links, canonical and integration scripts",
+    "zmiana-biura-rachunkowego-spolka-z-oo.html: unchanged DOM, CSS, H1, links, canonical and integration scripts",
+    "zmiana-biura-rachunkowego.html: unchanged DOM, CSS, H1, links, canonical and integration scripts",
+    "11 production files match review branch byte-for-byte",
+    "8 production files changed versus original PR #21; text only",
+    "No docs/QA files copied to release",
+    "sitemap lastmod unchanged: corrections on the same date, 2026-10-24"
+  ]
+}
