@@ -213,7 +213,7 @@
           "name": "Czy można zmienić biuro rachunkowe w trakcie roku?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Tak, zmianę biura rachunkowego można przeprowadzić także w trakcie roku. Ważne jest jednak uporządkowanie dokumentów, ustalenie stanu ksiąg, sprawdzenie deklaracji, rozrachunków i terminów oraz bezpieczne przekazanie danych do nowego biura."
+            "text": "Tak. Zmiana biura rachunkowego w trakcie roku jest możliwa. Kluczowe jest dobre przekazanie dokumentów, sprawdzenie deklaracji, rozrachunków, JPK, sald i terminów, żeby nowa obsługa nie zaczynała od niepełnych danych."
           }
         },
         {
@@ -221,7 +221,7 @@
           "name": "Czy Pracownia Rachunkowości pomaga przejąć księgowość po poprzednim biurze?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Tak. Pracownia Rachunkowości pomaga spółkom z o.o. przejść przez zmianę biura: od audytu startowego, przez listę dokumentów, po przejęcie ksiąg, rozrachunków i bieżącej obsługi."
+            "text": "Tak. Nowe przejęcia pełnej księgowości planujemy od stycznia 2027, po potwierdzeniu terminu i zakresu. Audyt i poprawianie zaległości wyceniamy osobno, a odpowiedzialność za zamknięcie 2026 ustalamy oddzielnie."
           }
         },
         {
@@ -229,15 +229,15 @@
           "name": "Jakie dokumenty są potrzebne przy zmianie biura rachunkowego?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Najczęściej potrzebne są księgi, rejestry VAT, deklaracje, JPK, rozrachunki, zestawienia sald, dokumenty kadrowe, umowy, potwierdzenia wysłanych deklaracji i dostęp do systemów, w których były prowadzone dokumenty."
+            "text": "Najczęściej potrzebne są księgi, rejestry VAT, deklaracje, JPK, potwierdzenia wysyłki, rozrachunki, zestawienia sald, dokumenty kadrowe, umowy oraz informacje o dostępach do systemów."
           }
         },
         {
           "@type": "Question",
-          "name": "Czy zmiana biura rachunkowego musi oznaczać przerwę w obsłudze?",
+          "name": "Czy zmiana biura oznacza przerwę w księgowości?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nie powinna. Dobrze zaplanowana zmiana biura rachunkowego zakłada okres przejściowy, listę odpowiedzialności, kontrolę terminów i szybkie ustalenie, które sprawy wymagają reakcji w pierwszej kolejności."
+            "text": "Nie powinna. Dlatego przy przejęciu obsługi ustalamy terminy, odpowiedzialności i kolejność działań. Celem jest zachowanie ciągłości rozliczeń oraz szybkie wykrycie obszarów, które wymagają uporządkowania."
           }
         },
         {
@@ -245,7 +245,7 @@
           "name": "Czy Pracownia Rachunkowości obsługuje zmianę biura rachunkowego online?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Tak. Pracownia Rachunkowości obsługuje spółki z o.o. we Wrocławiu i online, dlatego przekazanie dokumentów, ustalenie procesu i wdrożenie nowego obiegu może odbywać się zdalnie."
+            "text": "Tak. Obsługujemy spółki z o.o. we Wrocławiu i online. Przekazanie dokumentów, ustalenie procesu, komunikacja i wdrożenie obiegu dokumentów mogą odbywać się zdalnie."
           }
         }
       ]
@@ -1300,6 +1300,12 @@
         </aside>
       </div>
     </section>
+    <section class="section section--soft" aria-labelledby="termin-przejecia-title">
+      <div class="container">
+        <div class="head"><h2 id="termin-przejecia-title">Planujesz przejęcie pełnej księgowości od stycznia 2027?</h2><p>Termin i zakres potwierdzamy indywidualnie. Audyt, weryfikacja historycznych ksiąg i poprawianie zaległości to odrębnie wyceniane usługi. Obsługa od 2027 nie oznacza automatycznego sporządzenia ani podpisania sprawozdania finansowego, przygotowania CIT-8 ani wykonania innych obowiązków za 2026 rok — podział odpowiedzialności ustalamy osobno. Nie przejmujemy obecnie bieżącej księgowości JDG.</p><a class="btn btn--dark" href="/zmiana-biura-rachunkowego.html">Zobacz aktualne zasady i plan przejęcia</a></div>
+      </div>
+    </section>
+
 
     <section class="entity-section" id="o-pracowni">
       <div class="container">
@@ -1464,7 +1470,7 @@
           <p>Zakres zależy od sytuacji spółki, ale przy zmianie biura rachunkowego zwykle przygotowujemy uporządkowaną checklistę.</p>
         </div>
 
-        <div class="table-wrap">
+        <div class="table-wrap" role="region" aria-label="Dokumenty do przekazania" tabindex="0">
           <table>
             <thead>
               <tr>
@@ -1556,7 +1562,7 @@
         </details>
         <details>
           <summary>Czy Pracownia Rachunkowości pomaga przejąć księgowość po poprzednim biurze?</summary>
-          <p>Tak. Pracownia Rachunkowości pomaga spółkom z o.o. w przejęciu księgowości po poprzednim biurze: od audytu startowego i listy dokumentów po wdrożenie nowej obsługi i obiegu dokumentów.</p>
+          <p>Tak. Nowe przejęcia pełnej księgowości planujemy od stycznia 2027, po potwierdzeniu terminu i zakresu. Audyt i poprawianie zaległości wyceniamy osobno, a odpowiedzialność za zamknięcie 2026 ustalamy oddzielnie.</p>
         </details>
         <details>
           <summary>Jakie dokumenty są potrzebne przy zmianie biura rachunkowego?</summary>
@@ -1652,6 +1658,10 @@
           burger.setAttribute('aria-expanded', open ? 'true' : 'false');
           burger.setAttribute('aria-label', open ? 'Zamknij menu' : 'Otwórz menu');
         }
+
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape') setMenu(false);
+        });
 
         burger.addEventListener('click', function () {
           setMenu(!menu.classList.contains('is-open'));

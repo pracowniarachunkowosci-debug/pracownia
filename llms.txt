@@ -18,7 +18,7 @@
 - [Oferta](https://pracowniarachunkowosci.pl/oferta.html): zakres usług księgowych i dodatkowych
 - [Księgowość dla spółek z o.o.](https://pracowniarachunkowosci.pl/ksiegowosc-spolka-z-oo.html): pełna księgowość, podatki, sprawozdania, raporty i komunikacja z zarządem
 - [Księgowość e-commerce i VAT OSS](https://pracowniarachunkowosci.pl/ksiegowosc-ecommerce.html): obsługa sklepów internetowych i marketplace, KSeF, operatorzy płatności, rozrachunki, marża i cash-flow
-- [Zmiana biura rachunkowego](https://pracowniarachunkowosci.pl/zmiana-biura-rachunkowego.html): audyt startowy, przejęcie dokumentów i uporządkowanie księgowości
+- [Zmiana biura rachunkowego](https://pracowniarachunkowosci.pl/zmiana-biura-rachunkowego.html): główna strona usługi przejęcia pełnej księgowości od stycznia 2027; termin i zakres potwierdzane indywidualnie, audyt i zaległości wyceniane osobno, odpowiedzialność za zamknięcie 2026 ustalana oddzielnie
 - [Zewnętrzny dział finansowy](https://pracowniarachunkowosci.pl/zewnetrzny-dzial-finansowy.html): model stałej obsługi łączący pełną księgowość, raportowanie zarządcze, controlling oraz koordynację podatków i kadr dla rozwijających się spółek, szczególnie produkcji, hurtowni i handlu; zakres zgodny z pakietem i dodatkowymi ustaleniami
 - [Raporty zarządcze i controlling](https://pracowniarachunkowosci.pl/raporty-zarzadcze-controlling.html): KPI, cash-flow, rentowność, należności i zobowiązania
 - [Księgowość na estońskim CIT](https://pracowniarachunkowosci.pl/ksiegowosc-cit-estonski-online.html): główna strona usługi — pełne księgi, VAT, bieżące rozliczenia, monitoring ukrytych zysków, wypłat i wydatków oraz wybrane raporty; rozbudowane raportowanie pozostaje w pakiecie Strategia
@@ -28,6 +28,8 @@
 - [Blog](https://pracowniarachunkowosci.pl/blog/): artykuły eksperckie dla właścicieli i zarządów spółek
 
 ## Wybrane artykuły eksperckie
+
+- [Zmiana biura rachunkowego krok po kroku](https://pracowniarachunkowosci.pl/blog/zmiana-biura.html): poradnik przekazania dokumentów i przygotowania zmiany na przełomie 2026/2027
 
 - [Jak wybrać biuro rachunkowe dla spółki z o.o.?](https://pracowniarachunkowosci.pl/blog/jak-wybrac-biuro-rachunkowe-dla-spolki-z-oo.html)
 - [Raport miesięczny dla zarządu spółki z o.o.](https://pracowniarachunkowosci.pl/blog/raport-miesieczny-dla-zarzadu-spolki-z-oo.html)

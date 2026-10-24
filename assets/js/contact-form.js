@@ -16,11 +16,13 @@
   }
 
   function initForm(form, contract) {
-    var fromFinance = form.dataset.contactForm === 'home' && new URLSearchParams(window.location.search).get('service') === 'zewnetrzny-dzial-finansowy';
-    var source = fromFinance ? 'zewnetrzny-dzial-finansowy' : contract.source;
+    var service = form.dataset.contactForm === 'home' ? new URLSearchParams(window.location.search).get('service') : null;
+    var fromFinance = service === 'zewnetrzny-dzial-finansowy';
+    var fromTransfer = service === 'zmiana-biura-2027';
+    var source = fromTransfer ? 'zmiana-biura-2027' : (fromFinance ? 'zewnetrzny-dzial-finansowy' : contract.source);
     if (form.elements.inquiry_source) form.elements.inquiry_source.value = source;
-    if (fromFinance) {
-      form.setAttribute('aria-label', 'Zapytanie o zewnętrzny dział finansowy');
+    if (fromFinance || fromTransfer) {
+      form.setAttribute('aria-label', fromTransfer ? 'Zmiana biura rachunkowego od stycznia 2027' : 'Zapytanie o zewnętrzny dział finansowy');
       var note = document.querySelector('.hp-form-note');
       if (note) note.setAttribute('tabindex', '-1');
       function showContact() {
@@ -31,11 +33,11 @@
       }
       if (document.readyState === 'complete') showContact();
       else window.addEventListener('load', showContact, {once: true});
-      if (form.elements.topic) form.elements.topic.value = 'Zewnętrzny dział finansowy';
-      if (form.elements.subject) form.elements.subject.value = 'Zewnętrzny dział finansowy - nowe zapytanie';
+      if (form.elements.topic) form.elements.topic.value = fromTransfer ? 'Zmiana biura rachunkowego' : 'Zewnętrzny dział finansowy';
+      if (form.elements.subject) form.elements.subject.value = fromTransfer ? 'Zmiana biura rachunkowego od stycznia 2027 - nowe zapytanie' : 'Zewnętrzny dział finansowy - nowe zapytanie';
       var contact = document.querySelector('.hp-contact');
-      if (contact) contact.classList.add('hp-contact--zdf');
-      if (note) note.textContent = 'Zapytanie o zewnętrzny dział finansowy. Pełna księgowość: zgłoszenia na start od stycznia 2027, z terminem potwierdzanym po ocenie dokumentów. Raportowanie, controlling i audyt możemy omówić osobno.';
+      if (contact) contact.classList.add(fromTransfer ? 'hp-contact--transfer' : 'hp-contact--zdf');
+      if (note) note.textContent = fromTransfer ? 'Zgłoszenie na pełną księgowość od stycznia 2027. Opisz spółkę, skalę operacji i stan ksiąg. Termin i zakres potwierdzamy indywidualnie; audyt oraz zamknięcie 2026 ustalamy osobno.' : 'Zapytanie o zewnętrzny dział finansowy. Pełna księgowość: zgłoszenia na start od stycznia 2027, z terminem potwierdzanym po ocenie dokumentów. Raportowanie, controlling i audyt możemy omówić osobno.';
     }
     // Without these APIs the unchanged action/method still submit directly to Web3Forms.
     if (!window.fetch || !window.FormData || !window.AbortController) return;

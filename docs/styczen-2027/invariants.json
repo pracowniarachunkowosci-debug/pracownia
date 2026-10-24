@@ -1,0 +1,27 @@
+{
+  "checks": [
+    "blog/audyt-ksiegowosci-przed-zmiana-biura.html: canonical, H1, UTF-8, integration scripts checked",
+    "blog/zmiana-biura.html: canonical, H1, UTF-8, integration scripts checked",
+    "index.html: canonical, H1, UTF-8, integration scripts checked",
+    "index.html: packages/services unchanged",
+    "Home H1 and hero unchanged",
+    "ksiegowosc-spolka-z-oo.html: canonical, H1, UTF-8, integration scripts checked",
+    "ksiegowosc-spolka-z-oo.html: packages/services unchanged",
+    "oferta.html: canonical, H1, UTF-8, integration scripts checked",
+    "oferta.html: packages/services unchanged",
+    "zewnetrzny-dzial-finansowy.html: canonical, H1, UTF-8, integration scripts checked",
+    "zmiana-biura-rachunkowego-spolka-z-oo.html: canonical, H1, UTF-8, integration scripts checked",
+    "zmiana-biura-rachunkowego.html: canonical, H1, UTF-8, integration scripts checked",
+    "Sitemap: same URLs, exactly 8 modified lastmod values, 2026-10-24"
+  ],
+  "updatedSitemapURLs": [
+    "https://pracowniarachunkowosci.pl/",
+    "https://pracowniarachunkowosci.pl/oferta.html",
+    "https://pracowniarachunkowosci.pl/ksiegowosc-spolka-z-oo.html",
+    "https://pracowniarachunkowosci.pl/zmiana-biura-rachunkowego-spolka-z-oo.html",
+    "https://pracowniarachunkowosci.pl/zmiana-biura-rachunkowego.html",
+    "https://pracowniarachunkowosci.pl/blog/audyt-ksiegowosci-przed-zmiana-biura.html",
+    "https://pracowniarachunkowosci.pl/blog/zmiana-biura.html",
+    "https://pracowniarachunkowosci.pl/zewnetrzny-dzial-finansowy.html"
+  ]
+}
