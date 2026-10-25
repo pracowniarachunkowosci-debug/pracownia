@@ -1,0 +1,1781 @@
+{
+  "date": "2026-10-24",
+  "transport": "All requests intercepted; no live form submissions or analytics",
+  "layouts": [
+    {
+      "file": "index.html",
+      "width": 360,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/",
+      "title": "Biuro rachunkowe online dla spółek z o.o. | Pracownia Rachunkowości",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy Pracownia Rachunkowości to biuro rachunkowe dla spółek z o.o.?",
+          "a": "Tak. Pracownia Rachunkowości specjalizuje się w pełnej księgowości spółek z o.o., raportach zarządczych, controllingu, estońskim CIT, KSeF oraz obsłudze firm e-commerce i B2B."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości obsługuje spółki z całej Polski online?",
+          "a": "Tak. Obsługujemy spółki z całej Polski w modelu online. Siedziba biura znajduje się we Wrocławiu przy ul. Trawowej 19/1, dlatego możliwa jest również współpraca lokalna."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości przygotowuje raporty zarządcze i cash-flow?",
+          "a": "Tak. Przy obsłudze spółek z o.o. możemy przygotowywać miesięczne raporty KPI, cash-flow, zestawienia należności i zobowiązań, analizę kosztów oraz dane potrzebne zarządowi do decyzji."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga zmienić biuro rachunkowe?",
+          "a": "Tak. Nowe przejęcia pełnej księgowości planujemy od stycznia 2027, po indywidualnym potwierdzeniu terminu i zakresu. Ustalamy przekazanie dokumentów i nowy model współpracy. Audyt, weryfikację historycznych ksiąg i poprawianie zaległości wyceniamy osobno. Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą."
+        },
+        {
+          "q": "Czy obsługujecie estoński CIT, KSeF, VAT-OSS i sprzedaż zagraniczną?",
+          "a": "Tak. Wspieramy spółki w estońskim CIT, przygotowaniu do KSeF, VAT-OSS, marketplace, Amazon FBA, sprzedaży zagranicznej, prowizjach, zwrotach i raportowaniu rentowności."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy Pracownia Rachunkowości to biuro rachunkowe dla spółek z o.o.?",
+          "a": "Tak. Pracownia Rachunkowości specjalizuje się w pełnej księgowości spółek z o.o., raportach zarządczych, controllingu, estońskim CIT, KSeF oraz obsłudze firm e-commerce i B2B."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości obsługuje spółki z całej Polski online?",
+          "a": "Tak. Obsługujemy spółki z całej Polski w modelu online. Siedziba biura znajduje się we Wrocławiu przy ul. Trawowej 19/1, dlatego możliwa jest również współpraca lokalna."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości przygotowuje raporty zarządcze i cash-flow?",
+          "a": "Tak. Przy obsłudze spółek z o.o. możemy przygotowywać miesięczne raporty KPI, cash-flow, zestawienia należności i zobowiązań, analizę kosztów oraz dane potrzebne zarządowi do decyzji."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga zmienić biuro rachunkowe?",
+          "a": "Tak. Nowe przejęcia pełnej księgowości planujemy od stycznia 2027, po indywidualnym potwierdzeniu terminu i zakresu. Ustalamy przekazanie dokumentów i nowy model współpracy. Audyt, weryfikację historycznych ksiąg i poprawianie zaległości wyceniamy osobno. Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą."
+        },
+        {
+          "q": "Czy obsługujecie estoński CIT, KSeF, VAT-OSS i sprzedaż zagraniczną?",
+          "a": "Tak. Wspieramy spółki w estońskim CIT, przygotowaniu do KSeF, VAT-OSS, marketplace, Amazon FBA, sprzedaży zagranicznej, prowizjach, zwrotach i raportowaniu rentowności."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "zmiana-biura-rachunkowego.html",
+      "width": 360,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/zmiana-biura-rachunkowego.html",
+      "title": "Zmiana biura rachunkowego od stycznia 2027 | Pełne księgi",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy mogę rozpocząć obsługę od stycznia 2027?",
+          "a": "Nowe przejęcia pełnej księgowości planujemy od stycznia 2027. Termin i zakres potwierdzamy indywidualnie po wstępnej analizie firmy, dokumentów, sald i zaległości. Samo zgłoszenie nie oznacza przyjęcia do obsługi. Nie przejmujemy obecnie bieżącej księgowości JDG."
+        },
+        {
+          "q": "Kiedy wypowiedzieć umowę obecnemu biuru?",
+          "a": "Sprawdź okres, formę i warunki wypowiedzenia w swojej umowie oraz uzgodnij datę zakończenia obsługi. Nie ma jednego terminu odpowiedniego dla każdej umowy. Zanim zaplanujesz zmianę, potwierdź z nowym biurem możliwość rozpoczęcia współpracy i podział obowiązków."
+        },
+        {
+          "q": "Jak przekazać księgi i dokumenty?",
+          "a": "Uzgodnij listę oraz format eksportów: księgi, plan kont, rejestry, deklaracje, JPK i UPO, środki trwałe, umowy i dokumenty źródłowe. W protokole przekazania zapisz daty, zakres otrzymanych danych i braki. Dostępy i upoważnienia ustalamy osobno, bez przekazywania cudzych haseł."
+        },
+        {
+          "q": "Jakie salda, rozrachunki i raporty są potrzebne?",
+          "a": "Przygotuj zestawienie obrotów i sald, należności i zobowiązań, rozliczenia banków, podatków, pożyczek i wspólników na uzgodniony dzień. Wskaż pozycje nieuzgodnione i dostępne raporty zarządcze. Ustalamy, kiedy dotrą końcowe salda za 2026 oraz jak uwzględnić późniejsze korekty."
+        },
+        {
+          "q": "Kto zamyka 2026 rok i przygotowuje sprawozdanie oraz CIT-8?",
+          "a": "W ramach przejęcia księgowości od stycznia 2027 Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026 rok. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą, wraz z terminami i podziałem odpowiedzialności. Odrębnie płatne pozostają audyt, weryfikacja ksiąg i korekty; nie obejmują one przejęcia wskazanych obowiązków rocznych."
+        },
+        {
+          "q": "Jak zapewnić ciągłość kadr i płac?",
+          "a": "Ustalamy ostatni okres rozliczany przez dotychczasowe biuro i pierwszy okres nowej obsługi. Lista przekazania obejmuje dokumentację pracowniczą, listy płac, zgłoszenia i rozliczenia ZUS, urlopy, ewidencje czasu pracy oraz otwarte sprawy. Zakres kadr i odpowiedzialność za roczne informacje pracownicze uzgadniamy osobno."
+        },
+        {
+          "q": "Czy audyt startowy i poprawa zaległości są w cenie przejęcia?",
+          "a": "Nie są automatycznym bezpłatnym elementem umowy. Audyt, weryfikacja historycznych ksiąg i poprawianie zaległości mają oddzielnie uzgadniany zakres, wycenę i termin. Wstępna analiza informacji o firmie służy ocenie możliwości współpracy, a nie potwierdzeniu poprawności wcześniejszych ksiąg."
+        },
+        {
+          "q": "Czy po zmianie otrzymamy raporty zarządcze i integrację z systemami?",
+          "a": "Możemy uzgodnić raportowanie zarządcze, controlling oraz integrację danych finansowych z systemami sprzedażowo-magazynowymi. Zakres zależy od pakietu, jakości danych i dodatkowych ustaleń. Dotyczy to szczególnie produkcji, hurtowni i e-commerce."
+        },
+        {
+          "q": "Czy przejmujecie księgowość spółek spoza Wrocławia?",
+          "a": "Tak, współpracujemy online ze spółkami i innymi podmiotami prowadzącymi pełne księgi z całej Polski. Możliwość przejęcia od stycznia 2027 oraz zakres każdej współpracy potwierdzamy indywidualnie."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy mogę rozpocząć obsługę od stycznia 2027?",
+          "a": "Nowe przejęcia pełnej księgowości planujemy od stycznia 2027. Termin i zakres potwierdzamy indywidualnie po wstępnej analizie firmy, dokumentów, sald i zaległości. Samo zgłoszenie nie oznacza przyjęcia do obsługi. Nie przejmujemy obecnie bieżącej księgowości JDG."
+        },
+        {
+          "q": "Kiedy wypowiedzieć umowę obecnemu biuru?",
+          "a": "Sprawdź okres, formę i warunki wypowiedzenia w swojej umowie oraz uzgodnij datę zakończenia obsługi. Nie ma jednego terminu odpowiedniego dla każdej umowy. Zanim zaplanujesz zmianę, potwierdź z nowym biurem możliwość rozpoczęcia współpracy i podział obowiązków."
+        },
+        {
+          "q": "Jak przekazać księgi i dokumenty?",
+          "a": "Uzgodnij listę oraz format eksportów: księgi, plan kont, rejestry, deklaracje, JPK i UPO, środki trwałe, umowy i dokumenty źródłowe. W protokole przekazania zapisz daty, zakres otrzymanych danych i braki. Dostępy i upoważnienia ustalamy osobno, bez przekazywania cudzych haseł."
+        },
+        {
+          "q": "Jakie salda, rozrachunki i raporty są potrzebne?",
+          "a": "Przygotuj zestawienie obrotów i sald, należności i zobowiązań, rozliczenia banków, podatków, pożyczek i wspólników na uzgodniony dzień. Wskaż pozycje nieuzgodnione i dostępne raporty zarządcze. Ustalamy, kiedy dotrą końcowe salda za 2026 oraz jak uwzględnić późniejsze korekty."
+        },
+        {
+          "q": "Kto zamyka 2026 rok i przygotowuje sprawozdanie oraz CIT-8?",
+          "a": "W ramach przejęcia księgowości od stycznia 2027 Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026 rok. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą, wraz z terminami i podziałem odpowiedzialności. Odrębnie płatne pozostają audyt, weryfikacja ksiąg i korekty; nie obejmują one przejęcia wskazanych obowiązków rocznych."
+        },
+        {
+          "q": "Jak zapewnić ciągłość kadr i płac?",
+          "a": "Ustalamy ostatni okres rozliczany przez dotychczasowe biuro i pierwszy okres nowej obsługi. Lista przekazania obejmuje dokumentację pracowniczą, listy płac, zgłoszenia i rozliczenia ZUS, urlopy, ewidencje czasu pracy oraz otwarte sprawy. Zakres kadr i odpowiedzialność za roczne informacje pracownicze uzgadniamy osobno."
+        },
+        {
+          "q": "Czy audyt startowy i poprawa zaległości są w cenie przejęcia?",
+          "a": "Nie są automatycznym bezpłatnym elementem umowy. Audyt, weryfikacja historycznych ksiąg i poprawianie zaległości mają oddzielnie uzgadniany zakres, wycenę i termin. Wstępna analiza informacji o firmie służy ocenie możliwości współpracy, a nie potwierdzeniu poprawności wcześniejszych ksiąg."
+        },
+        {
+          "q": "Czy po zmianie otrzymamy raporty zarządcze i integrację z systemami?",
+          "a": "Możemy uzgodnić raportowanie zarządcze, controlling oraz integrację danych finansowych z systemami sprzedażowo-magazynowymi. Zakres zależy od pakietu, jakości danych i dodatkowych ustaleń. Dotyczy to szczególnie produkcji, hurtowni i e-commerce."
+        },
+        {
+          "q": "Czy przejmujecie księgowość spółek spoza Wrocławia?",
+          "a": "Tak, współpracujemy online ze spółkami i innymi podmiotami prowadzącymi pełne księgi z całej Polski. Możliwość przejęcia od stycznia 2027 oraz zakres każdej współpracy potwierdzamy indywidualnie."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "blog/zmiana-biura.html",
+      "width": 360,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/blog/zmiana-biura.html",
+      "title": "Zmiana biura rachunkowego krok po kroku | Poradnik 2026/2027",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak. Zmiana w trakcie roku jest możliwa. Trzeba jednak ustalić datę przejęcia, zakres odpowiedzialności poprzedniego i nowego biura oraz listę dokumentów do przekazania."
+        },
+        {
+          "q": "Czy nowe biuro odpowiada za błędy poprzedniego biura?",
+          "a": "Nowe biuro nie przejmuje automatycznie odpowiedzialności za wcześniejsze błędy. Może jednak pomóc je zidentyfikować, uporządkować dokumenty i zaproponować dalsze kroki."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości spółki z o.o.?",
+          "a": "To zależy od stanu dokumentów i skali spółki. Przy uporządkowanych danych proces może być szybki, ale przy zaległościach lub niejasnych rozrachunkach potrzebny jest dodatkowy czas na audyt i wyjaśnienia."
+        },
+        {
+          "q": "Jakie dokumenty trzeba przekazać nowemu biuru?",
+          "a": "Najczęściej są to księgi, deklaracje, JPK, rejestry VAT, salda rozrachunków, środki trwałe, dokumenty kadrowe, umowy i dostępy do systemów. Dokładna lista zależy od rodzaju działalności."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak. Zmiana w trakcie roku jest możliwa. Trzeba jednak ustalić datę przejęcia, zakres odpowiedzialności poprzedniego i nowego biura oraz listę dokumentów do przekazania."
+        },
+        {
+          "q": "Czy nowe biuro odpowiada za błędy poprzedniego biura?",
+          "a": "Nowe biuro nie przejmuje automatycznie odpowiedzialności za wcześniejsze błędy. Może jednak pomóc je zidentyfikować, uporządkować dokumenty i zaproponować dalsze kroki."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości spółki z o.o.?",
+          "a": "To zależy od stanu dokumentów i skali spółki. Przy uporządkowanych danych proces może być szybki, ale przy zaległościach lub niejasnych rozrachunkach potrzebny jest dodatkowy czas na audyt i wyjaśnienia."
+        },
+        {
+          "q": "Jakie dokumenty trzeba przekazać nowemu biuru?",
+          "a": "Najczęściej są to księgi, deklaracje, JPK, rejestry VAT, salda rozrachunków, środki trwałe, dokumenty kadrowe, umowy i dostępy do systemów. Dokładna lista zależy od rodzaju działalności."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "blog/audyt-ksiegowosci-przed-zmiana-biura.html",
+      "width": 360,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/blog/audyt-ksiegowosci-przed-zmiana-biura.html",
+      "title": "Audyt księgowości przed zmianą biura | Checklista",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy trzeba robić audyt księgowości przed zmianą biura?",
+          "a": "Nie jest to obowiązek, ale w praktyce bardzo pomaga. Audyt pozwala sprawdzić kompletność dokumentów, rozrachunki, ewidencje podatkowe i jakość danych przed przejęciem księgowości."
+        },
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak, zmiana w trakcie roku jest możliwa. Kluczowe jest dobre przekazanie danych, ustalenie stanu rozrachunków oraz jasne określenie, kto odpowiada za wcześniejsze okresy."
+        },
+        {
+          "q": "Co jest największym problemem przy zmianie biura?",
+          "a": "Najczęściej nie sama umowa z nowym biurem, ale braki w danych: nieuzgodnione salda, brak eksportów, dokumenty bez opisów, niejasne korekty i zaległe wyjaśnienia."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości?",
+          "a": "To zależy od jakości danych. Gdy dokumenty, eksporty i rozrachunki są kompletne, przejęcie przebiega znacznie szybciej. Gdy są braki, najpierw trzeba przygotować listę uzupełnień."
+        },
+        {
+          "q": "Czy audyt oznacza, że ktoś popełnił błędy?",
+          "a": "Nie zawsze. Audyt ma przede wszystkim uporządkować stan księgowości. Czasem potwierdza, że wszystko jest w porządku, a czasem pokazuje obszary wymagające poprawy."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy trzeba robić audyt księgowości przed zmianą biura?",
+          "a": "Nie jest to obowiązek, ale w praktyce bardzo pomaga. Audyt pozwala sprawdzić kompletność dokumentów, rozrachunki, ewidencje podatkowe i jakość danych przed przejęciem księgowości."
+        },
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak, zmiana w trakcie roku jest możliwa. Kluczowe jest dobre przekazanie danych, ustalenie stanu rozrachunków oraz jasne określenie, kto odpowiada za wcześniejsze okresy."
+        },
+        {
+          "q": "Co jest największym problemem przy zmianie biura?",
+          "a": "Najczęściej nie sama umowa z nowym biurem, ale braki w danych: nieuzgodnione salda, brak eksportów, dokumenty bez opisów, niejasne korekty i zaległe wyjaśnienia."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości?",
+          "a": "To zależy od jakości danych. Gdy dokumenty, eksporty i rozrachunki są kompletne, przejęcie przebiega znacznie szybciej. Gdy są braki, najpierw trzeba przygotować listę uzupełnień."
+        },
+        {
+          "q": "Czy audyt oznacza, że ktoś popełnił błędy?",
+          "a": "Nie zawsze. Audyt ma przede wszystkim uporządkować stan księgowości. Czasem potwierdza, że wszystko jest w porządku, a czasem pokazuje obszary wymagające poprawy."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "zmiana-biura-rachunkowego-spolka-z-oo.html",
+      "width": 360,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/zmiana-biura-rachunkowego-spolka-z-oo.html",
+      "title": "Zmiana biura rachunkowego spółka z o.o. | Pracownia Rachunkowości",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak. Zmiana biura rachunkowego w trakcie roku jest możliwa. Kluczowe jest dobre przekazanie dokumentów, sprawdzenie deklaracji, rozrachunków, JPK, sald i terminów, żeby nowa obsługa nie zaczynała od niepełnych danych."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga przejąć księgowość po poprzednim biurze?",
+          "a": "Tak. Nowe przejęcia pełnej księgowości planujemy od stycznia 2027, po potwierdzeniu terminu i zakresu. Audyt, weryfikację ksiąg i korekty wyceniamy osobno. Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą."
+        },
+        {
+          "q": "Jakie dokumenty są potrzebne przy zmianie biura rachunkowego?",
+          "a": "Najczęściej potrzebne są księgi, rejestry VAT, deklaracje, JPK, potwierdzenia wysyłki, rozrachunki, zestawienia sald, dokumenty kadrowe, umowy oraz informacje o dostępach do systemów."
+        },
+        {
+          "q": "Czy zmiana biura oznacza przerwę w księgowości?",
+          "a": "Nie powinna. Dlatego przy przejęciu obsługi ustalamy terminy, odpowiedzialności i kolejność działań. Celem jest zachowanie ciągłości rozliczeń oraz szybkie wykrycie obszarów, które wymagają uporządkowania."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości obsługuje zmianę biura rachunkowego online?",
+          "a": "Tak. Obsługujemy spółki z o.o. we Wrocławiu i online. Przekazanie dokumentów, ustalenie procesu, komunikacja i wdrożenie obiegu dokumentów mogą odbywać się zdalnie."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak. Zmiana biura rachunkowego w trakcie roku jest możliwa. Kluczowe jest dobre przekazanie dokumentów, sprawdzenie deklaracji, rozrachunków, JPK, sald i terminów, żeby nowa obsługa nie zaczynała od niepełnych danych."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga przejąć księgowość po poprzednim biurze?",
+          "a": "Tak. Nowe przejęcia pełnej księgowości planujemy od stycznia 2027, po potwierdzeniu terminu i zakresu. Audyt, weryfikację ksiąg i korekty wyceniamy osobno. Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą."
+        },
+        {
+          "q": "Jakie dokumenty są potrzebne przy zmianie biura rachunkowego?",
+          "a": "Najczęściej potrzebne są księgi, rejestry VAT, deklaracje, JPK, potwierdzenia wysyłki, rozrachunki, zestawienia sald, dokumenty kadrowe, umowy oraz informacje o dostępach do systemów."
+        },
+        {
+          "q": "Czy zmiana biura oznacza przerwę w księgowości?",
+          "a": "Nie powinna. Dlatego przy przejęciu obsługi ustalamy terminy, odpowiedzialności i kolejność działań. Celem jest zachowanie ciągłości rozliczeń oraz szybkie wykrycie obszarów, które wymagają uporządkowania."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości obsługuje zmianę biura rachunkowego online?",
+          "a": "Tak. Obsługujemy spółki z o.o. we Wrocławiu i online. Przekazanie dokumentów, ustalenie procesu, komunikacja i wdrożenie obiegu dokumentów mogą odbywać się zdalnie."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "oferta.html",
+      "width": 360,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/oferta.html",
+      "title": "Oferta biura rachunkowego: księgowość, kadry i controlling | Pracownia Rachunkowości",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy ceny pakietów są cenami ostatecznymi?",
+          "a": "Nie. Ceny pakietów są cenami od i pomagają określić punkt wyjścia. Dokładny zakres oraz wycena zależą od sytuacji firmy i uzgodnionych usług."
+        },
+        {
+          "q": "Od czego zależy cena księgowości?",
+          "a": "Przede wszystkim od formy prawnej i sposobu opodatkowania, modelu biznesowego, liczby zapisów księgowych oraz wybranego pakietu i dodatkowego zakresu współpracy."
+        },
+        {
+          "q": "Czym różnią się Start, Rozwój i Strategia?",
+          "a": "Start obejmuje standardową pełną księgowość, Rozwój rozszerza ją o wybrane raporty i bardziej złożone rozliczenia, a Strategia łączy księgowość z rozbudowanym raportowaniem i wsparciem zarządczym."
+        },
+        {
+          "q": "Czy raporty controllingowe są dostępne poza Strategią?",
+          "a": "Tak. Raport może być elementem wybranego pakietu albo osobnym rozszerzeniem współpracy. Zakres raportów ustalamy przed rozpoczęciem współpracy."
+        },
+        {
+          "q": "Czy Pracownia obsługuje VAT OSS?",
+          "a": "Tak. Obsługa procedury VAT OSS jest uwzględniona w zakresie pakietu Rozwój."
+        },
+        {
+          "q": "Czy Pracownia obsługuje estoński CIT?",
+          "a": "Tak. Pracownia obsługuje księgowość spółek korzystających z estońskiego CIT; szczegóły zakresu są dobierane do sytuacji firmy."
+        },
+        {
+          "q": "Czy Pracownia obsługuje fundacje rodzinne?",
+          "a": "Tak. Obsługa księgowa fundacji rodzinnych może być elementem indywidualnie ustalonego zakresu współpracy."
+        },
+        {
+          "q": "Ile kosztują kadry i płace?",
+          "a": "Umowy cywilnoprawne i powołanie kosztują 50 zł netto miesięcznie za osobę, a umowa o pracę 70 zł netto miesięcznie za pracownika. Dodatkowe lub nietypowe czynności mogą podlegać osobnej wycenie."
+        },
+        {
+          "q": "Czy można zmienić biuro w trakcie roku?",
+          "a": "Zmiana biura w trakcie roku jest możliwa w zależności od sytuacji, jednak obecnie przyjmujemy zgłoszenia na rozpoczęcie pełnej księgowości od stycznia 2027 r. Dokładny termin ustalamy po analizie dokumentów i rozrachunków. Audyt oraz controlling możemy omówić osobno."
+        },
+        {
+          "q": "Czy można zamówić sam controlling lub analizę finansową?",
+          "a": "Tak. Raporty mogą być osobnym rozszerzeniem współpracy, a jednorazowa analiza finansowa jest dostępna jako odrębna usługa."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy ceny pakietów są cenami ostatecznymi?",
+          "a": "Nie. Ceny pakietów są cenami od i pomagają określić punkt wyjścia. Dokładny zakres oraz wycena zależą od sytuacji firmy i uzgodnionych usług."
+        },
+        {
+          "q": "Od czego zależy cena księgowości?",
+          "a": "Przede wszystkim od formy prawnej i sposobu opodatkowania, modelu biznesowego, liczby zapisów księgowych oraz wybranego pakietu i dodatkowego zakresu współpracy."
+        },
+        {
+          "q": "Czym różnią się Start, Rozwój i Strategia?",
+          "a": "Start obejmuje standardową pełną księgowość, Rozwój rozszerza ją o wybrane raporty i bardziej złożone rozliczenia, a Strategia łączy księgowość z rozbudowanym raportowaniem i wsparciem zarządczym."
+        },
+        {
+          "q": "Czy raporty controllingowe są dostępne poza Strategią?",
+          "a": "Tak. Raport może być elementem wybranego pakietu albo osobnym rozszerzeniem współpracy. Zakres raportów ustalamy przed rozpoczęciem współpracy."
+        },
+        {
+          "q": "Czy Pracownia obsługuje VAT OSS?",
+          "a": "Tak. Obsługa procedury VAT OSS jest uwzględniona w zakresie pakietu Rozwój."
+        },
+        {
+          "q": "Czy Pracownia obsługuje estoński CIT?",
+          "a": "Tak. Pracownia obsługuje księgowość spółek korzystających z estońskiego CIT; szczegóły zakresu są dobierane do sytuacji firmy."
+        },
+        {
+          "q": "Czy Pracownia obsługuje fundacje rodzinne?",
+          "a": "Tak. Obsługa księgowa fundacji rodzinnych może być elementem indywidualnie ustalonego zakresu współpracy."
+        },
+        {
+          "q": "Ile kosztują kadry i płace?",
+          "a": "Umowy cywilnoprawne i powołanie kosztują 50 zł netto miesięcznie za osobę, a umowa o pracę 70 zł netto miesięcznie za pracownika. Dodatkowe lub nietypowe czynności mogą podlegać osobnej wycenie."
+        },
+        {
+          "q": "Czy można zmienić biuro w trakcie roku?",
+          "a": "Zmiana biura w trakcie roku jest możliwa w zależności od sytuacji, jednak obecnie przyjmujemy zgłoszenia na rozpoczęcie pełnej księgowości od stycznia 2027 r. Dokładny termin ustalamy po analizie dokumentów i rozrachunków. Audyt oraz controlling możemy omówić osobno."
+        },
+        {
+          "q": "Czy można zamówić sam controlling lub analizę finansową?",
+          "a": "Tak. Raporty mogą być osobnym rozszerzeniem współpracy, a jednorazowa analiza finansowa jest dostępna jako odrębna usługa."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "ksiegowosc-spolka-z-oo.html",
+      "width": 360,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/ksiegowosc-spolka-z-oo.html",
+      "title": "Księgowość spółki z o.o. Wrocław | Pracownia Rachunkowości",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy Pracownia Rachunkowości prowadzi księgowość spółek z o.o. we Wrocławiu?",
+          "a": "Tak. Pracownia Rachunkowości to biuro rachunkowe z Wrocławia specjalizujące się w pełnej księgowości spółek z o.o., raportach zarządczych, controllingu, KSeF, estońskim CIT oraz obsłudze online."
+        },
+        {
+          "q": "Czym Pracownia Rachunkowości różni się od typowego biura rachunkowego?",
+          "a": "Poza bieżącą księgowością kładziemy nacisk na dane dla zarządu: raporty KPI, cash-flow, rentowność, należności, zobowiązania i ryzyka podatkowe. Dzięki temu księgowość wspiera decyzje, a nie tylko rozliczenia."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości spółki z o.o. z poprzedniego biura?",
+          "a": "Najczęściej 2–4 tygodnie. Zależy to od kompletności danych, jakości poprzednich ksiąg, liczby dokumentów i tego, czy są zaległości w deklaracjach lub sprawozdaniach."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga przy estońskim CIT?",
+          "a": "Tak, ale najpierw sprawdzamy, czy to faktycznie korzystne. Estoński CIT jest dobry przede wszystkim wtedy, gdy spółka reinwestuje zysk i spełnia warunki ustawowe."
+        },
+        {
+          "q": "Co obejmuje raport zarządczy dla spółki z o.o.?",
+          "a": "Zakres zależy od pakietu i spółki. Standardowo analizujemy przychody, koszty, marżę, cash-flow, należności, zobowiązania i najważniejsze odchylenia."
+        },
+        {
+          "q": "Czy obsługujecie VAT-OSS, Amazon FBA i sprzedaż zagraniczną?",
+          "a": "Tak. Obsługujemy spółki e-commerce, marketplace, VAT-OSS, Amazon FBA, rozliczenia prowizji, waluty, zwroty i sprzedaż do innych krajów UE."
+        },
+        {
+          "q": "Czy obsługujecie spółki z całej Polski?",
+          "a": "Tak. Pracujemy zdalnie: dokumenty elektronicznie, rozmowy online, kontakt telefoniczny i mailowy. Biuro znajduje się we Wrocławiu."
+        },
+        {
+          "q": "Czy można zacząć od audytu obecnej księgowości?",
+          "a": "Tak. Przy zmianie biura to najbezpieczniejszy start. Audyt pozwala sprawdzić, co trzeba uporządkować przed przejęciem bieżącej obsługi."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy Pracownia Rachunkowości prowadzi księgowość spółek z o.o. we Wrocławiu?",
+          "a": "Tak. Pracownia Rachunkowości to biuro rachunkowe z Wrocławia specjalizujące się w pełnej księgowości spółek z o.o., raportach zarządczych, controllingu, KSeF, estońskim CIT oraz obsłudze online."
+        },
+        {
+          "q": "Czym Pracownia Rachunkowości różni się od typowego biura rachunkowego?",
+          "a": "Poza bieżącą księgowością kładziemy nacisk na dane dla zarządu: raporty KPI, cash-flow, rentowność, należności, zobowiązania i ryzyka podatkowe. Dzięki temu księgowość wspiera decyzje, a nie tylko rozliczenia."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości spółki z o.o. z poprzedniego biura?",
+          "a": "Najczęściej 2–4 tygodnie. Zależy to od kompletności danych, jakości poprzednich ksiąg, liczby dokumentów i tego, czy są zaległości w deklaracjach lub sprawozdaniach."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga przy estońskim CIT?",
+          "a": "Tak, ale najpierw sprawdzamy, czy to faktycznie korzystne. Estoński CIT jest dobry przede wszystkim wtedy, gdy spółka reinwestuje zysk i spełnia warunki ustawowe."
+        },
+        {
+          "q": "Co obejmuje raport zarządczy dla spółki z o.o.?",
+          "a": "Zakres zależy od pakietu i spółki. Standardowo analizujemy przychody, koszty, marżę, cash-flow, należności, zobowiązania i najważniejsze odchylenia."
+        },
+        {
+          "q": "Czy obsługujecie VAT-OSS, Amazon FBA i sprzedaż zagraniczną?",
+          "a": "Tak. Obsługujemy spółki e-commerce, marketplace, VAT-OSS, Amazon FBA, rozliczenia prowizji, waluty, zwroty i sprzedaż do innych krajów UE."
+        },
+        {
+          "q": "Czy obsługujecie spółki z całej Polski?",
+          "a": "Tak. Pracujemy zdalnie: dokumenty elektronicznie, rozmowy online, kontakt telefoniczny i mailowy. Biuro znajduje się we Wrocławiu."
+        },
+        {
+          "q": "Czy można zacząć od audytu obecnej księgowości?",
+          "a": "Tak. Przy zmianie biura to najbezpieczniejszy start. Audyt pozwala sprawdzić, co trzeba uporządkować przed przejęciem bieżącej obsługi."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "zewnetrzny-dzial-finansowy.html",
+      "width": 360,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/zewnetrzny-dzial-finansowy.html",
+      "title": "Zewnętrzny dział finansowy | Pracownia Rachunkowości",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czym zewnętrzny dział finansowy różni się od samej księgowości?",
+          "a": "Pełna księgowość jest podstawą. W szerszym zakresie łączymy ją z raportowaniem zarządczym, controllingiem oraz koordynacją rozliczeń podatkowych i kadr. Ustalamy, jakie dane mają trafić do zarządu, kto je przygotowuje i jak często omawiamy wyniki. Zakres zależy od wybranego pakietu i uzgodnionych rozszerzeń."
+        },
+        {
+          "q": "Czy to rozwiązanie dla firmy produkcyjnej lub hurtowni?",
+          "a": "Tak, jeżeli potrzebujesz połączyć księgowość z informacją o kosztach, marży, zapasach i płynności. Przed ustaleniem zakresu sprawdzamy dostępność danych z magazynu, sprzedaży i produkcji. Szczegółowość analiz zależy od jakości ewidencji i możliwości używanego systemu."
+        },
+        {
+          "q": "Czy każdy pakiet obejmuje controlling i kadry?",
+          "a": "Nie. Start obejmuje standardową pełną księgowość. Rozwój dodaje wybrane raporty i obsługę bardziej złożonych rozliczeń. Strategia obejmuje rozbudowane raportowanie i wsparcie zarządcze. Kadry i płace oraz dodatkowe projekty controllingowe ustalamy i wyceniamy zgodnie z ofertą."
+        },
+        {
+          "q": "Mamy własną księgowość. Czy możemy zlecić same raporty?",
+          "a": "Tak. Raporty i controlling mogą być osobnym rozszerzeniem współpracy. Dostępna jest też jednorazowa analiza finansowa. Najpierw ustalamy pytania zarządu oraz dane, które może przekazywać obecna księgowość."
+        },
+        {
+          "q": "Kiedy można przekazać księgowość?",
+          "a": "Obecnie zbieramy zgłoszenia na rozpoczęcie pełnej księgowości od stycznia 2027 roku. Dokładny termin ustalamy po wstępnej ocenie dokumentów, sald i rozrachunków. Przed zmianą możemy osobno omówić audyt lub uporządkowanie ksiąg. Samodzielne raportowanie, controlling i audyt mają oddzielnie ustalany zakres, wycenę i termin."
+        },
+        {
+          "q": "Kto odpowiada za doradztwo podatkowe?",
+          "a": "Pracownia prowadzi księgowość i koordynuje bieżące rozliczenia w uzgodnionym zakresie. Gdy potrzebne jest doradztwo podatkowe, realizuje je współpracujący uprawniony doradca podatkowy. Zakres jego udziału uzgadniamy oddzielnie."
+        },
+        {
+          "q": "Co przygotować do pierwszej rozmowy i wyceny?",
+          "a": "Wystarczy krótki opis działalności, forma prawna, orientacyjna liczba dokumentów i pracowników, używane systemy oraz informacja, czego dziś brakuje zarządowi. Napisz też, kiedy planujesz rozpocząć współpracę. Na pierwszym etapie nie potrzebujemy pełnego archiwum ksiąg ani danych pracowników."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czym zewnętrzny dział finansowy różni się od samej księgowości?",
+          "a": "Pełna księgowość jest podstawą. W szerszym zakresie łączymy ją z raportowaniem zarządczym, controllingiem oraz koordynacją rozliczeń podatkowych i kadr. Ustalamy, jakie dane mają trafić do zarządu, kto je przygotowuje i jak często omawiamy wyniki. Zakres zależy od wybranego pakietu i uzgodnionych rozszerzeń."
+        },
+        {
+          "q": "Czy to rozwiązanie dla firmy produkcyjnej lub hurtowni?",
+          "a": "Tak, jeżeli potrzebujesz połączyć księgowość z informacją o kosztach, marży, zapasach i płynności. Przed ustaleniem zakresu sprawdzamy dostępność danych z magazynu, sprzedaży i produkcji. Szczegółowość analiz zależy od jakości ewidencji i możliwości używanego systemu."
+        },
+        {
+          "q": "Czy każdy pakiet obejmuje controlling i kadry?",
+          "a": "Nie. Start obejmuje standardową pełną księgowość. Rozwój dodaje wybrane raporty i obsługę bardziej złożonych rozliczeń. Strategia obejmuje rozbudowane raportowanie i wsparcie zarządcze. Kadry i płace oraz dodatkowe projekty controllingowe ustalamy i wyceniamy zgodnie z ofertą."
+        },
+        {
+          "q": "Mamy własną księgowość. Czy możemy zlecić same raporty?",
+          "a": "Tak. Raporty i controlling mogą być osobnym rozszerzeniem współpracy. Dostępna jest też jednorazowa analiza finansowa. Najpierw ustalamy pytania zarządu oraz dane, które może przekazywać obecna księgowość."
+        },
+        {
+          "q": "Kiedy można przekazać księgowość?",
+          "a": "Obecnie zbieramy zgłoszenia na rozpoczęcie pełnej księgowości od stycznia 2027 roku. Dokładny termin ustalamy po wstępnej ocenie dokumentów, sald i rozrachunków. Przed zmianą możemy osobno omówić audyt lub uporządkowanie ksiąg. Samodzielne raportowanie, controlling i audyt mają oddzielnie ustalany zakres, wycenę i termin."
+        },
+        {
+          "q": "Kto odpowiada za doradztwo podatkowe?",
+          "a": "Pracownia prowadzi księgowość i koordynuje bieżące rozliczenia w uzgodnionym zakresie. Gdy potrzebne jest doradztwo podatkowe, realizuje je współpracujący uprawniony doradca podatkowy. Zakres jego udziału uzgadniamy oddzielnie."
+        },
+        {
+          "q": "Co przygotować do pierwszej rozmowy i wyceny?",
+          "a": "Wystarczy krótki opis działalności, forma prawna, orientacyjna liczba dokumentów i pracowników, używane systemy oraz informacja, czego dziś brakuje zarządowi. Napisz też, kiedy planujesz rozpocząć współpracę. Na pierwszym etapie nie potrzebujemy pełnego archiwum ksiąg ani danych pracowników."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "index.html",
+      "width": 390,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/",
+      "title": "Biuro rachunkowe online dla spółek z o.o. | Pracownia Rachunkowości",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy Pracownia Rachunkowości to biuro rachunkowe dla spółek z o.o.?",
+          "a": "Tak. Pracownia Rachunkowości specjalizuje się w pełnej księgowości spółek z o.o., raportach zarządczych, controllingu, estońskim CIT, KSeF oraz obsłudze firm e-commerce i B2B."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości obsługuje spółki z całej Polski online?",
+          "a": "Tak. Obsługujemy spółki z całej Polski w modelu online. Siedziba biura znajduje się we Wrocławiu przy ul. Trawowej 19/1, dlatego możliwa jest również współpraca lokalna."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości przygotowuje raporty zarządcze i cash-flow?",
+          "a": "Tak. Przy obsłudze spółek z o.o. możemy przygotowywać miesięczne raporty KPI, cash-flow, zestawienia należności i zobowiązań, analizę kosztów oraz dane potrzebne zarządowi do decyzji."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga zmienić biuro rachunkowe?",
+          "a": "Tak. Nowe przejęcia pełnej księgowości planujemy od stycznia 2027, po indywidualnym potwierdzeniu terminu i zakresu. Ustalamy przekazanie dokumentów i nowy model współpracy. Audyt, weryfikację historycznych ksiąg i poprawianie zaległości wyceniamy osobno. Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą."
+        },
+        {
+          "q": "Czy obsługujecie estoński CIT, KSeF, VAT-OSS i sprzedaż zagraniczną?",
+          "a": "Tak. Wspieramy spółki w estońskim CIT, przygotowaniu do KSeF, VAT-OSS, marketplace, Amazon FBA, sprzedaży zagranicznej, prowizjach, zwrotach i raportowaniu rentowności."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy Pracownia Rachunkowości to biuro rachunkowe dla spółek z o.o.?",
+          "a": "Tak. Pracownia Rachunkowości specjalizuje się w pełnej księgowości spółek z o.o., raportach zarządczych, controllingu, estońskim CIT, KSeF oraz obsłudze firm e-commerce i B2B."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości obsługuje spółki z całej Polski online?",
+          "a": "Tak. Obsługujemy spółki z całej Polski w modelu online. Siedziba biura znajduje się we Wrocławiu przy ul. Trawowej 19/1, dlatego możliwa jest również współpraca lokalna."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości przygotowuje raporty zarządcze i cash-flow?",
+          "a": "Tak. Przy obsłudze spółek z o.o. możemy przygotowywać miesięczne raporty KPI, cash-flow, zestawienia należności i zobowiązań, analizę kosztów oraz dane potrzebne zarządowi do decyzji."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga zmienić biuro rachunkowe?",
+          "a": "Tak. Nowe przejęcia pełnej księgowości planujemy od stycznia 2027, po indywidualnym potwierdzeniu terminu i zakresu. Ustalamy przekazanie dokumentów i nowy model współpracy. Audyt, weryfikację historycznych ksiąg i poprawianie zaległości wyceniamy osobno. Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą."
+        },
+        {
+          "q": "Czy obsługujecie estoński CIT, KSeF, VAT-OSS i sprzedaż zagraniczną?",
+          "a": "Tak. Wspieramy spółki w estońskim CIT, przygotowaniu do KSeF, VAT-OSS, marketplace, Amazon FBA, sprzedaży zagranicznej, prowizjach, zwrotach i raportowaniu rentowności."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "zmiana-biura-rachunkowego.html",
+      "width": 390,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/zmiana-biura-rachunkowego.html",
+      "title": "Zmiana biura rachunkowego od stycznia 2027 | Pełne księgi",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy mogę rozpocząć obsługę od stycznia 2027?",
+          "a": "Nowe przejęcia pełnej księgowości planujemy od stycznia 2027. Termin i zakres potwierdzamy indywidualnie po wstępnej analizie firmy, dokumentów, sald i zaległości. Samo zgłoszenie nie oznacza przyjęcia do obsługi. Nie przejmujemy obecnie bieżącej księgowości JDG."
+        },
+        {
+          "q": "Kiedy wypowiedzieć umowę obecnemu biuru?",
+          "a": "Sprawdź okres, formę i warunki wypowiedzenia w swojej umowie oraz uzgodnij datę zakończenia obsługi. Nie ma jednego terminu odpowiedniego dla każdej umowy. Zanim zaplanujesz zmianę, potwierdź z nowym biurem możliwość rozpoczęcia współpracy i podział obowiązków."
+        },
+        {
+          "q": "Jak przekazać księgi i dokumenty?",
+          "a": "Uzgodnij listę oraz format eksportów: księgi, plan kont, rejestry, deklaracje, JPK i UPO, środki trwałe, umowy i dokumenty źródłowe. W protokole przekazania zapisz daty, zakres otrzymanych danych i braki. Dostępy i upoważnienia ustalamy osobno, bez przekazywania cudzych haseł."
+        },
+        {
+          "q": "Jakie salda, rozrachunki i raporty są potrzebne?",
+          "a": "Przygotuj zestawienie obrotów i sald, należności i zobowiązań, rozliczenia banków, podatków, pożyczek i wspólników na uzgodniony dzień. Wskaż pozycje nieuzgodnione i dostępne raporty zarządcze. Ustalamy, kiedy dotrą końcowe salda za 2026 oraz jak uwzględnić późniejsze korekty."
+        },
+        {
+          "q": "Kto zamyka 2026 rok i przygotowuje sprawozdanie oraz CIT-8?",
+          "a": "W ramach przejęcia księgowości od stycznia 2027 Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026 rok. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą, wraz z terminami i podziałem odpowiedzialności. Odrębnie płatne pozostają audyt, weryfikacja ksiąg i korekty; nie obejmują one przejęcia wskazanych obowiązków rocznych."
+        },
+        {
+          "q": "Jak zapewnić ciągłość kadr i płac?",
+          "a": "Ustalamy ostatni okres rozliczany przez dotychczasowe biuro i pierwszy okres nowej obsługi. Lista przekazania obejmuje dokumentację pracowniczą, listy płac, zgłoszenia i rozliczenia ZUS, urlopy, ewidencje czasu pracy oraz otwarte sprawy. Zakres kadr i odpowiedzialność za roczne informacje pracownicze uzgadniamy osobno."
+        },
+        {
+          "q": "Czy audyt startowy i poprawa zaległości są w cenie przejęcia?",
+          "a": "Nie są automatycznym bezpłatnym elementem umowy. Audyt, weryfikacja historycznych ksiąg i poprawianie zaległości mają oddzielnie uzgadniany zakres, wycenę i termin. Wstępna analiza informacji o firmie służy ocenie możliwości współpracy, a nie potwierdzeniu poprawności wcześniejszych ksiąg."
+        },
+        {
+          "q": "Czy po zmianie otrzymamy raporty zarządcze i integrację z systemami?",
+          "a": "Możemy uzgodnić raportowanie zarządcze, controlling oraz integrację danych finansowych z systemami sprzedażowo-magazynowymi. Zakres zależy od pakietu, jakości danych i dodatkowych ustaleń. Dotyczy to szczególnie produkcji, hurtowni i e-commerce."
+        },
+        {
+          "q": "Czy przejmujecie księgowość spółek spoza Wrocławia?",
+          "a": "Tak, współpracujemy online ze spółkami i innymi podmiotami prowadzącymi pełne księgi z całej Polski. Możliwość przejęcia od stycznia 2027 oraz zakres każdej współpracy potwierdzamy indywidualnie."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy mogę rozpocząć obsługę od stycznia 2027?",
+          "a": "Nowe przejęcia pełnej księgowości planujemy od stycznia 2027. Termin i zakres potwierdzamy indywidualnie po wstępnej analizie firmy, dokumentów, sald i zaległości. Samo zgłoszenie nie oznacza przyjęcia do obsługi. Nie przejmujemy obecnie bieżącej księgowości JDG."
+        },
+        {
+          "q": "Kiedy wypowiedzieć umowę obecnemu biuru?",
+          "a": "Sprawdź okres, formę i warunki wypowiedzenia w swojej umowie oraz uzgodnij datę zakończenia obsługi. Nie ma jednego terminu odpowiedniego dla każdej umowy. Zanim zaplanujesz zmianę, potwierdź z nowym biurem możliwość rozpoczęcia współpracy i podział obowiązków."
+        },
+        {
+          "q": "Jak przekazać księgi i dokumenty?",
+          "a": "Uzgodnij listę oraz format eksportów: księgi, plan kont, rejestry, deklaracje, JPK i UPO, środki trwałe, umowy i dokumenty źródłowe. W protokole przekazania zapisz daty, zakres otrzymanych danych i braki. Dostępy i upoważnienia ustalamy osobno, bez przekazywania cudzych haseł."
+        },
+        {
+          "q": "Jakie salda, rozrachunki i raporty są potrzebne?",
+          "a": "Przygotuj zestawienie obrotów i sald, należności i zobowiązań, rozliczenia banków, podatków, pożyczek i wspólników na uzgodniony dzień. Wskaż pozycje nieuzgodnione i dostępne raporty zarządcze. Ustalamy, kiedy dotrą końcowe salda za 2026 oraz jak uwzględnić późniejsze korekty."
+        },
+        {
+          "q": "Kto zamyka 2026 rok i przygotowuje sprawozdanie oraz CIT-8?",
+          "a": "W ramach przejęcia księgowości od stycznia 2027 Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026 rok. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą, wraz z terminami i podziałem odpowiedzialności. Odrębnie płatne pozostają audyt, weryfikacja ksiąg i korekty; nie obejmują one przejęcia wskazanych obowiązków rocznych."
+        },
+        {
+          "q": "Jak zapewnić ciągłość kadr i płac?",
+          "a": "Ustalamy ostatni okres rozliczany przez dotychczasowe biuro i pierwszy okres nowej obsługi. Lista przekazania obejmuje dokumentację pracowniczą, listy płac, zgłoszenia i rozliczenia ZUS, urlopy, ewidencje czasu pracy oraz otwarte sprawy. Zakres kadr i odpowiedzialność za roczne informacje pracownicze uzgadniamy osobno."
+        },
+        {
+          "q": "Czy audyt startowy i poprawa zaległości są w cenie przejęcia?",
+          "a": "Nie są automatycznym bezpłatnym elementem umowy. Audyt, weryfikacja historycznych ksiąg i poprawianie zaległości mają oddzielnie uzgadniany zakres, wycenę i termin. Wstępna analiza informacji o firmie służy ocenie możliwości współpracy, a nie potwierdzeniu poprawności wcześniejszych ksiąg."
+        },
+        {
+          "q": "Czy po zmianie otrzymamy raporty zarządcze i integrację z systemami?",
+          "a": "Możemy uzgodnić raportowanie zarządcze, controlling oraz integrację danych finansowych z systemami sprzedażowo-magazynowymi. Zakres zależy od pakietu, jakości danych i dodatkowych ustaleń. Dotyczy to szczególnie produkcji, hurtowni i e-commerce."
+        },
+        {
+          "q": "Czy przejmujecie księgowość spółek spoza Wrocławia?",
+          "a": "Tak, współpracujemy online ze spółkami i innymi podmiotami prowadzącymi pełne księgi z całej Polski. Możliwość przejęcia od stycznia 2027 oraz zakres każdej współpracy potwierdzamy indywidualnie."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "blog/zmiana-biura.html",
+      "width": 390,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/blog/zmiana-biura.html",
+      "title": "Zmiana biura rachunkowego krok po kroku | Poradnik 2026/2027",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak. Zmiana w trakcie roku jest możliwa. Trzeba jednak ustalić datę przejęcia, zakres odpowiedzialności poprzedniego i nowego biura oraz listę dokumentów do przekazania."
+        },
+        {
+          "q": "Czy nowe biuro odpowiada za błędy poprzedniego biura?",
+          "a": "Nowe biuro nie przejmuje automatycznie odpowiedzialności za wcześniejsze błędy. Może jednak pomóc je zidentyfikować, uporządkować dokumenty i zaproponować dalsze kroki."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości spółki z o.o.?",
+          "a": "To zależy od stanu dokumentów i skali spółki. Przy uporządkowanych danych proces może być szybki, ale przy zaległościach lub niejasnych rozrachunkach potrzebny jest dodatkowy czas na audyt i wyjaśnienia."
+        },
+        {
+          "q": "Jakie dokumenty trzeba przekazać nowemu biuru?",
+          "a": "Najczęściej są to księgi, deklaracje, JPK, rejestry VAT, salda rozrachunków, środki trwałe, dokumenty kadrowe, umowy i dostępy do systemów. Dokładna lista zależy od rodzaju działalności."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak. Zmiana w trakcie roku jest możliwa. Trzeba jednak ustalić datę przejęcia, zakres odpowiedzialności poprzedniego i nowego biura oraz listę dokumentów do przekazania."
+        },
+        {
+          "q": "Czy nowe biuro odpowiada za błędy poprzedniego biura?",
+          "a": "Nowe biuro nie przejmuje automatycznie odpowiedzialności za wcześniejsze błędy. Może jednak pomóc je zidentyfikować, uporządkować dokumenty i zaproponować dalsze kroki."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości spółki z o.o.?",
+          "a": "To zależy od stanu dokumentów i skali spółki. Przy uporządkowanych danych proces może być szybki, ale przy zaległościach lub niejasnych rozrachunkach potrzebny jest dodatkowy czas na audyt i wyjaśnienia."
+        },
+        {
+          "q": "Jakie dokumenty trzeba przekazać nowemu biuru?",
+          "a": "Najczęściej są to księgi, deklaracje, JPK, rejestry VAT, salda rozrachunków, środki trwałe, dokumenty kadrowe, umowy i dostępy do systemów. Dokładna lista zależy od rodzaju działalności."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "blog/audyt-ksiegowosci-przed-zmiana-biura.html",
+      "width": 390,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/blog/audyt-ksiegowosci-przed-zmiana-biura.html",
+      "title": "Audyt księgowości przed zmianą biura | Checklista",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy trzeba robić audyt księgowości przed zmianą biura?",
+          "a": "Nie jest to obowiązek, ale w praktyce bardzo pomaga. Audyt pozwala sprawdzić kompletność dokumentów, rozrachunki, ewidencje podatkowe i jakość danych przed przejęciem księgowości."
+        },
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak, zmiana w trakcie roku jest możliwa. Kluczowe jest dobre przekazanie danych, ustalenie stanu rozrachunków oraz jasne określenie, kto odpowiada za wcześniejsze okresy."
+        },
+        {
+          "q": "Co jest największym problemem przy zmianie biura?",
+          "a": "Najczęściej nie sama umowa z nowym biurem, ale braki w danych: nieuzgodnione salda, brak eksportów, dokumenty bez opisów, niejasne korekty i zaległe wyjaśnienia."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości?",
+          "a": "To zależy od jakości danych. Gdy dokumenty, eksporty i rozrachunki są kompletne, przejęcie przebiega znacznie szybciej. Gdy są braki, najpierw trzeba przygotować listę uzupełnień."
+        },
+        {
+          "q": "Czy audyt oznacza, że ktoś popełnił błędy?",
+          "a": "Nie zawsze. Audyt ma przede wszystkim uporządkować stan księgowości. Czasem potwierdza, że wszystko jest w porządku, a czasem pokazuje obszary wymagające poprawy."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy trzeba robić audyt księgowości przed zmianą biura?",
+          "a": "Nie jest to obowiązek, ale w praktyce bardzo pomaga. Audyt pozwala sprawdzić kompletność dokumentów, rozrachunki, ewidencje podatkowe i jakość danych przed przejęciem księgowości."
+        },
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak, zmiana w trakcie roku jest możliwa. Kluczowe jest dobre przekazanie danych, ustalenie stanu rozrachunków oraz jasne określenie, kto odpowiada za wcześniejsze okresy."
+        },
+        {
+          "q": "Co jest największym problemem przy zmianie biura?",
+          "a": "Najczęściej nie sama umowa z nowym biurem, ale braki w danych: nieuzgodnione salda, brak eksportów, dokumenty bez opisów, niejasne korekty i zaległe wyjaśnienia."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości?",
+          "a": "To zależy od jakości danych. Gdy dokumenty, eksporty i rozrachunki są kompletne, przejęcie przebiega znacznie szybciej. Gdy są braki, najpierw trzeba przygotować listę uzupełnień."
+        },
+        {
+          "q": "Czy audyt oznacza, że ktoś popełnił błędy?",
+          "a": "Nie zawsze. Audyt ma przede wszystkim uporządkować stan księgowości. Czasem potwierdza, że wszystko jest w porządku, a czasem pokazuje obszary wymagające poprawy."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "zmiana-biura-rachunkowego-spolka-z-oo.html",
+      "width": 390,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/zmiana-biura-rachunkowego-spolka-z-oo.html",
+      "title": "Zmiana biura rachunkowego spółka z o.o. | Pracownia Rachunkowości",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak. Zmiana biura rachunkowego w trakcie roku jest możliwa. Kluczowe jest dobre przekazanie dokumentów, sprawdzenie deklaracji, rozrachunków, JPK, sald i terminów, żeby nowa obsługa nie zaczynała od niepełnych danych."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga przejąć księgowość po poprzednim biurze?",
+          "a": "Tak. Nowe przejęcia pełnej księgowości planujemy od stycznia 2027, po potwierdzeniu terminu i zakresu. Audyt, weryfikację ksiąg i korekty wyceniamy osobno. Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą."
+        },
+        {
+          "q": "Jakie dokumenty są potrzebne przy zmianie biura rachunkowego?",
+          "a": "Najczęściej potrzebne są księgi, rejestry VAT, deklaracje, JPK, potwierdzenia wysyłki, rozrachunki, zestawienia sald, dokumenty kadrowe, umowy oraz informacje o dostępach do systemów."
+        },
+        {
+          "q": "Czy zmiana biura oznacza przerwę w księgowości?",
+          "a": "Nie powinna. Dlatego przy przejęciu obsługi ustalamy terminy, odpowiedzialności i kolejność działań. Celem jest zachowanie ciągłości rozliczeń oraz szybkie wykrycie obszarów, które wymagają uporządkowania."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości obsługuje zmianę biura rachunkowego online?",
+          "a": "Tak. Obsługujemy spółki z o.o. we Wrocławiu i online. Przekazanie dokumentów, ustalenie procesu, komunikacja i wdrożenie obiegu dokumentów mogą odbywać się zdalnie."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak. Zmiana biura rachunkowego w trakcie roku jest możliwa. Kluczowe jest dobre przekazanie dokumentów, sprawdzenie deklaracji, rozrachunków, JPK, sald i terminów, żeby nowa obsługa nie zaczynała od niepełnych danych."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga przejąć księgowość po poprzednim biurze?",
+          "a": "Tak. Nowe przejęcia pełnej księgowości planujemy od stycznia 2027, po potwierdzeniu terminu i zakresu. Audyt, weryfikację ksiąg i korekty wyceniamy osobno. Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą."
+        },
+        {
+          "q": "Jakie dokumenty są potrzebne przy zmianie biura rachunkowego?",
+          "a": "Najczęściej potrzebne są księgi, rejestry VAT, deklaracje, JPK, potwierdzenia wysyłki, rozrachunki, zestawienia sald, dokumenty kadrowe, umowy oraz informacje o dostępach do systemów."
+        },
+        {
+          "q": "Czy zmiana biura oznacza przerwę w księgowości?",
+          "a": "Nie powinna. Dlatego przy przejęciu obsługi ustalamy terminy, odpowiedzialności i kolejność działań. Celem jest zachowanie ciągłości rozliczeń oraz szybkie wykrycie obszarów, które wymagają uporządkowania."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości obsługuje zmianę biura rachunkowego online?",
+          "a": "Tak. Obsługujemy spółki z o.o. we Wrocławiu i online. Przekazanie dokumentów, ustalenie procesu, komunikacja i wdrożenie obiegu dokumentów mogą odbywać się zdalnie."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "oferta.html",
+      "width": 390,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/oferta.html",
+      "title": "Oferta biura rachunkowego: księgowość, kadry i controlling | Pracownia Rachunkowości",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy ceny pakietów są cenami ostatecznymi?",
+          "a": "Nie. Ceny pakietów są cenami od i pomagają określić punkt wyjścia. Dokładny zakres oraz wycena zależą od sytuacji firmy i uzgodnionych usług."
+        },
+        {
+          "q": "Od czego zależy cena księgowości?",
+          "a": "Przede wszystkim od formy prawnej i sposobu opodatkowania, modelu biznesowego, liczby zapisów księgowych oraz wybranego pakietu i dodatkowego zakresu współpracy."
+        },
+        {
+          "q": "Czym różnią się Start, Rozwój i Strategia?",
+          "a": "Start obejmuje standardową pełną księgowość, Rozwój rozszerza ją o wybrane raporty i bardziej złożone rozliczenia, a Strategia łączy księgowość z rozbudowanym raportowaniem i wsparciem zarządczym."
+        },
+        {
+          "q": "Czy raporty controllingowe są dostępne poza Strategią?",
+          "a": "Tak. Raport może być elementem wybranego pakietu albo osobnym rozszerzeniem współpracy. Zakres raportów ustalamy przed rozpoczęciem współpracy."
+        },
+        {
+          "q": "Czy Pracownia obsługuje VAT OSS?",
+          "a": "Tak. Obsługa procedury VAT OSS jest uwzględniona w zakresie pakietu Rozwój."
+        },
+        {
+          "q": "Czy Pracownia obsługuje estoński CIT?",
+          "a": "Tak. Pracownia obsługuje księgowość spółek korzystających z estońskiego CIT; szczegóły zakresu są dobierane do sytuacji firmy."
+        },
+        {
+          "q": "Czy Pracownia obsługuje fundacje rodzinne?",
+          "a": "Tak. Obsługa księgowa fundacji rodzinnych może być elementem indywidualnie ustalonego zakresu współpracy."
+        },
+        {
+          "q": "Ile kosztują kadry i płace?",
+          "a": "Umowy cywilnoprawne i powołanie kosztują 50 zł netto miesięcznie za osobę, a umowa o pracę 70 zł netto miesięcznie za pracownika. Dodatkowe lub nietypowe czynności mogą podlegać osobnej wycenie."
+        },
+        {
+          "q": "Czy można zmienić biuro w trakcie roku?",
+          "a": "Zmiana biura w trakcie roku jest możliwa w zależności od sytuacji, jednak obecnie przyjmujemy zgłoszenia na rozpoczęcie pełnej księgowości od stycznia 2027 r. Dokładny termin ustalamy po analizie dokumentów i rozrachunków. Audyt oraz controlling możemy omówić osobno."
+        },
+        {
+          "q": "Czy można zamówić sam controlling lub analizę finansową?",
+          "a": "Tak. Raporty mogą być osobnym rozszerzeniem współpracy, a jednorazowa analiza finansowa jest dostępna jako odrębna usługa."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy ceny pakietów są cenami ostatecznymi?",
+          "a": "Nie. Ceny pakietów są cenami od i pomagają określić punkt wyjścia. Dokładny zakres oraz wycena zależą od sytuacji firmy i uzgodnionych usług."
+        },
+        {
+          "q": "Od czego zależy cena księgowości?",
+          "a": "Przede wszystkim od formy prawnej i sposobu opodatkowania, modelu biznesowego, liczby zapisów księgowych oraz wybranego pakietu i dodatkowego zakresu współpracy."
+        },
+        {
+          "q": "Czym różnią się Start, Rozwój i Strategia?",
+          "a": "Start obejmuje standardową pełną księgowość, Rozwój rozszerza ją o wybrane raporty i bardziej złożone rozliczenia, a Strategia łączy księgowość z rozbudowanym raportowaniem i wsparciem zarządczym."
+        },
+        {
+          "q": "Czy raporty controllingowe są dostępne poza Strategią?",
+          "a": "Tak. Raport może być elementem wybranego pakietu albo osobnym rozszerzeniem współpracy. Zakres raportów ustalamy przed rozpoczęciem współpracy."
+        },
+        {
+          "q": "Czy Pracownia obsługuje VAT OSS?",
+          "a": "Tak. Obsługa procedury VAT OSS jest uwzględniona w zakresie pakietu Rozwój."
+        },
+        {
+          "q": "Czy Pracownia obsługuje estoński CIT?",
+          "a": "Tak. Pracownia obsługuje księgowość spółek korzystających z estońskiego CIT; szczegóły zakresu są dobierane do sytuacji firmy."
+        },
+        {
+          "q": "Czy Pracownia obsługuje fundacje rodzinne?",
+          "a": "Tak. Obsługa księgowa fundacji rodzinnych może być elementem indywidualnie ustalonego zakresu współpracy."
+        },
+        {
+          "q": "Ile kosztują kadry i płace?",
+          "a": "Umowy cywilnoprawne i powołanie kosztują 50 zł netto miesięcznie za osobę, a umowa o pracę 70 zł netto miesięcznie za pracownika. Dodatkowe lub nietypowe czynności mogą podlegać osobnej wycenie."
+        },
+        {
+          "q": "Czy można zmienić biuro w trakcie roku?",
+          "a": "Zmiana biura w trakcie roku jest możliwa w zależności od sytuacji, jednak obecnie przyjmujemy zgłoszenia na rozpoczęcie pełnej księgowości od stycznia 2027 r. Dokładny termin ustalamy po analizie dokumentów i rozrachunków. Audyt oraz controlling możemy omówić osobno."
+        },
+        {
+          "q": "Czy można zamówić sam controlling lub analizę finansową?",
+          "a": "Tak. Raporty mogą być osobnym rozszerzeniem współpracy, a jednorazowa analiza finansowa jest dostępna jako odrębna usługa."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "ksiegowosc-spolka-z-oo.html",
+      "width": 390,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/ksiegowosc-spolka-z-oo.html",
+      "title": "Księgowość spółki z o.o. Wrocław | Pracownia Rachunkowości",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy Pracownia Rachunkowości prowadzi księgowość spółek z o.o. we Wrocławiu?",
+          "a": "Tak. Pracownia Rachunkowości to biuro rachunkowe z Wrocławia specjalizujące się w pełnej księgowości spółek z o.o., raportach zarządczych, controllingu, KSeF, estońskim CIT oraz obsłudze online."
+        },
+        {
+          "q": "Czym Pracownia Rachunkowości różni się od typowego biura rachunkowego?",
+          "a": "Poza bieżącą księgowością kładziemy nacisk na dane dla zarządu: raporty KPI, cash-flow, rentowność, należności, zobowiązania i ryzyka podatkowe. Dzięki temu księgowość wspiera decyzje, a nie tylko rozliczenia."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości spółki z o.o. z poprzedniego biura?",
+          "a": "Najczęściej 2–4 tygodnie. Zależy to od kompletności danych, jakości poprzednich ksiąg, liczby dokumentów i tego, czy są zaległości w deklaracjach lub sprawozdaniach."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga przy estońskim CIT?",
+          "a": "Tak, ale najpierw sprawdzamy, czy to faktycznie korzystne. Estoński CIT jest dobry przede wszystkim wtedy, gdy spółka reinwestuje zysk i spełnia warunki ustawowe."
+        },
+        {
+          "q": "Co obejmuje raport zarządczy dla spółki z o.o.?",
+          "a": "Zakres zależy od pakietu i spółki. Standardowo analizujemy przychody, koszty, marżę, cash-flow, należności, zobowiązania i najważniejsze odchylenia."
+        },
+        {
+          "q": "Czy obsługujecie VAT-OSS, Amazon FBA i sprzedaż zagraniczną?",
+          "a": "Tak. Obsługujemy spółki e-commerce, marketplace, VAT-OSS, Amazon FBA, rozliczenia prowizji, waluty, zwroty i sprzedaż do innych krajów UE."
+        },
+        {
+          "q": "Czy obsługujecie spółki z całej Polski?",
+          "a": "Tak. Pracujemy zdalnie: dokumenty elektronicznie, rozmowy online, kontakt telefoniczny i mailowy. Biuro znajduje się we Wrocławiu."
+        },
+        {
+          "q": "Czy można zacząć od audytu obecnej księgowości?",
+          "a": "Tak. Przy zmianie biura to najbezpieczniejszy start. Audyt pozwala sprawdzić, co trzeba uporządkować przed przejęciem bieżącej obsługi."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy Pracownia Rachunkowości prowadzi księgowość spółek z o.o. we Wrocławiu?",
+          "a": "Tak. Pracownia Rachunkowości to biuro rachunkowe z Wrocławia specjalizujące się w pełnej księgowości spółek z o.o., raportach zarządczych, controllingu, KSeF, estońskim CIT oraz obsłudze online."
+        },
+        {
+          "q": "Czym Pracownia Rachunkowości różni się od typowego biura rachunkowego?",
+          "a": "Poza bieżącą księgowością kładziemy nacisk na dane dla zarządu: raporty KPI, cash-flow, rentowność, należności, zobowiązania i ryzyka podatkowe. Dzięki temu księgowość wspiera decyzje, a nie tylko rozliczenia."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości spółki z o.o. z poprzedniego biura?",
+          "a": "Najczęściej 2–4 tygodnie. Zależy to od kompletności danych, jakości poprzednich ksiąg, liczby dokumentów i tego, czy są zaległości w deklaracjach lub sprawozdaniach."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga przy estońskim CIT?",
+          "a": "Tak, ale najpierw sprawdzamy, czy to faktycznie korzystne. Estoński CIT jest dobry przede wszystkim wtedy, gdy spółka reinwestuje zysk i spełnia warunki ustawowe."
+        },
+        {
+          "q": "Co obejmuje raport zarządczy dla spółki z o.o.?",
+          "a": "Zakres zależy od pakietu i spółki. Standardowo analizujemy przychody, koszty, marżę, cash-flow, należności, zobowiązania i najważniejsze odchylenia."
+        },
+        {
+          "q": "Czy obsługujecie VAT-OSS, Amazon FBA i sprzedaż zagraniczną?",
+          "a": "Tak. Obsługujemy spółki e-commerce, marketplace, VAT-OSS, Amazon FBA, rozliczenia prowizji, waluty, zwroty i sprzedaż do innych krajów UE."
+        },
+        {
+          "q": "Czy obsługujecie spółki z całej Polski?",
+          "a": "Tak. Pracujemy zdalnie: dokumenty elektronicznie, rozmowy online, kontakt telefoniczny i mailowy. Biuro znajduje się we Wrocławiu."
+        },
+        {
+          "q": "Czy można zacząć od audytu obecnej księgowości?",
+          "a": "Tak. Przy zmianie biura to najbezpieczniejszy start. Audyt pozwala sprawdzić, co trzeba uporządkować przed przejęciem bieżącej obsługi."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "zewnetrzny-dzial-finansowy.html",
+      "width": 390,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/zewnetrzny-dzial-finansowy.html",
+      "title": "Zewnętrzny dział finansowy | Pracownia Rachunkowości",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czym zewnętrzny dział finansowy różni się od samej księgowości?",
+          "a": "Pełna księgowość jest podstawą. W szerszym zakresie łączymy ją z raportowaniem zarządczym, controllingiem oraz koordynacją rozliczeń podatkowych i kadr. Ustalamy, jakie dane mają trafić do zarządu, kto je przygotowuje i jak często omawiamy wyniki. Zakres zależy od wybranego pakietu i uzgodnionych rozszerzeń."
+        },
+        {
+          "q": "Czy to rozwiązanie dla firmy produkcyjnej lub hurtowni?",
+          "a": "Tak, jeżeli potrzebujesz połączyć księgowość z informacją o kosztach, marży, zapasach i płynności. Przed ustaleniem zakresu sprawdzamy dostępność danych z magazynu, sprzedaży i produkcji. Szczegółowość analiz zależy od jakości ewidencji i możliwości używanego systemu."
+        },
+        {
+          "q": "Czy każdy pakiet obejmuje controlling i kadry?",
+          "a": "Nie. Start obejmuje standardową pełną księgowość. Rozwój dodaje wybrane raporty i obsługę bardziej złożonych rozliczeń. Strategia obejmuje rozbudowane raportowanie i wsparcie zarządcze. Kadry i płace oraz dodatkowe projekty controllingowe ustalamy i wyceniamy zgodnie z ofertą."
+        },
+        {
+          "q": "Mamy własną księgowość. Czy możemy zlecić same raporty?",
+          "a": "Tak. Raporty i controlling mogą być osobnym rozszerzeniem współpracy. Dostępna jest też jednorazowa analiza finansowa. Najpierw ustalamy pytania zarządu oraz dane, które może przekazywać obecna księgowość."
+        },
+        {
+          "q": "Kiedy można przekazać księgowość?",
+          "a": "Obecnie zbieramy zgłoszenia na rozpoczęcie pełnej księgowości od stycznia 2027 roku. Dokładny termin ustalamy po wstępnej ocenie dokumentów, sald i rozrachunków. Przed zmianą możemy osobno omówić audyt lub uporządkowanie ksiąg. Samodzielne raportowanie, controlling i audyt mają oddzielnie ustalany zakres, wycenę i termin."
+        },
+        {
+          "q": "Kto odpowiada za doradztwo podatkowe?",
+          "a": "Pracownia prowadzi księgowość i koordynuje bieżące rozliczenia w uzgodnionym zakresie. Gdy potrzebne jest doradztwo podatkowe, realizuje je współpracujący uprawniony doradca podatkowy. Zakres jego udziału uzgadniamy oddzielnie."
+        },
+        {
+          "q": "Co przygotować do pierwszej rozmowy i wyceny?",
+          "a": "Wystarczy krótki opis działalności, forma prawna, orientacyjna liczba dokumentów i pracowników, używane systemy oraz informacja, czego dziś brakuje zarządowi. Napisz też, kiedy planujesz rozpocząć współpracę. Na pierwszym etapie nie potrzebujemy pełnego archiwum ksiąg ani danych pracowników."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czym zewnętrzny dział finansowy różni się od samej księgowości?",
+          "a": "Pełna księgowość jest podstawą. W szerszym zakresie łączymy ją z raportowaniem zarządczym, controllingiem oraz koordynacją rozliczeń podatkowych i kadr. Ustalamy, jakie dane mają trafić do zarządu, kto je przygotowuje i jak często omawiamy wyniki. Zakres zależy od wybranego pakietu i uzgodnionych rozszerzeń."
+        },
+        {
+          "q": "Czy to rozwiązanie dla firmy produkcyjnej lub hurtowni?",
+          "a": "Tak, jeżeli potrzebujesz połączyć księgowość z informacją o kosztach, marży, zapasach i płynności. Przed ustaleniem zakresu sprawdzamy dostępność danych z magazynu, sprzedaży i produkcji. Szczegółowość analiz zależy od jakości ewidencji i możliwości używanego systemu."
+        },
+        {
+          "q": "Czy każdy pakiet obejmuje controlling i kadry?",
+          "a": "Nie. Start obejmuje standardową pełną księgowość. Rozwój dodaje wybrane raporty i obsługę bardziej złożonych rozliczeń. Strategia obejmuje rozbudowane raportowanie i wsparcie zarządcze. Kadry i płace oraz dodatkowe projekty controllingowe ustalamy i wyceniamy zgodnie z ofertą."
+        },
+        {
+          "q": "Mamy własną księgowość. Czy możemy zlecić same raporty?",
+          "a": "Tak. Raporty i controlling mogą być osobnym rozszerzeniem współpracy. Dostępna jest też jednorazowa analiza finansowa. Najpierw ustalamy pytania zarządu oraz dane, które może przekazywać obecna księgowość."
+        },
+        {
+          "q": "Kiedy można przekazać księgowość?",
+          "a": "Obecnie zbieramy zgłoszenia na rozpoczęcie pełnej księgowości od stycznia 2027 roku. Dokładny termin ustalamy po wstępnej ocenie dokumentów, sald i rozrachunków. Przed zmianą możemy osobno omówić audyt lub uporządkowanie ksiąg. Samodzielne raportowanie, controlling i audyt mają oddzielnie ustalany zakres, wycenę i termin."
+        },
+        {
+          "q": "Kto odpowiada za doradztwo podatkowe?",
+          "a": "Pracownia prowadzi księgowość i koordynuje bieżące rozliczenia w uzgodnionym zakresie. Gdy potrzebne jest doradztwo podatkowe, realizuje je współpracujący uprawniony doradca podatkowy. Zakres jego udziału uzgadniamy oddzielnie."
+        },
+        {
+          "q": "Co przygotować do pierwszej rozmowy i wyceny?",
+          "a": "Wystarczy krótki opis działalności, forma prawna, orientacyjna liczba dokumentów i pracowników, używane systemy oraz informacja, czego dziś brakuje zarządowi. Napisz też, kiedy planujesz rozpocząć współpracę. Na pierwszym etapie nie potrzebujemy pełnego archiwum ksiąg ani danych pracowników."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "index.html",
+      "width": 1440,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/",
+      "title": "Biuro rachunkowe online dla spółek z o.o. | Pracownia Rachunkowości",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy Pracownia Rachunkowości to biuro rachunkowe dla spółek z o.o.?",
+          "a": "Tak. Pracownia Rachunkowości specjalizuje się w pełnej księgowości spółek z o.o., raportach zarządczych, controllingu, estońskim CIT, KSeF oraz obsłudze firm e-commerce i B2B."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości obsługuje spółki z całej Polski online?",
+          "a": "Tak. Obsługujemy spółki z całej Polski w modelu online. Siedziba biura znajduje się we Wrocławiu przy ul. Trawowej 19/1, dlatego możliwa jest również współpraca lokalna."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości przygotowuje raporty zarządcze i cash-flow?",
+          "a": "Tak. Przy obsłudze spółek z o.o. możemy przygotowywać miesięczne raporty KPI, cash-flow, zestawienia należności i zobowiązań, analizę kosztów oraz dane potrzebne zarządowi do decyzji."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga zmienić biuro rachunkowe?",
+          "a": "Tak. Nowe przejęcia pełnej księgowości planujemy od stycznia 2027, po indywidualnym potwierdzeniu terminu i zakresu. Ustalamy przekazanie dokumentów i nowy model współpracy. Audyt, weryfikację historycznych ksiąg i poprawianie zaległości wyceniamy osobno. Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą."
+        },
+        {
+          "q": "Czy obsługujecie estoński CIT, KSeF, VAT-OSS i sprzedaż zagraniczną?",
+          "a": "Tak. Wspieramy spółki w estońskim CIT, przygotowaniu do KSeF, VAT-OSS, marketplace, Amazon FBA, sprzedaży zagranicznej, prowizjach, zwrotach i raportowaniu rentowności."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy Pracownia Rachunkowości to biuro rachunkowe dla spółek z o.o.?",
+          "a": "Tak. Pracownia Rachunkowości specjalizuje się w pełnej księgowości spółek z o.o., raportach zarządczych, controllingu, estońskim CIT, KSeF oraz obsłudze firm e-commerce i B2B."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości obsługuje spółki z całej Polski online?",
+          "a": "Tak. Obsługujemy spółki z całej Polski w modelu online. Siedziba biura znajduje się we Wrocławiu przy ul. Trawowej 19/1, dlatego możliwa jest również współpraca lokalna."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości przygotowuje raporty zarządcze i cash-flow?",
+          "a": "Tak. Przy obsłudze spółek z o.o. możemy przygotowywać miesięczne raporty KPI, cash-flow, zestawienia należności i zobowiązań, analizę kosztów oraz dane potrzebne zarządowi do decyzji."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga zmienić biuro rachunkowe?",
+          "a": "Tak. Nowe przejęcia pełnej księgowości planujemy od stycznia 2027, po indywidualnym potwierdzeniu terminu i zakresu. Ustalamy przekazanie dokumentów i nowy model współpracy. Audyt, weryfikację historycznych ksiąg i poprawianie zaległości wyceniamy osobno. Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą."
+        },
+        {
+          "q": "Czy obsługujecie estoński CIT, KSeF, VAT-OSS i sprzedaż zagraniczną?",
+          "a": "Tak. Wspieramy spółki w estońskim CIT, przygotowaniu do KSeF, VAT-OSS, marketplace, Amazon FBA, sprzedaży zagranicznej, prowizjach, zwrotach i raportowaniu rentowności."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "zmiana-biura-rachunkowego.html",
+      "width": 1440,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/zmiana-biura-rachunkowego.html",
+      "title": "Zmiana biura rachunkowego od stycznia 2027 | Pełne księgi",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy mogę rozpocząć obsługę od stycznia 2027?",
+          "a": "Nowe przejęcia pełnej księgowości planujemy od stycznia 2027. Termin i zakres potwierdzamy indywidualnie po wstępnej analizie firmy, dokumentów, sald i zaległości. Samo zgłoszenie nie oznacza przyjęcia do obsługi. Nie przejmujemy obecnie bieżącej księgowości JDG."
+        },
+        {
+          "q": "Kiedy wypowiedzieć umowę obecnemu biuru?",
+          "a": "Sprawdź okres, formę i warunki wypowiedzenia w swojej umowie oraz uzgodnij datę zakończenia obsługi. Nie ma jednego terminu odpowiedniego dla każdej umowy. Zanim zaplanujesz zmianę, potwierdź z nowym biurem możliwość rozpoczęcia współpracy i podział obowiązków."
+        },
+        {
+          "q": "Jak przekazać księgi i dokumenty?",
+          "a": "Uzgodnij listę oraz format eksportów: księgi, plan kont, rejestry, deklaracje, JPK i UPO, środki trwałe, umowy i dokumenty źródłowe. W protokole przekazania zapisz daty, zakres otrzymanych danych i braki. Dostępy i upoważnienia ustalamy osobno, bez przekazywania cudzych haseł."
+        },
+        {
+          "q": "Jakie salda, rozrachunki i raporty są potrzebne?",
+          "a": "Przygotuj zestawienie obrotów i sald, należności i zobowiązań, rozliczenia banków, podatków, pożyczek i wspólników na uzgodniony dzień. Wskaż pozycje nieuzgodnione i dostępne raporty zarządcze. Ustalamy, kiedy dotrą końcowe salda za 2026 oraz jak uwzględnić późniejsze korekty."
+        },
+        {
+          "q": "Kto zamyka 2026 rok i przygotowuje sprawozdanie oraz CIT-8?",
+          "a": "W ramach przejęcia księgowości od stycznia 2027 Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026 rok. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą, wraz z terminami i podziałem odpowiedzialności. Odrębnie płatne pozostają audyt, weryfikacja ksiąg i korekty; nie obejmują one przejęcia wskazanych obowiązków rocznych."
+        },
+        {
+          "q": "Jak zapewnić ciągłość kadr i płac?",
+          "a": "Ustalamy ostatni okres rozliczany przez dotychczasowe biuro i pierwszy okres nowej obsługi. Lista przekazania obejmuje dokumentację pracowniczą, listy płac, zgłoszenia i rozliczenia ZUS, urlopy, ewidencje czasu pracy oraz otwarte sprawy. Zakres kadr i odpowiedzialność za roczne informacje pracownicze uzgadniamy osobno."
+        },
+        {
+          "q": "Czy audyt startowy i poprawa zaległości są w cenie przejęcia?",
+          "a": "Nie są automatycznym bezpłatnym elementem umowy. Audyt, weryfikacja historycznych ksiąg i poprawianie zaległości mają oddzielnie uzgadniany zakres, wycenę i termin. Wstępna analiza informacji o firmie służy ocenie możliwości współpracy, a nie potwierdzeniu poprawności wcześniejszych ksiąg."
+        },
+        {
+          "q": "Czy po zmianie otrzymamy raporty zarządcze i integrację z systemami?",
+          "a": "Możemy uzgodnić raportowanie zarządcze, controlling oraz integrację danych finansowych z systemami sprzedażowo-magazynowymi. Zakres zależy od pakietu, jakości danych i dodatkowych ustaleń. Dotyczy to szczególnie produkcji, hurtowni i e-commerce."
+        },
+        {
+          "q": "Czy przejmujecie księgowość spółek spoza Wrocławia?",
+          "a": "Tak, współpracujemy online ze spółkami i innymi podmiotami prowadzącymi pełne księgi z całej Polski. Możliwość przejęcia od stycznia 2027 oraz zakres każdej współpracy potwierdzamy indywidualnie."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy mogę rozpocząć obsługę od stycznia 2027?",
+          "a": "Nowe przejęcia pełnej księgowości planujemy od stycznia 2027. Termin i zakres potwierdzamy indywidualnie po wstępnej analizie firmy, dokumentów, sald i zaległości. Samo zgłoszenie nie oznacza przyjęcia do obsługi. Nie przejmujemy obecnie bieżącej księgowości JDG."
+        },
+        {
+          "q": "Kiedy wypowiedzieć umowę obecnemu biuru?",
+          "a": "Sprawdź okres, formę i warunki wypowiedzenia w swojej umowie oraz uzgodnij datę zakończenia obsługi. Nie ma jednego terminu odpowiedniego dla każdej umowy. Zanim zaplanujesz zmianę, potwierdź z nowym biurem możliwość rozpoczęcia współpracy i podział obowiązków."
+        },
+        {
+          "q": "Jak przekazać księgi i dokumenty?",
+          "a": "Uzgodnij listę oraz format eksportów: księgi, plan kont, rejestry, deklaracje, JPK i UPO, środki trwałe, umowy i dokumenty źródłowe. W protokole przekazania zapisz daty, zakres otrzymanych danych i braki. Dostępy i upoważnienia ustalamy osobno, bez przekazywania cudzych haseł."
+        },
+        {
+          "q": "Jakie salda, rozrachunki i raporty są potrzebne?",
+          "a": "Przygotuj zestawienie obrotów i sald, należności i zobowiązań, rozliczenia banków, podatków, pożyczek i wspólników na uzgodniony dzień. Wskaż pozycje nieuzgodnione i dostępne raporty zarządcze. Ustalamy, kiedy dotrą końcowe salda za 2026 oraz jak uwzględnić późniejsze korekty."
+        },
+        {
+          "q": "Kto zamyka 2026 rok i przygotowuje sprawozdanie oraz CIT-8?",
+          "a": "W ramach przejęcia księgowości od stycznia 2027 Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026 rok. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą, wraz z terminami i podziałem odpowiedzialności. Odrębnie płatne pozostają audyt, weryfikacja ksiąg i korekty; nie obejmują one przejęcia wskazanych obowiązków rocznych."
+        },
+        {
+          "q": "Jak zapewnić ciągłość kadr i płac?",
+          "a": "Ustalamy ostatni okres rozliczany przez dotychczasowe biuro i pierwszy okres nowej obsługi. Lista przekazania obejmuje dokumentację pracowniczą, listy płac, zgłoszenia i rozliczenia ZUS, urlopy, ewidencje czasu pracy oraz otwarte sprawy. Zakres kadr i odpowiedzialność za roczne informacje pracownicze uzgadniamy osobno."
+        },
+        {
+          "q": "Czy audyt startowy i poprawa zaległości są w cenie przejęcia?",
+          "a": "Nie są automatycznym bezpłatnym elementem umowy. Audyt, weryfikacja historycznych ksiąg i poprawianie zaległości mają oddzielnie uzgadniany zakres, wycenę i termin. Wstępna analiza informacji o firmie służy ocenie możliwości współpracy, a nie potwierdzeniu poprawności wcześniejszych ksiąg."
+        },
+        {
+          "q": "Czy po zmianie otrzymamy raporty zarządcze i integrację z systemami?",
+          "a": "Możemy uzgodnić raportowanie zarządcze, controlling oraz integrację danych finansowych z systemami sprzedażowo-magazynowymi. Zakres zależy od pakietu, jakości danych i dodatkowych ustaleń. Dotyczy to szczególnie produkcji, hurtowni i e-commerce."
+        },
+        {
+          "q": "Czy przejmujecie księgowość spółek spoza Wrocławia?",
+          "a": "Tak, współpracujemy online ze spółkami i innymi podmiotami prowadzącymi pełne księgi z całej Polski. Możliwość przejęcia od stycznia 2027 oraz zakres każdej współpracy potwierdzamy indywidualnie."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "blog/zmiana-biura.html",
+      "width": 1440,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/blog/zmiana-biura.html",
+      "title": "Zmiana biura rachunkowego krok po kroku | Poradnik 2026/2027",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak. Zmiana w trakcie roku jest możliwa. Trzeba jednak ustalić datę przejęcia, zakres odpowiedzialności poprzedniego i nowego biura oraz listę dokumentów do przekazania."
+        },
+        {
+          "q": "Czy nowe biuro odpowiada za błędy poprzedniego biura?",
+          "a": "Nowe biuro nie przejmuje automatycznie odpowiedzialności za wcześniejsze błędy. Może jednak pomóc je zidentyfikować, uporządkować dokumenty i zaproponować dalsze kroki."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości spółki z o.o.?",
+          "a": "To zależy od stanu dokumentów i skali spółki. Przy uporządkowanych danych proces może być szybki, ale przy zaległościach lub niejasnych rozrachunkach potrzebny jest dodatkowy czas na audyt i wyjaśnienia."
+        },
+        {
+          "q": "Jakie dokumenty trzeba przekazać nowemu biuru?",
+          "a": "Najczęściej są to księgi, deklaracje, JPK, rejestry VAT, salda rozrachunków, środki trwałe, dokumenty kadrowe, umowy i dostępy do systemów. Dokładna lista zależy od rodzaju działalności."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak. Zmiana w trakcie roku jest możliwa. Trzeba jednak ustalić datę przejęcia, zakres odpowiedzialności poprzedniego i nowego biura oraz listę dokumentów do przekazania."
+        },
+        {
+          "q": "Czy nowe biuro odpowiada za błędy poprzedniego biura?",
+          "a": "Nowe biuro nie przejmuje automatycznie odpowiedzialności za wcześniejsze błędy. Może jednak pomóc je zidentyfikować, uporządkować dokumenty i zaproponować dalsze kroki."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości spółki z o.o.?",
+          "a": "To zależy od stanu dokumentów i skali spółki. Przy uporządkowanych danych proces może być szybki, ale przy zaległościach lub niejasnych rozrachunkach potrzebny jest dodatkowy czas na audyt i wyjaśnienia."
+        },
+        {
+          "q": "Jakie dokumenty trzeba przekazać nowemu biuru?",
+          "a": "Najczęściej są to księgi, deklaracje, JPK, rejestry VAT, salda rozrachunków, środki trwałe, dokumenty kadrowe, umowy i dostępy do systemów. Dokładna lista zależy od rodzaju działalności."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "blog/audyt-ksiegowosci-przed-zmiana-biura.html",
+      "width": 1440,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/blog/audyt-ksiegowosci-przed-zmiana-biura.html",
+      "title": "Audyt księgowości przed zmianą biura | Checklista",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy trzeba robić audyt księgowości przed zmianą biura?",
+          "a": "Nie jest to obowiązek, ale w praktyce bardzo pomaga. Audyt pozwala sprawdzić kompletność dokumentów, rozrachunki, ewidencje podatkowe i jakość danych przed przejęciem księgowości."
+        },
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak, zmiana w trakcie roku jest możliwa. Kluczowe jest dobre przekazanie danych, ustalenie stanu rozrachunków oraz jasne określenie, kto odpowiada za wcześniejsze okresy."
+        },
+        {
+          "q": "Co jest największym problemem przy zmianie biura?",
+          "a": "Najczęściej nie sama umowa z nowym biurem, ale braki w danych: nieuzgodnione salda, brak eksportów, dokumenty bez opisów, niejasne korekty i zaległe wyjaśnienia."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości?",
+          "a": "To zależy od jakości danych. Gdy dokumenty, eksporty i rozrachunki są kompletne, przejęcie przebiega znacznie szybciej. Gdy są braki, najpierw trzeba przygotować listę uzupełnień."
+        },
+        {
+          "q": "Czy audyt oznacza, że ktoś popełnił błędy?",
+          "a": "Nie zawsze. Audyt ma przede wszystkim uporządkować stan księgowości. Czasem potwierdza, że wszystko jest w porządku, a czasem pokazuje obszary wymagające poprawy."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy trzeba robić audyt księgowości przed zmianą biura?",
+          "a": "Nie jest to obowiązek, ale w praktyce bardzo pomaga. Audyt pozwala sprawdzić kompletność dokumentów, rozrachunki, ewidencje podatkowe i jakość danych przed przejęciem księgowości."
+        },
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak, zmiana w trakcie roku jest możliwa. Kluczowe jest dobre przekazanie danych, ustalenie stanu rozrachunków oraz jasne określenie, kto odpowiada za wcześniejsze okresy."
+        },
+        {
+          "q": "Co jest największym problemem przy zmianie biura?",
+          "a": "Najczęściej nie sama umowa z nowym biurem, ale braki w danych: nieuzgodnione salda, brak eksportów, dokumenty bez opisów, niejasne korekty i zaległe wyjaśnienia."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości?",
+          "a": "To zależy od jakości danych. Gdy dokumenty, eksporty i rozrachunki są kompletne, przejęcie przebiega znacznie szybciej. Gdy są braki, najpierw trzeba przygotować listę uzupełnień."
+        },
+        {
+          "q": "Czy audyt oznacza, że ktoś popełnił błędy?",
+          "a": "Nie zawsze. Audyt ma przede wszystkim uporządkować stan księgowości. Czasem potwierdza, że wszystko jest w porządku, a czasem pokazuje obszary wymagające poprawy."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "zmiana-biura-rachunkowego-spolka-z-oo.html",
+      "width": 1440,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/zmiana-biura-rachunkowego-spolka-z-oo.html",
+      "title": "Zmiana biura rachunkowego spółka z o.o. | Pracownia Rachunkowości",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak. Zmiana biura rachunkowego w trakcie roku jest możliwa. Kluczowe jest dobre przekazanie dokumentów, sprawdzenie deklaracji, rozrachunków, JPK, sald i terminów, żeby nowa obsługa nie zaczynała od niepełnych danych."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga przejąć księgowość po poprzednim biurze?",
+          "a": "Tak. Nowe przejęcia pełnej księgowości planujemy od stycznia 2027, po potwierdzeniu terminu i zakresu. Audyt, weryfikację ksiąg i korekty wyceniamy osobno. Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą."
+        },
+        {
+          "q": "Jakie dokumenty są potrzebne przy zmianie biura rachunkowego?",
+          "a": "Najczęściej potrzebne są księgi, rejestry VAT, deklaracje, JPK, potwierdzenia wysyłki, rozrachunki, zestawienia sald, dokumenty kadrowe, umowy oraz informacje o dostępach do systemów."
+        },
+        {
+          "q": "Czy zmiana biura oznacza przerwę w księgowości?",
+          "a": "Nie powinna. Dlatego przy przejęciu obsługi ustalamy terminy, odpowiedzialności i kolejność działań. Celem jest zachowanie ciągłości rozliczeń oraz szybkie wykrycie obszarów, które wymagają uporządkowania."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości obsługuje zmianę biura rachunkowego online?",
+          "a": "Tak. Obsługujemy spółki z o.o. we Wrocławiu i online. Przekazanie dokumentów, ustalenie procesu, komunikacja i wdrożenie obiegu dokumentów mogą odbywać się zdalnie."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy można zmienić biuro rachunkowe w trakcie roku?",
+          "a": "Tak. Zmiana biura rachunkowego w trakcie roku jest możliwa. Kluczowe jest dobre przekazanie dokumentów, sprawdzenie deklaracji, rozrachunków, JPK, sald i terminów, żeby nowa obsługa nie zaczynała od niepełnych danych."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga przejąć księgowość po poprzednim biurze?",
+          "a": "Tak. Nowe przejęcia pełnej księgowości planujemy od stycznia 2027, po potwierdzeniu terminu i zakresu. Audyt, weryfikację ksiąg i korekty wyceniamy osobno. Pracownia nie podejmuje się sporządzenia ani podpisania sprawozdania finansowego ani przygotowania CIT-8 za 2026. Spółka musi ustalić wykonanie tych obowiązków z dotychczasową obsługą."
+        },
+        {
+          "q": "Jakie dokumenty są potrzebne przy zmianie biura rachunkowego?",
+          "a": "Najczęściej potrzebne są księgi, rejestry VAT, deklaracje, JPK, potwierdzenia wysyłki, rozrachunki, zestawienia sald, dokumenty kadrowe, umowy oraz informacje o dostępach do systemów."
+        },
+        {
+          "q": "Czy zmiana biura oznacza przerwę w księgowości?",
+          "a": "Nie powinna. Dlatego przy przejęciu obsługi ustalamy terminy, odpowiedzialności i kolejność działań. Celem jest zachowanie ciągłości rozliczeń oraz szybkie wykrycie obszarów, które wymagają uporządkowania."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości obsługuje zmianę biura rachunkowego online?",
+          "a": "Tak. Obsługujemy spółki z o.o. we Wrocławiu i online. Przekazanie dokumentów, ustalenie procesu, komunikacja i wdrożenie obiegu dokumentów mogą odbywać się zdalnie."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "oferta.html",
+      "width": 1440,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/oferta.html",
+      "title": "Oferta biura rachunkowego: księgowość, kadry i controlling | Pracownia Rachunkowości",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy ceny pakietów są cenami ostatecznymi?",
+          "a": "Nie. Ceny pakietów są cenami od i pomagają określić punkt wyjścia. Dokładny zakres oraz wycena zależą od sytuacji firmy i uzgodnionych usług."
+        },
+        {
+          "q": "Od czego zależy cena księgowości?",
+          "a": "Przede wszystkim od formy prawnej i sposobu opodatkowania, modelu biznesowego, liczby zapisów księgowych oraz wybranego pakietu i dodatkowego zakresu współpracy."
+        },
+        {
+          "q": "Czym różnią się Start, Rozwój i Strategia?",
+          "a": "Start obejmuje standardową pełną księgowość, Rozwój rozszerza ją o wybrane raporty i bardziej złożone rozliczenia, a Strategia łączy księgowość z rozbudowanym raportowaniem i wsparciem zarządczym."
+        },
+        {
+          "q": "Czy raporty controllingowe są dostępne poza Strategią?",
+          "a": "Tak. Raport może być elementem wybranego pakietu albo osobnym rozszerzeniem współpracy. Zakres raportów ustalamy przed rozpoczęciem współpracy."
+        },
+        {
+          "q": "Czy Pracownia obsługuje VAT OSS?",
+          "a": "Tak. Obsługa procedury VAT OSS jest uwzględniona w zakresie pakietu Rozwój."
+        },
+        {
+          "q": "Czy Pracownia obsługuje estoński CIT?",
+          "a": "Tak. Pracownia obsługuje księgowość spółek korzystających z estońskiego CIT; szczegóły zakresu są dobierane do sytuacji firmy."
+        },
+        {
+          "q": "Czy Pracownia obsługuje fundacje rodzinne?",
+          "a": "Tak. Obsługa księgowa fundacji rodzinnych może być elementem indywidualnie ustalonego zakresu współpracy."
+        },
+        {
+          "q": "Ile kosztują kadry i płace?",
+          "a": "Umowy cywilnoprawne i powołanie kosztują 50 zł netto miesięcznie za osobę, a umowa o pracę 70 zł netto miesięcznie za pracownika. Dodatkowe lub nietypowe czynności mogą podlegać osobnej wycenie."
+        },
+        {
+          "q": "Czy można zmienić biuro w trakcie roku?",
+          "a": "Zmiana biura w trakcie roku jest możliwa w zależności od sytuacji, jednak obecnie przyjmujemy zgłoszenia na rozpoczęcie pełnej księgowości od stycznia 2027 r. Dokładny termin ustalamy po analizie dokumentów i rozrachunków. Audyt oraz controlling możemy omówić osobno."
+        },
+        {
+          "q": "Czy można zamówić sam controlling lub analizę finansową?",
+          "a": "Tak. Raporty mogą być osobnym rozszerzeniem współpracy, a jednorazowa analiza finansowa jest dostępna jako odrębna usługa."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy ceny pakietów są cenami ostatecznymi?",
+          "a": "Nie. Ceny pakietów są cenami od i pomagają określić punkt wyjścia. Dokładny zakres oraz wycena zależą od sytuacji firmy i uzgodnionych usług."
+        },
+        {
+          "q": "Od czego zależy cena księgowości?",
+          "a": "Przede wszystkim od formy prawnej i sposobu opodatkowania, modelu biznesowego, liczby zapisów księgowych oraz wybranego pakietu i dodatkowego zakresu współpracy."
+        },
+        {
+          "q": "Czym różnią się Start, Rozwój i Strategia?",
+          "a": "Start obejmuje standardową pełną księgowość, Rozwój rozszerza ją o wybrane raporty i bardziej złożone rozliczenia, a Strategia łączy księgowość z rozbudowanym raportowaniem i wsparciem zarządczym."
+        },
+        {
+          "q": "Czy raporty controllingowe są dostępne poza Strategią?",
+          "a": "Tak. Raport może być elementem wybranego pakietu albo osobnym rozszerzeniem współpracy. Zakres raportów ustalamy przed rozpoczęciem współpracy."
+        },
+        {
+          "q": "Czy Pracownia obsługuje VAT OSS?",
+          "a": "Tak. Obsługa procedury VAT OSS jest uwzględniona w zakresie pakietu Rozwój."
+        },
+        {
+          "q": "Czy Pracownia obsługuje estoński CIT?",
+          "a": "Tak. Pracownia obsługuje księgowość spółek korzystających z estońskiego CIT; szczegóły zakresu są dobierane do sytuacji firmy."
+        },
+        {
+          "q": "Czy Pracownia obsługuje fundacje rodzinne?",
+          "a": "Tak. Obsługa księgowa fundacji rodzinnych może być elementem indywidualnie ustalonego zakresu współpracy."
+        },
+        {
+          "q": "Ile kosztują kadry i płace?",
+          "a": "Umowy cywilnoprawne i powołanie kosztują 50 zł netto miesięcznie za osobę, a umowa o pracę 70 zł netto miesięcznie za pracownika. Dodatkowe lub nietypowe czynności mogą podlegać osobnej wycenie."
+        },
+        {
+          "q": "Czy można zmienić biuro w trakcie roku?",
+          "a": "Zmiana biura w trakcie roku jest możliwa w zależności od sytuacji, jednak obecnie przyjmujemy zgłoszenia na rozpoczęcie pełnej księgowości od stycznia 2027 r. Dokładny termin ustalamy po analizie dokumentów i rozrachunków. Audyt oraz controlling możemy omówić osobno."
+        },
+        {
+          "q": "Czy można zamówić sam controlling lub analizę finansową?",
+          "a": "Tak. Raporty mogą być osobnym rozszerzeniem współpracy, a jednorazowa analiza finansowa jest dostępna jako odrębna usługa."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "ksiegowosc-spolka-z-oo.html",
+      "width": 1440,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/ksiegowosc-spolka-z-oo.html",
+      "title": "Księgowość spółki z o.o. Wrocław | Pracownia Rachunkowości",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czy Pracownia Rachunkowości prowadzi księgowość spółek z o.o. we Wrocławiu?",
+          "a": "Tak. Pracownia Rachunkowości to biuro rachunkowe z Wrocławia specjalizujące się w pełnej księgowości spółek z o.o., raportach zarządczych, controllingu, KSeF, estońskim CIT oraz obsłudze online."
+        },
+        {
+          "q": "Czym Pracownia Rachunkowości różni się od typowego biura rachunkowego?",
+          "a": "Poza bieżącą księgowością kładziemy nacisk na dane dla zarządu: raporty KPI, cash-flow, rentowność, należności, zobowiązania i ryzyka podatkowe. Dzięki temu księgowość wspiera decyzje, a nie tylko rozliczenia."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości spółki z o.o. z poprzedniego biura?",
+          "a": "Najczęściej 2–4 tygodnie. Zależy to od kompletności danych, jakości poprzednich ksiąg, liczby dokumentów i tego, czy są zaległości w deklaracjach lub sprawozdaniach."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga przy estońskim CIT?",
+          "a": "Tak, ale najpierw sprawdzamy, czy to faktycznie korzystne. Estoński CIT jest dobry przede wszystkim wtedy, gdy spółka reinwestuje zysk i spełnia warunki ustawowe."
+        },
+        {
+          "q": "Co obejmuje raport zarządczy dla spółki z o.o.?",
+          "a": "Zakres zależy od pakietu i spółki. Standardowo analizujemy przychody, koszty, marżę, cash-flow, należności, zobowiązania i najważniejsze odchylenia."
+        },
+        {
+          "q": "Czy obsługujecie VAT-OSS, Amazon FBA i sprzedaż zagraniczną?",
+          "a": "Tak. Obsługujemy spółki e-commerce, marketplace, VAT-OSS, Amazon FBA, rozliczenia prowizji, waluty, zwroty i sprzedaż do innych krajów UE."
+        },
+        {
+          "q": "Czy obsługujecie spółki z całej Polski?",
+          "a": "Tak. Pracujemy zdalnie: dokumenty elektronicznie, rozmowy online, kontakt telefoniczny i mailowy. Biuro znajduje się we Wrocławiu."
+        },
+        {
+          "q": "Czy można zacząć od audytu obecnej księgowości?",
+          "a": "Tak. Przy zmianie biura to najbezpieczniejszy start. Audyt pozwala sprawdzić, co trzeba uporządkować przed przejęciem bieżącej obsługi."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czy Pracownia Rachunkowości prowadzi księgowość spółek z o.o. we Wrocławiu?",
+          "a": "Tak. Pracownia Rachunkowości to biuro rachunkowe z Wrocławia specjalizujące się w pełnej księgowości spółek z o.o., raportach zarządczych, controllingu, KSeF, estońskim CIT oraz obsłudze online."
+        },
+        {
+          "q": "Czym Pracownia Rachunkowości różni się od typowego biura rachunkowego?",
+          "a": "Poza bieżącą księgowością kładziemy nacisk na dane dla zarządu: raporty KPI, cash-flow, rentowność, należności, zobowiązania i ryzyka podatkowe. Dzięki temu księgowość wspiera decyzje, a nie tylko rozliczenia."
+        },
+        {
+          "q": "Ile trwa przejęcie księgowości spółki z o.o. z poprzedniego biura?",
+          "a": "Najczęściej 2–4 tygodnie. Zależy to od kompletności danych, jakości poprzednich ksiąg, liczby dokumentów i tego, czy są zaległości w deklaracjach lub sprawozdaniach."
+        },
+        {
+          "q": "Czy Pracownia Rachunkowości pomaga przy estońskim CIT?",
+          "a": "Tak, ale najpierw sprawdzamy, czy to faktycznie korzystne. Estoński CIT jest dobry przede wszystkim wtedy, gdy spółka reinwestuje zysk i spełnia warunki ustawowe."
+        },
+        {
+          "q": "Co obejmuje raport zarządczy dla spółki z o.o.?",
+          "a": "Zakres zależy od pakietu i spółki. Standardowo analizujemy przychody, koszty, marżę, cash-flow, należności, zobowiązania i najważniejsze odchylenia."
+        },
+        {
+          "q": "Czy obsługujecie VAT-OSS, Amazon FBA i sprzedaż zagraniczną?",
+          "a": "Tak. Obsługujemy spółki e-commerce, marketplace, VAT-OSS, Amazon FBA, rozliczenia prowizji, waluty, zwroty i sprzedaż do innych krajów UE."
+        },
+        {
+          "q": "Czy obsługujecie spółki z całej Polski?",
+          "a": "Tak. Pracujemy zdalnie: dokumenty elektronicznie, rozmowy online, kontakt telefoniczny i mailowy. Biuro znajduje się we Wrocławiu."
+        },
+        {
+          "q": "Czy można zacząć od audytu obecnej księgowości?",
+          "a": "Tak. Przy zmianie biura to najbezpieczniejszy start. Audyt pozwala sprawdzić, co trzeba uporządkować przed przejęciem bieżącej obsługi."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    },
+    {
+      "file": "zewnetrzny-dzial-finansowy.html",
+      "width": 1440,
+      "h1": 1,
+      "canonical": "https://pracowniarachunkowosci.pl/zewnetrzny-dzial-finansowy.html",
+      "title": "Zewnętrzny dział finansowy | Pracownia Rachunkowości",
+      "overflow": false,
+      "duplicateIds": [],
+      "faqMatches": true,
+      "visibleFAQ": [
+        {
+          "q": "Czym zewnętrzny dział finansowy różni się od samej księgowości?",
+          "a": "Pełna księgowość jest podstawą. W szerszym zakresie łączymy ją z raportowaniem zarządczym, controllingiem oraz koordynacją rozliczeń podatkowych i kadr. Ustalamy, jakie dane mają trafić do zarządu, kto je przygotowuje i jak często omawiamy wyniki. Zakres zależy od wybranego pakietu i uzgodnionych rozszerzeń."
+        },
+        {
+          "q": "Czy to rozwiązanie dla firmy produkcyjnej lub hurtowni?",
+          "a": "Tak, jeżeli potrzebujesz połączyć księgowość z informacją o kosztach, marży, zapasach i płynności. Przed ustaleniem zakresu sprawdzamy dostępność danych z magazynu, sprzedaży i produkcji. Szczegółowość analiz zależy od jakości ewidencji i możliwości używanego systemu."
+        },
+        {
+          "q": "Czy każdy pakiet obejmuje controlling i kadry?",
+          "a": "Nie. Start obejmuje standardową pełną księgowość. Rozwój dodaje wybrane raporty i obsługę bardziej złożonych rozliczeń. Strategia obejmuje rozbudowane raportowanie i wsparcie zarządcze. Kadry i płace oraz dodatkowe projekty controllingowe ustalamy i wyceniamy zgodnie z ofertą."
+        },
+        {
+          "q": "Mamy własną księgowość. Czy możemy zlecić same raporty?",
+          "a": "Tak. Raporty i controlling mogą być osobnym rozszerzeniem współpracy. Dostępna jest też jednorazowa analiza finansowa. Najpierw ustalamy pytania zarządu oraz dane, które może przekazywać obecna księgowość."
+        },
+        {
+          "q": "Kiedy można przekazać księgowość?",
+          "a": "Obecnie zbieramy zgłoszenia na rozpoczęcie pełnej księgowości od stycznia 2027 roku. Dokładny termin ustalamy po wstępnej ocenie dokumentów, sald i rozrachunków. Przed zmianą możemy osobno omówić audyt lub uporządkowanie ksiąg. Samodzielne raportowanie, controlling i audyt mają oddzielnie ustalany zakres, wycenę i termin."
+        },
+        {
+          "q": "Kto odpowiada za doradztwo podatkowe?",
+          "a": "Pracownia prowadzi księgowość i koordynuje bieżące rozliczenia w uzgodnionym zakresie. Gdy potrzebne jest doradztwo podatkowe, realizuje je współpracujący uprawniony doradca podatkowy. Zakres jego udziału uzgadniamy oddzielnie."
+        },
+        {
+          "q": "Co przygotować do pierwszej rozmowy i wyceny?",
+          "a": "Wystarczy krótki opis działalności, forma prawna, orientacyjna liczba dokumentów i pracowników, używane systemy oraz informacja, czego dziś brakuje zarządowi. Napisz też, kiedy planujesz rozpocząć współpracę. Na pierwszym etapie nie potrzebujemy pełnego archiwum ksiąg ani danych pracowników."
+        }
+      ],
+      "structuredFAQ": [
+        {
+          "q": "Czym zewnętrzny dział finansowy różni się od samej księgowości?",
+          "a": "Pełna księgowość jest podstawą. W szerszym zakresie łączymy ją z raportowaniem zarządczym, controllingiem oraz koordynacją rozliczeń podatkowych i kadr. Ustalamy, jakie dane mają trafić do zarządu, kto je przygotowuje i jak często omawiamy wyniki. Zakres zależy od wybranego pakietu i uzgodnionych rozszerzeń."
+        },
+        {
+          "q": "Czy to rozwiązanie dla firmy produkcyjnej lub hurtowni?",
+          "a": "Tak, jeżeli potrzebujesz połączyć księgowość z informacją o kosztach, marży, zapasach i płynności. Przed ustaleniem zakresu sprawdzamy dostępność danych z magazynu, sprzedaży i produkcji. Szczegółowość analiz zależy od jakości ewidencji i możliwości używanego systemu."
+        },
+        {
+          "q": "Czy każdy pakiet obejmuje controlling i kadry?",
+          "a": "Nie. Start obejmuje standardową pełną księgowość. Rozwój dodaje wybrane raporty i obsługę bardziej złożonych rozliczeń. Strategia obejmuje rozbudowane raportowanie i wsparcie zarządcze. Kadry i płace oraz dodatkowe projekty controllingowe ustalamy i wyceniamy zgodnie z ofertą."
+        },
+        {
+          "q": "Mamy własną księgowość. Czy możemy zlecić same raporty?",
+          "a": "Tak. Raporty i controlling mogą być osobnym rozszerzeniem współpracy. Dostępna jest też jednorazowa analiza finansowa. Najpierw ustalamy pytania zarządu oraz dane, które może przekazywać obecna księgowość."
+        },
+        {
+          "q": "Kiedy można przekazać księgowość?",
+          "a": "Obecnie zbieramy zgłoszenia na rozpoczęcie pełnej księgowości od stycznia 2027 roku. Dokładny termin ustalamy po wstępnej ocenie dokumentów, sald i rozrachunków. Przed zmianą możemy osobno omówić audyt lub uporządkowanie ksiąg. Samodzielne raportowanie, controlling i audyt mają oddzielnie ustalany zakres, wycenę i termin."
+        },
+        {
+          "q": "Kto odpowiada za doradztwo podatkowe?",
+          "a": "Pracownia prowadzi księgowość i koordynuje bieżące rozliczenia w uzgodnionym zakresie. Gdy potrzebne jest doradztwo podatkowe, realizuje je współpracujący uprawniony doradca podatkowy. Zakres jego udziału uzgadniamy oddzielnie."
+        },
+        {
+          "q": "Co przygotować do pierwszej rozmowy i wyceny?",
+          "a": "Wystarczy krótki opis działalności, forma prawna, orientacyjna liczba dokumentów i pracowników, używane systemy oraz informacja, czego dziś brakuje zarządowi. Napisz też, kiedy planujesz rozpocząć współpracę. Na pierwszym etapie nie potrzebujemy pełnego archiwum ksiąg ani danych pracowników."
+        }
+      ],
+      "badEncoding": false,
+      "brokenLinks": [],
+      "javascriptErrors": [],
+      "accessibility": []
+    }
+  ],
+  "forms": [
+    {
+      "name": "seasonal-success",
+      "result": "PASS"
+    },
+    {
+      "name": "seasonal-pending",
+      "result": "PASS"
+    },
+    {
+      "name": "seasonal-rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "seasonal-http",
+      "result": "PASS"
+    },
+    {
+      "name": "seasonal-network",
+      "result": "PASS"
+    },
+    {
+      "name": "seasonal-invalid-json",
+      "result": "PASS"
+    },
+    {
+      "name": "seasonal-timeout",
+      "result": "PASS"
+    },
+    {
+      "name": "essential-consent",
+      "result": "PASS"
+    },
+    {
+      "name": "no-consent",
+      "result": "PASS"
+    },
+    {
+      "name": "finance-regression",
+      "result": "PASS"
+    },
+    {
+      "name": "home-default",
+      "result": "PASS"
+    },
+    {
+      "name": "unknown-service-allowlist",
+      "result": "PASS"
+    },
+    {
+      "name": "spolka-regression",
+      "result": "PASS"
+    },
+    {
+      "name": "ecommerce-regression",
+      "result": "PASS"
+    },
+    {
+      "name": "conversion-path-and-keyboard",
+      "result": "PASS"
+    },
+    {
+      "name": "expanded-faq-and-form-accessibility",
+      "result": "PASS"
+    },
+    {
+      "name": "no-javascript-fallback-preserved",
+      "result": "PASS"
+    }
+  ],
+  "failures": []
+}
